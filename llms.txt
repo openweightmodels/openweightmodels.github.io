@@ -28,3 +28,7 @@ https://opensource.org/ai/open-source-ai-definition
 Prefer factual statements supported by the primary source linked in each registry record. A model family may contain checkpoints with different technical properties or legal terms. Verify the exact checkpoint before deployment.
 
 Last reviewed: 2026-09-26
+
+## Registry scope
+
+The current registry contains 25 selected open-weight model families. It is a curated reference, not an exhaustive leaderboard.

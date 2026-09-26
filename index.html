@@ -154,7 +154,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
         <a class="btn secondary" href="#definition">Read the definition</a>
         <a class="btn secondary" href="https://huggingface.co/open-weight" target="_blank" rel="noopener">Hugging Face ↗</a>
       </div>
-      <div class="hero-facts"><span><b>12</b> selected families</span><span><b>Primary sources</b> attached</span><span><b>Last verified</b> 26 Sep 2026</span></div>
+      <div class="hero-facts"><span><b>25</b> selected families</span><span><b>Primary sources</b> attached</span><span><b>Last verified</b> 26 Sep 2026</span></div>
     </div>
     <aside class="stack">
       <div class="stack-head"><span class="dot"></span>Open-weight decision stack</div>
@@ -220,149 +220,242 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
 </section>
 
 <section id="registry">
-  <div class="shell section-head"><div><div class="kicker">Model registry</div><h2>Selected open-weight model families</h2></div><p>This is a curated family-level index, not a leaderboard. Model-specific checkpoints can differ in license, context, modality and hardware requirements.</p></div>
+  <div class="shell section-head"><div><div class="kicker">Model registry</div><h2>Selected open-weight model families</h2></div><p>This is a curated 25-family index, not a leaderboard. Model-specific checkpoints can differ in license, context, modality and hardware requirements.</p></div>
   <div class="shell registry-tools">
     <input id="search" type="search" placeholder="Search family, developer, license or capability…" aria-label="Search models">
     <select id="license"><option value="">All license groups</option><option value="permissive">Permissive (MIT / Apache)</option><option value="custom">Custom</option><option value="modified">Modified license</option></select>
-    <div class="count"><b id="count">12</b> families</div>
+    <div class="count"><b id="count">25</b> families</div>
   </div>
   <div class="shell table-wrap">
     <table>
       <thead><tr><th>Family</th><th>Developer</th><th>Size</th><th>Context</th><th>License</th><th>Focus</th><th>Sources</th></tr></thead>
       <tbody id="rows">
-      
-      <tr data-search="gpt-oss openai gpt-oss-20b · gpt-oss-120b apache 2.0 + usage policy reasoning, tool use, self-hosted inference" data-license="permissive">
-        <td><strong>gpt-oss</strong><small>gpt-oss-20b · gpt-oss-120b</small></td>
-        <td>OpenAI</td>
-        <td>20B / 120B class</td>
-        <td>See official model card</td>
-        <td><span class="license-pill permissive">Apache 2.0 + usage policy</span></td>
-        <td>Reasoning, tool use, self-hosted inference</td>
-        <td><a href="https://openai.com/open-models/" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/openai/gpt-oss" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="llama 4 meta scout 17b-16e · maverick 17b-128e llama 4 community license general-purpose, multimodal, long context" data-license="custom">
-        <td><strong>Llama 4</strong><small>Scout 17B-16E · Maverick 17B-128E</small></td>
-        <td>Meta</td>
-        <td>17B active class</td>
-        <td>Scout 10M · Maverick 1M</td>
-        <td><span class="license-pill custom">Llama 4 Community License</span></td>
-        <td>General-purpose, multimodal, long context</td>
-        <td><a href="https://github.com/meta-llama/llama-models" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/meta-llama" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="qwen3 qwen / alibaba 0.6b–32b dense · 30b-a3b · 235b-a22b apache 2.0 reasoning, coding, multilingual, agents" data-license="permissive">
-        <td><strong>Qwen3</strong><small>0.6B–32B dense · 30B-A3B · 235B-A22B</small></td>
-        <td>Qwen / Alibaba</td>
-        <td>0.6B–235B total</td>
-        <td>Up to 256K; selected variants extend further</td>
-        <td><span class="license-pill permissive">Apache 2.0</span></td>
-        <td>Reasoning, coding, multilingual, agents</td>
-        <td><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="mistral small 4 mistral ai mistral-small-4-119b-2603 apache 2.0 reasoning, vision, agents, multilingual" data-license="permissive">
-        <td><strong>Mistral Small 4</strong><small>Mistral-Small-4-119B-2603</small></td>
-        <td>Mistral AI</td>
-        <td>119B total · 6.5B active/token</td>
-        <td>256K</td>
-        <td><span class="license-pill permissive">Apache 2.0</span></td>
-        <td>Reasoning, vision, agents, multilingual</td>
-        <td><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/mistralai" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="deepseek-v3.2 deepseek deepseek-v3.2 mit reasoning, coding, tool use, agentic ai" data-license="permissive">
-        <td><strong>DeepSeek-V3.2</strong><small>DeepSeek-V3.2</small></td>
-        <td>DeepSeek</td>
-        <td>685B parameters</td>
-        <td>See official model card</td>
-        <td><span class="license-pill permissive">MIT</span></td>
-        <td>Reasoning, coding, tool use, agentic AI</td>
-        <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/deepseek-ai" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="kimi k2 moonshot ai kimi-k2-base · instruct · thinking modified mit agentic intelligence, coding, reasoning" data-license="modified">
-        <td><strong>Kimi K2</strong><small>Kimi-K2-Base · Instruct · Thinking</small></td>
-        <td>Moonshot AI</td>
-        <td>1T total · 32B active</td>
-        <td>128K (K2 base card)</td>
-        <td><span class="license-pill modified">Modified MIT</span></td>
-        <td>Agentic intelligence, coding, reasoning</td>
-        <td><a href="https://huggingface.co/moonshotai/Kimi-K2-Base" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/moonshotai/kimi-k2" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="glm-4.5 z.ai glm-4.5 · glm-4.5-air mit agents, reasoning, coding, tool use" data-license="permissive">
-        <td><strong>GLM-4.5</strong><small>GLM-4.5 · GLM-4.5-Air</small></td>
-        <td>Z.ai</td>
-        <td>355B-A32B · 106B-A12B</td>
-        <td>See official model card</td>
-        <td><span class="license-pill permissive">MIT</span></td>
-        <td>Agents, reasoning, coding, tool use</td>
-        <td><a href="https://huggingface.co/zai-org/GLM-4.5" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/zai-org" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="phi-4 microsoft phi-4 · phi-4 mini · reasoning · multimodal mit reasoning, constrained compute, multimodal variants" data-license="permissive">
-        <td><strong>Phi-4</strong><small>Phi-4 · Phi-4 mini · reasoning · multimodal</small></td>
-        <td>Microsoft</td>
-        <td>14B base Phi-4; family includes smaller variants</td>
-        <td>16K on Phi-4 model card</td>
-        <td><span class="license-pill permissive">MIT</span></td>
-        <td>Reasoning, constrained compute, multimodal variants</td>
-        <td><a href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/microsoft/phi-4" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="granite 4.2 ibm granite 4.2 3b · 8b · 30b apache 2.0 enterprise, reasoning, code, tools, multilingual" data-license="permissive">
-        <td><strong>Granite 4.2</strong><small>Granite 4.2 3B · 8B · 30B</small></td>
-        <td>IBM</td>
-        <td>3B · 8B · 30B</td>
-        <td>128K native; longer extension documented</td>
-        <td><span class="license-pill permissive">Apache 2.0</span></td>
-        <td>Enterprise, reasoning, code, tools, multilingual</td>
-        <td><a href="https://huggingface.co/ibm-granite/granite-4.2-8b" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/ibm-granite" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="gemma 3 google deepmind gemma 3 family gemma terms multimodal, multilingual, local / on-device use" data-license="custom">
-        <td><strong>Gemma 3</strong><small>Gemma 3 family</small></td>
-        <td>Google DeepMind</td>
-        <td>Multiple sizes</td>
-        <td>See official model card</td>
-        <td><span class="license-pill custom">Gemma Terms</span></td>
-        <td>Multimodal, multilingual, local / on-device use</td>
-        <td><a href="https://ai.google.dev/gemma/docs/core/model_card_3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/google" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="minimax-m2 minimax minimax-m2 modified mit general-purpose, coding, agentic workloads" data-license="modified">
-        <td><strong>MiniMax-M2</strong><small>MiniMax-M2</small></td>
-        <td>MiniMax</td>
-        <td>See official model card</td>
-        <td>See official model card</td>
-        <td><span class="license-pill modified">Modified MIT</span></td>
-        <td>General-purpose, coding, agentic workloads</td>
-        <td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/MiniMaxAI" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-
-      <tr data-search="nemotron 3 nano nvidia nvidia-nemotron-3-nano-4b nvidia nemotron open model license local inference, compact deployment, nvidia ecosystem" data-license="custom">
-        <td><strong>Nemotron 3 Nano</strong><small>NVIDIA-Nemotron-3-Nano-4B</small></td>
-        <td>NVIDIA</td>
-        <td>4B class</td>
-        <td>See official model card</td>
-        <td><span class="license-pill custom">NVIDIA Nemotron Open Model License</span></td>
-        <td>Local inference, compact deployment, NVIDIA ecosystem</td>
-        <td><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/nvidia" target="_blank" rel="noopener">Hub ↗</a></td>
-      </tr>
-    
-      </tbody>
+<tr data-search="gpt-oss openai gpt-oss-20b · gpt-oss-120b apache 2.0 + usage policy reasoning, tool use, self-hosted inference " data-license="permissive">
+<td><strong>gpt-oss</strong><small>gpt-oss-20b · gpt-oss-120b</small></td>
+<td>OpenAI</td>
+<td>20B / 120B class</td>
+<td>See official model card</td>
+<td><span class="license-pill permissive">Apache 2.0 + usage policy</span></td>
+<td>Reasoning, tool use, self-hosted inference</td>
+<td><a href="https://openai.com/open-models/" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/openai/gpt-oss" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="llama 4 meta scout 17b-16e · maverick 17b-128e llama 4 community license general-purpose, multimodal, long context " data-license="custom">
+<td><strong>Llama 4</strong><small>Scout 17B-16E · Maverick 17B-128E</small></td>
+<td>Meta</td>
+<td>17B active class</td>
+<td>Scout 10M · Maverick 1M</td>
+<td><span class="license-pill custom">Llama 4 Community License</span></td>
+<td>General-purpose, multimodal, long context</td>
+<td><a href="https://github.com/meta-llama/llama-models" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/meta-llama" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="qwen3 qwen / alibaba 0.6b–32b dense · 30b-a3b · 235b-a22b apache 2.0 reasoning, coding, multilingual, agents " data-license="permissive">
+<td><strong>Qwen3</strong><small>0.6B–32B dense · 30B-A3B · 235B-A22B</small></td>
+<td>Qwen / Alibaba</td>
+<td>0.6B–235B total</td>
+<td>Up to 256K; selected variants extend further</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>Reasoning, coding, multilingual, agents</td>
+<td><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="mistral small 4 mistral ai mistral-small-4-119b-2603 apache 2.0 reasoning, vision, agents, multilingual " data-license="permissive">
+<td><strong>Mistral Small 4</strong><small>Mistral-Small-4-119B-2603</small></td>
+<td>Mistral AI</td>
+<td>119B total · 6.5B active/token</td>
+<td>256K</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>Reasoning, vision, agents, multilingual</td>
+<td><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/mistralai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="deepseek-v3.2 deepseek deepseek-v3.2 mit reasoning, coding, tool use, agentic ai " data-license="permissive">
+<td><strong>DeepSeek-V3.2</strong><small>DeepSeek-V3.2</small></td>
+<td>DeepSeek</td>
+<td>685B parameters</td>
+<td>See official model card</td>
+<td><span class="license-pill permissive">MIT</span></td>
+<td>Reasoning, coding, tool use, agentic AI</td>
+<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/deepseek-ai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="kimi k2 moonshot ai kimi-k2-base · instruct · thinking modified mit agentic intelligence, coding, reasoning " data-license="modified">
+<td><strong>Kimi K2</strong><small>Kimi-K2-Base · Instruct · Thinking</small></td>
+<td>Moonshot AI</td>
+<td>1T total · 32B active</td>
+<td>128K (K2 base card)</td>
+<td><span class="license-pill modified">Modified MIT</span></td>
+<td>Agentic intelligence, coding, reasoning</td>
+<td><a href="https://huggingface.co/moonshotai/Kimi-K2-Base" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/moonshotai/kimi-k2" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="glm-4.5 z.ai glm-4.5 · glm-4.5-air mit agents, reasoning, coding, tool use " data-license="permissive">
+<td><strong>GLM-4.5</strong><small>GLM-4.5 · GLM-4.5-Air</small></td>
+<td>Z.ai</td>
+<td>355B-A32B · 106B-A12B</td>
+<td>See official model card</td>
+<td><span class="license-pill permissive">MIT</span></td>
+<td>Agents, reasoning, coding, tool use</td>
+<td><a href="https://huggingface.co/zai-org/GLM-4.5" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/zai-org" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="phi-4 microsoft phi-4 · phi-4 mini · reasoning · multimodal mit reasoning, constrained compute, multimodal variants " data-license="permissive">
+<td><strong>Phi-4</strong><small>Phi-4 · Phi-4 mini · reasoning · multimodal</small></td>
+<td>Microsoft</td>
+<td>14B base Phi-4; family includes smaller variants</td>
+<td>16K on Phi-4 model card</td>
+<td><span class="license-pill permissive">MIT</span></td>
+<td>Reasoning, constrained compute, multimodal variants</td>
+<td><a href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/microsoft/phi-4" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="granite 4.2 ibm granite 4.2 3b · 8b · 30b apache 2.0 enterprise, reasoning, code, tools, multilingual " data-license="permissive">
+<td><strong>Granite 4.2</strong><small>Granite 4.2 3B · 8B · 30B</small></td>
+<td>IBM</td>
+<td>3B · 8B · 30B</td>
+<td>128K native; longer extension documented</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>Enterprise, reasoning, code, tools, multilingual</td>
+<td><a href="https://huggingface.co/ibm-granite/granite-4.2-8b" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/ibm-granite" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="gemma 3 google deepmind gemma 3 family gemma terms multimodal, multilingual, local / on-device use " data-license="custom">
+<td><strong>Gemma 3</strong><small>Gemma 3 family</small></td>
+<td>Google DeepMind</td>
+<td>Multiple sizes</td>
+<td>See official model card</td>
+<td><span class="license-pill custom">Gemma Terms</span></td>
+<td>Multimodal, multilingual, local / on-device use</td>
+<td><a href="https://ai.google.dev/gemma/docs/core/model_card_3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/google" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="minimax-m2 minimax minimax-m2 modified mit general-purpose, coding, agentic workloads " data-license="modified">
+<td><strong>MiniMax-M2</strong><small>MiniMax-M2</small></td>
+<td>MiniMax</td>
+<td>See official model card</td>
+<td>See official model card</td>
+<td><span class="license-pill modified">Modified MIT</span></td>
+<td>General-purpose, coding, agentic workloads</td>
+<td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/MiniMaxAI" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="nemotron 3 nano nvidia nvidia-nemotron-3-nano-4b nvidia nemotron open model license local inference, compact deployment, nvidia ecosystem " data-license="custom">
+<td><strong>Nemotron 3 Nano</strong><small>NVIDIA-Nemotron-3-Nano-4B</small></td>
+<td>NVIDIA</td>
+<td>4B class</td>
+<td>See official model card</td>
+<td><span class="license-pill custom">NVIDIA Nemotron Open Model License</span></td>
+<td>Local inference, compact deployment, NVIDIA ecosystem</td>
+<td><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/nvidia" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="deepseek-r1 deepseek deepseek-r1 · deepseek-r1-zero mit reasoning · math · coding · distillation " data-license="permissive">
+<td><strong>DeepSeek-R1</strong><small>DeepSeek-R1 · DeepSeek-R1-Zero</small></td>
+<td>DeepSeek</td>
+<td>671B total · 37B active</td>
+<td>128K</td>
+<td><span class="license-pill permissive">MIT</span></td>
+<td>reasoning · math · coding · distillation</td>
+<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/deepseek-ai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="qwen3-coder qwen / alibaba qwen3-coder-480b-a35b-instruct apache 2.0 agentic coding · repository understanding · tool use " data-license="permissive">
+<td><strong>Qwen3-Coder</strong><small>Qwen3-Coder-480B-A35B-Instruct</small></td>
+<td>Qwen / Alibaba</td>
+<td>480B total · 35B active</td>
+<td>256K native · extendable to 1M</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>agentic coding · repository understanding · tool use</td>
+<td><a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="qwen3-vl qwen / alibaba qwen3-vl-235b-a22b-instruct · qwen3-vl thinking variants apache 2.0 vision-language · visual agents · video · ocr · spatial reasoning " data-license="permissive">
+<td><strong>Qwen3-VL</strong><small>Qwen3-VL-235B-A22B-Instruct · Qwen3-VL Thinking variants</small></td>
+<td>Qwen / Alibaba</td>
+<td>Up to 235B total · 22B active</td>
+<td>256K native · expandable to 1M</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>vision-language · visual agents · video · OCR · spatial reasoning</td>
+<td><a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="olmo 3 ai2 olmo 3 7b · olmo 3 32b · instruct · think apache 2.0 fully open research · reasoning · instruction following " data-license="permissive">
+<td><strong>OLMo 3</strong><small>OLMo 3 7B · OLMo 3 32B · Instruct · Think</small></td>
+<td>Ai2</td>
+<td>7B · 32B</td>
+<td>65,536</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>fully open research · reasoning · instruction following</td>
+<td><a href="https://huggingface.co/allenai/Olmo-3-1125-32B" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/allenai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="smollm3 hugging face smollm3-3b · smollm3-3b-base apache 2.0 small models · reasoning · multilingual · local inference · tool use " data-license="permissive">
+<td><strong>SmolLM3</strong><small>SmolLM3-3B · SmolLM3-3B-Base</small></td>
+<td>Hugging Face</td>
+<td>3B</td>
+<td>64K trained · up to 128K with YaRN</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>small models · reasoning · multilingual · local inference · tool use</td>
+<td><a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/HuggingFaceTB" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="command a cohere labs c4ai-command-a-03-2025 cc by-nc 4.0 + aup enterprise · agents · multilingual · rag · tool use " data-license="custom">
+<td><strong>Command A</strong><small>c4ai-command-a-03-2025</small></td>
+<td>Cohere Labs</td>
+<td>111B</td>
+<td>256K supported</td>
+<td><span class="license-pill custom">CC BY-NC 4.0 + AUP</span></td>
+<td>enterprise · agents · multilingual · RAG · tool use</td>
+<td><a href="https://huggingface.co/CohereLabs/c4ai-command-a-03-2025" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/CohereLabs" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="falcon-h1 technology innovation institute falcon-h1-34b-instruct · falcon-h1-34b-base falcon llm license multilingual · general-purpose · efficient sequence modeling " data-license="custom">
+<td><strong>Falcon-H1</strong><small>Falcon-H1-34B-Instruct · Falcon-H1-34B-Base</small></td>
+<td>Technology Innovation Institute</td>
+<td>34B</td>
+<td>See official model card</td>
+<td><span class="license-pill custom">Falcon LLM License</span></td>
+<td>multilingual · general-purpose · efficient sequence modeling</td>
+<td><a href="https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/tiiuae" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="internlm3 internlm internlm3-8b-instruct apache 2.0 general-purpose · reasoning · knowledge-intensive tasks " data-license="permissive">
+<td><strong>InternLM3</strong><small>InternLM3-8B-Instruct</small></td>
+<td>InternLM</td>
+<td>8B</td>
+<td>See official model card</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>general-purpose · reasoning · knowledge-intensive tasks</td>
+<td><a href="https://huggingface.co/internlm/internlm3-8b-instruct" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/internlm" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="yi-1.5 01.ai yi-1.5-6b · yi-1.5-9b · yi-1.5-34b apache 2.0 general-purpose · coding · math · reasoning " data-license="permissive">
+<td><strong>Yi-1.5</strong><small>Yi-1.5-6B · Yi-1.5-9B · Yi-1.5-34B</small></td>
+<td>01.AI</td>
+<td>6B · 9B · 34B</td>
+<td>4K · 16K · 32K variants</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>general-purpose · coding · math · reasoning</td>
+<td><a href="https://huggingface.co/01-ai/Yi-1.5-34B" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/01-ai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="hunyuan-a13b tencent hunyuan-a13b-instruct tencent hunyuan community license general-purpose · reasoning · tool use the a13b license defines a territory excluding the eu, uk and south korea. verify eligibility before use." data-license="custom">
+<td><strong>Hunyuan-A13B</strong><small>Hunyuan-A13B-Instruct</small></td>
+<td>Tencent</td>
+<td>A13B family</td>
+<td>See official model card</td>
+<td><span class="license-pill custom">Tencent Hunyuan Community License</span><small title="The A13B license defines a territory excluding the EU, UK and South Korea. Verify eligibility before use.">⚠ license caveat</small></td>
+<td>general-purpose · reasoning · tool use</td>
+<td><a href="https://huggingface.co/tencent/Hunyuan-A13B-Instruct" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/tencent" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="ernie 4.5 baidu ernie-4.5-300b-a47b-base apache 2.0 general language · long context · multimodal family variants " data-license="permissive">
+<td><strong>ERNIE 4.5</strong><small>ERNIE-4.5-300B-A47B-Base</small></td>
+<td>Baidu</td>
+<td>300B total · 47B active</td>
+<td>131,072</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>general language · long context · multimodal family variants</td>
+<td><a href="https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-Paddle" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/baidu" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="devstral mistral ai / all hands ai devstral small 1.1 apache 2.0 agentic coding · software engineering · repository editing " data-license="permissive">
+<td><strong>Devstral</strong><small>Devstral Small 1.1</small></td>
+<td>Mistral AI / All Hands AI</td>
+<td>24B</td>
+<td>128K</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>agentic coding · software engineering · repository editing</td>
+<td><a href="https://huggingface.co/mistralai/Devstral-Small-2507" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/mistralai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+<tr data-search="magistral mistral ai magistral small 1.0 apache 2.0 reasoning · math · multilingual · local deployment " data-license="permissive">
+<td><strong>Magistral</strong><small>Magistral Small 1.0</small></td>
+<td>Mistral AI</td>
+<td>24B</td>
+<td>128K advertised · 40K recommended for best performance</td>
+<td><span class="license-pill permissive">Apache 2.0</span></td>
+<td>reasoning · math · multilingual · local deployment</td>
+<td><a href="https://huggingface.co/mistralai/Magistral-Small-2506" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/mistralai" target="_blank" rel="noopener">Hub ↗</a></td>
+</tr>
+</tbody>
     </table>
   </div>
   <div class="shell note">Registry records are informational. Always verify the exact checkpoint’s model card, license and deployment documentation before commercial or production use.</div>

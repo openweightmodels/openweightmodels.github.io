@@ -3,7 +3,7 @@
   "canonical_url": "https://openweightmodels.github.io/",
   "project_hugging_face": "https://huggingface.co/open-weight",
   "last_verified": "2026-09-26",
-  "scope_note": "Curated family-level reference. Model-specific licenses and technical requirements must be verified against the linked primary source before deployment.",
+  "scope_note": "Curated family-level reference with 25 selected families. Model-specific licenses and technical requirements must be verified against the linked primary source before deployment.",
   "models": [
     {
       "family": "gpt-oss",
@@ -172,6 +172,299 @@
       "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
       "hub": "https://huggingface.co/nvidia",
       "verified": "2026-09-26"
+    },
+    {
+      "family": "DeepSeek-R1",
+      "developer": "DeepSeek",
+      "examples": [
+        "DeepSeek-R1",
+        "DeepSeek-R1-Zero"
+      ],
+      "weights_available": true,
+      "architecture": "Mixture-of-Experts reasoning model",
+      "size": "671B total · 37B active",
+      "context": "128K",
+      "license": "MIT",
+      "license_type": "permissive",
+      "focus": [
+        "reasoning",
+        "math",
+        "coding",
+        "distillation"
+      ],
+      "official_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "hub": "https://huggingface.co/deepseek-ai",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Qwen3-Coder",
+      "developer": "Qwen / Alibaba",
+      "examples": [
+        "Qwen3-Coder-480B-A35B-Instruct"
+      ],
+      "weights_available": true,
+      "architecture": "Mixture-of-Experts code model",
+      "size": "480B total · 35B active",
+      "context": "256K native · extendable to 1M",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "agentic coding",
+        "repository understanding",
+        "tool use"
+      ],
+      "official_source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "hub": "https://huggingface.co/Qwen",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Qwen3-VL",
+      "developer": "Qwen / Alibaba",
+      "examples": [
+        "Qwen3-VL-235B-A22B-Instruct",
+        "Qwen3-VL Thinking variants"
+      ],
+      "weights_available": true,
+      "architecture": "Dense + MoE vision-language family",
+      "size": "Up to 235B total · 22B active",
+      "context": "256K native · expandable to 1M",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "vision-language",
+        "visual agents",
+        "video",
+        "OCR",
+        "spatial reasoning"
+      ],
+      "official_source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "hub": "https://huggingface.co/Qwen",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "OLMo 3",
+      "developer": "Ai2",
+      "examples": [
+        "OLMo 3 7B",
+        "OLMo 3 32B",
+        "Instruct",
+        "Think"
+      ],
+      "weights_available": true,
+      "architecture": "Transformer language-model family",
+      "size": "7B · 32B",
+      "context": "65,536",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "fully open research",
+        "reasoning",
+        "instruction following"
+      ],
+      "official_source": "https://huggingface.co/allenai/Olmo-3-1125-32B",
+      "hub": "https://huggingface.co/allenai",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "SmolLM3",
+      "developer": "Hugging Face",
+      "examples": [
+        "SmolLM3-3B",
+        "SmolLM3-3B-Base"
+      ],
+      "weights_available": true,
+      "architecture": "Decoder-only Transformer with GQA / NoPE layers",
+      "size": "3B",
+      "context": "64K trained · up to 128K with YaRN",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "small models",
+        "reasoning",
+        "multilingual",
+        "local inference",
+        "tool use"
+      ],
+      "official_source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "hub": "https://huggingface.co/HuggingFaceTB",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Command A",
+      "developer": "Cohere Labs",
+      "examples": [
+        "c4ai-command-a-03-2025"
+      ],
+      "weights_available": true,
+      "architecture": "Dense enterprise language model",
+      "size": "111B",
+      "context": "256K supported",
+      "license": "CC BY-NC 4.0 + AUP",
+      "license_type": "custom",
+      "focus": [
+        "enterprise",
+        "agents",
+        "multilingual",
+        "RAG",
+        "tool use"
+      ],
+      "official_source": "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025",
+      "hub": "https://huggingface.co/CohereLabs",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Falcon-H1",
+      "developer": "Technology Innovation Institute",
+      "examples": [
+        "Falcon-H1-34B-Instruct",
+        "Falcon-H1-34B-Base"
+      ],
+      "weights_available": true,
+      "architecture": "Hybrid Transformer + Mamba",
+      "size": "34B",
+      "context": "See official model card",
+      "license": "Falcon LLM License",
+      "license_type": "custom",
+      "focus": [
+        "multilingual",
+        "general-purpose",
+        "efficient sequence modeling"
+      ],
+      "official_source": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+      "hub": "https://huggingface.co/tiiuae",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "InternLM3",
+      "developer": "InternLM",
+      "examples": [
+        "InternLM3-8B-Instruct"
+      ],
+      "weights_available": true,
+      "architecture": "Causal language model",
+      "size": "8B",
+      "context": "See official model card",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "general-purpose",
+        "reasoning",
+        "knowledge-intensive tasks"
+      ],
+      "official_source": "https://huggingface.co/internlm/internlm3-8b-instruct",
+      "hub": "https://huggingface.co/internlm",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Yi-1.5",
+      "developer": "01.AI",
+      "examples": [
+        "Yi-1.5-6B",
+        "Yi-1.5-9B",
+        "Yi-1.5-34B"
+      ],
+      "weights_available": true,
+      "architecture": "Dense language-model family",
+      "size": "6B · 9B · 34B",
+      "context": "4K · 16K · 32K variants",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "general-purpose",
+        "coding",
+        "math",
+        "reasoning"
+      ],
+      "official_source": "https://huggingface.co/01-ai/Yi-1.5-34B",
+      "hub": "https://huggingface.co/01-ai",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Hunyuan-A13B",
+      "developer": "Tencent",
+      "examples": [
+        "Hunyuan-A13B-Instruct"
+      ],
+      "weights_available": true,
+      "architecture": "Mixture-of-Experts language model",
+      "size": "A13B family",
+      "context": "See official model card",
+      "license": "Tencent Hunyuan Community License",
+      "license_type": "custom",
+      "focus": [
+        "general-purpose",
+        "reasoning",
+        "tool use"
+      ],
+      "official_source": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
+      "hub": "https://huggingface.co/tencent",
+      "license_note": "The A13B license defines a territory excluding the EU, UK and South Korea. Verify eligibility before use.",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "ERNIE 4.5",
+      "developer": "Baidu",
+      "examples": [
+        "ERNIE-4.5-300B-A47B-Base"
+      ],
+      "weights_available": true,
+      "architecture": "Heterogeneous Mixture-of-Experts",
+      "size": "300B total · 47B active",
+      "context": "131,072",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "general language",
+        "long context",
+        "multimodal family variants"
+      ],
+      "official_source": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-Paddle",
+      "hub": "https://huggingface.co/baidu",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Devstral",
+      "developer": "Mistral AI / All Hands AI",
+      "examples": [
+        "Devstral Small 1.1"
+      ],
+      "weights_available": true,
+      "architecture": "Dense text-only coding model",
+      "size": "24B",
+      "context": "128K",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "agentic coding",
+        "software engineering",
+        "repository editing"
+      ],
+      "official_source": "https://huggingface.co/mistralai/Devstral-Small-2507",
+      "hub": "https://huggingface.co/mistralai",
+      "verified": "2026-09-26"
+    },
+    {
+      "family": "Magistral",
+      "developer": "Mistral AI",
+      "examples": [
+        "Magistral Small 1.0"
+      ],
+      "weights_available": true,
+      "architecture": "Dense reasoning language model",
+      "size": "24B",
+      "context": "128K advertised · 40K recommended for best performance",
+      "license": "Apache 2.0",
+      "license_type": "permissive",
+      "focus": [
+        "reasoning",
+        "math",
+        "multilingual",
+        "local deployment"
+      ],
+      "official_source": "https://huggingface.co/mistralai/Magistral-Small-2506",
+      "hub": "https://huggingface.co/mistralai",
+      "verified": "2026-09-26"
     }
-  ]
+  ],
+  "scope": "Curated registry of 25 selected open-weight model families. Verify model-specific cards and licenses before deployment."
 }

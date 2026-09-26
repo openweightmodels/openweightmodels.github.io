@@ -48,9 +48,9 @@ The two surfaces have different jobs:
 
 ## Current registry
 
-The first expanded registry includes selected families from OpenAI, Meta, Qwen/Alibaba, Mistral AI, DeepSeek, Moonshot AI, Z.ai, Microsoft, IBM, Google DeepMind, MiniMax and NVIDIA.
+The expanded registry now contains **25 selected model families**, spanning general-purpose, reasoning, coding, multimodal, small-model and research-focused releases from OpenAI, Meta, Qwen/Alibaba, Mistral AI, DeepSeek, Moonshot AI, Z.ai, Microsoft, IBM, Google DeepMind, MiniMax, NVIDIA, Ai2, Hugging Face, Cohere Labs, TII, InternLM, 01.AI, Tencent and Baidu.
 
-This is **not** an exhaustive leaderboard.
+This is **not** an exhaustive leaderboard. Every entry should remain tied to a primary source and a verification date.
 
 ---
 
