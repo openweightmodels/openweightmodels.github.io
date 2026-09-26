@@ -1,0 +1,13 @@
+{
+  "project": "Open Weight Models",
+  "site": "https://openweightmodels.github.io/",
+  "updated": "2026-09-26",
+  "scope": "Selected model families; verify official model cards and licenses before deployment.",
+  "models": [
+    {"family":"gpt-oss","developer":"OpenAI","examples":["gpt-oss-20b","gpt-oss-120b"],"weights_available":true,"license":"Apache-2.0","license_note":"Also subject to OpenAI's gpt-oss usage policy.","focus":["reasoning","tool use","self-hosted inference"],"official_source":"https://openai.com/open-models/"},
+    {"family":"Llama","developer":"Meta","examples":["Llama 4 Scout","Llama 4 Maverick"],"weights_available":true,"license":"Llama Community License","focus":["general purpose","multimodal"],"official_source":"https://ai.meta.com/resources/models-and-libraries/llama-downloads/"},
+    {"family":"Qwen3","developer":"Qwen / Alibaba","weights_available":true,"license":"Apache-2.0","focus":["reasoning","coding","multilingual","agents"],"official_source":"https://github.com/QwenLM/Qwen3"},
+    {"family":"Gemma","developer":"Google DeepMind","examples":["Gemma 3"],"weights_available":true,"license":"Gemma Terms of Use","focus":["lightweight","multimodal","on-device"],"official_source":"https://ai.google.dev/gemma/docs/core/model_card_3"},
+    {"family":"Mistral open models","developer":"Mistral AI","weights_available":true,"license":"Varies by model","focus":["general","coding","multimodal","edge"],"official_source":"https://docs.mistral.ai/models"}
+  ]
+}

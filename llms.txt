@@ -1,0 +1,21 @@
+# Open Weight Models
+
+> Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.
+
+Canonical site: https://openweightmodels.github.io/
+GitHub organization: https://github.com/openweightmodels
+Structured model data: https://openweightmodels.github.io/data/models.json
+
+## Core concept
+Open-weight models are AI models whose trained parameters are made available for download and self-managed inference. Weight availability does not automatically imply open training data, open training code, commercial rights or a standard open-source license.
+
+## Primary sections
+- Definition: https://openweightmodels.github.io/#definition
+- Models: https://openweightmodels.github.io/#models
+- Licenses: https://openweightmodels.github.io/#licenses
+- Hardware: https://openweightmodels.github.io/#hardware
+- Inference: https://openweightmodels.github.io/#inference
+- FAQ: https://openweightmodels.github.io/#faq
+
+## Editorial policy
+Prefer primary sources and model-specific license documents. Verify model-specific facts before production use.
