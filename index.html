@@ -2,35 +2,490 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Open Weight Models — Models, Licenses, Hardware & Inference</title>
-<meta name="description" content="Independent reference for open-weight AI models: model families, licenses, hardware requirements, inference, deployment, formats and structured model data.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Weight Models — Independent Reference, Registry, Licenses & Deployment</title>
+<meta name="description" content="A source-first reference for open-weight AI models: definitions, model registry, licenses, hardware, quantization, inference, deployment and structured model data.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <meta name="theme-color" content="#07111f">
 <link rel="canonical" href="https://openweightmodels.github.io/">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Open Weight Models"><meta property="og:title" content="Open Weight Models"><meta property="og:description" content="Independent reference for open-weight AI models, licenses, hardware, inference and deployment."><meta property="og:url" content="https://openweightmodels.github.io/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Open Weight Models","url":"https://openweightmodels.github.io/","description":"Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.","inLanguage":"en","publisher":{"@type":"Organization","name":"Open Weight Models","url":"https://github.com/openweightmodels"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Open Weight Models: Models, Licenses, Hardware and Inference","dateModified":"2026-09-26","author":{"@type":"Organization","name":"Open Weight Models"},"mainEntityOfPage":"https://openweightmodels.github.io/"}</script>
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="Open Weight Models">
+<meta property="og:description" content="Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.">
+<meta property="og:url" content="https://openweightmodels.github.io/">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://openweightmodels.github.io/#website",
+      "url":"https://openweightmodels.github.io/",
+      "name":"Open Weight Models",
+      "description":"Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.",
+      "inLanguage":"en",
+      "publisher":{"@id":"https://openweightmodels.github.io/#organization"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://openweightmodels.github.io/#organization",
+      "name":"Open Weight Models",
+      "url":"https://openweightmodels.github.io/",
+      "sameAs":[
+        "https://github.com/openweightmodels",
+        "https://huggingface.co/open-weight"
+      ]
+    },
+    {
+      "@type":"TechArticle",
+      "@id":"https://openweightmodels.github.io/#article",
+      "headline":"Open Weight Models: What They Are, How They Differ from Open Source, and How to Deploy Them",
+      "dateModified":"2026-09-26",
+      "mainEntityOfPage":{"@id":"https://openweightmodels.github.io/#website"},
+      "author":{"@id":"https://openweightmodels.github.io/#organization"},
+      "publisher":{"@id":"https://openweightmodels.github.io/#organization"},
+      "about":["open-weight models","open models","AI model weights","AI licensing","local inference","AI deployment"]
+    }
+  ]
+}
+</script>
+
 <style>
-:root{--bg:#f5f8fb;--s:#fff;--ink:#09111f;--mut:#617083;--line:#dce5ee;--blue:#1769ff;--cyan:#31d7ff;--dark:#07111f;--r:18px;--sh:0 22px 60px rgba(9,17,31,.08);--w:min(1180px,calc(100% - 40px))}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}.w{width:var(--w);margin:auto}.head{position:sticky;top:0;z-index:10;background:rgba(245,248,251,.9);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:26px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;letter-spacing:-.02em}.mark{display:grid;grid-template-columns:repeat(3,7px);gap:3px;transform:rotate(-8deg)}.mark i{height:27px;border-radius:3px;background:linear-gradient(var(--cyan),var(--blue))}.mark i:nth-child(2){transform:translateY(4px)}.mark i:nth-child(3){transform:translateY(8px)}.links{display:flex;gap:22px;align-items:center}.links a{font-size:14px;font-weight:700;text-decoration:none;color:#3e4c5e}.links a:hover{color:var(--blue)}.git{padding:8px 12px;border:1px solid #cbd7e3;border-radius:9px;background:#fff}.hero{position:relative;overflow:hidden;padding:92px 0 78px;color:#fff;background:radial-gradient(circle at 80% 10%,rgba(49,215,255,.19),transparent 28%),radial-gradient(circle at 15% 15%,rgba(23,105,255,.18),transparent 30%),linear-gradient(180deg,#07111f,#0b1829)}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(#000,transparent)}.hg{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}.ey{font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:900;color:var(--cyan);margin-bottom:15px}.hero h1{margin:0;font-size:clamp(54px,8vw,94px);line-height:.95;letter-spacing:-.055em}.lead{margin:25px 0 9px;max-width:760px;color:#e8f3ff;font-size:clamp(22px,3vw,31px);font-weight:650;line-height:1.28}.copy{max-width:720px;color:#aebed0;font-size:16.5px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{min-height:48px;padding:0 18px;display:inline-flex;align-items:center;border-radius:10px;text-decoration:none;font-size:14px;font-weight:850}.primary{background:linear-gradient(135deg,var(--blue),#4a91ff);box-shadow:0 12px 30px rgba(23,105,255,.28)}.secondary{border:1px solid #30445d;background:rgba(255,255,255,.04);color:#e2eef9}.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:34px;color:#8499b0;font-size:12px}.meta b{color:#e8f2fc}.panel{padding:18px;border:1px solid #263a51;border-radius:20px;background:rgba(8,19,33,.72);box-shadow:0 30px 80px rgba(0,0,0,.3)}.panel-top{display:flex;gap:8px;align-items:center;padding:2px 4px 13px;color:#9bb0c7;font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:850}.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}.steps{display:grid;gap:8px}.step{display:flex;gap:13px;align-items:center;padding:12px;border:1px solid #1e3045;border-radius:11px;background:rgba(255,255,255,.025)}.n{display:grid;place-items:center;width:36px;height:36px;border-radius:9px;background:#10243c;color:#72ddfa;font-size:10px;font-weight:900}.step div{display:flex;flex-direction:column}.step strong{font-size:13.5px}.step small{font-size:11.5px;color:#8298af}.strip{background:#fff;border-bottom:1px solid var(--line)}.stripg{display:grid;grid-template-columns:repeat(4,1fr)}.stripg div{padding:21px 18px;border-right:1px solid var(--line)}.stripg div:first-child{padding-left:0}.stripg div:last-child{border:0}.stripg strong{display:block;font-size:13px}.stripg span{display:block;color:var(--mut);font-size:12px;line-height:1.45}.sec{padding:86px 0}.muted{background:#edf2f7}.dark{background:linear-gradient(180deg,#081321,#0b1828);color:#fff}.two{display:grid;grid-template-columns:.72fr 1.28fr;gap:75px}.sec h2{margin:0;font-size:clamp(34px,4vw,52px);line-height:1.06;letter-spacing:-.035em}.prose{color:#526071}.prose .big{margin-top:0;color:var(--ink);font-size:21px;line-height:1.45}.srcs{display:flex;gap:15px;flex-wrap:wrap;margin-top:22px}.srcs a{color:var(--blue);font-size:13px;font-weight:850;text-decoration:none}.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:55px;margin-bottom:34px}.sh p{max-width:510px;margin:0;color:var(--mut);font-size:14.5px}.dark .sh p{color:#9fb0c3}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{padding:24px;border:1px solid #d8e1ea;border-radius:var(--r);background:#fff;box-shadow:0 10px 30px rgba(20,40,65,.035)}.idx{font-size:10px;color:var(--blue);font-weight:900;letter-spacing:.12em}.card h3{margin:32px 0 9px;font-size:19px;letter-spacing:-.02em}.card p{margin:0;color:var(--mut);font-size:13.5px}.toolbar{display:grid;grid-template-columns:1fr 280px auto;gap:10px;margin-bottom:16px}.toolbar input,.toolbar select{min-height:46px;width:100%;border:1px solid #d5dee8;border-radius:10px;background:#fff;padding:0 13px;font:inherit;color:var(--ink)}.count{display:flex;align-items:center;padding:0 14px;border:1px solid #d5dee8;border-radius:10px;background:#fff;color:var(--mut);font-size:13px}.count b{color:var(--ink);margin-right:5px}.tablebox{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--sh)}table{width:100%;min-width:900px;border-collapse:collapse}th,td{text-align:left;padding:16px 17px;border-bottom:1px solid #e8edf2;vertical-align:middle}th{background:#f7f9fb;color:#697789;font-size:10px;text-transform:uppercase;letter-spacing:.09em}td{color:#435267;font-size:13px}td:first-child strong{display:block;color:var(--ink);font-size:14.5px}td:first-child small{color:#7d8a99}tbody tr:last-child td{border:0}td a{color:var(--blue);font-weight:850;text-decoration:none}.pill{display:inline-flex;padding:4px 8px;border-radius:999px;background:#e9f8f1;color:#0a8353;font-size:10px;font-weight:900}.note{margin:10px 2px 0;color:#738093;font-size:11.5px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.license{padding:25px;border:1px solid #22364c;border-radius:16px;background:#0d1b2d}.license span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#5cdcf8}.license h3{margin:18px 0 8px;font-size:21px}.license p{margin:0;color:#9eafc3;font-size:13.5px}.callout{display:flex;gap:9px;margin-top:17px;padding:17px 19px;border:1px solid #274361;border-radius:12px;background:#10243a;color:#b9c7d7;font-size:14px}.callout b{color:#7de4fa;white-space:nowrap}.formula{display:flex;justify-content:space-between;gap:28px;align-items:center;padding:27px;border:1px solid #d9e3ed;border-radius:18px;background:#fff;box-shadow:var(--sh)}.formula small{display:block;color:var(--blue);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.11em}.eq{font-size:clamp(20px,3vw,31px);font-weight:850;letter-spacing:-.025em}.tags{display:flex;justify-content:flex-end;gap:7px;flex-wrap:wrap}.tags span{padding:7px 9px;border-radius:8px;background:#eff4f9;color:#4b596a;font-size:11px;font-weight:750}.plain{padding:22px;border:1px solid var(--line);border-radius:15px;background:#fff}.plain h3{margin:0 0 7px;font-size:18px}.plain p{margin:0;color:var(--mut);font-size:13.5px}.runtime{padding:21px;border:1px solid #d8e0e8;border-radius:15px;background:#fff}.rt{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:20px}.rt strong{font-size:17px}.rt span{padding:4px 8px;border-radius:999px;background:#edf4ff;color:var(--blue);font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:900}.runtime p{margin:0;color:var(--mut);font-size:13px}.tax{display:grid;grid-template-columns:repeat(2,1fr);overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#fff}.tax div{display:grid;grid-template-columns:135px 1fr;gap:18px;padding:20px;border-bottom:1px solid var(--line)}.tax div:nth-child(odd){border-right:1px solid var(--line)}.tax div:nth-last-child(-n+2){border-bottom:0}.tax span{color:var(--blue);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.09em}.tax strong{font-size:13.5px}.faq{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px}.faq details{padding:17px 0;border-top:1px solid #d5dee7}.faq details:last-child{border-bottom:1px solid #d5dee7}.faq summary{position:relative;padding-right:24px;cursor:pointer;list-style:none;font-weight:850}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:0;color:var(--blue);font-size:19px}.faq details[open] summary:after{content:"–"}.faq p{margin:9px 0 0;max-width:760px;color:var(--mut);font-size:13.5px}.sourcegrid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px}.sourcegrid a{display:flex;flex-direction:column;gap:4px;padding:17px;border:1px solid var(--line);border-radius:13px;background:#fff;text-decoration:none;transition:.2s}.sourcegrid a:hover{transform:translateY(-2px);box-shadow:0 12px 25px rgba(9,17,31,.06)}.sourcegrid strong{font-size:13.5px}.sourcegrid span{font-size:11.5px;color:var(--blue);font-weight:750}.cta{padding:0 0 86px}.ctabox{display:flex;justify-content:space-between;align-items:center;gap:38px;padding:38px;border-radius:21px;background:linear-gradient(135deg,#0a192b,#0a2c4e);color:#fff;box-shadow:0 25px 70px rgba(7,17,31,.2)}.ctabox h2{margin:0;font-size:clamp(28px,4vw,45px);line-height:1.06;letter-spacing:-.035em}.ctabox p{margin:9px 0 0;color:#a9bacd;max-width:700px}.light{background:#fff;color:var(--dark)}footer{padding:44px 0 22px;background:#06101c;color:#bfccdc}.foot{display:flex;justify-content:space-between;gap:45px}.foot p{max-width:510px;color:#7f93a9;font-size:12.5px}.flinks{display:flex;gap:14px;flex-wrap:wrap}.flinks a{color:#a7bbcf;text-decoration:none;font-size:12px;font-weight:750}.bottom{display:flex;justify-content:space-between;gap:18px;margin-top:28px;padding-top:18px;border-top:1px solid #1b2a3b;color:#6f8398;font-size:11px}@media(max-width:980px){.hg{grid-template-columns:1fr}.panel{max-width:640px}.stripg{grid-template-columns:repeat(2,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.sourcegrid{grid-template-columns:repeat(3,1fr)}.two,.faq{grid-template-columns:1fr;gap:26px}.sh{align-items:flex-start;flex-direction:column;gap:13px}.toolbar{grid-template-columns:1fr 1fr}.count{grid-column:1/-1}}@media(max-width:700px){:root{--w:min(100% - 28px,1180px)}.links a:not(.git){display:none}.hero{padding:70px 0 60px}.hero h1{font-size:clamp(48px,16vw,72px)}.meta{flex-direction:column;gap:6px}.stripg,.grid4,.grid3,.sourcegrid{grid-template-columns:1fr}.stripg div{border-right:0;border-bottom:1px solid var(--line);padding-left:0}.sec{padding:64px 0}.toolbar{grid-template-columns:1fr}.count{grid-column:auto}.formula{align-items:flex-start;flex-direction:column}.tags{justify-content:flex-start}.tax{grid-template-columns:1fr}.tax div,.tax div:nth-child(odd){border-right:0}.tax div:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.tax div:last-child{border-bottom:0}.tax div{grid-template-columns:1fr;gap:4px}.ctabox,.foot,.bottom{flex-direction:column;align-items:flex-start}}
+:root{
+  --bg:#f5f7fb;--surface:#fff;--soft:#edf2f7;--ink:#07111f;--muted:#5e6b7b;
+  --line:#dce4ed;--blue:#1769ff;--cyan:#39d9ff;--dark:#07111f;--dark2:#0b192b;
+  --green:#0a8d5d;--amber:#a66b00;--violet:#6c49e8;--radius:18px;
+  --shadow:0 18px 50px rgba(7,17,31,.075);--shell:min(1200px,calc(100% - 42px));
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}.shell{width:var(--shell);margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:999;background:#fff;padding:10px 14px;border-radius:8px}
+header{position:sticky;top:0;z-index:100;background:rgba(245,247,251,.9);border-bottom:1px solid rgba(220,228,237,.9);backdrop-filter:blur(15px)}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.025em}
+.mark{width:29px;height:29px;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;transform:rotate(-8deg)}
+.mark i{display:block;border-radius:4px;background:linear-gradient(180deg,var(--cyan),var(--blue))}.mark i:nth-child(2){transform:translateY(4px)}.mark i:nth-child(3){transform:translateY(8px)}
+nav{display:flex;align-items:center;gap:20px}nav a{text-decoration:none;color:#344154;font-size:13.5px;font-weight:700}nav a:hover{color:var(--blue)}
+.github{padding:8px 12px;border:1px solid #cbd6e2;border-radius:9px;background:#fff!important;color:var(--ink)!important}
+.menu{display:none;border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 11px;font-weight:750}
+
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 82% 20%,rgba(57,217,255,.17),transparent 28%),radial-gradient(circle at 13% 8%,rgba(23,105,255,.2),transparent 30%),linear-gradient(180deg,#06101d,#0a192b);color:white;padding:92px 0 80px}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,#000,transparent);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:11.5px;font-weight:900;color:var(--blue);margin-bottom:13px}.hero .kicker{color:var(--cyan)}
+h1{font-size:clamp(54px,7.8vw,92px);line-height:.95;letter-spacing:-.06em;margin:0}
+.hero h2{max-width:800px;margin:25px 0 12px;font-size:clamp(22px,3vw,31px);line-height:1.25;letter-spacing:-.02em;color:#edf6ff}
+.hero p{max-width:760px;margin:0;color:#aebed1;font-size:16.5px}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:10px;text-decoration:none;font-size:13.5px;font-weight:850}
+.primary{background:linear-gradient(135deg,var(--blue),#4a91ff);color:#fff;box-shadow:0 12px 30px rgba(23,105,255,.3)}.secondary{border:1px solid #32465f;background:rgba(255,255,255,.04);color:#dce9f7}
+.hero-facts{display:flex;flex-wrap:wrap;gap:18px;margin-top:34px;color:#8297ae;font-size:12px}.hero-facts b{color:#e5eff9}
+.stack{border:1px solid #26384e;border-radius:20px;background:rgba(8,20,35,.8);padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.25)}
+.stack-head{display:flex;align-items:center;gap:8px;color:#93a7bd;text-transform:uppercase;letter-spacing:.12em;font-size:10.5px;font-weight:900;margin:2px 3px 13px}.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px var(--cyan)}
+.stack div.item{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:center;padding:12px;border:1px solid #1e3045;border-radius:11px;margin-top:8px;background:rgba(255,255,255,.025)}
+.stack .n{display:grid;place-items:center;width:38px;height:38px;border-radius:9px;background:#10243c;color:#70ddfb;font-size:10.5px;font-weight:900}.stack strong{display:block;font-size:13.5px}.stack small{display:block;color:#8296ad;font-size:11.5px;margin-top:1px}
+
+.quick{background:#fff;border-bottom:1px solid var(--line)}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr)}.quick-grid div{padding:21px 19px;border-right:1px solid var(--line)}.quick-grid div:first-child{padding-left:0}.quick-grid div:last-child{border:0}.quick b{display:block;font-size:12.5px;margin-bottom:4px}.quick span{display:block;color:var(--muted);font-size:12px;line-height:1.45}
+
+section{padding:86px 0}.soft{background:var(--soft)}.dark{background:linear-gradient(180deg,#07111f,#0b1b2d);color:#fff}
+.section-head{display:grid;grid-template-columns:1fr minmax(300px,480px);gap:60px;align-items:end;margin-bottom:34px}.section-head h2,.two h2,.faq h2{margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1.06;letter-spacing:-.04em}.section-head p{margin:0;color:var(--muted);font-size:14.5px}.dark .section-head p{color:#9caec1}
+.two{display:grid;grid-template-columns:.7fr 1.3fr;gap:78px}.article{color:#4c5a6a}.article .lead{font-size:21px;line-height:1.48;color:var(--ink);margin-top:0}.article p{margin:0 0 18px}.article h3{color:var(--ink);font-size:21px;margin:34px 0 9px}.source-links{display:flex;flex-wrap:wrap;gap:15px;margin-top:22px}.source-links a{color:var(--blue);font-size:12.5px;font-weight:800;text-decoration:none}
+
+.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}.compare article{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}.compare .tag{display:inline-flex;padding:4px 8px;border-radius:999px;background:#eef4ff;color:var(--blue);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.compare h3{font-size:21px;margin:20px 0 9px}.compare p{color:var(--muted);font-size:13.5px;margin:0}.compare ul{padding-left:18px;margin:14px 0 0;color:#536172;font-size:13px}
+
+.weight-diagram{margin-top:36px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.weight-diagram div{position:relative;padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff;min-height:130px}.weight-diagram span{display:block;color:var(--blue);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.09em}.weight-diagram strong{display:block;margin-top:23px;font-size:15px}.weight-diagram small{display:block;margin-top:5px;color:var(--muted);font-size:11.5px}.weight-diagram div:not(:last-child):after{content:"→";position:absolute;right:-9px;top:50%;z-index:2;color:#8290a0;font-weight:900;background:var(--bg);padding:0 2px}
+
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.benefits article{min-height:220px;padding:24px;border:1px solid #d7e0e9;border-radius:16px;background:#fff}.benefits .num{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:.12em}.benefits h3{margin:31px 0 9px;font-size:19px}.benefits p{margin:0;color:var(--muted);font-size:13px}
+
+.registry-tools{display:grid;grid-template-columns:1fr 230px 120px;gap:10px;margin-bottom:17px}.registry-tools input,.registry-tools select{min-height:45px;width:100%;border:1px solid #d2dce7;border-radius:9px;background:#fff;padding:0 12px;font:inherit;color:var(--ink)}.count{display:flex;align-items:center;justify-content:center;border:1px solid #d2dce7;border-radius:9px;background:#fff;color:var(--muted);font-size:12.5px}.count b{color:var(--ink);margin-right:5px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;min-width:1180px}th,td{text-align:left;padding:15px 15px;border-bottom:1px solid #e7edf3;vertical-align:top}th{background:#f7f9fb;color:#6b7887;font-size:10px;text-transform:uppercase;letter-spacing:.08em}td{color:#465465;font-size:12.5px}td strong{display:block;color:var(--ink);font-size:14px}td small{display:block;color:#7d8998;margin-top:3px;max-width:200px}tbody tr:last-child td{border:0}td a{color:var(--blue);text-decoration:none;font-weight:800}.muted-link{font-size:11px;color:#7b8795!important}
+.license-pill{display:inline-flex;padding:4px 7px;border-radius:999px;font-size:10px;font-weight:850;white-space:nowrap}.license-pill.permissive{background:#e7f7f0;color:#0b8055}.license-pill.custom{background:#f2edff;color:#6340bf}.license-pill.modified{background:#fff1db;color:#946100}.note{margin:12px 2px 0;color:#748191;font-size:11.5px}
+
+.dark-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.dark-grid article{padding:24px;border:1px solid #21364c;border-radius:16px;background:#0d1b2d}.dark-grid span{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#65def8;font-weight:900}.dark-grid h3{margin:19px 0 8px;font-size:20px}.dark-grid p{margin:0;color:#9eb0c3;font-size:13px}.callout{margin-top:17px;padding:18px 20px;border:1px solid #27445f;border-radius:12px;background:#10243a;color:#b7c8d8;font-size:13px}.callout b{color:#74e4fb}
+
+.hw-formula{display:flex;justify-content:space-between;gap:25px;align-items:center;padding:26px;border:1px solid #d9e3ed;border-radius:17px;background:#fff;box-shadow:var(--shadow)}.formula small{display:block;color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.1em}.formula strong{display:block;margin-top:7px;font-size:clamp(20px,3vw,30px);letter-spacing:-.025em}.precision{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}.precision span{padding:6px 9px;border-radius:8px;background:#eef3f8;color:#506073;font-size:11.5px;font-weight:750}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:15px}.card{padding:22px;border:1px solid var(--line);border-radius:15px;background:#fff}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px}
+
+.hf-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;padding:42px;border-radius:22px;background:linear-gradient(135deg,#fff7cf,#fff 65%);border:1px solid #eadb9b;box-shadow:var(--shadow)}.hf-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 9px;border-radius:999px;background:#ffdc57;color:#3a3000;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.hf-box h2{font-size:clamp(34px,4vw,50px);line-height:1.06;letter-spacing:-.04em;margin:17px 0 12px}.hf-box p{color:#5e625c;margin:0}.hf-links{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hf-links a{padding:19px;border:1px solid #eadb9b;border-radius:14px;background:rgba(255,255,255,.72);text-decoration:none}.hf-links strong{display:block;font-size:14px}.hf-links span{display:block;color:#7b7250;font-size:11.5px;margin-top:4px}.hf-links a:hover{border-color:#c9ae42;transform:translateY(-1px)}
+
+.machine{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.machine a{padding:22px;border:1px solid var(--line);border-radius:15px;background:#fff;text-decoration:none}.machine code{display:block;color:var(--blue);font-size:12px;font-weight:850}.machine strong{display:block;margin:17px 0 5px}.machine span{display:block;color:var(--muted);font-size:12px}
+
+.faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:68px}.faq details{border-top:1px solid #d2dce6;padding:17px 0}.faq details:last-child{border-bottom:1px solid #d2dce6}.faq summary{cursor:pointer;list-style:none;font-weight:800;position:relative;padding-right:28px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:0;color:var(--blue);font-size:20px}.faq details[open] summary:after{content:"–"}.faq p{margin:9px 0 0;color:var(--muted);font-size:13.5px}
+
+.sources{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.sources a{padding:17px;border:1px solid var(--line);border-radius:13px;background:#fff;text-decoration:none}.sources strong{display:block;font-size:13px}.sources span{display:block;color:var(--blue);font-size:11px;margin-top:3px;font-weight:750}
+.citebox{margin-top:26px;padding:22px;border:1px solid var(--line);border-radius:15px;background:#fff}.citebox pre{overflow:auto;margin:12px 0 0;padding:14px;border-radius:10px;background:#07111f;color:#cce3f8;font-size:11px;line-height:1.6}
+
+footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;justify-content:space-between;gap:40px}.foot p{max-width:520px;color:#7c90a5;font-size:12.5px}.foot-links{display:flex;flex-wrap:wrap;gap:15px;align-items:flex-start}.foot-links a{color:#a9bdd0;text-decoration:none;font-size:12px;font-weight:750}.bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #1a2a3b;margin-top:28px;padding-top:18px;color:#6e8398;font-size:11px}
+
+@media(max-width:980px){.hero-grid,.hf-box{grid-template-columns:1fr}.two,.faq{grid-template-columns:1fr;gap:26px}.section-head{grid-template-columns:1fr;gap:12px;align-items:start}.benefits{grid-template-columns:repeat(2,1fr)}.weight-diagram{grid-template-columns:1fr 1fr}.weight-diagram div:after{display:none}.quick-grid{grid-template-columns:1fr 1fr}.dark-grid,.three,.machine{grid-template-columns:1fr 1fr}.sources{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){:root{--shell:min(100% - 28px,1200px)}.menu{display:block}nav{display:none;position:absolute;left:14px;right:14px;top:65px;flex-direction:column;align-items:stretch;gap:0;padding:9px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:var(--shadow)}nav.open{display:flex}nav a{padding:10px}.hero{padding:70px 0 58px}h1{font-size:clamp(48px,15vw,70px)}section{padding:64px 0}.quick-grid,.benefits,.dark-grid,.three,.machine,.sources,.hf-links,.weight-diagram{grid-template-columns:1fr}.quick-grid div{border-right:0;border-bottom:1px solid var(--line);padding-left:0}.quick-grid div:last-child{border-bottom:0}.registry-tools{grid-template-columns:1fr}.hw-formula{flex-direction:column;align-items:flex-start}.precision{justify-content:flex-start}.foot,.bottom{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
-<header class="head"><div class="w nav"><a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span>Open Weight Models</a><nav class="links"><a href="#models">Models</a><a href="#licenses">Licenses</a><a href="#hardware">Hardware</a><a href="#inference">Inference</a><a href="#faq">FAQ</a><a class="git" href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav></div></header>
-<main>
-<section class="hero"><div class="w hg"><div><div class="ey">Independent technical reference</div><h1>Open Weight Models</h1><p class="lead">Understand, compare and deploy AI models whose trained weights are publicly available.</p><p class="copy">A structured guide to model families, licenses, hardware requirements, quantization, inference runtimes and deployment choices — designed for developers, researchers and AI infrastructure teams.</p><div class="actions"><a class="btn primary" href="#models">Explore models</a><a class="btn secondary" href="#definition">What are open weights?</a></div><div class="meta"><span><b>Scope</b> Open-weight AI</span><span><b>Format</b> Human + machine readable</span><span><b>Updated</b> September 26, 2026</span></div></div><aside class="panel"><div class="panel-top"><span class="dot"></span>Decision stack</div><div class="steps"><div class="step"><span class="n">01</span><div><strong>Model</strong><small>Capabilities, modality, size</small></div></div><div class="step"><span class="n">02</span><div><strong>License</strong><small>Use, modification, redistribution</small></div></div><div class="step"><span class="n">03</span><div><strong>Weights</strong><small>Precision, quantization, format</small></div></div><div class="step"><span class="n">04</span><div><strong>Hardware</strong><small>VRAM, RAM, accelerator fit</small></div></div><div class="step"><span class="n">05</span><div><strong>Runtime</strong><small>vLLM, llama.cpp, SGLang, Ollama…</small></div></div><div class="step"><span class="n">06</span><div><strong>Deployment</strong><small>Local, cloud, edge, provider</small></div></div></div></aside></div></section>
-<section class="strip"><div class="w stripg"><div><strong>Source-first</strong><span>Primary model cards and official documentation</span></div><div><strong>License-aware</strong><span>Open weights are not automatically open source</span></div><div><strong>Deployment-focused</strong><span>From download to production inference</span></div><div><strong>Structured</strong><span>Reference data for people, search and agents</span></div></div></section>
-<section id="definition" class="sec"><div class="w two"><div><div class="ey" style="color:var(--blue)">Definition</div><h2>What is an open-weight model?</h2></div><div class="prose"><p class="big">An <strong>open-weight model</strong> is an AI model whose trained parameters are made available for download, allowing users to run the model on infrastructure they control.</p><p>The phrase describes access to model weights. It does <strong>not</strong> by itself guarantee that training data, training code, full methodology or every usage right is open. Those details depend on the model and its license.</p><p>This distinction matters. OpenAI describes gpt-oss as open-weight and publishes it under Apache 2.0 plus a usage policy, while Meta states that Llama uses a bespoke community license. Always inspect the exact model card and license before production use.</p><div class="srcs"><a href="https://openai.com/open-models/" target="_blank" rel="noopener">OpenAI open models ↗</a><a href="https://ai.meta.com/llama/faq/" target="_blank" rel="noopener">Meta Llama licensing FAQ ↗</a></div></div></div></section>
-<section class="sec muted"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Why it matters</div><h2>Open weights change where AI can run.</h2></div><p>For many teams, the key advantage is not “free AI.” It is control over deployment, customization, latency, privacy and infrastructure.</p></div><div class="grid4"><article class="card"><span class="idx">01</span><h3>Infrastructure control</h3><p>Deploy on local workstations, private clouds, data centers or edge devices when the model and hardware allow it.</p></article><article class="card"><span class="idx">02</span><h3>Customization</h3><p>Fine-tune, adapt, quantize or package weights with compatible tooling — subject to the model's terms.</p></article><article class="card"><span class="idx">03</span><h3>Data control</h3><p>Self-managed inference can keep prompts and outputs inside infrastructure chosen by the operator.</p></article><article class="card"><span class="idx">04</span><h3>Runtime choice</h3><p>Use vLLM, SGLang, llama.cpp, Ollama or vendor-specific tooling where supported.</p></article></div></div></section>
-<section id="models" class="sec"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Selected ecosystem</div><h2>Open-weight model families</h2></div><p>A curated starting point, not an exhaustive leaderboard. Verify the official model card before deploying any specific checkpoint.</p></div><div class="toolbar"><input id="q" type="search" placeholder="Search model family or developer…"><select id="lic"><option value="">All license types</option><option value="apache">Apache 2.0</option><option value="custom">Custom / model-specific</option></select><div class="count"><b id="cnt">5</b> families</div></div><div class="tablebox"><table><thead><tr><th>Family</th><th>Developer</th><th>Weights</th><th>License</th><th>Primary focus</th><th>Source</th></tr></thead><tbody id="rows"><tr data-s="gpt-oss openai reasoning text" data-l="apache"><td><strong>gpt-oss</strong><small>20B / 120B</small></td><td>OpenAI</td><td><span class="pill">Available</span></td><td>Apache 2.0*</td><td>Reasoning, tools, self-hosted inference</td><td><a href="https://openai.com/open-models/" target="_blank">Official ↗</a></td></tr><tr data-s="llama meta multimodal scout maverick" data-l="custom"><td><strong>Llama</strong><small>Llama 4 family</small></td><td>Meta</td><td><span class="pill">Available</span></td><td>Llama Community License</td><td>General-purpose, multimodal</td><td><a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Official ↗</a></td></tr><tr data-s="qwen3 alibaba reasoning coding multilingual" data-l="apache"><td><strong>Qwen3</strong><small>Dense + MoE</small></td><td>Qwen / Alibaba</td><td><span class="pill">Available</span></td><td>Apache 2.0</td><td>Reasoning, coding, multilingual, agents</td><td><a href="https://github.com/QwenLM/Qwen3" target="_blank">Official ↗</a></td></tr><tr data-s="gemma google deepmind multimodal lightweight" data-l="custom"><td><strong>Gemma</strong><small>Gemma 3 family</small></td><td>Google DeepMind</td><td><span class="pill">Available</span></td><td>Gemma Terms</td><td>Lightweight, multimodal, on-device</td><td><a href="https://ai.google.dev/gemma/docs/core/model_card_3" target="_blank">Official ↗</a></td></tr><tr data-s="mistral open models large small ministral" data-l="custom"><td><strong>Mistral open models</strong><small>Multiple families</small></td><td>Mistral AI</td><td><span class="pill">Available</span></td><td>Varies by model</td><td>General, code, multimodal, edge</td><td><a href="https://docs.mistral.ai/models" target="_blank">Official ↗</a></td></tr></tbody></table></div><p class="note">* Always read the model-specific license and usage policy. “Open weight” describes weight availability, not a universal license category.</p></div></section>
-<section id="licenses" class="sec dark"><div class="w"><div class="sh"><div><div class="ey">Licensing</div><h2>Weights are open. Rights still vary.</h2></div><p>The license is part of the model architecture decision. Check commercial use, redistribution, derivative works, attribution and restrictions.</p></div><div class="grid3"><article class="license"><span>Permissive</span><h3>Apache 2.0</h3><p>Common in open-model releases. It generally permits use, modification and redistribution while providing explicit patent terms.</p></article><article class="license"><span>Community</span><h3>Model-specific licenses</h3><p>Some major families use custom licenses. Their conditions can differ materially from standard open-source software licenses.</p></article><article class="license"><span>Operational</span><h3>Usage policies</h3><p>A permissive license can coexist with separate acceptable-use or safety policies. Review the complete release terms.</p></article></div><div class="callout"><b>Rule of thumb:</b><span>Never infer commercial rights from the words “open,” “open model” or “open weight.” Read the model-specific license.</span></div></div></section>
-<section id="hardware" class="sec"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Hardware</div><h2>Model size is only the beginning.</h2></div><p>Practical deployment depends on parameter count, active parameters, precision, KV cache, context length, batch size and runtime overhead.</p></div><div class="formula"><div><small>First-order estimate</small><div class="eq">weight memory ≈ parameters × bytes per parameter</div></div><div class="tags"><span>FP16 ≈ 2 B/parameter</span><span>INT8 ≈ 1 B/parameter</span><span>4-bit ≈ 0.5 B/parameter*</span></div></div><div class="grid3" style="margin-top:15px"><article class="plain"><h3>VRAM</h3><p>GPU memory determines whether weights, cache and runtime buffers fit on one accelerator or must be split across devices.</p></article><article class="plain"><h3>RAM & offload</h3><p>CPU memory and offloading can make larger models accessible, typically with latency and throughput trade-offs.</p></article><article class="plain"><h3>Quantization</h3><p>Lower precision can reduce memory needs substantially, but quality, speed and compatibility depend on method and runtime.</p></article></div><p class="note">* Approximation for raw weight storage only. Real deployments require additional memory.</p></div></section>
-<section id="inference" class="sec muted"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Inference & deployment</div><h2>Choose the runtime around the workload.</h2></div><p>Open weights let you choose your serving layer. The best option depends on scale, hardware, quantization, latency targets and operational complexity.</p></div><div class="grid4"><article class="runtime"><div class="rt"><strong>vLLM</strong><span>Serving</span></div><p>High-throughput inference for supported transformer models and production API serving.</p></article><article class="runtime"><div class="rt"><strong>SGLang</strong><span>Serving</span></div><p>Serving and structured-generation workflows with support for modern open-weight families.</p></article><article class="runtime"><div class="rt"><strong>llama.cpp</strong><span>Local</span></div><p>Portable local inference with strong support for quantized formats and CPU/GPU execution.</p></article><article class="runtime"><div class="rt"><strong>Ollama</strong><span>Local</span></div><p>Developer-friendly local model management and inference for many popular open-weight families.</p></article></div></div></section>
-<section class="sec"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Reference architecture</div><h2>What this project will track.</h2></div><p>The goal is to make selection operational: not only “which model is good?” but “can I legally and practically run it?”</p></div><div class="tax"><div><span>Identity</span><strong>Model, family, developer, release</strong></div><div><span>Architecture</span><strong>Parameters, active params, modality, context</strong></div><div><span>Access</span><strong>Weights, formats, quantizations, download sources</strong></div><div><span>Legal</span><strong>License, commercial use, redistribution, restrictions</strong></div><div><span>Infrastructure</span><strong>VRAM, RAM, accelerator, local / server fit</strong></div><div><span>Inference</span><strong>Runtimes, providers, deployment paths</strong></div><div><span>Evidence</span><strong>Official sources, model cards, verified_at</strong></div><div><span>Data</span><strong>JSON records for tools, agents and analysis</strong></div></div></div></section>
-<section id="faq" class="sec muted"><div class="w faq"><div><div class="ey" style="color:var(--blue)">FAQ</div><h2>Open-weight models, clearly explained.</h2></div><div><details open><summary>Are open-weight models the same as open-source models?</summary><p>No. Open weights means trained parameters are available. Open source is broader and may imply access to code, training details or other components under qualifying licenses.</p></details><details><summary>Can open-weight models be used commercially?</summary><p>Sometimes, but not automatically. Commercial rights depend on the model-specific license and accompanying terms.</p></details><details><summary>Can I run open-weight models locally?</summary><p>Many can be run locally, especially smaller or quantized models. Feasibility depends on size, precision, runtime and available CPU, GPU, RAM and VRAM.</p></details><details><summary>Why publish structured model data?</summary><p>Structured records make consistent comparisons easier and allow tools, search systems and AI agents to consume the same verified metadata.</p></details><details><summary>Is this a benchmark leaderboard?</summary><p>No. This is designed as an operational reference. Benchmarks can be evidence, but deployment, licensing and reproducibility are first-class attributes.</p></details></div></div></section>
-<section class="sec"><div class="w"><div class="sh"><div><div class="ey" style="color:var(--blue)">Primary sources</div><h2>Start with the model publisher.</h2></div><p>Information changes. Official model cards, repositories and licenses remain authoritative for specific releases.</p></div><div class="sourcegrid"><a href="https://openai.com/open-models/" target="_blank"><strong>OpenAI</strong><span>gpt-oss open models ↗</span></a><a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank"><strong>Meta</strong><span>Llama models ↗</span></a><a href="https://github.com/QwenLM/Qwen3" target="_blank"><strong>Qwen</strong><span>Qwen3 repository ↗</span></a><a href="https://ai.google.dev/gemma/docs/core/model_card_3" target="_blank"><strong>Google</strong><span>Gemma model card ↗</span></a><a href="https://docs.mistral.ai/models" target="_blank"><strong>Mistral AI</strong><span>Model docs ↗</span></a></div></div></section>
-<section class="cta"><div class="w ctabox"><div><div class="ey">Open infrastructure reference</div><h2>Build a better map of the open-weight ecosystem.</h2><p>This project is designed to grow into a structured registry for models, licenses, hardware, inference and deployment.</p></div><a class="btn light" href="https://github.com/openweightmodels/openweightmodels.github.io" target="_blank">View repository ↗</a></div></section>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="shell navbar">
+    <a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+    <button class="menu" aria-expanded="false">Menu</button>
+    <nav>
+      <a href="#definition">Definition</a>
+      <a href="#registry">Registry</a>
+      <a href="#licenses">Licenses</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#huggingface">Hugging Face</a>
+      <a href="#faq">FAQ</a>
+      <a class="github" href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <div class="kicker">Independent · source-first · machine-readable</div>
+      <h1>Open Weight Models</h1>
+      <h2>A practical reference for AI models whose trained weights are available to download and run.</h2>
+      <p>Understand what “open weight” actually means, compare model families and licenses, estimate deployment requirements, and follow primary sources instead of relying on ambiguous labels.</p>
+      <div class="actions">
+        <a class="btn primary" href="#registry">Explore the registry</a>
+        <a class="btn secondary" href="#definition">Read the definition</a>
+        <a class="btn secondary" href="https://huggingface.co/open-weight" target="_blank" rel="noopener">Hugging Face ↗</a>
+      </div>
+      <div class="hero-facts"><span><b>12</b> selected families</span><span><b>Primary sources</b> attached</span><span><b>Last verified</b> 26 Sep 2026</span></div>
+    </div>
+    <aside class="stack">
+      <div class="stack-head"><span class="dot"></span>Open-weight decision stack</div>
+      <div class="item"><span class="n">01</span><div><strong>Access</strong><small>Can you obtain the trained weights?</small></div></div>
+      <div class="item"><span class="n">02</span><div><strong>License</strong><small>What can you legally do with them?</small></div></div>
+      <div class="item"><span class="n">03</span><div><strong>Architecture</strong><small>Dense, MoE, multimodal, context</small></div></div>
+      <div class="item"><span class="n">04</span><div><strong>Format</strong><small>Safetensors, GGUF, FP8, quantization</small></div></div>
+      <div class="item"><span class="n">05</span><div><strong>Hardware</strong><small>VRAM, RAM, accelerators, offload</small></div></div>
+      <div class="item"><span class="n">06</span><div><strong>Runtime</strong><small>Transformers, vLLM, SGLang, llama.cpp</small></div></div>
+    </aside>
+  </div>
+</section>
+
+<div class="quick">
+  <div class="shell quick-grid">
+    <div><b>Open weights ≠ automatically open source</b><span>Weight access describes one layer of openness; code, data information and legal rights vary.</span></div>
+    <div><b>Licenses are model-specific</b><span>Apache 2.0, MIT, community licenses and modified terms can imply very different rights.</span></div>
+    <div><b>Deployment is a systems question</b><span>Parameter count alone does not determine memory, throughput or cost.</span></div>
+    <div><b>Sources beat summaries</b><span>Every registry entry points back to a publisher-controlled model card or repository.</span></div>
+  </div>
+</div>
+
+<section id="definition">
+  <div class="shell two">
+    <div><div class="kicker">Definition</div><h2>What is an open-weight model?</h2></div>
+    <div class="article">
+      <p class="lead"><strong>An open-weight model is an AI model whose trained parameters — the learned numerical values commonly called weights — are made available so that others can obtain and run the model outside the publisher’s hosted API.</strong></p>
+      <p>The term focuses on <em>access to the trained parameters</em>. It does not, by itself, say that the training dataset is public, that the complete training code is available, or that every use is permitted. Those questions must be answered separately from the model card, license and accompanying policies.</p>
+      <h3>What are “weights” technically?</h3>
+      <p>During training, a neural network adjusts very large collections of numeric parameters. Those learned values are stored in tensors and checkpoint files. At inference time, the architecture plus these parameters transform inputs into outputs. Making the weights available lets another operator load the trained model on compatible infrastructure without calling the original provider’s API.</p>
+      <h3>Why “open weight” and “open source” are not synonyms</h3>
+      <p>The Open Source Initiative’s Open Source AI Definition is broader: it requires the freedoms to use, study, modify and share, and describes a preferred form for modification that includes data information, code and parameters. A model can therefore have downloadable weights without necessarily satisfying the OSI definition of Open Source AI.</p>
+      <div class="source-links">
+        <a href="https://opensource.org/ai/open-source-ai-definition" target="_blank" rel="noopener">OSI Open Source AI Definition ↗</a>
+        <a href="https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss" target="_blank" rel="noopener">OpenAI on open-weight models ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell compare">
+    <article><span class="tag">Open weight</span><h3>Weights available</h3><p>You can obtain the trained parameters and run the model yourself, subject to its license and technical requirements.</p><ul><li>Self-managed inference possible</li><li>License varies</li><li>Training data may remain unavailable</li></ul></article>
+    <article><span class="tag">Open Source AI</span><h3>Broader openness</h3><p>Under the OSI definition, meaningful freedoms and the preferred form for modification extend beyond final weights.</p><ul><li>Use, study, modify, share</li><li>Code and data information matter</li><li>OSI-approved terms are relevant</li></ul></article>
+    <article><span class="tag">Closed weight</span><h3>Hosted access</h3><p>The trained parameters are not distributed to users. Access is typically provided through an API or hosted product.</p><ul><li>Provider controls deployment</li><li>No direct weight access</li><li>Operational control is narrower</li></ul></article>
+  </div>
+
+  <div class="shell weight-diagram">
+    <div><span>Training</span><strong>Data + objective</strong><small>Examples, mixtures, preprocessing, optimization</small></div>
+    <div><span>Architecture</span><strong>Network design</strong><small>Layers, attention, experts, tokenizer</small></div>
+    <div><span>Weights</span><strong>Learned parameters</strong><small>The trained numeric state distributed as checkpoints</small></div>
+    <div><span>Runtime</span><strong>Inference engine</strong><small>Loads and executes the model</small></div>
+    <div><span>Application</span><strong>Your system</strong><small>Agents, assistants, RAG, code, multimodal workflows</small></div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="shell section-head"><div><div class="kicker">Why it matters</div><h2>Open weights move deployment choices back to the operator.</h2></div><p>They can enable control, portability and customization — but they also move infrastructure, security, evaluation and compliance responsibilities onto the deployer.</p></div>
+  <div class="shell benefits">
+    <article><span class="num">01</span><h3>Infrastructure control</h3><p>Run on workstations, private clouds, data centers or edge hardware when the model and runtime support it.</p></article>
+    <article><span class="num">02</span><h3>Customization</h3><p>Fine-tune, adapt, quantize or package a model using compatible tools and within the rights granted by its terms.</p></article>
+    <article><span class="num">03</span><h3>Data locality</h3><p>Self-hosting can keep prompts, retrieved documents and outputs inside infrastructure chosen by the operator.</p></article>
+    <article><span class="num">04</span><h3>Runtime choice</h3><p>Choose serving software, quantization formats, accelerators and scaling strategies instead of a single API stack.</p></article>
+  </div>
+</section>
+
+<section id="registry">
+  <div class="shell section-head"><div><div class="kicker">Model registry</div><h2>Selected open-weight model families</h2></div><p>This is a curated family-level index, not a leaderboard. Model-specific checkpoints can differ in license, context, modality and hardware requirements.</p></div>
+  <div class="shell registry-tools">
+    <input id="search" type="search" placeholder="Search family, developer, license or capability…" aria-label="Search models">
+    <select id="license"><option value="">All license groups</option><option value="permissive">Permissive (MIT / Apache)</option><option value="custom">Custom</option><option value="modified">Modified license</option></select>
+    <div class="count"><b id="count">12</b> families</div>
+  </div>
+  <div class="shell table-wrap">
+    <table>
+      <thead><tr><th>Family</th><th>Developer</th><th>Size</th><th>Context</th><th>License</th><th>Focus</th><th>Sources</th></tr></thead>
+      <tbody id="rows">
+      
+      <tr data-search="gpt-oss openai gpt-oss-20b · gpt-oss-120b apache 2.0 + usage policy reasoning, tool use, self-hosted inference" data-license="permissive">
+        <td><strong>gpt-oss</strong><small>gpt-oss-20b · gpt-oss-120b</small></td>
+        <td>OpenAI</td>
+        <td>20B / 120B class</td>
+        <td>See official model card</td>
+        <td><span class="license-pill permissive">Apache 2.0 + usage policy</span></td>
+        <td>Reasoning, tool use, self-hosted inference</td>
+        <td><a href="https://openai.com/open-models/" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/openai/gpt-oss" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="llama 4 meta scout 17b-16e · maverick 17b-128e llama 4 community license general-purpose, multimodal, long context" data-license="custom">
+        <td><strong>Llama 4</strong><small>Scout 17B-16E · Maverick 17B-128E</small></td>
+        <td>Meta</td>
+        <td>17B active class</td>
+        <td>Scout 10M · Maverick 1M</td>
+        <td><span class="license-pill custom">Llama 4 Community License</span></td>
+        <td>General-purpose, multimodal, long context</td>
+        <td><a href="https://github.com/meta-llama/llama-models" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/meta-llama" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="qwen3 qwen / alibaba 0.6b–32b dense · 30b-a3b · 235b-a22b apache 2.0 reasoning, coding, multilingual, agents" data-license="permissive">
+        <td><strong>Qwen3</strong><small>0.6B–32B dense · 30B-A3B · 235B-A22B</small></td>
+        <td>Qwen / Alibaba</td>
+        <td>0.6B–235B total</td>
+        <td>Up to 256K; selected variants extend further</td>
+        <td><span class="license-pill permissive">Apache 2.0</span></td>
+        <td>Reasoning, coding, multilingual, agents</td>
+        <td><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="mistral small 4 mistral ai mistral-small-4-119b-2603 apache 2.0 reasoning, vision, agents, multilingual" data-license="permissive">
+        <td><strong>Mistral Small 4</strong><small>Mistral-Small-4-119B-2603</small></td>
+        <td>Mistral AI</td>
+        <td>119B total · 6.5B active/token</td>
+        <td>256K</td>
+        <td><span class="license-pill permissive">Apache 2.0</span></td>
+        <td>Reasoning, vision, agents, multilingual</td>
+        <td><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/mistralai" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="deepseek-v3.2 deepseek deepseek-v3.2 mit reasoning, coding, tool use, agentic ai" data-license="permissive">
+        <td><strong>DeepSeek-V3.2</strong><small>DeepSeek-V3.2</small></td>
+        <td>DeepSeek</td>
+        <td>685B parameters</td>
+        <td>See official model card</td>
+        <td><span class="license-pill permissive">MIT</span></td>
+        <td>Reasoning, coding, tool use, agentic AI</td>
+        <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/deepseek-ai" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="kimi k2 moonshot ai kimi-k2-base · instruct · thinking modified mit agentic intelligence, coding, reasoning" data-license="modified">
+        <td><strong>Kimi K2</strong><small>Kimi-K2-Base · Instruct · Thinking</small></td>
+        <td>Moonshot AI</td>
+        <td>1T total · 32B active</td>
+        <td>128K (K2 base card)</td>
+        <td><span class="license-pill modified">Modified MIT</span></td>
+        <td>Agentic intelligence, coding, reasoning</td>
+        <td><a href="https://huggingface.co/moonshotai/Kimi-K2-Base" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/moonshotai/kimi-k2" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="glm-4.5 z.ai glm-4.5 · glm-4.5-air mit agents, reasoning, coding, tool use" data-license="permissive">
+        <td><strong>GLM-4.5</strong><small>GLM-4.5 · GLM-4.5-Air</small></td>
+        <td>Z.ai</td>
+        <td>355B-A32B · 106B-A12B</td>
+        <td>See official model card</td>
+        <td><span class="license-pill permissive">MIT</span></td>
+        <td>Agents, reasoning, coding, tool use</td>
+        <td><a href="https://huggingface.co/zai-org/GLM-4.5" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/zai-org" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="phi-4 microsoft phi-4 · phi-4 mini · reasoning · multimodal mit reasoning, constrained compute, multimodal variants" data-license="permissive">
+        <td><strong>Phi-4</strong><small>Phi-4 · Phi-4 mini · reasoning · multimodal</small></td>
+        <td>Microsoft</td>
+        <td>14B base Phi-4; family includes smaller variants</td>
+        <td>16K on Phi-4 model card</td>
+        <td><span class="license-pill permissive">MIT</span></td>
+        <td>Reasoning, constrained compute, multimodal variants</td>
+        <td><a href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/collections/microsoft/phi-4" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="granite 4.2 ibm granite 4.2 3b · 8b · 30b apache 2.0 enterprise, reasoning, code, tools, multilingual" data-license="permissive">
+        <td><strong>Granite 4.2</strong><small>Granite 4.2 3B · 8B · 30B</small></td>
+        <td>IBM</td>
+        <td>3B · 8B · 30B</td>
+        <td>128K native; longer extension documented</td>
+        <td><span class="license-pill permissive">Apache 2.0</span></td>
+        <td>Enterprise, reasoning, code, tools, multilingual</td>
+        <td><a href="https://huggingface.co/ibm-granite/granite-4.2-8b" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/ibm-granite" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="gemma 3 google deepmind gemma 3 family gemma terms multimodal, multilingual, local / on-device use" data-license="custom">
+        <td><strong>Gemma 3</strong><small>Gemma 3 family</small></td>
+        <td>Google DeepMind</td>
+        <td>Multiple sizes</td>
+        <td>See official model card</td>
+        <td><span class="license-pill custom">Gemma Terms</span></td>
+        <td>Multimodal, multilingual, local / on-device use</td>
+        <td><a href="https://ai.google.dev/gemma/docs/core/model_card_3" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/google" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="minimax-m2 minimax minimax-m2 modified mit general-purpose, coding, agentic workloads" data-license="modified">
+        <td><strong>MiniMax-M2</strong><small>MiniMax-M2</small></td>
+        <td>MiniMax</td>
+        <td>See official model card</td>
+        <td>See official model card</td>
+        <td><span class="license-pill modified">Modified MIT</span></td>
+        <td>General-purpose, coding, agentic workloads</td>
+        <td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/MiniMaxAI" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+
+      <tr data-search="nemotron 3 nano nvidia nvidia-nemotron-3-nano-4b nvidia nemotron open model license local inference, compact deployment, nvidia ecosystem" data-license="custom">
+        <td><strong>Nemotron 3 Nano</strong><small>NVIDIA-Nemotron-3-Nano-4B</small></td>
+        <td>NVIDIA</td>
+        <td>4B class</td>
+        <td>See official model card</td>
+        <td><span class="license-pill custom">NVIDIA Nemotron Open Model License</span></td>
+        <td>Local inference, compact deployment, NVIDIA ecosystem</td>
+        <td><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF" target="_blank" rel="noopener">Primary ↗</a><br><a class="muted-link" href="https://huggingface.co/nvidia" target="_blank" rel="noopener">Hub ↗</a></td>
+      </tr>
+    
+      </tbody>
+    </table>
+  </div>
+  <div class="shell note">Registry records are informational. Always verify the exact checkpoint’s model card, license and deployment documentation before commercial or production use.</div>
+</section>
+
+<section id="licenses" class="dark">
+  <div class="shell section-head"><div><div class="kicker" style="color:var(--cyan)">Licensing</div><h2>“Open” is not a license.</h2></div><p>A project should record the exact license and policy attached to the checkpoint, not infer rights from marketing terminology.</p></div>
+  <div class="shell dark-grid">
+    <article><span>Permissive software licenses</span><h3>Apache 2.0 / MIT</h3><p>These can grant broad rights, including commercial use, modification and redistribution, but the full model release may still include separate usage policies or third-party components.</p></article>
+    <article><span>Community / bespoke terms</span><h3>Model-specific licenses</h3><p>Llama, Gemma and other families use terms tailored to their ecosystems. Read the actual agreement rather than assuming equivalence with standard OSS licenses.</p></article>
+    <article><span>Modified terms</span><h3>Near-standard ≠ identical</h3><p>“Modified MIT” and similar labels should be treated as distinct legal documents. The differences may be operationally important.</p></article>
+  </div>
+  <div class="shell callout"><b>Deployment rule:</b> Record the exact model identifier, exact license URL and verification date together. A family name alone is not enough for compliance.</div>
+</section>
+
+<section id="hardware">
+  <div class="shell section-head"><div><div class="kicker">Hardware & quantization</div><h2>Can you actually run the model?</h2></div><p>That question depends on more than parameter count. Precision, active parameters, KV cache, context length, batch size, runtime buffers and offloading all matter.</p></div>
+  <div class="shell hw-formula">
+    <div class="formula"><small>First-order estimate</small><strong>raw weight memory ≈ parameters × bytes per parameter</strong></div>
+    <div class="precision"><span>FP16/BF16 ≈ 2 B</span><span>INT8 ≈ 1 B</span><span>4-bit ≈ 0.5 B*</span></div>
+  </div>
+  <div class="shell three">
+    <article class="card"><h3>VRAM is not just weights</h3><p>Inference also needs memory for KV cache, temporary buffers, runtime overhead and sometimes multiple replicas.</p></article>
+    <article class="card"><h3>MoE changes the picture</h3><p>Mixture-of-Experts models can activate only part of the network per token, but the full checkpoint may still need to be stored or distributed.</p></article>
+    <article class="card"><h3>Quantization is a trade-off</h3><p>Lower precision can reduce memory and improve accessibility, while quality and speed depend on method, hardware and runtime support.</p></article>
+  </div>
+  <div class="shell note">* Approximation for raw weight storage only; real deployment memory is higher.</div>
+</section>
+
+<section class="soft">
+  <div class="shell section-head"><div><div class="kicker">Inference</div><h2>The runtime is part of the model decision.</h2></div><p>Open-weight models can often be served through multiple stacks. Compatibility varies by architecture and checkpoint.</p></div>
+  <div class="shell benefits">
+    <article><span class="num">SERVING</span><h3>vLLM</h3><p>High-throughput serving for many transformer architectures with OpenAI-compatible APIs and accelerator-focused execution.</p></article>
+    <article><span class="num">SERVING</span><h3>SGLang</h3><p>A serving and programming stack used by multiple current open-weight model releases for reasoning and tool workflows.</p></article>
+    <article><span class="num">LOCAL</span><h3>llama.cpp</h3><p>Portable local inference with broad support for GGUF quantizations and CPU/GPU execution.</p></article>
+    <article><span class="num">LOCAL</span><h3>Ollama</h3><p>A developer-friendly local model workflow that packages and serves many popular open-weight model families.</p></article>
+  </div>
+</section>
+
+<section id="huggingface">
+  <div class="shell hf-box">
+    <div>
+      <span class="hf-badge">🤗 Project ecosystem</span>
+      <h2>Open Weight Models on Hugging Face</h2>
+      <p>GitHub Pages is the long-form reference and machine-readable index. Hugging Face is the companion workspace for interactive Spaces, curated Collections, datasets and model-infrastructure experiments.</p>
+      <div class="actions" style="margin-top:24px"><a class="btn primary" href="https://huggingface.co/open-weight" target="_blank" rel="noopener">Visit open-weight on Hugging Face ↗</a></div>
+    </div>
+    <div class="hf-links">
+      <a href="https://huggingface.co/open-weight" target="_blank" rel="noopener"><strong>Organization</strong><span>Central project hub and activity</span></a>
+      <a href="https://huggingface.co/open-weight/spaces" target="_blank" rel="noopener"><strong>Spaces</strong><span>Interactive tools and model explorers</span></a>
+      <a href="https://huggingface.co/open-weight/collections" target="_blank" rel="noopener"><strong>Collections</strong><span>Curated models, infrastructure and references</span></a>
+      <a href="https://huggingface.co/open-weight/datasets" target="_blank" rel="noopener"><strong>Datasets</strong><span>Structured registry data as the project grows</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="shell section-head"><div><div class="kicker">For search, agents & tools</div><h2>Human-readable and machine-readable by design.</h2></div><p>Good GEO is not keyword stuffing. It means clear definitions, structured entities, primary-source links, stable URLs and data that systems can parse reliably.</p></div>
+  <div class="shell machine">
+    <a href="/data/models.json"><code>/data/models.json</code><strong>Structured model registry</strong><span>Family-level metadata with licenses, focus, sources and verification dates.</span></a>
+    <a href="/llms.txt"><code>/llms.txt</code><strong>Machine-oriented site guide</strong><span>A concise map of canonical resources and editorial principles.</span></a>
+    <a href="/sitemap.xml"><code>/sitemap.xml</code><strong>Indexable resource map</strong><span>Canonical pages and machine-readable assets for discovery.</span></a>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="shell faq">
+    <div><div class="kicker">FAQ</div><h2>Questions people ask about open-weight models</h2></div>
+    <div>
+      <details open><summary>Are open-weight models the same as open-source models?</summary><p>No. “Open weight” means the trained parameters are available. Open Source AI is a broader claim about freedoms and the preferred form for modification. The OSI definition includes requirements involving data information, code and parameters.</p></details>
+      <details><summary>Can I use an open-weight model commercially?</summary><p>Sometimes, but not because it is open-weight. Commercial rights depend on the exact license and any additional policies attached to the checkpoint.</p></details>
+      <details><summary>Can I run open-weight models locally?</summary><p>Many can run locally, particularly smaller or quantized checkpoints. Feasibility depends on model size, precision, architecture, context length, runtime and your available RAM/VRAM.</p></details>
+      <details><summary>Do open weights make a model private?</summary><p>No. They give you the option to self-host. Privacy then depends on how you deploy, log, network and secure the system.</p></details>
+      <details><summary>What is the difference between a model family and a checkpoint?</summary><p>A family groups related releases. A checkpoint is a particular set of weights with its own identifier, size, precision, training state and sometimes distinct license or usage terms.</p></details>
+      <details><summary>Why does this project link to Hugging Face?</summary><p>Hugging Face is a major distribution and tooling hub for open-weight models. The companion open-weight organization can host interactive explorers, collections and structured datasets while this site remains the canonical long-form reference.</p></details>
+      <details><summary>Is this a benchmark leaderboard?</summary><p>No. The project prioritizes operational questions: access, licensing, formats, hardware, inference and deployment. Benchmarks can be useful evidence, but no single score represents overall model quality.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="shell section-head"><div><div class="kicker">Primary references</div><h2>Trace claims back to publishers.</h2></div><p>The registry is designed to summarize, not replace, model cards and license documents.</p></div>
+  <div class="shell sources">
+    <a href="https://openai.com/open-models/" target="_blank" rel="noopener"><strong>OpenAI</strong><span>gpt-oss open models ↗</span></a>
+    <a href="https://github.com/meta-llama/llama-models" target="_blank" rel="noopener"><strong>Meta</strong><span>Llama models repository ↗</span></a>
+    <a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener"><strong>Qwen</strong><span>Qwen3 repository ↗</span></a>
+    <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener"><strong>Mistral AI</strong><span>Mistral Small 4 ↗</span></a>
+    <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2" target="_blank" rel="noopener"><strong>DeepSeek</strong><span>DeepSeek-V3.2 ↗</span></a>
+    <a href="https://huggingface.co/moonshotai/Kimi-K2-Base" target="_blank" rel="noopener"><strong>Moonshot AI</strong><span>Kimi K2 ↗</span></a>
+    <a href="https://huggingface.co/zai-org/GLM-4.5" target="_blank" rel="noopener"><strong>Z.ai</strong><span>GLM-4.5 ↗</span></a>
+    <a href="https://opensource.org/ai/open-source-ai-definition" target="_blank" rel="noopener"><strong>OSI</strong><span>Open Source AI Definition ↗</span></a>
+  </div>
+
+  <div class="shell citebox">
+    <strong>Cite this reference</strong>
+    <div class="note">A stable citation block makes the project easier to reference in articles, repositories and research notes.</div>
+    <pre>@misc{openweightmodels2026,
+  title        = {Open Weight Models},
+  author       = {{Open Weight Models}},
+  year         = {2026},
+  howpublished = {\url{https://openweightmodels.github.io/}},
+  note         = {Independent reference for open-weight AI models; accessed 2026-09-26}
+}</pre>
+  </div>
+</section>
 </main>
-<footer><div class="w foot"><div><div class="brand"><span class="mark"><i></i><i></i><i></i></span>Open Weight Models</div><p>Independent reference for open-weight AI models and deployment infrastructure.</p></div><div class="flinks"><a href="/data/models.json">models.json</a><a href="/llms.txt">llms.txt</a><a href="/sitemap.xml">sitemap.xml</a><a href="https://github.com/openweightmodels" target="_blank">GitHub ↗</a></div></div><div class="w bottom"><span>Information only — verify model-specific licenses and technical requirements.</span><span>Last reviewed: 2026-09-26</span></div></footer>
-<script>const q=document.getElementById('q'),l=document.getElementById('lic'),rs=[...document.querySelectorAll('#rows tr')],c=document.getElementById('cnt');function f(){let x=(q.value||'').toLowerCase().trim(),y=l.value,n=0;rs.forEach(r=>{let ok=(!x||(r.dataset.s||'').includes(x))&&(!y||r.dataset.l===y);r.hidden=!ok;if(ok)n++});c.textContent=n}q.addEventListener('input',f);l.addEventListener('change',f)</script>
-</body></html>
+
+<footer>
+  <div class="shell foot">
+    <div><a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span style="color:white">Open Weight Models</span></a><p>Independent reference for open-weight AI models, licensing and deployment infrastructure. Not affiliated with the model developers listed on this site.</p></div>
+    <div class="foot-links"><a href="https://github.com/openweightmodels">GitHub ↗</a><a href="https://huggingface.co/open-weight">Hugging Face ↗</a><a href="/data/models.json">models.json</a><a href="/llms.txt">llms.txt</a><a href="/sitemap.xml">sitemap.xml</a></div>
+  </div>
+  <div class="shell bottom"><span>Verify checkpoint-specific licenses and requirements before production use.</span><span>Last reviewed: 26 September 2026</span></div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const menu=document.querySelector(".menu"),nav=document.querySelector("nav");
+  if(menu&&nav){menu.addEventListener("click",()=>{const o=nav.classList.toggle("open");menu.setAttribute("aria-expanded",o?"true":"false")});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false")}))}
+  const search=document.getElementById("search"),license=document.getElementById("license"),rows=[...document.querySelectorAll("#rows tr")],count=document.getElementById("count");
+  function update(){const q=(search?.value||"").toLowerCase().trim(),l=license?.value||"";let n=0;rows.forEach(r=>{const ok=(!q||(r.dataset.search||"").includes(q))&&(!l||r.dataset.license===l);r.hidden=!ok;if(ok)n++});if(count)count.textContent=n}
+  search?.addEventListener("input",update);license?.addEventListener("change",update);
+});
+</script>
+</body>
+</html>

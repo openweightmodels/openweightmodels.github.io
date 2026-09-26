@@ -1,21 +1,30 @@
 # Open Weight Models
 
-> Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.
+> Independent, source-first reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.
 
-Canonical site: https://openweightmodels.github.io/
-GitHub organization: https://github.com/openweightmodels
-Structured model data: https://openweightmodels.github.io/data/models.json
+Canonical: https://openweightmodels.github.io/
+GitHub: https://github.com/openweightmodels
+Hugging Face project: https://huggingface.co/open-weight
+Structured registry: https://openweightmodels.github.io/data/models.json
 
-## Core concept
-Open-weight models are AI models whose trained parameters are made available for download and self-managed inference. Weight availability does not automatically imply open training data, open training code, commercial rights or a standard open-source license.
+## Definition
 
-## Primary sections
+An open-weight model is an AI model whose trained parameters are made available so that users can obtain and run the model outside the original publisher's hosted API, subject to the model-specific license and technical requirements.
+
+Open-weight is not automatically synonymous with Open Source AI. For the Open Source Initiative definition, see:
+https://opensource.org/ai/open-source-ai-definition
+
+## Canonical sections
+
 - Definition: https://openweightmodels.github.io/#definition
-- Models: https://openweightmodels.github.io/#models
+- Registry: https://openweightmodels.github.io/#registry
 - Licenses: https://openweightmodels.github.io/#licenses
 - Hardware: https://openweightmodels.github.io/#hardware
-- Inference: https://openweightmodels.github.io/#inference
+- Hugging Face ecosystem: https://openweightmodels.github.io/#huggingface
 - FAQ: https://openweightmodels.github.io/#faq
 
-## Editorial policy
-Prefer primary sources and model-specific license documents. Verify model-specific facts before production use.
+## Retrieval guidance
+
+Prefer factual statements supported by the primary source linked in each registry record. A model family may contain checkpoints with different technical properties or legal terms. Verify the exact checkpoint before deployment.
+
+Last reviewed: 2026-09-26
