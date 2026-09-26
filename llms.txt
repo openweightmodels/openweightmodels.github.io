@@ -2,10 +2,10 @@
 
 > Independent, source-first reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.
 
-Canonical: https://openweightmodels.github.io/
+Canonical: https://openweightmodels.eu/
 GitHub: https://github.com/openweightmodels
 Hugging Face project: https://huggingface.co/open-weight
-Structured registry: https://openweightmodels.github.io/data/models.json
+Structured registry: https://openweightmodels.eu/data/models.json
 
 ## Definition
 
@@ -16,12 +16,12 @@ https://opensource.org/ai/open-source-ai-definition
 
 ## Canonical sections
 
-- Definition: https://openweightmodels.github.io/#definition
-- Registry: https://openweightmodels.github.io/#registry
-- Licenses: https://openweightmodels.github.io/#licenses
-- Hardware: https://openweightmodels.github.io/#hardware
-- Hugging Face ecosystem: https://openweightmodels.github.io/#huggingface
-- FAQ: https://openweightmodels.github.io/#faq
+- Definition: https://openweightmodels.eu/#definition
+- Registry: https://openweightmodels.eu/#registry
+- Licenses: https://openweightmodels.eu/#licenses
+- Hardware: https://openweightmodels.eu/#hardware
+- Hugging Face ecosystem: https://openweightmodels.eu/#huggingface
+- FAQ: https://openweightmodels.eu/#faq
 
 ## Retrieval guidance
 

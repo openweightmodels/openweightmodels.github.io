@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openweightmodels.github.io/</loc>
+    <loc>https://openweightmodels.eu/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.github.io/data/models.json</loc>
+    <loc>https://openweightmodels.eu/data/models.json</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.github.io/llms.txt</loc>
+    <loc>https://openweightmodels.eu/llms.txt</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

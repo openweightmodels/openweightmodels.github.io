@@ -2,7 +2,7 @@
 
 **Independent reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.**
 
-Website: **https://openweightmodels.github.io/**  
+Canonical website: **https://openweightmodels.eu/**  
 Hugging Face: **https://huggingface.co/open-weight**
 
 ## Mission
