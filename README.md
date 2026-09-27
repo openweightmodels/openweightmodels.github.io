@@ -88,3 +88,24 @@ Files:
 - `data/sovereignty-lens.json`
 
 The project deliberately takes a nuanced position: **the future is likely hybrid**, with proprietary APIs and open-weight deployment coexisting.
+
+
+## v8 — Detailed model references
+
+Ten model-specific reference pages are now available under `/models/`.
+
+Each page includes:
+- answer-first model summary for search and generative engines
+- OWM editorial view
+- exact checkpoint facts
+- license reality
+- hardware reality
+- runtime evidence policy
+- OWM Sovereignty Lens
+- where-it-fits / where-it-does-not-fit guidance
+- FAQ structured data
+- TechArticle + Breadcrumb + FAQ JSON-LD
+- canonical URL, Open Graph, metadata and internal links
+- primary sources and machine-readable Passport link
+
+The ten launch references are gpt-oss-20b, gpt-oss-120b, Qwen3-32B, Qwen3-Coder-30B-A3B-Instruct, DeepSeek-R1, Gemma 3 27B IT, Mistral Small 4, Llama 4 Scout, OLMo 3 32B and GLM-4.5.
