@@ -34,5 +34,6 @@
   ],
   "reference_page": "https://openweightmodels.eu/model-qwen3-32b.html",
   "owm_view": "Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-qwen3-32b.json"
 }

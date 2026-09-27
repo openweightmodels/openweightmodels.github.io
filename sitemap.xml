@@ -236,4 +236,37 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url><loc>https://openweightmodels.eu/changes.html</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://openweightmodels.eu/change-history-index.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://openweightmodels.eu/change-watchlist.json</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://openweightmodels.eu/model-command-a.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-deepseek-r1-distill-qwen-32b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-deepseek-r1-distill-qwen-7b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-devstral-small-1-1.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-granite-4-2-8b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-kimi-k2-instruct.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-phi-4.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-qwen3-30b-a3b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-qwen3-vl-30b-a3b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/model-smollm3-3b.html</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openweightmodels.eu/change-command-a.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-deepseek-r1.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-deepseek-r1-distill-qwen-32b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-deepseek-r1-distill-qwen-7b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-devstral-small-1-1.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-gemma-3-27b-it.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-glm-4-5.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-gpt-oss-120b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-gpt-oss-20b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-granite-4-2-8b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-kimi-k2-instruct.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-llama-4-scout.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-mistral-small-4.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-olmo-3-32b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-phi-4.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-qwen3-30b-a3b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-qwen3-32b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-qwen3-coder-30b-a3b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-qwen3-vl-30b-a3b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
+  <url><loc>https://openweightmodels.eu/change-smollm3-3b.json</loc><lastmod>2026-09-27</lastmod><changefreq>daily</changefreq><priority>0.45</priority></url>
 </urlset>

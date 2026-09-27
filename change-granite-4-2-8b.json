@@ -1,0 +1,29 @@
+{
+  "model_id": "granite-4-2-8b",
+  "model_name": "Granite 4.2 8B",
+  "exact_model_id": "ibm-granite/granite-4.2-8b",
+  "history_start": "2026-09-27",
+  "reference_page": "https://openweightmodels.eu/model-granite-4-2-8b.html",
+  "passport": "https://openweightmodels.eu/passport-granite-4-2-8b.json",
+  "monitored_fields": [
+    "model_card",
+    "license",
+    "checkpoint_files",
+    "quantizations",
+    "runtime_support",
+    "context_claims",
+    "hardware_guidance",
+    "provider_availability",
+    "access_or_gating"
+  ],
+  "events": [
+    {
+      "date": "2026-09-27",
+      "type": "initial-snapshot",
+      "evidence": "owm-source-review",
+      "summary": "Initial OWM verification snapshot created.",
+      "details": "Baseline recorded for future diffs. This is the beginning of OWM observed history, not a claim about earlier changes.",
+      "source": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    }
+  ]
+}

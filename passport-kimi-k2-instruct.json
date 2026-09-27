@@ -26,5 +26,7 @@
   ],
   "hardware_note": "Huge total checkpoint size despite 32B active parameters per token; storage and distributed serving remain substantial.",
   "primary_source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-kimi-k2-instruct.html",
+  "change_history": "https://openweightmodels.eu/change-kimi-k2-instruct.json"
 }

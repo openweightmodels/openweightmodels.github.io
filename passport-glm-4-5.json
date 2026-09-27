@@ -31,5 +31,6 @@
   "third_party_runtime_evidence": [],
   "reference_page": "https://openweightmodels.eu/model-glm-4-5.html",
   "owm_view": "GLM-4.5 is a strong example of open-weight competition moving into agentic infrastructure. Its 355B total / 32B active architecture is far beyond workstation scale, but the MIT license and support in Transformers, vLLM and SGLang make the model layer comparatively portable for organizations already operating distributed inference.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-glm-4-5.json"
 }

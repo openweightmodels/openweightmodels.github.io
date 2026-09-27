@@ -1,0 +1,29 @@
+{
+  "model_id": "qwen3-32b",
+  "model_name": "Qwen3-32B",
+  "exact_model_id": "Qwen/Qwen3-32B",
+  "history_start": "2026-09-27",
+  "reference_page": "https://openweightmodels.eu/model-qwen3-32b.html",
+  "passport": "https://openweightmodels.eu/passport-qwen3-32b.json",
+  "monitored_fields": [
+    "model_card",
+    "license",
+    "checkpoint_files",
+    "quantizations",
+    "runtime_support",
+    "context_claims",
+    "hardware_guidance",
+    "provider_availability",
+    "access_or_gating"
+  ],
+  "events": [
+    {
+      "date": "2026-09-27",
+      "type": "initial-snapshot",
+      "evidence": "owm-source-review",
+      "summary": "Initial OWM verification snapshot created.",
+      "details": "Baseline recorded for future diffs. This is the beginning of OWM observed history, not a claim about earlier changes.",
+      "source": "https://huggingface.co/Qwen/Qwen3-32B"
+    }
+  ]
+}

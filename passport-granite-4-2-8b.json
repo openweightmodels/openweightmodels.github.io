@@ -27,5 +27,7 @@
   ],
   "hardware_note": "IBM publishes BF16, FP8, MXFP4/NVFP4 and GGUF variants, giving several deployment paths.",
   "primary_source": "https://huggingface.co/ibm-granite/granite-4.2-8b",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-granite-4-2-8b.html",
+  "change_history": "https://openweightmodels.eu/change-granite-4-2-8b.json"
 }

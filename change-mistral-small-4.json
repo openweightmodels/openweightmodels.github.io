@@ -1,0 +1,29 @@
+{
+  "model_id": "mistral-small-4",
+  "model_name": "Mistral Small 4",
+  "exact_model_id": "mistralai/Mistral-Small-4-119B-2603",
+  "history_start": "2026-09-27",
+  "reference_page": "https://openweightmodels.eu/model-mistral-small-4.html",
+  "passport": "https://openweightmodels.eu/passport-mistral-small-4.json",
+  "monitored_fields": [
+    "model_card",
+    "license",
+    "checkpoint_files",
+    "quantizations",
+    "runtime_support",
+    "context_claims",
+    "hardware_guidance",
+    "provider_availability",
+    "access_or_gating"
+  ],
+  "events": [
+    {
+      "date": "2026-09-27",
+      "type": "initial-snapshot",
+      "evidence": "owm-source-review",
+      "summary": "Initial OWM verification snapshot created.",
+      "details": "Baseline recorded for future diffs. This is the beginning of OWM observed history, not a claim about earlier changes.",
+      "source": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+    }
+  ]
+}

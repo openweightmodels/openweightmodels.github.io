@@ -29,5 +29,6 @@
   "third_party_runtime_evidence": [],
   "reference_page": "https://openweightmodels.eu/model-llama-4-scout.html",
   "owm_view": "Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-llama-4-scout.json"
 }

@@ -27,5 +27,7 @@
   ],
   "hardware_note": "Multimodal deployments require additional image/video preprocessing memory beyond raw weights.",
   "primary_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-qwen3-vl-30b-a3b.html",
+  "change_history": "https://openweightmodels.eu/change-qwen3-vl-30b-a3b.json"
 }

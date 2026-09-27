@@ -32,5 +32,6 @@
   ],
   "reference_page": "https://openweightmodels.eu/model-gemma-3-27b-it.html",
   "owm_view": "Gemma 3 27B is interesting because it brings native image understanding, a 128K context window and a relatively workstation-friendly parameter count into the same open-weight package. OWM also considers it a useful reminder that “open weights” and “standard open-source license” are different concepts: Gemma uses its own Terms of Use rather than Apache or MIT.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-gemma-3-27b-it.json"
 }

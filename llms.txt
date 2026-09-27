@@ -67,3 +67,30 @@ OWM explicitly does not treat open-weight as automatically equivalent to Open So
 - Llama 4 Scout: https://openweightmodels.eu/models.htmlllama-4-scout/ — 109B total · 17B active; 10M; Llama 4 Community License. OWM view: Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.
 - OLMo 3 32B: https://openweightmodels.eu/models.htmlolmo-3-32b/ — 32B; 65,536; Apache 2.0. OWM view: OLMo 3 32B matters to OWM for a different reason than most commercial open-weight releases: Ai2 emphasizes not only weight access but also code, checkpoints and training details. That makes OLMo particularly valuable when the goal is scientific inspectability and reproducibility rather than only self-hosted inference.
 - GLM-4.5: https://openweightmodels.eu/models.htmlglm-4-5/ — 355B total · 32B active; 131,072; MIT. OWM view: GLM-4.5 is a strong example of open-weight competition moving into agentic infrastructure. Its 355B total / 32B active architecture is far beyond workstation scale, but the MIT license and support in Transformers, vLLM and SGLang make the model layer comparatively portable for organizations already operating distributed inference.
+
+
+## Complete detailed model reference set
+
+- Command A: https://openweightmodels.eu/model-command-a.html | Passport: https://openweightmodels.eu/passport-command-a.json | History: https://openweightmodels.eu/change-command-a.json
+- DeepSeek-R1: https://openweightmodels.eu/model-deepseek-r1.html | Passport: https://openweightmodels.eu/passport-deepseek-r1.json | History: https://openweightmodels.eu/change-deepseek-r1.json
+- DeepSeek-R1-Distill-Qwen-32B: https://openweightmodels.eu/model-deepseek-r1-distill-qwen-32b.html | Passport: https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-32b.json | History: https://openweightmodels.eu/change-deepseek-r1-distill-qwen-32b.json
+- DeepSeek-R1-Distill-Qwen-7B: https://openweightmodels.eu/model-deepseek-r1-distill-qwen-7b.html | Passport: https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-7b.json | History: https://openweightmodels.eu/change-deepseek-r1-distill-qwen-7b.json
+- Devstral Small 1.1: https://openweightmodels.eu/model-devstral-small-1-1.html | Passport: https://openweightmodels.eu/passport-devstral-small-1-1.json | History: https://openweightmodels.eu/change-devstral-small-1-1.json
+- Gemma 3 27B IT: https://openweightmodels.eu/model-gemma-3-27b-it.html | Passport: https://openweightmodels.eu/passport-gemma-3-27b-it.json | History: https://openweightmodels.eu/change-gemma-3-27b-it.json
+- GLM-4.5: https://openweightmodels.eu/model-glm-4-5.html | Passport: https://openweightmodels.eu/passport-glm-4-5.json | History: https://openweightmodels.eu/change-glm-4-5.json
+- gpt-oss-120b: https://openweightmodels.eu/model-gpt-oss-120b.html | Passport: https://openweightmodels.eu/passport-gpt-oss-120b.json | History: https://openweightmodels.eu/change-gpt-oss-120b.json
+- gpt-oss-20b: https://openweightmodels.eu/model-gpt-oss-20b.html | Passport: https://openweightmodels.eu/passport-gpt-oss-20b.json | History: https://openweightmodels.eu/change-gpt-oss-20b.json
+- Granite 4.2 8B: https://openweightmodels.eu/model-granite-4-2-8b.html | Passport: https://openweightmodels.eu/passport-granite-4-2-8b.json | History: https://openweightmodels.eu/change-granite-4-2-8b.json
+- Kimi K2 Instruct: https://openweightmodels.eu/model-kimi-k2-instruct.html | Passport: https://openweightmodels.eu/passport-kimi-k2-instruct.json | History: https://openweightmodels.eu/change-kimi-k2-instruct.json
+- Llama 4 Scout: https://openweightmodels.eu/model-llama-4-scout.html | Passport: https://openweightmodels.eu/passport-llama-4-scout.json | History: https://openweightmodels.eu/change-llama-4-scout.json
+- Mistral Small 4: https://openweightmodels.eu/model-mistral-small-4.html | Passport: https://openweightmodels.eu/passport-mistral-small-4.json | History: https://openweightmodels.eu/change-mistral-small-4.json
+- OLMo 3 32B: https://openweightmodels.eu/model-olmo-3-32b.html | Passport: https://openweightmodels.eu/passport-olmo-3-32b.json | History: https://openweightmodels.eu/change-olmo-3-32b.json
+- Phi-4: https://openweightmodels.eu/model-phi-4.html | Passport: https://openweightmodels.eu/passport-phi-4.json | History: https://openweightmodels.eu/change-phi-4.json
+- Qwen3-30B-A3B: https://openweightmodels.eu/model-qwen3-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-30b-a3b.json
+- Qwen3-32B: https://openweightmodels.eu/model-qwen3-32b.html | Passport: https://openweightmodels.eu/passport-qwen3-32b.json | History: https://openweightmodels.eu/change-qwen3-32b.json
+- Qwen3-Coder-30B-A3B-Instruct: https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-coder-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-coder-30b-a3b.json
+- Qwen3-VL-30B-A3B-Instruct: https://openweightmodels.eu/model-qwen3-vl-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-vl-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-vl-30b-a3b.json
+- SmolLM3-3B: https://openweightmodels.eu/model-smollm3-3b.html | Passport: https://openweightmodels.eu/passport-smollm3-3b.json | History: https://openweightmodels.eu/change-smollm3-3b.json
+
+Global observed change history: https://openweightmodels.eu/changes.html
+Machine-readable history index: https://openweightmodels.eu/change-history-index.json

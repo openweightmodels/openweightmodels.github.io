@@ -17,7 +17,7 @@
   "architecture": {
     "parameters": "3B",
     "type": "Compact decoder-only language model",
-    "context": "64K trained; extended variants exist",
+    "context": "64K trained / up to 128K with YaRN",
     "modalities": "Text → text"
   },
   "runtimes": [
@@ -27,5 +27,7 @@
   ],
   "hardware_note": "3B scale makes local and edge-style experimentation substantially easier than 30B+ models.",
   "primary_source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-smollm3-3b.html",
+  "change_history": "https://openweightmodels.eu/change-smollm3-3b.json"
 }

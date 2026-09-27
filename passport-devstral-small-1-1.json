@@ -29,5 +29,7 @@
   ],
   "hardware_note": "Publisher says it is light enough for a single RTX 4090 or a Mac with 32 GB RAM.",
   "primary_source": "https://huggingface.co/mistralai/Devstral-Small-2507",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-devstral-small-1-1.html",
+  "change_history": "https://openweightmodels.eu/change-devstral-small-1-1.json"
 }

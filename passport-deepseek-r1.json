@@ -33,5 +33,6 @@
   ],
   "reference_page": "https://openweightmodels.eu/model-deepseek-r1.html",
   "owm_view": "DeepSeek-R1 is strategically important because it proved that a very large reasoning model could be distributed as weights under a permissive license. OWM does not treat it as a “local model” in the casual sense: the full 671B checkpoint is infrastructure-heavy. Its significance is that organizations can still operate that infrastructure themselves or choose among independent providers.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-deepseek-r1.json"
 }

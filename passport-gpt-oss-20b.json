@@ -33,5 +33,6 @@
   ],
   "reference_page": "https://openweightmodels.eu/model-gpt-oss-20b.html",
   "owm_view": "gpt-oss-20b is one of the clearest demonstrations of why open weights matter strategically: it packages a modern reasoning-oriented model into a footprint that OpenAI explicitly targets at systems with 16 GB of memory. OWM sees it as a strong bridge between API-first AI and infrastructure that an individual team can actually control.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-gpt-oss-20b.json"
 }

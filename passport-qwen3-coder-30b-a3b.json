@@ -31,5 +31,6 @@
   "third_party_runtime_evidence": [],
   "reference_page": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html",
   "owm_view": "Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-qwen3-coder-30b-a3b.json"
 }

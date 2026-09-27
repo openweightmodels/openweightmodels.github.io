@@ -15,9 +15,9 @@
     "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
   },
   "architecture": {
-    "parameters": "30B total / ~3B active",
+    "parameters": "30.5B total / 3.3B active",
     "type": "Mixture-of-Experts",
-    "context": "See exact model card",
+    "context": "32,768 native / 131,072 with YaRN",
     "modalities": "Text → text"
   },
   "runtimes": [
@@ -28,5 +28,7 @@
   ],
   "hardware_note": "MoE activation reduces per-token compute, but full checkpoint storage and runtime overhead still matter.",
   "primary_source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-qwen3-30b-a3b.html",
+  "change_history": "https://openweightmodels.eu/change-qwen3-30b-a3b.json"
 }

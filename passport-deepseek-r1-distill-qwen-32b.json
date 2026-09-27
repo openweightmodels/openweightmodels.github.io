@@ -10,8 +10,8 @@
     "gated": false
   },
   "license": {
-    "name": "See exact model repository / upstream terms",
-    "commercial_use": "Verify both the exact DeepSeek repository terms and upstream model-license implications before production use.",
+    "name": "MIT",
+    "commercial_use": "MIT license permits commercial use subject to its terms.",
     "eu_note": "No explicit EU territorial restriction identified in the reviewed model repository."
   },
   "architecture": {
@@ -28,5 +28,7 @@
   ],
   "hardware_note": "Raw-weight estimate is similar to other 32–33B dense models; quantized local deployment is practical on larger consumer systems.",
   "primary_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-deepseek-r1-distill-qwen-32b.html",
+  "change_history": "https://openweightmodels.eu/change-deepseek-r1-distill-qwen-32b.json"
 }

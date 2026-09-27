@@ -29,5 +29,6 @@
   "third_party_runtime_evidence": [],
   "reference_page": "https://openweightmodels.eu/model-mistral-small-4.html",
   "owm_view": "Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path.",
-  "seo_reference_verified_at": "2026-09-27"
+  "seo_reference_verified_at": "2026-09-27",
+  "change_history": "https://openweightmodels.eu/change-mistral-small-4.json"
 }

@@ -128,3 +128,18 @@ The previous clean `/models/<slug>/` structure is retained as a compatibility co
 
 The 10 detailed model reference pages and `models.html` now contain their full CSS inline.
 They no longer depend on `/assets/model-reference.css`, so the pages remain fully styled even if GitHub Pages does not serve the asset path correctly.
+
+
+## v9 — 20 complete model references + observed Change History
+
+All 20 Passport models now have detailed human-readable reference pages.
+
+New change-history layer:
+- `/changes.html`
+- `/change-history-index.json`
+- `/change-watchlist.json`
+- `/change-history.schema.json`
+- `/change-<model>.json`
+- `/OWM-CHANGE-HISTORY.md`
+
+OWM history begins on 2026-09-27. The project intentionally does not reconstruct an unobserved past. Each model starts with a verified baseline; future material license, checkpoint, runtime, hardware, context, provider and access changes can be appended as dated events.

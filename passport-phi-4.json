@@ -28,5 +28,7 @@
   ],
   "hardware_note": "14B-class dense model suitable for memory/compute-constrained and latency-sensitive scenarios.",
   "primary_source": "https://huggingface.co/microsoft/phi-4",
-  "third_party_runtime_evidence": []
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-phi-4.html",
+  "change_history": "https://openweightmodels.eu/change-phi-4.json"
 }
