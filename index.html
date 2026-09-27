@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Open Weight Models — Independent Reference, Registry, Licenses & Deployment</title>
-<meta name="description" content="A source-first reference for open-weight AI models: definitions, model registry, licenses, hardware, quantization, inference, deployment and structured model data.">
+<title>Open Weight Models — Open-Weight AI, Sovereignty, Model Passports & Deployment</title>
+<meta name="description" content="Independent reference for open-weight AI: what open weights are, why they matter for control and sovereignty, 20 Model Passports, licenses, hardware, runtime evidence and deployment data.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <meta name="theme-color" content="#07111f">
 <link rel="canonical" href="https://openweightmodels.eu/">
@@ -121,6 +121,85 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
 
 @media(max-width:980px){.hero-grid,.hf-box{grid-template-columns:1fr}.two,.faq{grid-template-columns:1fr;gap:26px}.section-head{grid-template-columns:1fr;gap:12px;align-items:start}.benefits{grid-template-columns:repeat(2,1fr)}.weight-diagram{grid-template-columns:1fr 1fr}.weight-diagram div:after{display:none}.quick-grid{grid-template-columns:1fr 1fr}.dark-grid,.three,.machine{grid-template-columns:1fr 1fr}.sources{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){:root{--shell:min(100% - 28px,1200px)}.menu{display:block}nav{display:none;position:absolute;left:14px;right:14px;top:65px;flex-direction:column;align-items:stretch;gap:0;padding:9px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:var(--shadow)}nav.open{display:flex}nav a{padding:10px}.hero{padding:70px 0 58px}h1{font-size:clamp(48px,15vw,70px)}section{padding:64px 0}.quick-grid,.benefits,.dark-grid,.three,.machine,.sources,.hf-links,.weight-diagram{grid-template-columns:1fr}.quick-grid div{border-right:0;border-bottom:1px solid var(--line);padding-left:0}.quick-grid div:last-child{border-bottom:0}.registry-tools{grid-template-columns:1fr}.hw-formula{flex-direction:column;align-items:flex-start}.precision{justify-content:flex-start}.foot,.bottom{flex-direction:column;align-items:flex-start}}
+
+/* OWM Model Passport v0.2 */
+.passport-zone{background:linear-gradient(180deg,#07111f,#0b1d31);color:#fff}
+.passport-zone .section-head p{color:#a9bbcd}.passport-zone .kicker{color:var(--cyan)}
+.owm-position{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;margin-bottom:24px}
+.owm-position>div{padding:24px;border:1px solid #29425b;border-radius:16px;background:#0c1a2b}
+.owm-position h3{margin:5px 0 10px;font-size:23px;letter-spacing:-.025em}.owm-position p{margin:0;color:#9eb2c5;font-size:13px}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:9px}.legend div{font-size:11px;color:#a9bbcd}.legend b{color:#fff}
+.pdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px}.green{background:#42d49d}.blue{background:#57b8ff}.amber{background:#ffc15d}.cyan{background:#45e5f4}.purple{background:#b889ff}.grey{background:#718299}
+.passport-tools{display:grid;grid-template-columns:1fr 130px;gap:10px;margin-bottom:14px}.passport-tools input{min-height:44px;border:1px solid #29425b;background:#0c1a2a;color:#fff;border-radius:10px;padding:0 13px;font:inherit}.passport-tools div{display:flex;align-items:center;justify-content:center;border:1px solid #29425b;border-radius:10px;color:#9fb2c5;font-size:11.5px}.passport-tools b{color:#fff;margin-right:5px}
+.passport-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.passport-card{padding:18px;border:1px solid #29425b;border-radius:15px;background:#0c1a2a;display:flex;flex-direction:column;min-height:355px}
+.passport-eyebrow{color:#66dff7;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.11em}.passport-card h3{margin:15px 0 3px;font-size:18px}.passport-dev{color:#8196ac;font-size:11px}
+.badge-row{display:flex;flex-wrap:wrap;gap:5px;margin:11px 0}.source-badge,.tp-badge{display:inline-flex;width:max-content;padding:4px 7px;border-radius:999px;font-size:8.5px;font-weight:900;text-transform:uppercase}.source-badge{background:#12392f;color:#6be4b5}.tp-badge{background:#12384a;color:#72e7f7}
+.passport-meta{margin-top:4px}.passport-meta div{display:flex;justify-content:space-between;gap:9px;border-top:1px solid #1f3348;padding-top:7px;margin-top:7px;font-size:9.7px}.passport-meta span{color:#71869d}.passport-meta b{color:#dce8f5;text-align:right;max-width:65%;word-break:break-word}
+.passport-card details{border-top:1px solid #1f3348;margin-top:9px;padding-top:9px}.passport-card summary{cursor:pointer;font-size:10.5px;font-weight:800;color:#d4e4f3}.passport-card details div{font-size:10px;color:#90a6bb;margin-top:6px}.passport-card>a{font-size:10.5px;font-weight:800;color:#65dff7;text-decoration:none;margin-top:12px}
+.p-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}.p-actions a{padding:9px 12px;border:1px solid #2c465f;border-radius:9px;color:#d4e5f5;text-decoration:none;font-size:10.5px;font-weight:800}
+.runtime-zone{background:#fff}.test-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.test-card{padding:21px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}.test-source{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--blue)}.test-card h3{margin:14px 0 6px;font-size:19px}.test-result{font-size:25px;font-weight:900;letter-spacing:-.03em;margin-bottom:14px}.test-card dl{margin:0}.test-card dl div{border-top:1px solid #e7edf3;padding:8px 0}.test-card dt{font-size:9px;text-transform:uppercase;font-weight:850;color:#8793a1}.test-card dd{margin:2px 0 0;font-size:11px;color:#445263}.test-card p{font-size:10.5px;color:#687687}.test-card a{font-size:10.5px;font-weight:800;color:var(--blue);text-decoration:none}.runtime-note{margin-top:13px;color:#718092;font-size:11px}
+@media(max-width:1100px){.passport-grid,.test-grid{grid-template-columns:repeat(2,1fr)}.owm-position{grid-template-columns:1fr}}
+@media(max-width:650px){.passport-grid,.test-grid,.legend,.passport-tools{grid-template-columns:1fr}}
+
+
+/* OWM editorial reference layer v0.1 */
+.editorial-zone{background:#fff}
+.thesis-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.thesis-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+.thesis-card .n{font-size:10px;font-weight:900;letter-spacing:.1em;color:var(--blue)}
+.thesis-card h3{margin:28px 0 9px;font-size:20px;letter-spacing:-.02em}
+.thesis-card p{margin:0;color:var(--muted);font-size:13px}
+.longform{display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:start}
+.longform aside{position:sticky;top:98px}
+.longform aside h2{font-size:clamp(34px,4vw,50px);line-height:1.05;letter-spacing:-.04em;margin:0}
+.longform article{color:#4e5d6d}
+.longform article p{margin:0 0 18px;font-size:15px}
+.longform article .lead{font-size:21px;line-height:1.5;color:var(--ink)}
+.longform article h3{color:var(--ink);margin:36px 0 10px;font-size:22px}
+.longform article blockquote{margin:26px 0;padding:18px 20px;border-left:4px solid var(--blue);background:#eef4ff;color:#20334c;font-weight:760;border-radius:0 12px 12px 0}
+.definition-box{margin:25px 0;padding:22px;border:1px solid #cddaea;border-radius:15px;background:#f8fbff}
+.definition-box b{display:block;font-size:11px;color:var(--blue);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.definition-box strong{display:block;font-size:19px;line-height:1.45;color:var(--ink)}
+.source-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.source-row a{display:inline-flex;padding:8px 10px;border:1px solid #cfd9e4;border-radius:9px;text-decoration:none;color:var(--blue);font-size:11px;font-weight:800;background:#fff}
+
+.sov-zone{background:linear-gradient(180deg,#07111f,#0c2035);color:#fff}
+.sov-zone .section-head p{color:#a4b6c8}
+.sov-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:32px;align-items:start}
+.sov-position{padding:28px;border:1px solid #29445e;border-radius:18px;background:#0d1e31}
+.sov-position .kicker{color:var(--cyan)}
+.sov-position h3{font-size:29px;line-height:1.1;letter-spacing:-.035em;margin:10px 0 15px}
+.sov-position p{color:#a5b7c9;font-size:13.5px;margin:0 0 14px}
+.sov-lens{display:grid;gap:10px}
+.sov-item{display:grid;grid-template-columns:38px 1fr;gap:13px;padding:17px;border:1px solid #28425b;border-radius:13px;background:#0b1a2a}
+.sov-item .icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#102d47;color:#75e4f8;font-size:11px;font-weight:900}
+.sov-item strong{display:block;font-size:14px}.sov-item span{display:block;color:#91a7bc;font-size:11.5px;margin-top:3px}
+.sov-warning{margin-top:17px;padding:17px;border:1px solid #345069;border-radius:12px;background:#10273d;color:#abc0d2;font-size:12px}
+.sov-warning b{color:#fff}
+
+.not-guaranteed{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.ng-card{padding:22px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.ng-card h3{font-size:17px;margin:0 0 8px}.ng-card p{margin:0;color:var(--muted);font-size:12.5px}
+
+.future-box{padding:34px;border:1px solid #d6e1ec;border-radius:20px;background:linear-gradient(135deg,#f7faff,#fff);box-shadow:var(--shadow)}
+.future-box h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.04em;margin:0 0 15px}
+.future-box p{font-size:15px;color:#506072;margin:0 0 14px}
+.future-box .big-thesis{font-size:21px;line-height:1.5;color:var(--ink);font-weight:780}
+.future-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.future-points div{padding:17px;border:1px solid #dae3ec;border-radius:12px;background:#fff}
+.future-points b{display:block;font-size:13px}.future-points span{display:block;font-size:11.5px;color:#6b7887;margin-top:4px}
+
+@media(max-width:1000px){
+  .thesis-grid{grid-template-columns:1fr 1fr}
+  .longform,.sov-grid{grid-template-columns:1fr}
+  .longform aside{position:static}
+  .not-guaranteed,.future-points{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .thesis-grid,.not-guaranteed,.future-points{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -130,6 +209,9 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
     <a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
     <button class="menu" aria-expanded="false">Menu</button>
     <nav>
+      <a href="#thesis">Why open weights</a>
+      <a href="#passports">Passports</a>
+      <a href="#runtime-evidence">Runtime evidence</a>
       <a href="#definition">Definition</a>
       <a href="#registry">Registry</a>
       <a href="#licenses">Licenses</a>
@@ -147,14 +229,14 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
     <div>
       <div class="kicker">Independent · source-first · machine-readable</div>
       <h1>Open Weight Models</h1>
-      <h2>A practical reference for AI models whose trained weights are available to download and run.</h2>
-      <p>Understand what “open weight” actually means, compare model families and licenses, estimate deployment requirements, and follow primary sources instead of relying on ambiguous labels.</p>
+      <h2>The verification and deployment layer for open-weight AI.</h2>
+      <p>Go beyond model lists: exact checkpoints, license facts, hardware guidance, attributed runtime evidence, dated verification and machine-readable Model Passports.</p>
       <div class="actions">
-        <a class="btn primary" href="#registry">Explore the registry</a>
+        <a class="btn primary" href="#passports">Explore 20 Model Passports</a>
         <a class="btn secondary" href="#definition">Read the definition</a>
         <a class="btn secondary" href="https://huggingface.co/open-weight" target="_blank" rel="noopener">Hugging Face ↗</a>
       </div>
-      <div class="hero-facts"><span><b>25</b> selected families</span><span><b>Primary sources</b> attached</span><span><b>Last verified</b> 26 Sep 2026</span></div>
+      <div class="hero-facts"><span><b>25</b> registry families</span><span><b>20</b> Model Passports</span><span><b>4</b> third-party runtime records</span></div>
     </div>
     <aside class="stack">
       <div class="stack-head"><span class="dot"></span>Open-weight decision stack</div>
@@ -177,9 +259,543 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
 </div>
 
+
+
+<section id="thesis" class="editorial-zone">
+  <div class="shell section-head">
+    <div><div class="kicker">Our thesis</div><h2>Open weights are not a trend label. They are an infrastructure capability.</h2></div>
+    <p>Our position is deliberately practical: the value of open weights is not that every AI workload should be self-hosted. The value is that users and organizations can preserve meaningful choice — over models, infrastructure, data location, adaptation and exit.</p>
+  </div>
+  <div class="shell thesis-grid">
+    <article class="thesis-card"><span class="n">01 · CONTROL</span><h3>Run without asking permission</h3><p>If the exact weights and required software are available under workable terms, an operator can run the model on infrastructure it chooses instead of depending exclusively on one hosted API.</p></article>
+    <article class="thesis-card"><span class="n">02 · PORTABILITY</span><h3>Separate model from provider</h3><p>Open weights can make the model portable across on-premises systems, private clouds, specialized inference providers and future hardware — reducing architectural lock-in.</p></article>
+    <article class="thesis-card"><span class="n">03 · ADAPTATION</span><h3>Make the model yours</h3><p>Fine-tuning, quantization, distillation, serving optimizations and domain-specific safety layers become engineering choices rather than features that must be offered by a single vendor.</p></article>
+    <article class="thesis-card"><span class="n">04 · OPTIONALITY</span><h3>Sovereignty is the ability to choose</h3><p>We define AI sovereignty as practical optionality: the ability to move, operate and adapt critical AI capability without being trapped by one model API, cloud region or commercial contract.</p></article>
+  </div>
+</section>
+
+<section id="open-weight-definition" class="soft">
+  <div class="shell longform">
+    <aside>
+      <div class="kicker">The reference definition</div>
+      <h2>What is an open-weight model?</h2>
+    </aside>
+    <article>
+      <p class="lead">An open-weight model is an AI model whose trained parameters — the learned numerical values commonly called <strong>weights</strong> — are made available so that others can obtain the model and run it outside the original publisher’s hosted API, subject to the model’s license and technical requirements.</p>
+
+      <div class="definition-box">
+        <b>OWM working definition</b>
+        <strong>Open weight describes access to the trained parameters. It does not, by itself, guarantee open-source status, unrestricted commercial rights, training-data transparency, reproducibility, safety, low cost or easy deployment.</strong>
+      </div>
+
+      <h3>What are “weights”?</h3>
+      <p>During training, a neural network adjusts large arrays of numeric parameters. Those parameters encode the learned statistical structure that the model uses at inference time. A checkpoint typically packages these parameters together with configuration files and supporting metadata. When the weights are distributed, another operator can load the trained model into a compatible inference runtime instead of sending every request to the original provider.</p>
+
+      <h3>Open weight is not the same as Open Source AI</h3>
+      <p>This distinction matters. The Open Source Initiative’s Open Source AI Definition is broader than weight availability. It requires freedoms to use, study, modify and share, and it treats data information, code and parameters as part of the preferred form for modification. A model can therefore be open-weight without satisfying that broader definition.</p>
+
+      <p>OpenAI makes a similar practical distinction for gpt-oss: the company uses “open-weight” to describe publicly available trained weights that can be run on infrastructure controlled by the user or by hosting providers. OpenAI specifically highlights choice, control, data residency and customization as reasons for open-weight deployment.</p>
+
+      <blockquote>Our rule: never infer “open source” from “weights downloadable.” Check the exact license, code availability, data information and usage conditions.</blockquote>
+
+      <h3>What changes when the weights are available?</h3>
+      <p>The operator gains a new set of choices. It can decide where inference runs, which runtime serves the model, whether the checkpoint is quantized, whether it is fine-tuned for a domain, which telemetry is retained, and which infrastructure provider is used. Those choices can be strategically important even when the operator ultimately decides that a hosted API is the better option.</p>
+
+      <div class="source-row">
+        <a href="https://opensource.org/ai/open-source-ai-definition" target="_blank" rel="noopener">OSI Open Source AI Definition ↗</a>
+        <a href="https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss" target="_blank" rel="noopener">OpenAI on open weights ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="sovereignty" class="sov-zone">
+  <div class="shell section-head">
+    <div><div class="kicker" style="color:var(--cyan)">OWM Sovereignty Lens</div><h2>Sovereignty is not “run everything yourself.”</h2></div>
+    <p>We use a five-part lens instead of a sovereignty score. The goal is to show where control exists, where dependency remains, and which layer can still become a lock-in point.</p>
+  </div>
+  <div class="shell sov-grid">
+    <article class="sov-position">
+      <div class="kicker">Our position</div>
+      <h3>Sovereignty means credible exit options.</h3>
+      <p>A company is not sovereign merely because it owns a server. It is more sovereign when it can change model, runtime, hardware, provider and deployment location without rebuilding its entire product or surrendering access to its own data.</p>
+      <p>Open weights can strengthen that optionality, but they do not remove dependencies on chips, electricity, cloud capacity, software stacks, data, security expertise or model governance.</p>
+      <div class="sov-warning"><b>Important:</b> open weights are one layer of sovereignty — not sovereignty by themselves.</div>
+    </article>
+    <div class="sov-lens">
+      <div class="sov-item"><span class="icon">W</span><div><strong>Weight control</strong><span>Can you obtain and retain the exact checkpoint independently of a hosted API?</span></div></div>
+      <div class="sov-item"><span class="icon">L</span><div><strong>License freedom</strong><span>Can you use, modify, redistribute or commercialize the model under terms compatible with your deployment?</span></div></div>
+      <div class="sov-item"><span class="icon">D</span><div><strong>Deployment control</strong><span>Can you choose on-prem, private cloud, EU region, edge hardware or a competing inference provider?</span></div></div>
+      <div class="sov-item"><span class="icon">R</span><div><strong>Runtime portability</strong><span>Can the checkpoint move between runtimes such as Transformers, vLLM, SGLang, llama.cpp or other compatible stacks?</span></div></div>
+      <div class="sov-item"><span class="icon">E</span><div><strong>Exit capability</strong><span>If a provider changes pricing, policy or geography, can you leave without losing the model layer of your application?</span></div></div>
+    </div>
+  </div>
+  <div class="shell source-row">
+    <a href="https://digital-strategy.ec.europa.eu/en/library/europes-open-source-ai-landscape-lever-innovation-and-sovereignty" target="_blank" rel="noopener" style="background:#0d1e31;border-color:#29445e;color:#75e4f8">European Commission: Open-Source AI & Sovereignty ↗</a>
+  </div>
+</section>
+
+<section>
+  <div class="shell future-box">
+    <div class="kicker">Why we believe this matters for the future</div>
+    <h2>The future of AI will probably be hybrid. Open weights make the hybrid future less dependent on a single gatekeeper.</h2>
+    <p class="big-thesis">We do not believe open-weight models will replace every proprietary API. We believe they will become a durable strategic layer alongside closed services because they create an alternative path for deployment, adaptation and infrastructure choice.</p>
+    <p>Current infrastructure already points in that direction: Hugging Face aggregates many inference providers behind common interfaces, while open-weight publishers increasingly document self-hosted and multi-runtime deployment. The European Commission has also framed open-source AI as a potential lever for competitiveness and digital sovereignty.</p>
+    <div class="future-points">
+      <div><b>APIs remain valuable</b><span>Managed APIs can be faster to integrate, easier to operate and economically attractive for many workloads.</span></div>
+      <div><b>Open weights preserve an option</b><span>When requirements change, teams can move toward private deployment, alternative providers or specialized hardware.</span></div>
+      <div><b>Agents increase infrastructure stakes</b><span>As AI systems become persistent and deeply integrated into workflows, model control, data location and switching costs become more consequential.</span></div>
+    </div>
+    <div class="source-row">
+      <a href="https://huggingface.co/docs/inference-providers/index" target="_blank" rel="noopener">Hugging Face Inference Providers ↗</a>
+      <a href="https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss" target="_blank" rel="noopener">OpenAI: choice & control ↗</a>
+      <a href="https://digital-strategy.ec.europa.eu/en/library/europes-open-source-ai-landscape-lever-innovation-and-sovereignty" target="_blank" rel="noopener">EU: innovation & sovereignty ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="shell section-head">
+    <div><div class="kicker">What open weights do not guarantee</div><h2>Access to weights solves one problem — not every problem.</h2></div>
+    <p>We want Open Weight Models to be useful precisely because it does not romanticize openness. Each deployment still has legal, operational, security and economic constraints.</p>
+  </div>
+  <div class="shell not-guaranteed">
+    <article class="ng-card"><h3>Not automatically open source</h3><p>Weights may be public while training code, data information or legal freedoms remain limited.</p></article>
+    <article class="ng-card"><h3>Not automatically private</h3><p>Self-hosting can improve data control, but privacy still depends on logs, networking, access controls, telemetry and operating practices.</p></article>
+    <article class="ng-card"><h3>Not automatically cheaper</h3><p>GPU capacity, engineering time, utilization, maintenance and upgrades can make self-hosting more expensive than an API.</p></article>
+    <article class="ng-card"><h3>Not automatically safe</h3><p>Weight access does not provide security hardening, model governance, monitoring or responsible deployment by itself.</p></article>
+    <article class="ng-card"><h3>Not automatically reproducible</h3><p>Final weights alone may reveal little about the exact data, training pipeline and decisions that produced the model.</p></article>
+    <article class="ng-card"><h3>Not automatically portable</h3><p>A checkpoint may require custom kernels, specific runtimes, unusual quantization or hardware that limits practical portability.</p></article>
+  </div>
+</section>
+
+<section id="passports" class="passport-zone">
+  <div class="shell section-head">
+    <div><div class="kicker">OWM Model Passport · v0.2</div><h2>20 models. Evidence before checkmarks.</h2></div>
+    <p>Our position: a useful open-weight record must identify the exact checkpoint, license, deployment facts, evidence source and verification date. We separate source review, estimates, third-party measurements and our own future reproductions.</p>
+  </div>
+
+  <div class="shell owm-position">
+    <div>
+      <div class="kicker">Our editorial position</div>
+      <h3>Know what you can obtain, use and run — and know why we believe it.</h3>
+      <p><strong>Open Weight Models is becoming a verification and deployment layer.</strong> We do not relabel external benchmarks as our own. “OWM runtime tested” will only appear when we physically reproduce the setup ourselves.</p>
+    </div>
+    <div>
+      <div class="kicker">Evidence labels</div>
+      <div class="legend">
+        <div><span class="pdot green"></span><b>Source verified</b><br>Primary source reviewed by OWM.</div>
+        <div><span class="pdot blue"></span><b>Publisher stated</b><br>Explicit publisher guidance.</div>
+        <div><span class="pdot amber"></span><b>OWM estimate</b><br>Transparent calculation, not a guarantee.</div>
+        <div><span class="pdot cyan"></span><b>Third-party measured</b><br>External test with traceable provenance.</div>
+        <div><span class="pdot purple"></span><b>OWM runtime tested</b><br>Reserved for our own reproduced runs.</div>
+        <div><span class="pdot grey"></span><b>Unknown</b><br>No reliable evidence recorded yet.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell passport-tools">
+    <input id="passport-search" type="search" placeholder="Search 20 passports by model, developer, license or architecture…" aria-label="Search model passports">
+    <div><b id="passport-count">20</b> passports</div>
+  </div>
+  <div class="shell passport-grid">
+    
+<article class="passport-card" data-passport-search="gpt-oss-20b openai apache 2.0 + usage policy mixture-of-experts reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>gpt-oss-20b</h3>
+  <div class="passport-dev">OpenAI</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span><span class="tp-badge">3rd-party measured</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>openai/gpt-oss-20b</b></div>
+    <div><span>License</span><b>Apache 2.0 + usage policy</b></div>
+    <div><span>Context</span><b>See current model card</b></div>
+    <div><span>Parameters</span><b>20B class</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, Ollama</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>OpenAI states the 20B model can run on devices with 16 GB memory.</div></details>
+  <details><summary>License / EU facts</summary><div>Broad commercial use under Apache 2.0, subject to the usage policy.<br><br>No explicit EU territorial restriction identified in the reviewed publisher materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/gpt-oss-20b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="gpt-oss-120b openai apache 2.0 + usage policy mixture-of-experts reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>gpt-oss-120b</h3>
+  <div class="passport-dev">OpenAI</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>openai/gpt-oss-120b</b></div>
+    <div><span>License</span><b>Apache 2.0 + usage policy</b></div>
+    <div><span>Context</span><b>See current model card</b></div>
+    <div><span>Parameters</span><b>120B class</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, Ollama</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>OpenAI states the 120B model can run efficiently on a single 80 GB GPU.</div></details>
+  <details><summary>License / EU facts</summary><div>Broad commercial use under Apache 2.0, subject to the usage policy.<br><br>No explicit EU territorial restriction identified in the reviewed publisher materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/gpt-oss-120b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="qwen3-32b qwen / alibaba apache 2.0 dense causal language model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Qwen3-32B</h3>
+  <div class="passport-dev">Qwen / Alibaba</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span><span class="tp-badge">3rd-party measured</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>Qwen/Qwen3-32B</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>Up to 131K in official Qwen3 serving examples</b></div>
+    <div><span>Parameters</span><b>33B reported on model hub</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, SGLang</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Raw-weight estimate: ~66 GB BF16, ~33 GB INT8, ~16.5 GB at 4-bit before runtime/KV-cache overhead.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/qwen3-32b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="qwen3-30b-a3b qwen / alibaba apache 2.0 mixture-of-experts">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Qwen3-30B-A3B</h3>
+  <div class="passport-dev">Qwen / Alibaba</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>Qwen/Qwen3-30B-A3B</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>See exact model card</b></div>
+    <div><span>Parameters</span><b>30B total / ~3B active</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, SGLang</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>MoE activation reduces per-token compute, but full checkpoint storage and runtime overhead still matter.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/qwen3-30b-a3b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="qwen3-coder-30b-a3b-instruct qwen / alibaba apache 2.0 mixture-of-experts coding model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Qwen3-Coder-30B-A3B-Instruct</h3>
+  <div class="passport-dev">Qwen / Alibaba</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>Qwen/Qwen3-Coder-30B-A3B-Instruct</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>256K</b></div>
+    <div><span>Parameters</span><b>30B total / ~3B active</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, SGLang</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Designed for agentic coding; memory depends strongly on quantization and KV-cache length.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/qwen3-coder-30b-a3b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="qwen3-vl-30b-a3b-instruct qwen / alibaba apache 2.0 vision-language moe">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Qwen3-VL-30B-A3B-Instruct</h3>
+  <div class="passport-dev">Qwen / Alibaba</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>Qwen/Qwen3-VL-30B-A3B-Instruct</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>256K native; publisher says expandable to 1M</b></div>
+    <div><span>Parameters</span><b>31B reported on model hub</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, Docker Model Runner</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Multimodal deployments require additional image/video preprocessing memory beyond raw weights.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/qwen3-vl-30b-a3b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="deepseek-r1 deepseek mit mixture-of-experts reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>DeepSeek-R1</h3>
+  <div class="passport-dev">DeepSeek</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span><span class="tp-badge">3rd-party measured</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>deepseek-ai/DeepSeek-R1</b></div>
+    <div><span>License</span><b>MIT</b></div>
+    <div><span>Context</span><b>See current serving configuration</b></div>
+    <div><span>Parameters</span><b>Large DeepSeek-V3-family MoE</b></div>
+    <div><span>Runtimes</span><b>vLLM, SGLang, Transformers</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Very large deployment; multi-GPU/accelerator configurations are normally required.</div></details>
+  <details><summary>License / EU facts</summary><div>Publisher materials support commercial use under the MIT release.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/deepseek-r1.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="deepseek-r1-distill-qwen-32b deepseek see exact model repository / upstream terms dense qwen-derived distilled reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>DeepSeek-R1-Distill-Qwen-32B</h3>
+  <div class="passport-dev">DeepSeek</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>deepseek-ai/DeepSeek-R1-Distill-Qwen-32B</b></div>
+    <div><span>License</span><b>See exact model repository / upstream terms</b></div>
+    <div><span>Context</span><b>131,072</b></div>
+    <div><span>Parameters</span><b>33B reported on model hub</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, Docker Model Runner</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Raw-weight estimate is similar to other 32–33B dense models; quantized local deployment is practical on larger consumer systems.</div></details>
+  <details><summary>License / EU facts</summary><div>Verify both the exact DeepSeek repository terms and upstream model-license implications before production use.<br><br>No explicit EU territorial restriction identified in the reviewed model repository.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/deepseek-r1-distill-qwen-32b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="deepseek-r1-distill-qwen-7b deepseek see exact model repository / upstream terms dense distilled reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>DeepSeek-R1-Distill-Qwen-7B</h3>
+  <div class="passport-dev">DeepSeek</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>deepseek-ai/DeepSeek-R1-Distill-Qwen-7B</b></div>
+    <div><span>License</span><b>See exact model repository / upstream terms</b></div>
+    <div><span>Context</span><b>See exact model card</b></div>
+    <div><span>Parameters</span><b>7B class</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, llama.cpp via quantizations</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Small enough for many single-GPU or quantized local deployments.</div></details>
+  <details><summary>License / EU facts</summary><div>Verify exact repository and upstream terms before commercial deployment.<br><br>No explicit EU territorial restriction identified in the reviewed model repository.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/deepseek-r1-distill-qwen-7b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="mistral small 4 mistral ai apache 2.0 moe — 128 experts, 4 active">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Mistral Small 4</h3>
+  <div class="passport-dev">Mistral AI</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>mistralai/Mistral-Small-4-119B-2603</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>256K</b></div>
+    <div><span>Parameters</span><b>119B total / 6.5B active per token</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Official NVFP4 checkpoint can materially reduce memory versus BF16.</div></details>
+  <details><summary>License / EU facts</summary><div>Apache 2.0 supports commercial and non-commercial use.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/mistral-small-4.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="devstral small 1.1 mistral ai / all hands ai apache 2.0 dense coding model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Devstral Small 1.1</h3>
+  <div class="passport-dev">Mistral AI / All Hands AI</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>mistralai/Devstral-Small-2507</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>128K</b></div>
+    <div><span>Parameters</span><b>24B</b></div>
+    <div><span>Runtimes</span><b>mistral-inference, Transformers, vLLM</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Publisher says it is light enough for a single RTX 4090 or a Mac with 32 GB RAM.</div></details>
+  <details><summary>License / EU facts</summary><div>Apache 2.0 allows commercial and non-commercial use.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/devstral-small-1-1.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="llama 4 scout meta llama 4 community license native multimodal mixture-of-experts">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Llama 4 Scout</h3>
+  <div class="passport-dev">Meta</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>meta-llama/Llama-4-Scout-17B-16E-Instruct</b></div>
+    <div><span>License</span><b>Llama 4 Community License</b></div>
+    <div><span>Context</span><b>10M</b></div>
+    <div><span>Parameters</span><b>17B active / 109B total</b></div>
+    <div><span>Runtimes</span><b>Meta reference implementation, Transformers</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Meta states the Llama 4 series needs at least 4 GPUs for full BF16 inference with the reference implementation.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use is contemplated by the license, subject to its conditions and large-user provisions.<br><br>No explicit EU territorial prohibition identified in the reviewed Llama 4 license.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/llama-4-scout.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="gemma 3 27b it google deepmind gemma terms dense multimodal model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Gemma 3 27B IT</h3>
+  <div class="passport-dev">Google DeepMind</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span><span class="tp-badge">3rd-party measured</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>google/gemma-3-27b-it</b></div>
+    <div><span>License</span><b>Gemma Terms</b></div>
+    <div><span>Context</span><b>128K</b></div>
+    <div><span>Parameters</span><b>27B</b></div>
+    <div><span>Runtimes</span><b>Transformers, llama.cpp via GGUF, Ollama</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Google positions the 27B model as runnable on a single GPU/TPU host; quantization materially changes memory requirements.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial deployment depends on the Gemma Terms and applicable use restrictions; verify exact terms.<br><br>No simple Apache/MIT-style conclusion; review Gemma Terms for the deployment context.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/gemma-3-27b-it.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="phi-4 microsoft mit dense decoder-only transformer">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Phi-4</h3>
+  <div class="passport-dev">Microsoft</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>microsoft/phi-4</b></div>
+    <div><span>License</span><b>MIT</b></div>
+    <div><span>Context</span><b>16K</b></div>
+    <div><span>Parameters</span><b>14B/15B class</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, SGLang</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>14B-class dense model suitable for memory/compute-constrained and latency-sensitive scenarios.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under MIT.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/phi-4.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="granite 4.2 8b ibm apache 2.0 dense granite language model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Granite 4.2 8B</h3>
+  <div class="passport-dev">IBM</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>ibm-granite/granite-4.2-8b</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>131,072</b></div>
+    <div><span>Parameters</span><b>8B-class / ~9B reported on hub</b></div>
+    <div><span>Runtimes</span><b>Transformers, SGLang, llama.cpp via official GGUF</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>IBM publishes BF16, FP8, MXFP4/NVFP4 and GGUF variants, giving several deployment paths.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/granite-4-2-8b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="kimi k2 instruct moonshot ai modified mit mixture-of-experts">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Kimi K2 Instruct</h3>
+  <div class="passport-dev">Moonshot AI</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>moonshotai/Kimi-K2-Instruct</b></div>
+    <div><span>License</span><b>Modified MIT</b></div>
+    <div><span>Context</span><b>128K</b></div>
+    <div><span>Parameters</span><b>1T total / 32B active</b></div>
+    <div><span>Runtimes</span><b>Transformers, provider runtimes / custom code</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Huge total checkpoint size despite 32B active parameters per token; storage and distributed serving remain substantial.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use depends on the exact modified-MIT terms; do not treat it as identical to standard MIT.<br><br>No explicit EU territorial restriction identified in the reviewed model page; verify the full modified license.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/kimi-k2-instruct.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="glm-4.5 z.ai mit mixture-of-experts hybrid reasoning model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>GLM-4.5</h3>
+  <div class="passport-dev">Z.ai</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>zai-org/GLM-4.5</b></div>
+    <div><span>License</span><b>MIT</b></div>
+    <div><span>Context</span><b>See current model card</b></div>
+    <div><span>Parameters</span><b>355B total / 32B active</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM, SGLang</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>717 GB repository size is reported on the hub for the main checkpoint; distributed inference is the realistic path.</div></details>
+  <details><summary>License / EU facts</summary><div>Publisher states MIT release can be used commercially and for secondary development.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/glm-4-5.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="olmo 3 32b ai2 apache 2.0 autoregressive transformer">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>OLMo 3 32B</h3>
+  <div class="passport-dev">Ai2</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>allenai/Olmo-3-1125-32B</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>65,536</b></div>
+    <div><span>Parameters</span><b>32B</b></div>
+    <div><span>Runtimes</span><b>Transformers, vLLM</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Ai2 releases code, checkpoints and training details, making this one of the more transparent entries in the set.</div></details>
+  <details><summary>License / EU facts</summary><div>Model and code are released under Apache 2.0; Ai2 also provides responsible-use guidance.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/olmo-3-32b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="smollm3-3b hugging face apache 2.0 compact decoder-only language model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>SmolLM3-3B</h3>
+  <div class="passport-dev">Hugging Face</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>HuggingFaceTB/SmolLM3-3B</b></div>
+    <div><span>License</span><b>Apache 2.0</b></div>
+    <div><span>Context</span><b>64K trained; extended variants exist</b></div>
+    <div><span>Parameters</span><b>3B</b></div>
+    <div><span>Runtimes</span><b>Transformers, llama.cpp via GGUF, MLX community variants</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>3B scale makes local and edge-style experimentation substantially easier than 30B+ models.</div></details>
+  <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/smollm3-3b.json">Machine-readable passport →</a>
+</article>
+<article class="passport-card" data-passport-search="command a cohere labs cc by-nc 4.0 + cohere labs aup dense enterprise language model">
+  <div class="passport-eyebrow">OWM Passport v0.2</div>
+  <h3>Command A</h3>
+  <div class="passport-dev">Cohere Labs</div>
+  <div class="badge-row"><span class="source-badge">Source verified</span></div>
+  <div class="passport-meta">
+    <div><span>Model ID</span><b>CohereLabs/c4ai-command-a-03-2025</b></div>
+    <div><span>License</span><b>CC BY-NC 4.0 + Cohere Labs AUP</b></div>
+    <div><span>Context</span><b>256K (HF config may use 128K)</b></div>
+    <div><span>Parameters</span><b>111B</b></div>
+    <div><span>Runtimes</span><b>Transformers</b></div>
+  </div>
+  <details><summary>Deployment notes</summary><div>Publisher states the model can be deployed on two GPUs; exact GPU class/configuration must be checked for the target setup.</div></details>
+  <details><summary>License / EU facts</summary><div>Non-commercial license: do not classify as broadly commercially deployable.<br><br>Territorial use is not the main restriction here; the non-commercial license is the key deployment constraint.<br><br><em>Informational, not legal advice.</em></div></details>
+  <a href="/data/passports/command-a.json">Machine-readable passport →</a>
+</article>
+  </div>
+  <div class="shell p-actions">
+    <a href="/data/passports/index.json">Passport index JSON →</a>
+    <a href="/data/runtime-evidence.json">Runtime evidence JSON →</a>
+    <a href="/data/owm-passport.schema.json">JSON Schema →</a>
+    <a href="/data/changes.json">Change history →</a>
+    <a href="https://github.com/openweightmodels/openweightmodels.github.io/blob/main/OWM-PASSPORT-SPEC.md" target="_blank" rel="noopener">Specification →</a>
+  </div>
+</section>
+
+<section id="runtime-evidence" class="runtime-zone">
+  <div class="shell section-head">
+    <div><div class="kicker">Independent & third-party runtime evidence</div><h2>Measured elsewhere. Attributed here.</h2></div>
+    <p>These are externally measured results, not OWM tests. We keep the hardware, runtime and workload visible because tokens-per-second figures without configuration are misleading.</p>
+  </div>
+  <div class="shell test-grid">
+    
+<article class="test-card">
+  <div class="test-source">Signed community run · llm-speed</div>
+  <h3>gpt-oss-20b</h3>
+  <div class="test-result">69.42 tok/s</div>
+  <dl>
+    <div><dt>Hardware</dt><dd>RTX 5090 (32 GB) + Ryzen 7 9850X3D</dd></div>
+    <div><dt>Runtime</dt><dd>llama.cpp</dd></div>
+    <div><dt>Workload</dt><dd>chat-short</dd></div>
+    <div><dt>TTFT</dt><dd>333 ms</dd></div>
+  </dl>
+  <p>Single signed third-party run. Not an OWM reproduction and not a universal speed guarantee.</p>
+  <a href="https://llm-speed.com/r/r_r9h57uts9lr" target="_blank" rel="noopener">Open source benchmark ↗</a>
+</article>
+<article class="test-card">
+  <div class="test-source">Signed community run · llm-speed</div>
+  <h3>Qwen3-32B</h3>
+  <div class="test-result">69.45 tok/s</div>
+  <dl>
+    <div><dt>Hardware</dt><dd>RTX 5090 (32 GB) + Ryzen 7 9850X3D</dd></div>
+    <div><dt>Runtime</dt><dd>llama.cpp</dd></div>
+    <div><dt>Workload</dt><dd>chat-short, 4-bit model page</dd></div>
+    <div><dt>TTFT</dt><dd>327 ms on cited run</dd></div>
+  </dl>
+  <p>Contributor-submitted signed benchmark. Configuration-specific; not an OWM reproduction.</p>
+  <a href="https://llm-speed.com/m/qwen3-32b" target="_blank" rel="noopener">Open source benchmark ↗</a>
+</article>
+<article class="test-card">
+  <div class="test-source">Signed community run · llm-speed</div>
+  <h3>Gemma 3 27B IT</h3>
+  <div class="test-result">46.95 tok/s short · 45.25 tok/s long</div>
+  <dl>
+    <div><dt>Hardware</dt><dd>RTX 4090 (24 GB) + AMD EPYC host</dd></div>
+    <div><dt>Runtime</dt><dd>Ollama 0.31.1</dd></div>
+    <div><dt>Workload</dt><dd>Q4_K_M; short chat / long chat</dd></div>
+    <div><dt>TTFT</dt><dd>817 ms short · 1,998 ms long</dd></div>
+  </dl>
+  <p>One recorded submission per variant; useful observation, not a repeat-average or OWM reproduction.</p>
+  <a href="https://llm-speed.com/blog/gemma-3-speed-rtx-4090" target="_blank" rel="noopener">Open source benchmark ↗</a>
+</article>
+<article class="test-card">
+  <div class="test-source">Independent lab measurement · SemiAnalysis InferenceX</div>
+  <h3>DeepSeek-R1</h3>
+  <div class="test-result">74.2 tok/s/GPU at 50 tok/s per user</div>
+  <dl>
+    <div><dt>Hardware</dt><dd>NVIDIA H100</dd></div>
+    <div><dt>Runtime</dt><dd>Dynamo SGLang</dd></div>
+    <div><dt>Workload</dt><dd>FP8; single-turn chat, 8K input / 1K output</dd></div>
+    <div><dt>TTFT</dt><dd>Benchmark page reports latency frontier across 72 configs</dd></div>
+  </dl>
+  <p>Measured by SemiAnalysis InferenceX, not by OWM. Throughput depends on interactivity target and configuration.</p>
+  <a href="https://inferencex.semianalysis.com/run/deepseek-r1-on-h100" target="_blank" rel="noopener">Open source benchmark ↗</a>
+</article>
+  </div>
+  <div class="shell runtime-note">We intentionally use two provenance classes here: an independent lab measurement (SemiAnalysis InferenceX) and signed community measurements (llm-speed). Neither class is presented as an OWM reproduction.</div>
+</section>
+
 <section id="definition">
   <div class="shell two">
-    <div><div class="kicker">Definition</div><h2>What is an open-weight model?</h2></div>
+    <div><div class="kicker">Technical background</div><h2>How weights, licenses and deployment fit together</h2></div>
     <div class="article">
       <p class="lead"><strong>An open-weight model is an AI model whose trained parameters — the learned numerical values commonly called weights — are made available so that others can obtain and run the model outside the publisher’s hosted API.</strong></p>
       <p>The term focuses on <em>access to the trained parameters</em>. It does not, by itself, say that the training dataset is public, that the complete training code is available, or that every use is permitted. Those questions must be answered separately from the model card, license and accompanying policies.</p>
@@ -580,5 +1196,24 @@ document.addEventListener("DOMContentLoaded",()=>{
   search?.addEventListener("input",update);license?.addEventListener("change",update);
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const q=document.getElementById("passport-search");
+  const cards=[...document.querySelectorAll(".passport-card")];
+  const count=document.getElementById("passport-count");
+  function filterPassports(){
+    const term=(q?.value||"").toLowerCase().trim();
+    let n=0;
+    cards.forEach(c=>{
+      const ok=!term||(c.dataset.passportSearch||"").includes(term);
+      c.hidden=!ok;if(ok)n++;
+    });
+    if(count)count.textContent=n;
+  }
+  q?.addEventListener("input",filterPassports);
+});
+</script>
+
 </body>
 </html>

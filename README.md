@@ -55,3 +55,36 @@ This is **not** an exhaustive leaderboard. Every entry should remain tied to a p
 ---
 
 Open Weight Models is an independent reference project and is not affiliated with the model developers listed on the site.
+
+
+## OWM Model Passport v0.2
+
+The Passport layer now contains **20 exact model/checkpoint records**.
+
+A new evidence class, **third-party measured**, records externally measured runtime results without presenting them as Open Weight Models tests. The first four records include llm-speed signed community runs and a SemiAnalysis InferenceX lab measurement.
+
+Machine-readable resources:
+
+- `/data/passports/index.json`
+- `/data/passports/*.json`
+- `/data/runtime-evidence.json`
+- `/data/owm-passport.schema.json`
+- `/data/changes.json`
+- `/OWM-PASSPORT-SPEC.md`
+
+
+## Editorial position & sovereignty
+
+The public reference now includes a long-form editorial position on:
+
+- what an open-weight model is
+- why open weight is not the same as Open Source AI
+- why OWM views open weights as strategic infrastructure optionality
+- the OWM Sovereignty Lens
+- what open weights do **not** guarantee
+
+Files:
+- `OWM-EDITORIAL-POSITION.md`
+- `data/sovereignty-lens.json`
+
+The project deliberately takes a nuanced position: **the future is likely hybrid**, with proprietary APIs and open-weight deployment coexisting.

@@ -32,3 +32,24 @@ Last reviewed: 2026-09-26
 ## Registry scope
 
 The current registry contains 25 selected open-weight model families. It is a curated reference, not an exhaustive leaderboard.
+
+
+## Model Passports v0.2
+
+Passport count: 20
+Passport index: https://openweightmodels.eu/data/passports/index.json
+Third-party runtime evidence: https://openweightmodels.eu/data/runtime-evidence.json
+Schema: https://openweightmodels.eu/data/owm-passport.schema.json
+
+“Third-party measured” does not mean “OWM runtime tested.” OWM runtime-tested status is reserved for configurations reproduced by the project itself.
+
+
+## Editorial thesis
+
+OWM view: open weights are an infrastructure capability that can increase operator optionality across model access, licensing, deployment location, runtime choice and provider exit.
+
+Reference: https://openweightmodels.eu/#thesis
+Sovereignty Lens: https://openweightmodels.eu/#sovereignty
+Machine-readable lens: https://openweightmodels.eu/data/sovereignty-lens.json
+
+OWM explicitly does not treat open-weight as automatically equivalent to Open Source AI, lower cost, privacy, safety or easy portability.
