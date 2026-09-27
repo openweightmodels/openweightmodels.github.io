@@ -1,0 +1,29 @@
+{
+  "id": "command-a",
+  "name": "Command A",
+  "developer": "Cohere Labs",
+  "exact_model_id": "CohereLabs/c4ai-command-a-03-2025",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "CC BY-NC 4.0 + Cohere Labs AUP",
+    "commercial_use": "Non-commercial license: do not classify as broadly commercially deployable.",
+    "eu_note": "Territorial use is not the main restriction here; the non-commercial license is the key deployment constraint."
+  },
+  "architecture": {
+    "parameters": "111B",
+    "type": "Dense enterprise language model",
+    "context": "256K (HF config may use 128K)",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers"
+  ],
+  "hardware_note": "Publisher states the model can be deployed on two GPUs; exact GPU class/configuration must be checked for the target setup.",
+  "primary_source": "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025",
+  "third_party_runtime_evidence": []
+}

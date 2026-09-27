@@ -1,0 +1,30 @@
+{
+  "id": "kimi-k2-instruct",
+  "name": "Kimi K2 Instruct",
+  "developer": "Moonshot AI",
+  "exact_model_id": "moonshotai/Kimi-K2-Instruct",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Modified MIT",
+    "commercial_use": "Commercial use depends on the exact modified-MIT terms; do not treat it as identical to standard MIT.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model page; verify the full modified license."
+  },
+  "architecture": {
+    "parameters": "1T total / 32B active",
+    "type": "Mixture-of-Experts",
+    "context": "128K",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "provider runtimes / custom code"
+  ],
+  "hardware_note": "Huge total checkpoint size despite 32B active parameters per token; storage and distributed serving remain substantial.",
+  "primary_source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+  "third_party_runtime_evidence": []
+}

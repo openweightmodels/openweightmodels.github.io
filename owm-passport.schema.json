@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openweightmodels.eu/data/owm-passport.schema.json",
+  "title": "OWM Model Passport v0.2",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "developer",
+    "exact_model_id",
+    "verified_at",
+    "access",
+    "license",
+    "architecture",
+    "runtimes",
+    "primary_source"
+  ]
+}

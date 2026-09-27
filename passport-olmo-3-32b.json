@@ -1,0 +1,33 @@
+{
+  "id": "olmo-3-32b",
+  "name": "OLMo 3 32B",
+  "developer": "Ai2",
+  "exact_model_id": "allenai/Olmo-3-1125-32B",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Model and code are released under Apache 2.0; Ai2 also provides responsible-use guidance.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model materials."
+  },
+  "architecture": {
+    "parameters": "32B",
+    "type": "Autoregressive Transformer",
+    "context": "65,536",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM"
+  ],
+  "hardware_note": "Ai2 releases code, checkpoints and training details, making this one of the more transparent entries in the set.",
+  "primary_source": "https://huggingface.co/allenai/Olmo-3-1125-32B",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-olmo-3-32b.html",
+  "owm_view": "OLMo 3 32B matters to OWM for a different reason than most commercial open-weight releases: Ai2 emphasizes not only weight access but also code, checkpoints and training details. That makes OLMo particularly valuable when the goal is scientific inspectability and reproducibility rather than only self-hosted inference.",
+  "seo_reference_verified_at": "2026-09-27"
+}

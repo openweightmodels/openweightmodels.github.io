@@ -1,0 +1,31 @@
+{
+  "id": "deepseek-r1-distill-qwen-7b",
+  "name": "DeepSeek-R1-Distill-Qwen-7B",
+  "developer": "DeepSeek",
+  "exact_model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "See exact model repository / upstream terms",
+    "commercial_use": "Verify exact repository and upstream terms before commercial deployment.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model repository."
+  },
+  "architecture": {
+    "parameters": "7B class",
+    "type": "Dense distilled reasoning model",
+    "context": "See exact model card",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "llama.cpp via quantizations"
+  ],
+  "hardware_note": "Small enough for many single-GPU or quantized local deployments.",
+  "primary_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "third_party_runtime_evidence": []
+}

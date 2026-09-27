@@ -1,0 +1,35 @@
+{
+  "id": "qwen3-coder-30b-a3b",
+  "name": "Qwen3-Coder-30B-A3B-Instruct",
+  "developer": "Qwen / Alibaba",
+  "exact_model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "30B total / ~3B active",
+    "type": "Mixture-of-Experts coding model",
+    "context": "256K",
+    "modalities": "Text → text/code"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "SGLang",
+    "llama.cpp"
+  ],
+  "hardware_note": "Designed for agentic coding; memory depends strongly on quantization and KV-cache length.",
+  "primary_source": "https://github.com/QwenLM/Qwen3-Coder",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html",
+  "owm_view": "Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents.",
+  "seo_reference_verified_at": "2026-09-27"
+}

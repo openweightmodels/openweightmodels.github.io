@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Llama 4 Scout: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="Llama 4 Scout reference: 109B/17B MoE, 10M context, multimodal input, Llama 4 license, hardware requirements, sovereignty and OWM analysis.">
+<meta name="keywords" content="Llama 4 Scout, Llama 4 Scout hardware, Llama 4 license, Llama 4 10M context, Llama 4 open weight, Llama 4 self host">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-llama-4-scout.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="Llama 4 Scout: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="Llama 4 Scout reference: 109B/17B MoE, 10M context, multimodal input, Llama 4 license, hardware requirements, sovereignty and OWM analysis.">
+<meta property="og:url" content="https://openweightmodels.eu/model-llama-4-scout.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Llama 4 Scout: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="Llama 4 Scout reference: 109B/17B MoE, 10M context, multimodal input, Llama 4 license, hardware requirements, sovereignty and OWM analysis.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-llama-4-scout.html#article", "headline": "Llama 4 Scout: Open-Weight Model Reference, License, Hardware and Deployment", "description": "Llama 4 Scout reference: 109B/17B MoE, 10M context, multimodal input, Llama 4 license, hardware requirements, sovereignty and OWM analysis.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-llama-4-scout.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["Llama 4 Scout", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "Llama 4 Scout, Llama 4 Scout hardware, Llama 4 license, Llama 4 10M context, Llama 4 open weight, Llama 4 self host"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "Llama 4 Scout", "item": "https://openweightmodels.eu/model-llama-4-scout.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How large is Llama 4 Scout?", "acceptedAnswer": {"@type": "Answer", "text": "Meta documents 109B total parameters with 17B activated parameters."}}, {"@type": "Question", "name": "What is the context window of Llama 4 Scout?", "acceptedAnswer": {"@type": "Answer", "text": "Meta lists a 10M-token context window for Scout."}}, {"@type": "Question", "name": "Is Llama 4 Scout Apache 2.0?", "acceptedAnswer": {"@type": "Answer", "text": "No. It uses Meta’s Llama 4 Community License."}}, {"@type": "Question", "name": "Can Llama 4 Scout be self-hosted?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, subject to the license and substantial hardware requirements. Meta states at least four GPUs for full BF16 reference inference."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / Llama 4 Scout</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>Llama 4 Scout</h1>
+<p class="sub">Meta · Native multimodal Mixture-of-Experts · Llama 4 Community License</p>
+<p class="answer"><strong>Direct answer:</strong> Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.</p>
+<div class="factstrip">
+<span class="fact"><b>109B total · 17B active</b></span>
+<span class="fact"><b>10M</b> context</span>
+<span class="fact"><b>Llama 4 Community License</b></span>
+<span class="fact">Image + text → text/code</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>Llama 4 Scout: what matters beyond the model card</h2>
+<p class="lead">Meta documents 109B total parameters with 17B activated, image and text input and a 10M context window. That context scale creates genuinely different system-design possibilities, but it also magnifies memory and serving complexity. The Llama ecosystem is broad, yet sovereignty analysis has to include the license obligations and not just the availability of weights.</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>Meta</b></div><div><span>Exact model ID</span><b>meta-llama/Llama-4-Scout-17B-16E-Instruct</b></div><div><span>Parameters</span><b>109B total · 17B active</b></div><div><span>Context</span><b>10M</b></div><div><span>Architecture</span><b>Native multimodal Mixture-of-Experts</b></div><div><span>Modalities</span><b>Image + text → text/code</b></div><div><span>License</span><b>Llama 4 Community License</b></div><div><span>Access</span><b>License acceptance / gated distribution</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> Meta reference implementation · Transformers. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>Meta documents 109B total parameters with 17B activated, image and text input and a 10M context window. That context scale creates genuinely different system-design possibilities, but it also magnifies memory and serving complexity. The Llama ecosystem is broad, yet sovereignty analysis has to include the license obligations and not just the availability of weights.</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>Meta states that the Llama 4 series requires at least four GPUs for full BF16 inference with the reference implementation. Quantized or alternative runtime paths may change that, but OWM does not substitute community conversions for the publisher’s documented full-precision guidance.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>The Llama 4 Community License grants broad rights subject to conditions. Redistribution includes notice and “Built with Llama” obligations, and additional terms apply for very large services above the license’s stated monthly-active-user threshold. That makes the license a first-class deployment fact, not a footnote.</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong but gated</div><div class="desc">The checkpoint can be obtained and retained after accepting the license.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Conditional</div><div class="desc">The custom community license includes redistribution and large-user conditions.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong</div><div class="desc">Once obtained, the model can be self-hosted.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Moderate to strong</div><div class="desc">The ecosystem is broad, although exact Llama 4 support varies by runtime.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong at provider layer</div><div class="desc">Infrastructure providers can be changed while retaining the checkpoint, subject to license compliance.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>OWM currently records publisher and source-verified runtime information for Scout. Independent configuration-specific performance data should be added without converting it into an OWM-tested claim.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where Llama 4 Scout fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Long-context research and applications where 10M-token capability is genuinely useful.</li><li>Multimodal systems that benefit from Meta’s Llama ecosystem.</li><li>Organizations comfortable reviewing and complying with the Llama 4 Community License.</li><li>Infrastructure teams with multi-GPU capacity.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Teams requiring a simple Apache/MIT licensing posture.</li><li>Single-consumer-GPU full-precision deployment.</li><li>Applications treating maximum context as free: extreme context lengths can dominate memory and latency.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>How large is Llama 4 Scout?</summary><p>Meta documents 109B total parameters with 17B activated parameters.</p></details><details><summary>What is the context window of Llama 4 Scout?</summary><p>Meta lists a 10M-token context window for Scout.</p></details><details><summary>Is Llama 4 Scout Apache 2.0?</summary><p>No. It uses Meta’s Llama 4 Community License.</p></details><details><summary>Can Llama 4 Scout be self-hosted?</summary><p>Yes, subject to the license and substantial hardware requirements. Meta states at least four GPUs for full BF16 reference inference.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Primary model source — Meta ↗</a><a href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-llama-4-scout.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-olmo-3-32b.html"><b>OLMo 3 32B</b><span>Apache 2.0 · 32B</span></a><a href="/model-glm-4-5.html"><b>GLM-4.5</b><span>MIT · 355B total · 32B active</span></a><a href="/model-gpt-oss-20b.html"><b>gpt-oss-20b</b><span>Apache 2.0 + gpt-oss usage policy · 21B total · 3.6B active/token</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

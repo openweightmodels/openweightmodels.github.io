@@ -1,0 +1,33 @@
+{
+  "id": "mistral-small-4",
+  "name": "Mistral Small 4",
+  "developer": "Mistral AI",
+  "exact_model_id": "mistralai/Mistral-Small-4-119B-2603",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Apache 2.0 supports commercial and non-commercial use.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model materials."
+  },
+  "architecture": {
+    "parameters": "119B total / 6.5B active per token",
+    "type": "MoE — 128 experts, 4 active",
+    "context": "256K",
+    "modalities": "Text + image → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM"
+  ],
+  "hardware_note": "Official NVFP4 checkpoint can materially reduce memory versus BF16.",
+  "primary_source": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-mistral-small-4.html",
+  "owm_view": "Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path.",
+  "seo_reference_verified_at": "2026-09-27"
+}

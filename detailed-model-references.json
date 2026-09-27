@@ -1,0 +1,118 @@
+{
+  "name": "OWM Detailed Model References",
+  "version": "0.1",
+  "verified_at": "2026-09-27",
+  "count": 10,
+  "models": [
+    {
+      "name": "gpt-oss-20b",
+      "developer": "OpenAI",
+      "model_id": "openai/gpt-oss-20b",
+      "reference_url": "https://openweightmodels.eu/model-gpt-oss-20b.html",
+      "passport_url": "https://openweightmodels.eu/passport-gpt-oss-20b.json",
+      "license": "Apache 2.0 + gpt-oss usage policy",
+      "parameters": "21B total · 3.6B active/token",
+      "context": "128K native",
+      "owm_view": "gpt-oss-20b is one of the clearest demonstrations of why open weights matter strategically: it packages a modern reasoning-oriented model into a footprint that OpenAI explicitly targets at systems with 16 GB of memory. OWM sees it as a strong bridge between API-first AI and infrastructure that an individual team can actually control."
+    },
+    {
+      "name": "gpt-oss-120b",
+      "developer": "OpenAI",
+      "model_id": "openai/gpt-oss-120b",
+      "reference_url": "https://openweightmodels.eu/model-gpt-oss-120b.html",
+      "passport_url": "https://openweightmodels.eu/passport-gpt-oss-120b.json",
+      "license": "Apache 2.0 + gpt-oss usage policy",
+      "parameters": "117B total · 5.1B active/token",
+      "context": "128K native",
+      "owm_view": "gpt-oss-120b is the more infrastructure-oriented member of OpenAI’s open-weight family. OWM sees it as strategically important because it brings a much larger reasoning model into a deployment envelope that OpenAI says can fit on a single 80 GB GPU, while still preserving the operator’s ability to choose the serving stack."
+    },
+    {
+      "name": "Qwen3-32B",
+      "developer": "Qwen / Alibaba",
+      "model_id": "Qwen/Qwen3-32B",
+      "reference_url": "https://openweightmodels.eu/model-qwen3-32b.html",
+      "passport_url": "https://openweightmodels.eu/passport-qwen3-32b.json",
+      "license": "Apache 2.0",
+      "parameters": "32.8B total",
+      "context": "32,768 native · 131,072 with YaRN",
+      "owm_view": "Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference."
+    },
+    {
+      "name": "Qwen3-Coder-30B-A3B-Instruct",
+      "developer": "Qwen / Alibaba",
+      "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "reference_url": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html",
+      "passport_url": "https://openweightmodels.eu/passport-qwen3-coder-30b-a3b.json",
+      "license": "Apache 2.0",
+      "parameters": "30B total · ~3B active",
+      "context": "256K native · up to 1M with YaRN",
+      "owm_view": "Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents."
+    },
+    {
+      "name": "DeepSeek-R1",
+      "developer": "DeepSeek",
+      "model_id": "deepseek-ai/DeepSeek-R1",
+      "reference_url": "https://openweightmodels.eu/model-deepseek-r1.html",
+      "passport_url": "https://openweightmodels.eu/passport-deepseek-r1.json",
+      "license": "MIT",
+      "parameters": "671B total · 37B active",
+      "context": "128K",
+      "owm_view": "DeepSeek-R1 is strategically important because it proved that a very large reasoning model could be distributed as weights under a permissive license. OWM does not treat it as a “local model” in the casual sense: the full 671B checkpoint is infrastructure-heavy. Its significance is that organizations can still operate that infrastructure themselves or choose among independent providers."
+    },
+    {
+      "name": "Gemma 3 27B IT",
+      "developer": "Google DeepMind",
+      "model_id": "google/gemma-3-27b-it",
+      "reference_url": "https://openweightmodels.eu/model-gemma-3-27b-it.html",
+      "passport_url": "https://openweightmodels.eu/passport-gemma-3-27b-it.json",
+      "license": "Gemma Terms of Use",
+      "parameters": "27B class",
+      "context": "128K",
+      "owm_view": "Gemma 3 27B is interesting because it brings native image understanding, a 128K context window and a relatively workstation-friendly parameter count into the same open-weight package. OWM also considers it a useful reminder that “open weights” and “standard open-source license” are different concepts: Gemma uses its own Terms of Use rather than Apache or MIT."
+    },
+    {
+      "name": "Mistral Small 4",
+      "developer": "Mistral AI",
+      "model_id": "mistralai/Mistral-Small-4-119B-2603",
+      "reference_url": "https://openweightmodels.eu/model-mistral-small-4.html",
+      "passport_url": "https://openweightmodels.eu/passport-mistral-small-4.json",
+      "license": "Apache 2.0",
+      "parameters": "119B total · 6.5B active/token",
+      "context": "256K",
+      "owm_view": "Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path."
+    },
+    {
+      "name": "Llama 4 Scout",
+      "developer": "Meta",
+      "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "reference_url": "https://openweightmodels.eu/model-llama-4-scout.html",
+      "passport_url": "https://openweightmodels.eu/passport-llama-4-scout.json",
+      "license": "Llama 4 Community License",
+      "parameters": "109B total · 17B active",
+      "context": "10M",
+      "owm_view": "Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives."
+    },
+    {
+      "name": "OLMo 3 32B",
+      "developer": "Ai2",
+      "model_id": "allenai/Olmo-3-1125-32B",
+      "reference_url": "https://openweightmodels.eu/model-olmo-3-32b.html",
+      "passport_url": "https://openweightmodels.eu/passport-olmo-3-32b.json",
+      "license": "Apache 2.0",
+      "parameters": "32B",
+      "context": "65,536",
+      "owm_view": "OLMo 3 32B matters to OWM for a different reason than most commercial open-weight releases: Ai2 emphasizes not only weight access but also code, checkpoints and training details. That makes OLMo particularly valuable when the goal is scientific inspectability and reproducibility rather than only self-hosted inference."
+    },
+    {
+      "name": "GLM-4.5",
+      "developer": "Z.ai",
+      "model_id": "zai-org/GLM-4.5",
+      "reference_url": "https://openweightmodels.eu/model-glm-4-5.html",
+      "passport_url": "https://openweightmodels.eu/passport-glm-4-5.json",
+      "license": "MIT",
+      "parameters": "355B total · 32B active",
+      "context": "131,072",
+      "owm_view": "GLM-4.5 is a strong example of open-weight competition moving into agentic infrastructure. Its 355B total / 32B active architecture is far beyond workstation scale, but the MIT license and support in Transformers, vLLM and SGLang make the model layer comparatively portable for organizations already operating distributed inference."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "devstral-small-1-1",
+  "name": "Devstral Small 1.1",
+  "developer": "Mistral AI / All Hands AI",
+  "exact_model_id": "mistralai/Devstral-Small-2507",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Apache 2.0 allows commercial and non-commercial use.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model materials."
+  },
+  "architecture": {
+    "parameters": "24B",
+    "type": "Dense coding model",
+    "context": "128K",
+    "modalities": "Text → text/code"
+  },
+  "runtimes": [
+    "mistral-inference",
+    "Transformers",
+    "vLLM",
+    "LM Studio",
+    "llama.cpp"
+  ],
+  "hardware_note": "Publisher says it is light enough for a single RTX 4090 or a Mac with 32 GB RAM.",
+  "primary_source": "https://huggingface.co/mistralai/Devstral-Small-2507",
+  "third_party_runtime_evidence": []
+}

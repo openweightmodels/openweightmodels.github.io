@@ -1,0 +1,34 @@
+{
+  "name": "OWM Sovereignty Lens",
+  "version": "0.1",
+  "canonical": "https://openweightmodels.eu/#sovereignty",
+  "position": "Sovereignty is practical optionality and credible exit capability, not autarky.",
+  "dimensions": [
+    {
+      "id": "weights",
+      "name": "Weight control",
+      "question": "Can the exact checkpoint be obtained and retained independently of a hosted API?"
+    },
+    {
+      "id": "license",
+      "name": "License freedom",
+      "question": "Are the rights compatible with the intended use, modification, redistribution and commercialization?"
+    },
+    {
+      "id": "deployment",
+      "name": "Deployment control",
+      "question": "Can deployment location, infrastructure and provider be chosen?"
+    },
+    {
+      "id": "runtime",
+      "name": "Runtime portability",
+      "question": "Can the checkpoint be served across multiple compatible runtimes or stacks?"
+    },
+    {
+      "id": "exit",
+      "name": "Exit capability",
+      "question": "Can the operator change provider without losing access to the model layer?"
+    }
+  ],
+  "note": "The lens is descriptive and intentionally does not assign a single sovereignty score."
+}

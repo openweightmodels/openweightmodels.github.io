@@ -1,0 +1,32 @@
+{
+  "id": "qwen3-30b-a3b",
+  "name": "Qwen3-30B-A3B",
+  "developer": "Qwen / Alibaba",
+  "exact_model_id": "Qwen/Qwen3-30B-A3B",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "30B total / ~3B active",
+    "type": "Mixture-of-Experts",
+    "context": "See exact model card",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "SGLang",
+    "Docker Model Runner"
+  ],
+  "hardware_note": "MoE activation reduces per-token compute, but full checkpoint storage and runtime overhead still matter.",
+  "primary_source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+  "third_party_runtime_evidence": []
+}

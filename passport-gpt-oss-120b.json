@@ -1,0 +1,35 @@
+{
+  "id": "gpt-oss-120b",
+  "name": "gpt-oss-120b",
+  "developer": "OpenAI",
+  "exact_model_id": "openai/gpt-oss-120b",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0 + usage policy",
+    "commercial_use": "Broad commercial use under Apache 2.0, subject to the usage policy.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed publisher materials."
+  },
+  "architecture": {
+    "parameters": "120B class",
+    "type": "Mixture-of-Experts reasoning model",
+    "context": "See current model card",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "Ollama",
+    "llama.cpp"
+  ],
+  "hardware_note": "OpenAI states the 120B model can run efficiently on a single 80 GB GPU.",
+  "primary_source": "https://openai.com/index/introducing-gpt-oss/",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-gpt-oss-120b.html",
+  "owm_view": "gpt-oss-120b is the more infrastructure-oriented member of OpenAI’s open-weight family. OWM sees it as strategically important because it brings a much larger reasoning model into a deployment envelope that OpenAI says can fit on a single 80 GB GPU, while still preserving the operator’s ability to choose the serving stack.",
+  "seo_reference_verified_at": "2026-09-27"
+}

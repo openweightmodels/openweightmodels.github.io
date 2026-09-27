@@ -1,0 +1,33 @@
+{
+  "id": "llama-4-scout",
+  "name": "Llama 4 Scout",
+  "developer": "Meta",
+  "exact_model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Gated / license acceptance",
+    "gated": true
+  },
+  "license": {
+    "name": "Llama 4 Community License",
+    "commercial_use": "Commercial use is contemplated by the license, subject to its conditions and large-user provisions.",
+    "eu_note": "No explicit EU territorial prohibition identified in the reviewed Llama 4 license."
+  },
+  "architecture": {
+    "parameters": "17B active / 109B total",
+    "type": "Native multimodal Mixture-of-Experts",
+    "context": "10M",
+    "modalities": "Text + image → text/code"
+  },
+  "runtimes": [
+    "Meta reference implementation",
+    "Transformers"
+  ],
+  "hardware_note": "Meta states the Llama 4 series needs at least 4 GPUs for full BF16 inference with the reference implementation.",
+  "primary_source": "https://github.com/meta-llama/llama-models",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-llama-4-scout.html",
+  "owm_view": "Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.",
+  "seo_reference_verified_at": "2026-09-27"
+}

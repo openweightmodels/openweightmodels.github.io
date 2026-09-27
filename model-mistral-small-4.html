@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mistral Small 4: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="Mistral Small 4 reference: 119B/6.5B MoE, 256K context, multimodal input, Apache 2.0, NVFP4 quantization, vLLM and OWM analysis.">
+<meta name="keywords" content="Mistral Small 4, Mistral Small 4 119B, Mistral Small 4 hardware, Mistral Small 4 NVFP4, Mistral Small 4 vLLM, Apache 2.0 AI model">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-mistral-small-4.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="Mistral Small 4: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="Mistral Small 4 reference: 119B/6.5B MoE, 256K context, multimodal input, Apache 2.0, NVFP4 quantization, vLLM and OWM analysis.">
+<meta property="og:url" content="https://openweightmodels.eu/model-mistral-small-4.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mistral Small 4: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="Mistral Small 4 reference: 119B/6.5B MoE, 256K context, multimodal input, Apache 2.0, NVFP4 quantization, vLLM and OWM analysis.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-mistral-small-4.html#article", "headline": "Mistral Small 4: Open-Weight Model Reference, License, Hardware and Deployment", "description": "Mistral Small 4 reference: 119B/6.5B MoE, 256K context, multimodal input, Apache 2.0, NVFP4 quantization, vLLM and OWM analysis.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-mistral-small-4.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["Mistral Small 4", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "Mistral Small 4, Mistral Small 4 119B, Mistral Small 4 hardware, Mistral Small 4 NVFP4, Mistral Small 4 vLLM, Apache 2.0 AI model"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "Mistral Small 4", "item": "https://openweightmodels.eu/model-mistral-small-4.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many parameters does Mistral Small 4 have?", "acceptedAnswer": {"@type": "Answer", "text": "Mistral documents 119B total parameters with 6.5B activated per token."}}, {"@type": "Question", "name": "What is the context length of Mistral Small 4?", "acceptedAnswer": {"@type": "Answer", "text": "The model card documents a 256K context window."}}, {"@type": "Question", "name": "Is Mistral Small 4 multimodal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It accepts text and image input and produces text output."}}, {"@type": "Question", "name": "Does Mistral Small 4 have an official 4-bit checkpoint?", "acceptedAnswer": {"@type": "Answer", "text": "Mistral publishes an NVFP4 checkpoint, providing an official lower-precision deployment path."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / Mistral Small 4</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>Mistral Small 4</h1>
+<p class="sub">Mistral AI · MoE · 128 experts · 4 active · Apache 2.0</p>
+<p class="answer"><strong>Direct answer:</strong> Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path.</p>
+<div class="factstrip">
+<span class="fact"><b>119B total · 6.5B active/token</b></span>
+<span class="fact"><b>256K</b> context</span>
+<span class="fact"><b>Apache 2.0</b></span>
+<span class="fact">Image + text → text</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>Mistral Small 4: what matters beyond the model card</h2>
+<p class="lead">The model uses 119B total parameters but activates 6.5B per token. Mistral documents 128 experts with four active, image and text input, reasoning controls and function calling. The model’s value for infrastructure teams is therefore not one benchmark number but the combination of a large sparse architecture with an explicit low-precision deployment option.</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>Mistral AI</b></div><div><span>Exact model ID</span><b>mistralai/Mistral-Small-4-119B-2603</b></div><div><span>Parameters</span><b>119B total · 6.5B active/token</b></div><div><span>Context</span><b>256K</b></div><div><span>Architecture</span><b>MoE · 128 experts · 4 active</b></div><div><span>Modalities</span><b>Image + text → text</b></div><div><span>License</span><b>Apache 2.0</b></div><div><span>Access</span><b>Direct open-weight download</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> Transformers/Mistral4 · vLLM. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>The model uses 119B total parameters but activates 6.5B per token. Mistral documents 128 experts with four active, image and text input, reasoning controls and function calling. The model’s value for infrastructure teams is therefore not one benchmark number but the combination of a large sparse architecture with an explicit low-precision deployment option.</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>The main repository is hundreds of gigabytes at high precision. A simplistic raw 4-bit calculation for 119B parameters is still about 59.5 GB before overhead. Mistral’s official NVFP4 checkpoint is therefore strategically relevant: it offers a vendor-supported low-precision route rather than relying only on third-party conversions.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>Mistral publishes Mistral Small 4 under Apache 2.0 for commercial and non-commercial use. OWM treats that standard permissive license as a major advantage for organizations that want to build internal or customer-facing systems without a custom model license.</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong</div><div class="desc">The model and an official low-precision checkpoint are downloadable.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Strong</div><div class="desc">Apache 2.0 is broadly permissive.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong but hardware-sensitive</div><div class="desc">Self-hosting is possible, though the full checkpoint remains large.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Moderate to strong</div><div class="desc">Current vLLM and Transformers support is documented; ecosystem breadth is still narrower than older architectures.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong</div><div class="desc">The Apache-licensed checkpoint can move with the operator.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>The current Passport records source-verified support for vLLM and the Mistral4 Transformers integration. OWM has not yet reproduced a standardized runtime benchmark for this exact checkpoint.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where Mistral Small 4 fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Enterprise agent systems needing vision, function calling and long context.</li><li>Teams with GPU infrastructure that can benefit from an official NVFP4 checkpoint.</li><li>Organizations preferring Apache 2.0 for commercial deployment.</li><li>Serving stacks built around current vLLM or Transformers/Mistral4 support.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Small consumer systems expecting a 6.5B-active model to have 6.5B storage requirements.</li><li>Very long contexts without capacity planning for KV cache.</li><li>Teams on older inference stacks that do not yet support the Mistral4 architecture.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>How many parameters does Mistral Small 4 have?</summary><p>Mistral documents 119B total parameters with 6.5B activated per token.</p></details><details><summary>What is the context length of Mistral Small 4?</summary><p>The model card documents a 256K context window.</p></details><details><summary>Is Mistral Small 4 multimodal?</summary><p>Yes. It accepts text and image input and produces text output.</p></details><details><summary>Does Mistral Small 4 have an official 4-bit checkpoint?</summary><p>Mistral publishes an NVFP4 checkpoint, providing an official lower-precision deployment path.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener">Primary model source — Mistral AI ↗</a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-mistral-small-4.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-llama-4-scout.html"><b>Llama 4 Scout</b><span>Llama 4 Community License · 109B total · 17B active</span></a><a href="/model-olmo-3-32b.html"><b>OLMo 3 32B</b><span>Apache 2.0 · 32B</span></a><a href="/model-glm-4-5.html"><b>GLM-4.5</b><span>MIT · 355B total · 32B active</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

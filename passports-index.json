@@ -1,0 +1,137 @@
+{
+  "name": "OWM Model Passport",
+  "spec_version": "0.2",
+  "canonical": "https://openweightmodels.eu/",
+  "verified_at": "2026-09-27",
+  "count": 20,
+  "evidence_policy": {
+    "source-verified": "OWM reviewed a cited primary source.",
+    "publisher-stated": "A claim stated by the model publisher.",
+    "owm-estimate": "Transparent OWM engineering estimate, not a runtime guarantee.",
+    "third-party-measured": "Externally measured benchmark with source/provenance; not reproduced by OWM.",
+    "owm-runtime-tested": "Reserved only for configurations physically reproduced by OWM.",
+    "unknown": "No sufficiently reliable evidence recorded yet."
+  },
+  "models": [
+    {
+      "id": "gpt-oss-20b",
+      "name": "gpt-oss-20b",
+      "path": "/data/passports/gpt-oss-20b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "gpt-oss-120b",
+      "path": "/data/passports/gpt-oss-120b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "qwen3-32b",
+      "name": "Qwen3-32B",
+      "path": "/data/passports/qwen3-32b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "qwen3-30b-a3b",
+      "name": "Qwen3-30B-A3B",
+      "path": "/data/passports/qwen3-30b-a3b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "qwen3-coder-30b-a3b",
+      "name": "Qwen3-Coder-30B-A3B-Instruct",
+      "path": "/data/passports/qwen3-coder-30b-a3b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "qwen3-vl-30b-a3b",
+      "name": "Qwen3-VL-30B-A3B-Instruct",
+      "path": "/data/passports/qwen3-vl-30b-a3b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek-R1",
+      "path": "/data/passports/deepseek-r1.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek-R1-Distill-Qwen-32B",
+      "path": "/data/passports/deepseek-r1-distill-qwen-32b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "deepseek-r1-distill-qwen-7b",
+      "name": "DeepSeek-R1-Distill-Qwen-7B",
+      "path": "/data/passports/deepseek-r1-distill-qwen-7b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "mistral-small-4",
+      "name": "Mistral Small 4",
+      "path": "/data/passports/mistral-small-4.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "devstral-small-1-1",
+      "name": "Devstral Small 1.1",
+      "path": "/data/passports/devstral-small-1-1.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "llama-4-scout",
+      "name": "Llama 4 Scout",
+      "path": "/data/passports/llama-4-scout.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "gemma-3-27b-it",
+      "name": "Gemma 3 27B IT",
+      "path": "/data/passports/gemma-3-27b-it.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "phi-4",
+      "name": "Phi-4",
+      "path": "/data/passports/phi-4.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "granite-4-2-8b",
+      "name": "Granite 4.2 8B",
+      "path": "/data/passports/granite-4-2-8b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "kimi-k2-instruct",
+      "name": "Kimi K2 Instruct",
+      "path": "/data/passports/kimi-k2-instruct.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "glm-4-5",
+      "name": "GLM-4.5",
+      "path": "/data/passports/glm-4-5.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "olmo-3-32b",
+      "name": "OLMo 3 32B",
+      "path": "/data/passports/olmo-3-32b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "smollm3-3b",
+      "name": "SmolLM3-3B",
+      "path": "/data/passports/smollm3-3b.json",
+      "verified_at": "2026-09-27"
+    },
+    {
+      "id": "command-a",
+      "name": "Command A",
+      "path": "/data/passports/command-a.json",
+      "verified_at": "2026-09-27"
+    }
+  ]
+}

@@ -65,11 +65,11 @@ A new evidence class, **third-party measured**, records externally measured runt
 
 Machine-readable resources:
 
-- `/data/passports/index.json`
+- `/passports-index.json`
 - `/data/passports/*.json`
-- `/data/runtime-evidence.json`
-- `/data/owm-passport.schema.json`
-- `/data/changes.json`
+- `/runtime-evidence.json`
+- `/owm-passport.schema.json`
+- `/changes.json`
 - `/OWM-PASSPORT-SPEC.md`
 
 
@@ -109,3 +109,16 @@ Each page includes:
 - primary sources and machine-readable Passport link
 
 The ten launch references are gpt-oss-20b, gpt-oss-120b, Qwen3-32B, Qwen3-Coder-30B-A3B-Instruct, DeepSeek-R1, Gemma 3 27B IT, Mistral Small 4, Llama 4 Scout, OLMo 3 32B and GLM-4.5.
+
+
+## v8.1 — GitHub Pages-safe model URLs
+
+The detailed model references are additionally published as root-level static HTML files:
+
+- `/models.html`
+- `/model-deepseek-r1.html`
+- `/model-qwen3-32b.html`
+- etc.
+
+`.nojekyll` is included so GitHub Pages serves the repository as plain static files.
+The previous clean `/models/<slug>/` structure is retained as a compatibility copy, and `404.html` redirects legacy clean model paths to their canonical flat URLs.

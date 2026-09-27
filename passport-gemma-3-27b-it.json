@@ -1,0 +1,36 @@
+{
+  "id": "gemma-3-27b-it",
+  "name": "Gemma 3 27B IT",
+  "developer": "Google DeepMind",
+  "exact_model_id": "google/gemma-3-27b-it",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Gated / terms acceptance on some distribution channels",
+    "gated": true
+  },
+  "license": {
+    "name": "Gemma Terms",
+    "commercial_use": "Commercial deployment depends on the Gemma Terms and applicable use restrictions; verify exact terms.",
+    "eu_note": "No simple Apache/MIT-style conclusion; review Gemma Terms for the deployment context."
+  },
+  "architecture": {
+    "parameters": "27B",
+    "type": "Dense multimodal model",
+    "context": "128K",
+    "modalities": "Image + text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "llama.cpp via GGUF",
+    "Ollama"
+  ],
+  "hardware_note": "Google positions the 27B model as runnable on a single GPU/TPU host; quantization materially changes memory requirements.",
+  "primary_source": "https://deepmind.google/models/gemma/gemma-3/",
+  "third_party_runtime_evidence": [
+    "tp-gemma3-27b-4090"
+  ],
+  "reference_page": "https://openweightmodels.eu/model-gemma-3-27b-it.html",
+  "owm_view": "Gemma 3 27B is interesting because it brings native image understanding, a 128K context window and a relatively workstation-friendly parameter count into the same open-weight package. OWM also considers it a useful reminder that “open weights” and “standard open-source license” are different concepts: Gemma uses its own Terms of Use rather than Apache or MIT.",
+  "seo_reference_verified_at": "2026-09-27"
+}

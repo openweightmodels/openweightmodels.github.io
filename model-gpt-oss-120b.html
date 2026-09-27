@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gpt-oss-120b: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="gpt-oss-120b reference: 117B MoE open-weight model, Apache 2.0 license, 128K context, 80 GB GPU guidance, runtimes and OWM analysis.">
+<meta name="keywords" content="gpt-oss-120b, OpenAI open weight model, gpt oss 120b hardware, 80GB GPU AI model, gpt oss 120b license, local inference">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-gpt-oss-120b.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="gpt-oss-120b: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="gpt-oss-120b reference: 117B MoE open-weight model, Apache 2.0 license, 128K context, 80 GB GPU guidance, runtimes and OWM analysis.">
+<meta property="og:url" content="https://openweightmodels.eu/model-gpt-oss-120b.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gpt-oss-120b: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="gpt-oss-120b reference: 117B MoE open-weight model, Apache 2.0 license, 128K context, 80 GB GPU guidance, runtimes and OWM analysis.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-gpt-oss-120b.html#article", "headline": "gpt-oss-120b: Open-Weight Model Reference, License, Hardware and Deployment", "description": "gpt-oss-120b reference: 117B MoE open-weight model, Apache 2.0 license, 128K context, 80 GB GPU guidance, runtimes and OWM analysis.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-gpt-oss-120b.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["gpt-oss-120b", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "gpt-oss-120b, OpenAI open weight model, gpt oss 120b hardware, 80GB GPU AI model, gpt oss 120b license, local inference"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "gpt-oss-120b", "item": "https://openweightmodels.eu/model-gpt-oss-120b.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much GPU memory does gpt-oss-120b need?", "acceptedAnswer": {"@type": "Answer", "text": "OpenAI says it can run efficiently on a single 80 GB GPU. Production needs can rise with long contexts, concurrency and runtime overhead."}}, {"@type": "Question", "name": "How many parameters does gpt-oss-120b have?", "acceptedAnswer": {"@type": "Answer", "text": "OpenAI documents 117B total parameters with 5.1B active parameters per token."}}, {"@type": "Question", "name": "Does gpt-oss-120b have a 128K context window?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. OpenAI documents native context support up to 128K tokens."}}, {"@type": "Question", "name": "Can an enterprise self-host gpt-oss-120b?", "acceptedAnswer": {"@type": "Answer", "text": "Yes in principle; the weights are available for self-hosting, subject to license, policy, infrastructure and operational requirements."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / gpt-oss-120b</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>gpt-oss-120b</h1>
+<p class="sub">OpenAI · Mixture-of-Experts Transformer · Apache 2.0 + gpt-oss usage policy</p>
+<p class="answer"><strong>Direct answer:</strong> gpt-oss-120b is the more infrastructure-oriented member of OpenAI’s open-weight family. OWM sees it as strategically important because it brings a much larger reasoning model into a deployment envelope that OpenAI says can fit on a single 80 GB GPU, while still preserving the operator’s ability to choose the serving stack.</p>
+<div class="factstrip">
+<span class="fact"><b>117B total · 5.1B active/token</b></span>
+<span class="fact"><b>128K native</b> context</span>
+<span class="fact"><b>Apache 2.0 + gpt-oss usage policy</b></span>
+<span class="fact">Text → text</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>gpt-oss-120b: what matters beyond the model card</h2>
+<p class="lead">For organizations already operating data-center GPUs, gpt-oss-120b makes the open-weight decision more consequential than a small local model. It can sit inside private infrastructure, be exposed through an internal API and remain decoupled from a single external model provider. That is exactly the type of separation between model and service layer that OWM considers important for long-term AI optionality.</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>gpt-oss-120b is the more infrastructure-oriented member of OpenAI’s open-weight family. OWM sees it as strategically important because it brings a much larger reasoning model into a deployment envelope that OpenAI says can fit on a single 80 GB GPU, while still preserving the operator’s ability to choose the serving stack.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>OpenAI</b></div><div><span>Exact model ID</span><b>openai/gpt-oss-120b</b></div><div><span>Parameters</span><b>117B total · 5.1B active/token</b></div><div><span>Context</span><b>128K native</b></div><div><span>Architecture</span><b>Mixture-of-Experts Transformer</b></div><div><span>Modalities</span><b>Text → text</b></div><div><span>License</span><b>Apache 2.0 + gpt-oss usage policy</b></div><div><span>Access</span><b>Direct open-weight download</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> Transformers · vLLM · llama.cpp · Ollama. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>For organizations already operating data-center GPUs, gpt-oss-120b makes the open-weight decision more consequential than a small local model. It can sit inside private infrastructure, be exposed through an internal API and remain decoupled from a single external model provider. That is exactly the type of separation between model and service layer that OWM considers important for long-term AI optionality.</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>OpenAI states that gpt-oss-120b can run efficiently on a single 80 GB GPU. That statement is especially notable for a 117B-parameter model because the MoE architecture activates only 5.1B parameters per token. Storage, loading, context length, KV cache and runtime implementation still affect real deployment requirements.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>The same Apache 2.0 plus usage-policy structure applies as with gpt-oss-20b. OWM considers the permissive software license a major deployment advantage, while still recording the policy layer explicitly so organizations do not confuse “permissive license” with “no conditions anywhere.”</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong</div><div class="desc">The checkpoint can be obtained and retained outside an OpenAI-hosted API.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Strong with policy layer</div><div class="desc">Apache 2.0 is permissive; the usage policy remains part of the operational review.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong</div><div class="desc">The model is intended for self-hosted and provider-hosted deployment.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Strong</div><div class="desc">Multiple mainstream inference stacks support the family.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong</div><div class="desc">The model layer can survive a change of infrastructure provider.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>OWM currently records publisher-stated runtime support for the family. Independent or OWM-reproduced 120B deployment measurements should be added only with exact hardware, runtime version and workload.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where gpt-oss-120b fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Private enterprise inference on H100/H200-class or other 80 GB accelerator infrastructure.</li><li>Organizations that want a larger reasoning model while keeping model weights under their own operational control.</li><li>Internal agent platforms where data location, provider exit and runtime choice matter.</li><li>Teams comparing self-hosted inference economics with premium managed APIs.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Consumer laptops or typical single consumer GPUs without aggressive offload strategies.</li><li>Teams whose inference volume is too low to justify operating an 80 GB-class accelerator.</li><li>Multimodal workloads requiring native vision or audio.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>How much GPU memory does gpt-oss-120b need?</summary><p>OpenAI says it can run efficiently on a single 80 GB GPU. Production needs can rise with long contexts, concurrency and runtime overhead.</p></details><details><summary>How many parameters does gpt-oss-120b have?</summary><p>OpenAI documents 117B total parameters with 5.1B active parameters per token.</p></details><details><summary>Does gpt-oss-120b have a 128K context window?</summary><p>Yes. OpenAI documents native context support up to 128K tokens.</p></details><details><summary>Can an enterprise self-host gpt-oss-120b?</summary><p>Yes in principle; the weights are available for self-hosting, subject to license, policy, infrastructure and operational requirements.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://openai.com/index/introducing-gpt-oss/" target="_blank" rel="noopener">Primary model source — OpenAI ↗</a><a href="https://openai.com/index/gpt-oss-model-card/" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-gpt-oss-120b.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-qwen3-32b.html"><b>Qwen3-32B</b><span>Apache 2.0 · 32.8B total</span></a><a href="/model-qwen3-coder-30b-a3b.html"><b>Qwen3-Coder-30B-A3B-Instruct</b><span>Apache 2.0 · 30B total · ~3B active</span></a><a href="/model-deepseek-r1.html"><b>DeepSeek-R1</b><span>MIT · 671B total · 37B active</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "id": "glm-4-5",
+  "name": "GLM-4.5",
+  "developer": "Z.ai",
+  "exact_model_id": "zai-org/GLM-4.5",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "MIT",
+    "commercial_use": "Publisher states MIT release can be used commercially and for secondary development.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed model materials."
+  },
+  "architecture": {
+    "parameters": "355B total / 32B active",
+    "type": "Mixture-of-Experts hybrid reasoning model",
+    "context": "See current model card",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "SGLang",
+    "Docker Model Runner"
+  ],
+  "hardware_note": "717 GB repository size is reported on the hub for the main checkpoint; distributed inference is the realistic path.",
+  "primary_source": "https://huggingface.co/zai-org/GLM-4.5",
+  "third_party_runtime_evidence": [],
+  "reference_page": "https://openweightmodels.eu/model-glm-4-5.html",
+  "owm_view": "GLM-4.5 is a strong example of open-weight competition moving into agentic infrastructure. Its 355B total / 32B active architecture is far beyond workstation scale, but the MIT license and support in Transformers, vLLM and SGLang make the model layer comparatively portable for organizations already operating distributed inference.",
+  "seo_reference_verified_at": "2026-09-27"
+}

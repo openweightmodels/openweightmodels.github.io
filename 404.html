@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Redirecting | Open Weight Models</title>
+<script>
+(function(){
+  const redirects = {"/models/olmo-3-32b/": "/model-olmo-3-32b.html", "/models/mistral-small-4/": "/model-mistral-small-4.html", "/models/gpt-oss-20b/": "/model-gpt-oss-20b.html", "/models/qwen3-32b/": "/model-qwen3-32b.html", "/models/glm-4-5/": "/model-glm-4-5.html", "/models/gpt-oss-120b/": "/model-gpt-oss-120b.html", "/models/gemma-3-27b-it/": "/model-gemma-3-27b-it.html", "/models/llama-4-scout/": "/model-llama-4-scout.html", "/models/deepseek-r1/": "/model-deepseek-r1.html", "/models/qwen3-coder-30b-a3b/": "/model-qwen3-coder-30b-a3b.html"};
+  const p = window.location.pathname;
+  if (redirects[p]) {
+    window.location.replace(redirects[p]);
+    return;
+  }
+})();
+</script>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;background:#07111f;color:#fff;margin:0;display:grid;place-items:center;min-height:100vh}
+main{max-width:680px;padding:32px}a{color:#55dfff}
+</style>
+</head>
+<body><main><h1>Page not found</h1><p><a href="/">Return to Open Weight Models</a></p></main></body>
+</html>

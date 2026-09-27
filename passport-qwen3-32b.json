@@ -1,0 +1,38 @@
+{
+  "id": "qwen3-32b",
+  "name": "Qwen3-32B",
+  "developer": "Qwen / Alibaba",
+  "exact_model_id": "Qwen/Qwen3-32B",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "33B reported on model hub",
+    "type": "Dense causal language model",
+    "context": "Up to 131K in official Qwen3 serving examples",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "SGLang",
+    "llama.cpp",
+    "Ollama"
+  ],
+  "hardware_note": "Raw-weight estimate: ~66 GB BF16, ~33 GB INT8, ~16.5 GB at 4-bit before runtime/KV-cache overhead.",
+  "primary_source": "https://huggingface.co/Qwen/Qwen3-32B",
+  "third_party_runtime_evidence": [
+    "tp-qwen3-32b-5090"
+  ],
+  "reference_page": "https://openweightmodels.eu/model-qwen3-32b.html",
+  "owm_view": "Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference.",
+  "seo_reference_verified_at": "2026-09-27"
+}

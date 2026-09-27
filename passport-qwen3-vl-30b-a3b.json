@@ -1,0 +1,31 @@
+{
+  "id": "qwen3-vl-30b-a3b",
+  "name": "Qwen3-VL-30B-A3B-Instruct",
+  "developer": "Qwen / Alibaba",
+  "exact_model_id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "31B reported on model hub",
+    "type": "Vision-language MoE",
+    "context": "256K native; publisher says expandable to 1M",
+    "modalities": "Image/video + text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "Docker Model Runner"
+  ],
+  "hardware_note": "Multimodal deployments require additional image/video preprocessing memory beyond raw weights.",
+  "primary_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "third_party_runtime_evidence": []
+}

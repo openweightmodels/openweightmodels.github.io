@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwen3-32B: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="Qwen3-32B reference: Apache 2.0, 32.8B parameters, 32K/131K context, hardware estimates, vLLM/SGLang/llama.cpp support and OWM view.">
+<meta name="keywords" content="Qwen3-32B, Qwen 3 32B hardware, Qwen3 license, Qwen3 vLLM, Qwen3 SGLang, Qwen3 llama.cpp, Qwen3 context window">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-qwen3-32b.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="Qwen3-32B: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="Qwen3-32B reference: Apache 2.0, 32.8B parameters, 32K/131K context, hardware estimates, vLLM/SGLang/llama.cpp support and OWM view.">
+<meta property="og:url" content="https://openweightmodels.eu/model-qwen3-32b.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Qwen3-32B: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="Qwen3-32B reference: Apache 2.0, 32.8B parameters, 32K/131K context, hardware estimates, vLLM/SGLang/llama.cpp support and OWM view.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-qwen3-32b.html#article", "headline": "Qwen3-32B: Open-Weight Model Reference, License, Hardware and Deployment", "description": "Qwen3-32B reference: Apache 2.0, 32.8B parameters, 32K/131K context, hardware estimates, vLLM/SGLang/llama.cpp support and OWM view.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-qwen3-32b.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["Qwen3-32B", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "Qwen3-32B, Qwen 3 32B hardware, Qwen3 license, Qwen3 vLLM, Qwen3 SGLang, Qwen3 llama.cpp, Qwen3 context window"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "Qwen3-32B", "item": "https://openweightmodels.eu/model-qwen3-32b.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much VRAM does Qwen3-32B need?", "acceptedAnswer": {"@type": "Answer", "text": "Raw weights are about 65.6 GB at 16-bit and 16.4 GB at 4-bit before overhead. Real VRAM needs vary by quantization, runtime and context."}}, {"@type": "Question", "name": "What is the context window of Qwen3-32B?", "acceptedAnswer": {"@type": "Answer", "text": "The model card lists 32,768 tokens natively and up to 131,072 tokens using YaRN."}}, {"@type": "Question", "name": "Is Qwen3-32B commercially usable?", "acceptedAnswer": {"@type": "Answer", "text": "It is released under Apache 2.0, which generally permits commercial use subject to the license terms."}}, {"@type": "Question", "name": "Which runtimes support Qwen3-32B?", "acceptedAnswer": {"@type": "Answer", "text": "The Qwen ecosystem documents Transformers, vLLM, SGLang, llama.cpp and Ollama among the available paths."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / Qwen3-32B</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>Qwen3-32B</h1>
+<p class="sub">Qwen / Alibaba · Dense causal language model · Apache 2.0</p>
+<p class="answer"><strong>Direct answer:</strong> Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference.</p>
+<div class="factstrip">
+<span class="fact"><b>32.8B total</b></span>
+<span class="fact"><b>32,768 native · 131,072 with YaRN</b> context</span>
+<span class="fact"><b>Apache 2.0</b></span>
+<span class="fact">Text → text</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>Qwen3-32B: what matters beyond the model card</h2>
+<p class="lead">Qwen3 combines a mature model family with unusually broad serving support. The exact 32B checkpoint is dense rather than MoE, which makes its memory behavior easier to reason about than some giant sparse models. Its native 32K context can be extended to 131K with YaRN according to the model card, giving operators a clear trade-off between ordinary serving and longer-context configurations.</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>Qwen / Alibaba</b></div><div><span>Exact model ID</span><b>Qwen/Qwen3-32B</b></div><div><span>Parameters</span><b>32.8B total</b></div><div><span>Context</span><b>32,768 native · 131,072 with YaRN</b></div><div><span>Architecture</span><b>Dense causal language model</b></div><div><span>Modalities</span><b>Text → text</b></div><div><span>License</span><b>Apache 2.0</b></div><div><span>Access</span><b>Direct open-weight download</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> Transformers · vLLM · SGLang · llama.cpp · Ollama. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>Qwen3 combines a mature model family with unusually broad serving support. The exact 32B checkpoint is dense rather than MoE, which makes its memory behavior easier to reason about than some giant sparse models. Its native 32K context can be extended to 131K with YaRN according to the model card, giving operators a clear trade-off between ordinary serving and longer-context configurations.</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>A simple raw-weight calculation is roughly 65.6 GB at 16-bit, 32.8 GB at 8-bit and 16.4 GB at 4-bit before runtime overhead and KV cache. Those are OWM engineering estimates, not guarantees. Actual memory depends on quantization format, runtime, context and offload behavior.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>Qwen3-32B is published under Apache 2.0, which is a major reason OWM views the family as deployment-friendly. A permissive standard license makes legal review more familiar than custom model licenses, although downstream applications still need to meet applicable law and any separate software-component terms.</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong</div><div class="desc">The exact checkpoint is directly downloadable.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Strong</div><div class="desc">Apache 2.0 provides broad use, modification and redistribution rights.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong</div><div class="desc">The model can be served locally, on-prem or through many cloud configurations.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Very strong</div><div class="desc">Qwen documents a wide runtime ecosystem.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong</div><div class="desc">Model access is not tied to one inference provider.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>OWM records a signed third-party llm-speed run for a Qwen3-32B 4-bit configuration on an RTX 5090 with llama.cpp. It is useful configuration evidence, not an OWM benchmark.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where Qwen3-32B fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Workstations with enough memory for a quantized 32B-class model.</li><li>Private reasoning, coding and multilingual applications that value Apache 2.0 licensing.</li><li>Teams that want freedom to move between vLLM, SGLang, llama.cpp, Ollama and Transformers.</li><li>Organizations seeking a capable model without committing to multi-node 100B+ infrastructure.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Small edge devices where even a quantized 32B checkpoint is too large.</li><li>Very long-context production workloads without careful KV-cache and latency planning.</li><li>Teams that require native multimodal input from the same checkpoint.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>How much VRAM does Qwen3-32B need?</summary><p>Raw weights are about 65.6 GB at 16-bit and 16.4 GB at 4-bit before overhead. Real VRAM needs vary by quantization, runtime and context.</p></details><details><summary>What is the context window of Qwen3-32B?</summary><p>The model card lists 32,768 tokens natively and up to 131,072 tokens using YaRN.</p></details><details><summary>Is Qwen3-32B commercially usable?</summary><p>It is released under Apache 2.0, which generally permits commercial use subject to the license terms.</p></details><details><summary>Which runtimes support Qwen3-32B?</summary><p>The Qwen ecosystem documents Transformers, vLLM, SGLang, llama.cpp and Ollama among the available paths.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://huggingface.co/Qwen/Qwen3-32B" target="_blank" rel="noopener">Primary model source — Qwen / Alibaba ↗</a><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-qwen3-32b.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-qwen3-coder-30b-a3b.html"><b>Qwen3-Coder-30B-A3B-Instruct</b><span>Apache 2.0 · 30B total · ~3B active</span></a><a href="/model-deepseek-r1.html"><b>DeepSeek-R1</b><span>MIT · 671B total · 37B active</span></a><a href="/model-gemma-3-27b-it.html"><b>Gemma 3 27B IT</b><span>Gemma Terms of Use · 27B class</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

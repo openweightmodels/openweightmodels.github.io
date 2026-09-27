@@ -1,0 +1,31 @@
+{
+  "id": "granite-4-2-8b",
+  "name": "Granite 4.2 8B",
+  "developer": "IBM",
+  "exact_model_id": "ibm-granite/granite-4.2-8b",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "8B-class / ~9B reported on hub",
+    "type": "Dense Granite language model",
+    "context": "131,072",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "SGLang",
+    "llama.cpp via official GGUF"
+  ],
+  "hardware_note": "IBM publishes BF16, FP8, MXFP4/NVFP4 and GGUF variants, giving several deployment paths.",
+  "primary_source": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+  "third_party_runtime_evidence": []
+}

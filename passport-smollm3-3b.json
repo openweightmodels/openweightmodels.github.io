@@ -1,0 +1,31 @@
+{
+  "id": "smollm3-3b",
+  "name": "SmolLM3-3B",
+  "developer": "Hugging Face",
+  "exact_model_id": "HuggingFaceTB/SmolLM3-3B",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Commercial use permitted under Apache 2.0.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "3B",
+    "type": "Compact decoder-only language model",
+    "context": "64K trained; extended variants exist",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "llama.cpp via GGUF",
+    "MLX community variants"
+  ],
+  "hardware_note": "3B scale makes local and edge-style experimentation substantially easier than 30B+ models.",
+  "primary_source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+  "third_party_runtime_evidence": []
+}

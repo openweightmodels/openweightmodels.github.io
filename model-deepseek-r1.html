@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek-R1: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="DeepSeek-R1 open-weight reference: 671B/37B MoE reasoning model, 128K context, MIT license, multi-GPU deployment, runtime evidence and OWM view.">
+<meta name="keywords" content="DeepSeek R1, DeepSeek R1 hardware, DeepSeek R1 671B, DeepSeek R1 license, DeepSeek R1 vLLM, DeepSeek R1 SGLang, DeepSeek R1 context">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-deepseek-r1.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="DeepSeek-R1: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="DeepSeek-R1 open-weight reference: 671B/37B MoE reasoning model, 128K context, MIT license, multi-GPU deployment, runtime evidence and OWM view.">
+<meta property="og:url" content="https://openweightmodels.eu/model-deepseek-r1.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DeepSeek-R1: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="DeepSeek-R1 open-weight reference: 671B/37B MoE reasoning model, 128K context, MIT license, multi-GPU deployment, runtime evidence and OWM view.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-deepseek-r1.html#article", "headline": "DeepSeek-R1: Open-Weight Model Reference, License, Hardware and Deployment", "description": "DeepSeek-R1 open-weight reference: 671B/37B MoE reasoning model, 128K context, MIT license, multi-GPU deployment, runtime evidence and OWM view.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-deepseek-r1.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["DeepSeek-R1", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "DeepSeek R1, DeepSeek R1 hardware, DeepSeek R1 671B, DeepSeek R1 license, DeepSeek R1 vLLM, DeepSeek R1 SGLang, DeepSeek R1 context"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "DeepSeek-R1", "item": "https://openweightmodels.eu/model-deepseek-r1.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How large is DeepSeek-R1?", "acceptedAnswer": {"@type": "Answer", "text": "DeepSeek lists 671B total parameters and 37B activated parameters."}}, {"@type": "Question", "name": "What is the context window of DeepSeek-R1?", "acceptedAnswer": {"@type": "Answer", "text": "The official model card lists a 128K context length."}}, {"@type": "Question", "name": "Can DeepSeek-R1 run on one GPU?", "acceptedAnswer": {"@type": "Answer", "text": "The full checkpoint is generally a distributed-inference model. Distilled variants are much smaller but are different checkpoints."}}, {"@type": "Question", "name": "Is DeepSeek-R1 commercially usable?", "acceptedAnswer": {"@type": "Answer", "text": "The main project is released under MIT and DeepSeek states commercial use is supported; always verify exact derivative terms."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / DeepSeek-R1</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>DeepSeek-R1</h1>
+<p class="sub">DeepSeek · Mixture-of-Experts reasoning model · MIT</p>
+<p class="answer"><strong>Direct answer:</strong> DeepSeek-R1 is strategically important because it proved that a very large reasoning model could be distributed as weights under a permissive license. OWM does not treat it as a “local model” in the casual sense: the full 671B checkpoint is infrastructure-heavy. Its significance is that organizations can still operate that infrastructure themselves or choose among independent providers.</p>
+<div class="factstrip">
+<span class="fact"><b>671B total · 37B active</b></span>
+<span class="fact"><b>128K</b> context</span>
+<span class="fact"><b>MIT</b></span>
+<span class="fact">Text → text</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>DeepSeek-R1: what matters beyond the model card</h2>
+<p class="lead">The model card lists 671B total parameters, 37B active parameters and a 128K context window. That scale shifts the sovereignty question away from laptop ownership and toward data-center choice: can the organization control where the model runs, which serving stack it uses and whether it can change providers without changing the model itself?</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>DeepSeek-R1 is strategically important because it proved that a very large reasoning model could be distributed as weights under a permissive license. OWM does not treat it as a “local model” in the casual sense: the full 671B checkpoint is infrastructure-heavy. Its significance is that organizations can still operate that infrastructure themselves or choose among independent providers.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>DeepSeek</b></div><div><span>Exact model ID</span><b>deepseek-ai/DeepSeek-R1</b></div><div><span>Parameters</span><b>671B total · 37B active</b></div><div><span>Context</span><b>128K</b></div><div><span>Architecture</span><b>Mixture-of-Experts reasoning model</b></div><div><span>Modalities</span><b>Text → text</b></div><div><span>License</span><b>MIT</b></div><div><span>Access</span><b>Direct open-weight download</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> vLLM · SGLang · Transformers · Docker Model Runner. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>The model card lists 671B total parameters, 37B active parameters and a 128K context window. That scale shifts the sovereignty question away from laptop ownership and toward data-center choice: can the organization control where the model runs, which serving stack it uses and whether it can change providers without changing the model itself?</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>The full model is enormous. Even an idealized 4-bit raw-weight estimate is hundreds of gigabytes before runtime overhead. DeepSeek-R1 is therefore fundamentally a distributed-serving model unless a heavily transformed derivative is used. Distilled R1 variants are separate checkpoints and should not be confused with the full model.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>DeepSeek releases the R1 repository under MIT and states support for commercial use. OWM still recommends checking the exact checkpoint and any derivative’s upstream licensing because distilled models can introduce separate license considerations.</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong</div><div class="desc">The full checkpoint is published and can be retained.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Strong</div><div class="desc">MIT is highly permissive.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong but infrastructure-heavy</div><div class="desc">Operators can choose infrastructure, but practical choices are constrained by the scale of the checkpoint.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Strong</div><div class="desc">Multiple leading server runtimes support the model.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong at model layer</div><div class="desc">The checkpoint can move between providers, even though moving hundreds of gigabytes and distributed configurations is operationally non-trivial.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>SemiAnalysis InferenceX has published an independent DeepSeek-R1 H100 measurement using Dynamo SGLang. OWM records it as external laboratory evidence and does not present it as an OWM reproduction.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where DeepSeek-R1 fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Multi-GPU or multi-node reasoning infrastructure.</li><li>Research labs and enterprises that need control of a large reasoning checkpoint.</li><li>Provider-hosted deployments where the customer still wants model portability between infrastructure vendors.</li><li>Teams comparing the economics of sparse large models against closed reasoning APIs.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Typical single-GPU consumer hardware for the full checkpoint.</li><li>Teams that interpret “37B active” as meaning the full 671B checkpoint has 37B-model storage requirements.</li><li>Small deployments where operational complexity outweighs the benefit of owning the model layer.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>How large is DeepSeek-R1?</summary><p>DeepSeek lists 671B total parameters and 37B activated parameters.</p></details><details><summary>What is the context window of DeepSeek-R1?</summary><p>The official model card lists a 128K context length.</p></details><details><summary>Can DeepSeek-R1 run on one GPU?</summary><p>The full checkpoint is generally a distributed-inference model. Distilled variants are much smaller but are different checkpoints.</p></details><details><summary>Is DeepSeek-R1 commercially usable?</summary><p>The main project is released under MIT and DeepSeek states commercial use is supported; always verify exact derivative terms.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener">Primary model source — DeepSeek ↗</a><a href="https://github.com/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-deepseek-r1.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-gemma-3-27b-it.html"><b>Gemma 3 27B IT</b><span>Gemma Terms of Use · 27B class</span></a><a href="/model-mistral-small-4.html"><b>Mistral Small 4</b><span>Apache 2.0 · 119B total · 6.5B active/token</span></a><a href="/model-llama-4-scout.html"><b>Llama 4 Scout</b><span>Llama 4 Community License · 109B total · 17B active</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

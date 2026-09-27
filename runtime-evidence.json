@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tp-gptoss20-5090",
+    "model_id": "gpt-oss-20b",
+    "label": "Signed community run",
+    "source_name": "llm-speed",
+    "date": "2026-07-01",
+    "hardware": "RTX 5090 (32 GB) + Ryzen 7 9850X3D",
+    "runtime": "llama.cpp",
+    "workload": "chat-short",
+    "metric": "decode throughput",
+    "result": "69.42 tok/s",
+    "ttft": "333 ms",
+    "notes": "Single signed third-party run. Not an OWM reproduction and not a universal speed guarantee.",
+    "url": "https://llm-speed.com/r/r_r9h57uts9lr"
+  },
+  {
+    "id": "tp-qwen3-32b-5090",
+    "model_id": "qwen3-32b",
+    "label": "Signed community run",
+    "source_name": "llm-speed",
+    "date": "2026",
+    "hardware": "RTX 5090 (32 GB) + Ryzen 7 9850X3D",
+    "runtime": "llama.cpp",
+    "workload": "chat-short, 4-bit model page",
+    "metric": "decode throughput",
+    "result": "69.45 tok/s",
+    "ttft": "327 ms on cited run",
+    "notes": "Contributor-submitted signed benchmark. Configuration-specific; not an OWM reproduction.",
+    "url": "https://llm-speed.com/m/qwen3-32b"
+  },
+  {
+    "id": "tp-gemma3-27b-4090",
+    "model_id": "gemma-3-27b-it",
+    "label": "Signed community run",
+    "source_name": "llm-speed",
+    "date": "2026-07-02",
+    "hardware": "RTX 4090 (24 GB) + AMD EPYC host",
+    "runtime": "Ollama 0.31.1",
+    "workload": "Q4_K_M; short chat / long chat",
+    "metric": "decode throughput",
+    "result": "46.95 tok/s short · 45.25 tok/s long",
+    "ttft": "817 ms short · 1,998 ms long",
+    "notes": "One recorded submission per variant; useful observation, not a repeat-average or OWM reproduction.",
+    "url": "https://llm-speed.com/blog/gemma-3-speed-rtx-4090"
+  },
+  {
+    "id": "tp-deepseek-r1-h100",
+    "model_id": "deepseek-r1",
+    "label": "Independent lab measurement",
+    "source_name": "SemiAnalysis InferenceX",
+    "date": "2026-02-08 to 2026-02-13",
+    "hardware": "NVIDIA H100",
+    "runtime": "Dynamo SGLang",
+    "workload": "FP8; single-turn chat, 8K input / 1K output",
+    "metric": "throughput frontier",
+    "result": "74.2 tok/s/GPU at 50 tok/s per user",
+    "ttft": "Benchmark page reports latency frontier across 72 configs",
+    "notes": "Measured by SemiAnalysis InferenceX, not by OWM. Throughput depends on interactivity target and configuration.",
+    "url": "https://inferencex.semianalysis.com/run/deepseek-r1-on-h100"
+  }
+]

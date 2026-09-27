@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwen3-Coder-30B-A3B-Instruct: License, Hardware &amp; Deployment | OWM</title>
+<meta name="description" content="Qwen3-Coder-30B-A3B reference: Apache 2.0 coding model, 30B/3B MoE, 256K context, agentic coding, runtimes, hardware and OWM analysis.">
+<meta name="keywords" content="Qwen3 Coder 30B A3B, Qwen3 Coder local, Qwen3 Coder hardware, agentic coding model, Qwen3 Coder vLLM, 256K coding model">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="Open Weight Models">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html">
+<link rel="stylesheet" href="/assets/model-reference.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Open Weight Models">
+<meta property="og:title" content="Qwen3-Coder-30B-A3B-Instruct: License, Hardware &amp; Deployment | OWM">
+<meta property="og:description" content="Qwen3-Coder-30B-A3B reference: Apache 2.0 coding model, 30B/3B MoE, 256K context, agentic coding, runtimes, hardware and OWM analysis.">
+<meta property="og:url" content="https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Qwen3-Coder-30B-A3B-Instruct: License, Hardware &amp; Deployment | OWM">
+<meta name="twitter:description" content="Qwen3-Coder-30B-A3B reference: Apache 2.0 coding model, 30B/3B MoE, 256K context, agentic coding, runtimes, hardware and OWM analysis.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html#article", "headline": "Qwen3-Coder-30B-A3B-Instruct: Open-Weight Model Reference, License, Hardware and Deployment", "description": "Qwen3-Coder-30B-A3B reference: Apache 2.0 coding model, 30B/3B MoE, 256K context, agentic coding, runtimes, hardware and OWM analysis.", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "inLanguage": "en", "mainEntityOfPage": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "about": ["Qwen3-Coder-30B-A3B-Instruct", "open-weight AI models", "AI model licensing", "AI inference", "AI sovereignty", "self-hosted AI"], "keywords": "Qwen3 Coder 30B A3B, Qwen3 Coder local, Qwen3 Coder hardware, agentic coding model, Qwen3 Coder vLLM, 256K coding model"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Open Weight Models", "item": "https://openweightmodels.eu/"}, {"@type": "ListItem", "position": 2, "name": "Model References", "item": "https://openweightmodels.eu/models/"}, {"@type": "ListItem", "position": 3, "name": "Qwen3-Coder-30B-A3B-Instruct", "item": "https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Qwen3-Coder-30B-A3B?", "acceptedAnswer": {"@type": "Answer", "text": "It is an open-weight Qwen coding model using a Mixture-of-Experts architecture with about 30B total and roughly 3B active parameters."}}, {"@type": "Question", "name": "How long is the Qwen3-Coder context window?", "acceptedAnswer": {"@type": "Answer", "text": "Qwen documents 256K native context and extension up to 1M tokens with YaRN."}}, {"@type": "Question", "name": "Is Qwen3-Coder Apache 2.0?", "acceptedAnswer": {"@type": "Answer", "text": "The Hugging Face repository identifies the model license as Apache 2.0."}}, {"@type": "Question", "name": "Does Qwen3-Coder support agentic tool use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Qwen documents agentic coding and dedicated function-call support, with runtime-specific parser guidance for systems such as vLLM and SGLang."}}]}]}</script>
+</head>
+<body>
+<header><div class="shell nav">
+<a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
+<nav class="navlinks"><a href="/models.html">Model references</a><a href="/#passports">Passports</a><a href="/#sovereignty">Sovereignty</a><a href="https://github.com/openweightmodels" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="shell">
+<div class="breadcrumb"><a href="/">Open Weight Models</a> / <a href="/models.html">Model References</a> / Qwen3-Coder-30B-A3B-Instruct</div>
+<div class="eyebrow">Detailed OWM Model Reference · verified 2026-09-27</div>
+<h1>Qwen3-Coder-30B-A3B-Instruct</h1>
+<p class="sub">Qwen / Alibaba · Mixture-of-Experts coding model · Apache 2.0</p>
+<p class="answer"><strong>Direct answer:</strong> Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents.</p>
+<div class="factstrip">
+<span class="fact"><b>30B total · ~3B active</b></span>
+<span class="fact"><b>256K native · up to 1M with YaRN</b> context</span>
+<span class="fact"><b>Apache 2.0</b></span>
+<span class="fact">Text → text/code</span>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="shell grid2">
+<aside class="toc">
+<strong>On this page</strong>
+<a href="#overview">OWM View</a>
+<a href="#facts">Model facts</a>
+<a href="#why">Why it matters</a>
+<a href="#hardware">Hardware reality</a>
+<a href="#license">License reality</a>
+<a href="#sovereignty">Sovereignty lens</a>
+<a href="#runtime">Runtime evidence</a>
+<a href="#fit">Where it fits</a>
+<a href="#faq">FAQ</a>
+<a href="#sources">Sources</a>
+</aside>
+<article class="content">
+<div id="overview" class="kicker">OWM View</div>
+<h2>Qwen3-Coder-30B-A3B-Instruct: what matters beyond the model card</h2>
+<p class="lead">Coding agents are persistent infrastructure: they read repositories, call tools and can become embedded in software workflows. That makes provider choice, context length and local deployment more consequential than for occasional chat. Qwen documents native 256K context, extension to 1M with YaRN, and dedicated function-call parsing for vLLM and SGLang.</p>
+<div class="owmview"><b>Open Weight Models editorial view</b><p>Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents.</p></div>
+
+<h3 id="facts">Model facts</h3>
+<div class="facts"><div><span>Developer</span><b>Qwen / Alibaba</b></div><div><span>Exact model ID</span><b>Qwen/Qwen3-Coder-30B-A3B-Instruct</b></div><div><span>Parameters</span><b>30B total · ~3B active</b></div><div><span>Context</span><b>256K native · up to 1M with YaRN</b></div><div><span>Architecture</span><b>Mixture-of-Experts coding model</b></div><div><span>Modalities</span><b>Text → text/code</b></div><div><span>License</span><b>Apache 2.0</b></div><div><span>Access</span><b>Direct open-weight download</b></div></div>
+<p><strong>Runtime paths recorded by OWM:</strong> Transformers · vLLM · SGLang · llama.cpp. Runtime support is version-sensitive; a named runtime should not be read as a guarantee that every quantization, context size or feature works identically.</p>
+
+<h3 id="why">Why this model matters</h3>
+<p>Coding agents are persistent infrastructure: they read repositories, call tools and can become embedded in software workflows. That makes provider choice, context length and local deployment more consequential than for occasional chat. Qwen documents native 256K context, extension to 1M with YaRN, and dedicated function-call parsing for vLLM and SGLang.</p>
+<p>OWM evaluates a model as infrastructure, not only as a benchmark entry. That means the exact checkpoint, license, runtime ecosystem, memory footprint, ability to move between providers and the quality of the evidence all matter alongside model capability.</p>
+
+<h3 id="hardware">Hardware reality</h3>
+<p>The model is MoE: about 30B parameters are stored while roughly 3B are active for a token. That improves compute efficiency but does not mean only 3B parameters need to be stored. Quantization can make local deployment much more accessible, while 256K contexts can become the dominant memory consideration.</p>
+<p>OWM deliberately separates <strong>raw-weight arithmetic</strong>, <strong>publisher guidance</strong> and <strong>measured runtime evidence</strong>. A model that theoretically fits into a memory budget can still fail in practice because of KV cache, runtime buffers, vision components, tensor-parallel overhead or concurrent requests.</p>
+
+<h3 id="license">License reality</h3>
+<p>The Hugging Face repository identifies Apache 2.0. For an agentic coding model this matters because organizations may want to embed, adapt or serve the checkpoint inside internal developer platforms without being tied to a single hosted coding service.</p>
+<p>This is an informational deployment summary, not legal advice. Production users should review the exact current license, usage policy, derivative-model terms and applicable law before shipping a product.</p>
+
+<h3 id="sovereignty">OWM Sovereignty Lens</h3>
+<p>OWM does not assign a single sovereignty score. We describe the layers separately because a model can be highly portable technically while remaining conditional legally — or permissively licensed while requiring infrastructure that limits practical choice.</p>
+<div class="sov"><div class="sovrow"><div class="dim">Weight control</div><div class="status">Strong</div><div class="desc">The checkpoint is directly available.</div></div><div class="sovrow"><div class="dim">License freedom</div><div class="status">Strong</div><div class="desc">Apache 2.0 is broadly permissive.</div></div><div class="sovrow"><div class="dim">Deployment control</div><div class="status">Strong</div><div class="desc">Local and server deployment are both realistic depending on quantization.</div></div><div class="sovrow"><div class="dim">Runtime portability</div><div class="status">Strong but tooling-sensitive</div><div class="desc">Core inference is portable, while function-calling behavior depends on runtime-specific parsers.</div></div><div class="sovrow"><div class="dim">Exit capability</div><div class="status">Strong</div><div class="desc">The coding model can be retained while the hosting layer changes.</div></div></div>
+
+<h3 id="runtime">Runtime evidence</h3>
+<div class="runtime"><b>Evidence status</b><p>The Qwen project documents runtime integration directly. OWM has not yet recorded an independent measured run for this exact 30B-A3B checkpoint.</p></div>
+<p>“Third-party measured” means the result was measured outside Open Weight Models and is shown with provenance. “OWM runtime tested” is reserved for configurations that OWM physically reproduces with an exact checkpoint, runtime version, hardware configuration, workload and date.</p>
+
+<h3 id="fit">Where Qwen3-Coder-30B-A3B-Instruct fits — and where it does not</h3>
+<div class="twocol">
+<div class="listbox good"><h3>Where it fits</h3><ul><li>Repository-scale coding assistants and internal software agents.</li><li>Organizations that want code to remain inside controlled infrastructure.</li><li>Teams using vLLM or SGLang and willing to adopt Qwen’s function-call parser.</li><li>Developers who want an Apache-licensed coding checkpoint rather than a closed coding API.</li></ul></div>
+<div class="listbox bad"><h3>Where it does not fit</h3><ul><li>Very small local hardware where a 30B checkpoint remains too large despite low active-parameter count.</li><li>Teams expecting all agent tooling to work identically across runtimes without configuration.</li><li>Applications where the 256K context is enabled without budgeting for KV-cache growth.</li></ul></div>
+</div>
+
+<h3>Open-weight significance</h3>
+<p>The strategic value of this model is not simply that its weights can be downloaded. The important question is what those weights let an operator control: infrastructure, data location, runtime, adaptation and the ability to exit a provider relationship without discarding the model layer. Those freedoms remain bounded by the model’s license and the practical hardware required to run it.</p>
+
+<h3 id="faq">Frequently asked questions</h3>
+<div class="faq"><details><summary>What is Qwen3-Coder-30B-A3B?</summary><p>It is an open-weight Qwen coding model using a Mixture-of-Experts architecture with about 30B total and roughly 3B active parameters.</p></details><details><summary>How long is the Qwen3-Coder context window?</summary><p>Qwen documents 256K native context and extension up to 1M tokens with YaRN.</p></details><details><summary>Is Qwen3-Coder Apache 2.0?</summary><p>The Hugging Face repository identifies the model license as Apache 2.0.</p></details><details><summary>Does Qwen3-Coder support agentic tool use?</summary><p>Yes. Qwen documents agentic coding and dedicated function-call support, with runtime-specific parser guidance for systems such as vLLM and SGLang.</p></details></div>
+
+<h3 id="sources">Primary sources and OWM data</h3>
+<div class="sources"><a href="https://github.com/QwenLM/Qwen3-Coder" target="_blank" rel="noopener">Primary model source — Qwen / Alibaba ↗</a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct" target="_blank" rel="noopener">License / terms source ↗</a><a href="/passport-qwen3-coder-30b-a3b.json" >Machine-readable OWM Model Passport ↗</a></div>
+<p class="updated">Last verified by Open Weight Models: 2026-09-27. Facts can change as model repositories, licenses and runtime support evolve.</p>
+
+<h3>Related model references</h3>
+<div class="related"><a href="/model-deepseek-r1.html"><b>DeepSeek-R1</b><span>MIT · 671B total · 37B active</span></a><a href="/model-gemma-3-27b-it.html"><b>Gemma 3 27B IT</b><span>Gemma Terms of Use · 27B class</span></a><a href="/model-mistral-small-4.html"><b>Mistral Small 4</b><span>Apache 2.0 · 119B total · 6.5B active/token</span></a></div>
+</article>
+</div>
+</section>
+</main>
+
+<footer><div class="shell footergrid"><span>Open Weight Models · independent open-weight AI reference</span><span><a href="/">Home</a> · <a href="/models.html">Models</a> · <a href="/OWM-EDITORIAL-POSITION.md">Editorial position</a></span></div></footer>
+</body>
+</html>

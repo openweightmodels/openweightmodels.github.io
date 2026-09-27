@@ -209,7 +209,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
     <a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span><span>Open Weight Models</span></a>
     <button class="menu" aria-expanded="false">Menu</button>
     <nav>
-      <a href="/models/">Detailed models</a>
+      <a href="/models.html">Detailed models</a>
       <a href="#thesis">Why open weights</a>
       <a href="#passports">Passports</a>
       <a href="#runtime-evidence">Runtime evidence</a>
@@ -415,7 +415,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>OpenAI states the 20B model can run on devices with 16 GB memory.</div></details>
   <details><summary>License / EU facts</summary><div>Broad commercial use under Apache 2.0, subject to the usage policy.<br><br>No explicit EU territorial restriction identified in the reviewed publisher materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/gpt-oss-20b/">Full model reference →</a><a href="/data/passports/gpt-oss-20b.json">Machine-readable passport →</a>
+  <a href="/model-gpt-oss-20b.html">Full model reference →</a><a href="/passport-gpt-oss-20b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="gpt-oss-120b openai apache 2.0 + usage policy mixture-of-experts reasoning model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -431,7 +431,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>OpenAI states the 120B model can run efficiently on a single 80 GB GPU.</div></details>
   <details><summary>License / EU facts</summary><div>Broad commercial use under Apache 2.0, subject to the usage policy.<br><br>No explicit EU territorial restriction identified in the reviewed publisher materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/gpt-oss-120b/">Full model reference →</a><a href="/data/passports/gpt-oss-120b.json">Machine-readable passport →</a>
+  <a href="/model-gpt-oss-120b.html">Full model reference →</a><a href="/passport-gpt-oss-120b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="qwen3-32b qwen / alibaba apache 2.0 dense causal language model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -447,7 +447,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Raw-weight estimate: ~66 GB BF16, ~33 GB INT8, ~16.5 GB at 4-bit before runtime/KV-cache overhead.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/qwen3-32b/">Full model reference →</a><a href="/data/passports/qwen3-32b.json">Machine-readable passport →</a>
+  <a href="/model-qwen3-32b.html">Full model reference →</a><a href="/passport-qwen3-32b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="qwen3-30b-a3b qwen / alibaba apache 2.0 mixture-of-experts">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -463,7 +463,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>MoE activation reduces per-token compute, but full checkpoint storage and runtime overhead still matter.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/qwen3-30b-a3b.json">Machine-readable passport →</a>
+  <a href="/passport-qwen3-30b-a3b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="qwen3-coder-30b-a3b-instruct qwen / alibaba apache 2.0 mixture-of-experts coding model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -479,7 +479,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Designed for agentic coding; memory depends strongly on quantization and KV-cache length.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/qwen3-coder-30b-a3b/">Full model reference →</a><a href="/data/passports/qwen3-coder-30b-a3b.json">Machine-readable passport →</a>
+  <a href="/model-qwen3-coder-30b-a3b.html">Full model reference →</a><a href="/passport-qwen3-coder-30b-a3b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="qwen3-vl-30b-a3b-instruct qwen / alibaba apache 2.0 vision-language moe">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -495,7 +495,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Multimodal deployments require additional image/video preprocessing memory beyond raw weights.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/qwen3-vl-30b-a3b.json">Machine-readable passport →</a>
+  <a href="/passport-qwen3-vl-30b-a3b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="deepseek-r1 deepseek mit mixture-of-experts reasoning model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -511,7 +511,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Very large deployment; multi-GPU/accelerator configurations are normally required.</div></details>
   <details><summary>License / EU facts</summary><div>Publisher materials support commercial use under the MIT release.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/deepseek-r1/">Full model reference →</a><a href="/data/passports/deepseek-r1.json">Machine-readable passport →</a>
+  <a href="/model-deepseek-r1.html">Full model reference →</a><a href="/passport-deepseek-r1.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="deepseek-r1-distill-qwen-32b deepseek see exact model repository / upstream terms dense qwen-derived distilled reasoning model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -527,7 +527,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Raw-weight estimate is similar to other 32–33B dense models; quantized local deployment is practical on larger consumer systems.</div></details>
   <details><summary>License / EU facts</summary><div>Verify both the exact DeepSeek repository terms and upstream model-license implications before production use.<br><br>No explicit EU territorial restriction identified in the reviewed model repository.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/deepseek-r1-distill-qwen-32b.json">Machine-readable passport →</a>
+  <a href="/passport-deepseek-r1-distill-qwen-32b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="deepseek-r1-distill-qwen-7b deepseek see exact model repository / upstream terms dense distilled reasoning model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -543,7 +543,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Small enough for many single-GPU or quantized local deployments.</div></details>
   <details><summary>License / EU facts</summary><div>Verify exact repository and upstream terms before commercial deployment.<br><br>No explicit EU territorial restriction identified in the reviewed model repository.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/deepseek-r1-distill-qwen-7b.json">Machine-readable passport →</a>
+  <a href="/passport-deepseek-r1-distill-qwen-7b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="mistral small 4 mistral ai apache 2.0 moe — 128 experts, 4 active">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -559,7 +559,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Official NVFP4 checkpoint can materially reduce memory versus BF16.</div></details>
   <details><summary>License / EU facts</summary><div>Apache 2.0 supports commercial and non-commercial use.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/mistral-small-4/">Full model reference →</a><a href="/data/passports/mistral-small-4.json">Machine-readable passport →</a>
+  <a href="/model-mistral-small-4.html">Full model reference →</a><a href="/passport-mistral-small-4.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="devstral small 1.1 mistral ai / all hands ai apache 2.0 dense coding model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -575,7 +575,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Publisher says it is light enough for a single RTX 4090 or a Mac with 32 GB RAM.</div></details>
   <details><summary>License / EU facts</summary><div>Apache 2.0 allows commercial and non-commercial use.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/devstral-small-1-1.json">Machine-readable passport →</a>
+  <a href="/passport-devstral-small-1-1.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="llama 4 scout meta llama 4 community license native multimodal mixture-of-experts">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -591,7 +591,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Meta states the Llama 4 series needs at least 4 GPUs for full BF16 inference with the reference implementation.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use is contemplated by the license, subject to its conditions and large-user provisions.<br><br>No explicit EU territorial prohibition identified in the reviewed Llama 4 license.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/llama-4-scout/">Full model reference →</a><a href="/data/passports/llama-4-scout.json">Machine-readable passport →</a>
+  <a href="/model-llama-4-scout.html">Full model reference →</a><a href="/passport-llama-4-scout.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="gemma 3 27b it google deepmind gemma terms dense multimodal model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -607,7 +607,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Google positions the 27B model as runnable on a single GPU/TPU host; quantization materially changes memory requirements.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial deployment depends on the Gemma Terms and applicable use restrictions; verify exact terms.<br><br>No simple Apache/MIT-style conclusion; review Gemma Terms for the deployment context.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/gemma-3-27b-it/">Full model reference →</a><a href="/data/passports/gemma-3-27b-it.json">Machine-readable passport →</a>
+  <a href="/model-gemma-3-27b-it.html">Full model reference →</a><a href="/passport-gemma-3-27b-it.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="phi-4 microsoft mit dense decoder-only transformer">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -623,7 +623,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>14B-class dense model suitable for memory/compute-constrained and latency-sensitive scenarios.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under MIT.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/phi-4.json">Machine-readable passport →</a>
+  <a href="/passport-phi-4.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="granite 4.2 8b ibm apache 2.0 dense granite language model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -639,7 +639,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>IBM publishes BF16, FP8, MXFP4/NVFP4 and GGUF variants, giving several deployment paths.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/granite-4-2-8b.json">Machine-readable passport →</a>
+  <a href="/passport-granite-4-2-8b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="kimi k2 instruct moonshot ai modified mit mixture-of-experts">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -655,7 +655,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Huge total checkpoint size despite 32B active parameters per token; storage and distributed serving remain substantial.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use depends on the exact modified-MIT terms; do not treat it as identical to standard MIT.<br><br>No explicit EU territorial restriction identified in the reviewed model page; verify the full modified license.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/kimi-k2-instruct.json">Machine-readable passport →</a>
+  <a href="/passport-kimi-k2-instruct.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="glm-4.5 z.ai mit mixture-of-experts hybrid reasoning model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -671,7 +671,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>717 GB repository size is reported on the hub for the main checkpoint; distributed inference is the realistic path.</div></details>
   <details><summary>License / EU facts</summary><div>Publisher states MIT release can be used commercially and for secondary development.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/glm-4-5/">Full model reference →</a><a href="/data/passports/glm-4-5.json">Machine-readable passport →</a>
+  <a href="/model-glm-4-5.html">Full model reference →</a><a href="/passport-glm-4-5.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="olmo 3 32b ai2 apache 2.0 autoregressive transformer">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -687,7 +687,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Ai2 releases code, checkpoints and training details, making this one of the more transparent entries in the set.</div></details>
   <details><summary>License / EU facts</summary><div>Model and code are released under Apache 2.0; Ai2 also provides responsible-use guidance.<br><br>No explicit EU territorial restriction identified in the reviewed model materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/models/olmo-3-32b/">Full model reference →</a><a href="/data/passports/olmo-3-32b.json">Machine-readable passport →</a>
+  <a href="/model-olmo-3-32b.html">Full model reference →</a><a href="/passport-olmo-3-32b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="smollm3-3b hugging face apache 2.0 compact decoder-only language model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -703,7 +703,7 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>3B scale makes local and edge-style experimentation substantially easier than 30B+ models.</div></details>
   <details><summary>License / EU facts</summary><div>Commercial use permitted under Apache 2.0.<br><br>No explicit EU territorial restriction identified in the reviewed license/materials.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/smollm3-3b.json">Machine-readable passport →</a>
+  <a href="/passport-smollm3-3b.json">Machine-readable passport →</a>
 </article>
 <article class="passport-card" data-passport-search="command a cohere labs cc by-nc 4.0 + cohere labs aup dense enterprise language model">
   <div class="passport-eyebrow">OWM Passport v0.2</div>
@@ -719,14 +719,14 @@ footer{background:#06101c;color:#b7c6d6;padding:44px 0 22px}.foot{display:flex;j
   </div>
   <details><summary>Deployment notes</summary><div>Publisher states the model can be deployed on two GPUs; exact GPU class/configuration must be checked for the target setup.</div></details>
   <details><summary>License / EU facts</summary><div>Non-commercial license: do not classify as broadly commercially deployable.<br><br>Territorial use is not the main restriction here; the non-commercial license is the key deployment constraint.<br><br><em>Informational, not legal advice.</em></div></details>
-  <a href="/data/passports/command-a.json">Machine-readable passport →</a>
+  <a href="/passport-command-a.json">Machine-readable passport →</a>
 </article>
   </div>
   <div class="shell p-actions">
-    <a href="/data/passports/index.json">Passport index JSON →</a>
-    <a href="/data/runtime-evidence.json">Runtime evidence JSON →</a>
-    <a href="/data/owm-passport.schema.json">JSON Schema →</a>
-    <a href="/data/changes.json">Change history →</a>
+    <a href="/passports-index.json">Passport index JSON →</a>
+    <a href="/runtime-evidence.json">Runtime evidence JSON →</a>
+    <a href="/owm-passport.schema.json">JSON Schema →</a>
+    <a href="/changes.json">Change history →</a>
     <a href="https://github.com/openweightmodels/openweightmodels.github.io/blob/main/OWM-PASSPORT-SPEC.md" target="_blank" rel="noopener">Specification →</a>
   </div>
 </section>

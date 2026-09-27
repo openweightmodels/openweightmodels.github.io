@@ -1,0 +1,32 @@
+{
+  "id": "phi-4",
+  "name": "Phi-4",
+  "developer": "Microsoft",
+  "exact_model_id": "microsoft/phi-4",
+  "verified_at": "2026-09-27",
+  "evidence_level": "source-verified",
+  "access": {
+    "label": "Direct download",
+    "gated": false
+  },
+  "license": {
+    "name": "MIT",
+    "commercial_use": "Commercial use permitted under MIT.",
+    "eu_note": "No explicit EU territorial restriction identified in the reviewed license/materials."
+  },
+  "architecture": {
+    "parameters": "14B/15B class",
+    "type": "Dense decoder-only Transformer",
+    "context": "16K",
+    "modalities": "Text → text"
+  },
+  "runtimes": [
+    "Transformers",
+    "vLLM",
+    "SGLang",
+    "Docker Model Runner"
+  ],
+  "hardware_note": "14B-class dense model suitable for memory/compute-constrained and latency-sensitive scenarios.",
+  "primary_source": "https://huggingface.co/microsoft/phi-4",
+  "third_party_runtime_evidence": []
+}

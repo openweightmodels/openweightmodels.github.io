@@ -1,0 +1,17 @@
+{
+  "history_start": "2026-09-27",
+  "last_update": "2026-09-27",
+  "note": "OWM records observed changes from this date onward and does not reconstruct changes that were not observed.",
+  "changes": [
+    {
+      "date": "2026-09-27",
+      "type": "passport-expansion",
+      "summary": "OWM Model Passport expanded to 20 exact model/checkpoint records."
+    },
+    {
+      "date": "2026-09-27",
+      "type": "third-party-runtime-evidence",
+      "summary": "Four externally measured runtime records added with explicit provenance and no claim of OWM reproduction."
+    }
+  ]
+}

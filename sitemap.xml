@@ -19,99 +19,221 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/data/passports/index.json</loc>
+    <loc>https://openweightmodels.eu/passports-index.json</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/data/runtime-evidence.json</loc>
+    <loc>https://openweightmodels.eu/runtime-evidence.json</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/data/changes.json</loc>
+    <loc>https://openweightmodels.eu/changes.json</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/data/sovereignty-lens.json</loc>
+    <loc>https://openweightmodels.eu/sovereignty-lens.json</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/</loc>
+    <loc>https://openweightmodels.eu/detailed-model-references.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://openweightmodels.eu/models.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/gpt-oss-20b/</loc>
+    <loc>https://openweightmodels.eu/model-gpt-oss-20b.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/gpt-oss-120b/</loc>
+    <loc>https://openweightmodels.eu/model-gpt-oss-120b.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/qwen3-32b/</loc>
+    <loc>https://openweightmodels.eu/model-qwen3-32b.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/qwen3-coder-30b-a3b/</loc>
+    <loc>https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/deepseek-r1/</loc>
+    <loc>https://openweightmodels.eu/model-deepseek-r1.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/gemma-3-27b-it/</loc>
+    <loc>https://openweightmodels.eu/model-gemma-3-27b-it.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/mistral-small-4/</loc>
+    <loc>https://openweightmodels.eu/model-mistral-small-4.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/llama-4-scout/</loc>
+    <loc>https://openweightmodels.eu/model-llama-4-scout.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/olmo-3-32b/</loc>
+    <loc>https://openweightmodels.eu/model-olmo-3-32b.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openweightmodels.eu/models/glm-4-5/</loc>
+    <loc>https://openweightmodels.eu/model-glm-4-5.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://openweightmodels.eu/data/detailed-model-references.json</loc>
+    <loc>https://openweightmodels.eu/passport-command-a.json</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-32b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-7b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-deepseek-r1.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-devstral-small-1-1.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-gemma-3-27b-it.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-glm-4-5.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-gpt-oss-120b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-gpt-oss-20b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-granite-4-2-8b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-kimi-k2-instruct.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-llama-4-scout.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-mistral-small-4.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-olmo-3-32b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-phi-4.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-qwen3-30b-a3b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-qwen3-32b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-qwen3-coder-30b-a3b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-qwen3-vl-30b-a3b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://openweightmodels.eu/passport-smollm3-3b.json</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
