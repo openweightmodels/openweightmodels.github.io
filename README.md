@@ -122,3 +122,9 @@ The detailed model references are additionally published as root-level static HT
 
 `.nojekyll` is included so GitHub Pages serves the repository as plain static files.
 The previous clean `/models/<slug>/` structure is retained as a compatibility copy, and `404.html` redirects legacy clean model paths to their canonical flat URLs.
+
+
+## v8.3 — Inline styling fix
+
+The 10 detailed model reference pages and `models.html` now contain their full CSS inline.
+They no longer depend on `/assets/model-reference.css`, so the pages remain fully styled even if GitHub Pages does not serve the asset path correctly.
