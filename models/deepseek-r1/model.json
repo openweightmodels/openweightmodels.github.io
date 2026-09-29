@@ -1,0 +1,111 @@
+{
+  "name": "DeepSeek-R1",
+  "slug": "deepseek-r1",
+  "developer": "DeepSeek",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "DeepSeek-R1 is a 671B-parameter reasoning Mixture-of-Experts model with 37B activated parameters and a 128K context window. DeepSeek publishes the code repository and weights under the MIT License.",
+  "stats": [
+    {
+      "label": "Total params",
+      "value": "671B",
+      "note": "MoE"
+    },
+    {
+      "label": "Active params",
+      "value": "37B",
+      "note": "per token"
+    },
+    {
+      "label": "Context",
+      "value": "128K",
+      "note": "official"
+    },
+    {
+      "label": "Input",
+      "value": "Text",
+      "note": "reasoning"
+    },
+    {
+      "label": "License",
+      "value": "MIT",
+      "note": "weights + code"
+    },
+    {
+      "label": "Deployment",
+      "value": "Datacenter",
+      "note": "multi-GPU class"
+    }
+  ],
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Allowed",
+        "notes": "DeepSeek explicitly states that the R1 series supports commercial use."
+      },
+      {
+        "question": "Modification",
+        "status": "Allowed",
+        "notes": "MIT licensing permits modification."
+      },
+      {
+        "question": "Derivative works",
+        "status": "Allowed",
+        "notes": "DeepSeek explicitly permits derivative works, including distillation."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Allowed with notice",
+        "notes": "Standard MIT copyright and permission notice requirements apply."
+      },
+      {
+        "question": "Distilled variants",
+        "status": "Check base license",
+        "notes": "Some R1-Distill checkpoints inherit underlying Qwen or Llama licensing considerations."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Official DeepSeek API",
+      "type": "Managed API",
+      "notes": "DeepSeek provides an OpenAI-compatible API platform."
+    },
+    {
+      "route": "Direct weights",
+      "type": "Self-hosted",
+      "notes": "Official weights are published on Hugging Face."
+    },
+    {
+      "route": "DeepSeek-V3 stack",
+      "type": "Self-hosted",
+      "notes": "DeepSeek directs full R1 deployments to the DeepSeek-V3 runtime guidance."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving runtime",
+      "notes": "Current SGLang documentation validates direct DeepSeek-R1 deployment."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official DeepSeek-R1 repository",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1"
+    },
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1"
+    },
+    {
+      "label": "MIT license",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE"
+    },
+    {
+      "label": "SGLang deployment docs",
+      "url": "https://github.com/sgl-project/sglang/blob/main/docs_new/docs/hardware-platforms/ascend-npus/model-tutorials/deepseek_r1.mdx"
+    }
+  ]
+}

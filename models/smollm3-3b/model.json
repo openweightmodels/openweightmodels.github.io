@@ -1,0 +1,112 @@
+{
+  "name": "SmolLM3 3B",
+  "slug": "smollm3-3b",
+  "developer": "Hugging Face",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "SmolLM3 is a compact 3B language model designed for efficient deployment, hybrid reasoning and long context. Hugging Face publishes it under Apache 2.0 together with substantial training details and supports multiple local runtimes.",
+  "stats": [
+    {
+      "label": "Parameters",
+      "value": "3B",
+      "note": "dense"
+    },
+    {
+      "label": "Native train context",
+      "value": "64K",
+      "note": "staged training"
+    },
+    {
+      "label": "Extended context",
+      "value": "128K",
+      "note": "YaRN"
+    },
+    {
+      "label": "Languages",
+      "value": "6 native",
+      "note": "multilingual"
+    },
+    {
+      "label": "Focus",
+      "value": "Hybrid reasoning",
+      "note": "local"
+    },
+    {
+      "label": "License",
+      "value": "Apache 2.0",
+      "note": "permissive"
+    }
+  ],
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Allowed",
+        "notes": "Apache 2.0 permits commercial use."
+      },
+      {
+        "question": "Modification",
+        "status": "Allowed",
+        "notes": "Adaptation and fine-tuning are permitted."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Allowed with conditions",
+        "notes": "Apache notice/license obligations apply."
+      },
+      {
+        "question": "Patent grant",
+        "status": "Included",
+        "notes": "Express Apache 2.0 patent grant."
+      },
+      {
+        "question": "Training transparency",
+        "status": "High",
+        "notes": "Hugging Face publishes substantial training details in addition to the weights."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Native model support in Transformers."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving runtime",
+      "notes": "Hugging Face documents current vLLM support."
+    },
+    {
+      "route": "llama.cpp / GGUF",
+      "type": "Local",
+      "notes": "Quantized community/ggml checkpoints support lightweight local serving."
+    },
+    {
+      "route": "ONNX",
+      "type": "Local / edge",
+      "notes": "Documented as a local inference path."
+    },
+    {
+      "route": "MLX / MLC",
+      "type": "Local / device",
+      "notes": "Documented as local inference options for compatible hardware."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+    },
+    {
+      "label": "Transformers documentation",
+      "url": "https://huggingface.co/docs/transformers/model_doc/smollm3"
+    },
+    {
+      "label": "GGUF / llama.cpp model",
+      "url": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "name": "Kimi K2 Instruct",
+  "slug": "kimi-k2-instruct",
+  "developer": "Moonshot AI",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "Kimi K2 Instruct is a 1-trillion-parameter Mixture-of-Experts model with 32B active parameters, 384 experts and a 128K context window. Moonshot AI uses a Modified MIT license that adds a branding obligation for very large commercial services.",
+  "stats": [
+    {
+      "label": "Total params",
+      "value": "1T",
+      "note": "MoE"
+    },
+    {
+      "label": "Active params",
+      "value": "32B",
+      "note": "per token"
+    },
+    {
+      "label": "Experts",
+      "value": "384",
+      "note": "8 selected + shared"
+    },
+    {
+      "label": "Context",
+      "value": "128K",
+      "note": "official"
+    },
+    {
+      "label": "Focus",
+      "value": "Agentic",
+      "note": "coding + tools"
+    },
+    {
+      "label": "License",
+      "value": "Modified MIT",
+      "note": "threshold clause"
+    }
+  ],
+  "license": {
+    "name": "Modified MIT License",
+    "classification": "Permissive base + scale-triggered branding clause",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Allowed",
+        "notes": "The license broadly tracks MIT permissions."
+      },
+      {
+        "question": "Modification",
+        "status": "Allowed",
+        "notes": "Modification and derivative works are permitted."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Allowed with notice",
+        "notes": "MIT copyright and permission notice requirements remain."
+      },
+      {
+        "question": ">100M monthly active users",
+        "status": "Branding condition",
+        "notes": "Qualifying commercial products/services must prominently display “Kimi K2”."
+      },
+      {
+        "question": ">$20M monthly revenue",
+        "status": "Branding condition",
+        "notes": "The same prominent-display obligation applies above the revenue threshold."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official model supports Transformers with remote model code."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving runtime",
+      "notes": "Official model page documents vLLM serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving runtime",
+      "notes": "Official model page documents SGLang serving."
+    },
+    {
+      "route": "FP8 checkpoint",
+      "type": "Reduced precision",
+      "notes": "The published model repository is tagged for FP8 deployment."
+    },
+    {
+      "route": "Other optimized stacks",
+      "type": "Ecosystem",
+      "notes": "Moonshot's repository also documents broader optimized runtime support."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
+    },
+    {
+      "label": "Official Kimi K2 repository",
+      "url": "https://github.com/MoonshotAI/Kimi-K2"
+    },
+    {
+      "label": "Modified MIT license",
+      "url": "https://github.com/MoonshotAI/Kimi-K2/blob/main/LICENSE"
+    }
+  ]
+}

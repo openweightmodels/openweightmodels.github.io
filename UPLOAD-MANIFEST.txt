@@ -1,0 +1,21 @@
+OpenWeightModels targeted passport expansion — 2026-09-29
+
+Upload the contents of this ZIP to the repository root, preserving folders.
+
+Updated:
+- /index.html
+- /data/models.json
+
+New full Model Passports:
+- /models/gpt-oss-120b/index.html
+- /models/gpt-oss-120b/model.json
+- /models/deepseek-r1/index.html
+- /models/deepseek-r1/model.json
+- /models/gemma-3-27b-it/index.html
+- /models/gemma-3-27b-it/model.json
+- /models/qwen3-coder-480b-a35b-instruct/index.html
+- /models/qwen3-coder-480b-a35b-instruct/model.json
+- /models/kimi-k2-instruct/index.html
+- /models/kimi-k2-instruct/model.json
+- /models/smollm3-3b/index.html
+- /models/smollm3-3b/model.json

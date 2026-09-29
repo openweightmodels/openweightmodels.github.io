@@ -1,0 +1,107 @@
+{
+  "name": "Gemma 3 27B IT",
+  "slug": "gemma-3-27b-it",
+  "developer": "Google DeepMind",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "Gemma 3 27B IT is Google's instruction-tuned 27B multimodal model with text and image input, text output and a 128K context window. Its weights are available under Google's Gemma Terms rather than a standard permissive OSS license.",
+  "stats": [
+    {
+      "label": "Parameters",
+      "value": "27B",
+      "note": "dense"
+    },
+    {
+      "label": "Context",
+      "value": "128K",
+      "note": "official"
+    },
+    {
+      "label": "Input",
+      "value": "Text + image",
+      "note": "multimodal"
+    },
+    {
+      "label": "Output",
+      "value": "Text",
+      "note": "generation"
+    },
+    {
+      "label": "Languages",
+      "value": "140+",
+      "note": "documented"
+    },
+    {
+      "label": "License",
+      "value": "Gemma Terms",
+      "note": "custom"
+    }
+  ],
+  "license": {
+    "name": "Gemma Terms of Use",
+    "classification": "Custom model terms",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Conditional",
+        "notes": "Use is permitted subject to the Gemma Terms and incorporated restrictions."
+      },
+      {
+        "question": "Modification",
+        "status": "Conditional",
+        "notes": "Model derivatives are expressly contemplated by the terms."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Conditional",
+        "notes": "Recipients must receive the agreement and required notices/restrictions."
+      },
+      {
+        "question": "Hosted service",
+        "status": "Counts as distribution",
+        "notes": "The terms define hosted API/web access as Distribution."
+      },
+      {
+        "question": "Modified files",
+        "status": "Notice required",
+        "notes": "Modified files must carry prominent modification notices."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official model is published for standard Hugging Face workflows."
+    },
+    {
+      "route": "Vertex AI Model Garden",
+      "type": "Cloud deployment",
+      "notes": "Google lists Gemma 3 through Vertex Model Garden."
+    },
+    {
+      "route": "Ollama",
+      "type": "Local",
+      "notes": "Google documents Gemma deployment with Ollama."
+    },
+    {
+      "route": "llama.cpp",
+      "type": "Local / quantized",
+      "notes": "Google documents GGUF/llama.cpp-style local deployment for Gemma."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official model card",
+      "url": "https://huggingface.co/google/gemma-3-27b-it"
+    },
+    {
+      "label": "Gemma Terms",
+      "url": "https://ai.google.dev/gemma/terms"
+    },
+    {
+      "label": "Gemma with Ollama",
+      "url": "https://ai.google.dev/gemma/docs/integrations/ollama"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "name": "Qwen3-Coder-480B-A35B-Instruct",
+  "slug": "qwen3-coder-480b-a35b-instruct",
+  "developer": "Qwen / Alibaba",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "Qwen3-Coder-480B-A35B-Instruct is a large coding-focused Mixture-of-Experts model with 480B total parameters, 35B active parameters and a 256K context window. The official checkpoint is Apache-2.0 licensed and documented for vLLM and SGLang serving.",
+  "stats": [
+    {
+      "label": "Total params",
+      "value": "480B",
+      "note": "MoE"
+    },
+    {
+      "label": "Active params",
+      "value": "35B",
+      "note": "per token"
+    },
+    {
+      "label": "Experts",
+      "value": "160",
+      "note": "8 selected/token"
+    },
+    {
+      "label": "Context",
+      "value": "256K",
+      "note": "official"
+    },
+    {
+      "label": "Focus",
+      "value": "Coding + agents",
+      "note": "tool use"
+    },
+    {
+      "label": "License",
+      "value": "Apache 2.0",
+      "note": "permissive"
+    }
+  ],
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Allowed",
+        "notes": "Apache 2.0 permits commercial use."
+      },
+      {
+        "question": "Modification",
+        "status": "Allowed",
+        "notes": "Weights/code may be modified subject to license terms."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Allowed with conditions",
+        "notes": "License and notice requirements apply."
+      },
+      {
+        "question": "Patent grant",
+        "status": "Included",
+        "notes": "Apache 2.0 includes an express patent license."
+      },
+      {
+        "question": "Copyleft",
+        "status": "No",
+        "notes": "Apache 2.0 is permissive rather than reciprocal/copyleft."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face integration."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving runtime",
+      "notes": "Official model page documents vLLM serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving runtime",
+      "notes": "Official model page documents SGLang serving."
+    },
+    {
+      "route": "Docker Model Runner",
+      "type": "Container workflow",
+      "notes": "Documented from the Hugging Face model page."
+    },
+    {
+      "route": "Official FP8 variant",
+      "type": "Reduced precision",
+      "notes": "Qwen publishes an FP8 checkpoint in the model family."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
+    },
+    {
+      "label": "Qwen3-Coder repository",
+      "url": "https://github.com/QwenLM/Qwen3-Coder"
+    },
+    {
+      "label": "Model config",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/config.json"
+    }
+  ]
+}

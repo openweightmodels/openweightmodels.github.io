@@ -1,0 +1,112 @@
+{
+  "name": "gpt-oss-120b",
+  "slug": "gpt-oss-120b",
+  "developer": "OpenAI",
+  "passport_status": "full",
+  "verified_at": "2026-09-29",
+  "summary": "OpenAI's larger gpt-oss reasoning model combines 116.8B total parameters with about 5.1B active parameters per token and a 128K context window. The checkpoint uses MXFP4 quantization and is designed to fit on a single 80 GB accelerator.",
+  "stats": [
+    {
+      "label": "Total params",
+      "value": "116.8B",
+      "note": "MoE"
+    },
+    {
+      "label": "Active params",
+      "value": "5.1B",
+      "note": "per token"
+    },
+    {
+      "label": "Experts",
+      "value": "128",
+      "note": "4 active/token"
+    },
+    {
+      "label": "Context",
+      "value": "131,072",
+      "note": "native"
+    },
+    {
+      "label": "Checkpoint",
+      "value": "60.8 GiB",
+      "note": "MXFP4"
+    },
+    {
+      "label": "License",
+      "value": "Apache 2.0",
+      "note": "+ usage policy"
+    }
+  ],
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive license + separate usage policy",
+    "rights": [
+      {
+        "question": "Commercial use",
+        "status": "Allowed",
+        "notes": "Apache 2.0 permits broad commercial use."
+      },
+      {
+        "question": "Modification",
+        "status": "Allowed",
+        "notes": "Modification and fine-tuning are permitted under Apache 2.0."
+      },
+      {
+        "question": "Redistribution",
+        "status": "Allowed with conditions",
+        "notes": "Apache 2.0 notice/license obligations apply."
+      },
+      {
+        "question": "Patent grant",
+        "status": "Included",
+        "notes": "Apache 2.0 contains an express patent license."
+      },
+      {
+        "question": "Usage policy",
+        "status": "Applies",
+        "notes": "OpenAI publishes a separate gpt-oss usage policy."
+      }
+    ]
+  },
+  "deployment": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face integration and model card."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving runtime",
+      "notes": "Documented in the official model ecosystem."
+    },
+    {
+      "route": "PyTorch / Triton",
+      "type": "Self-hosted",
+      "notes": "Documented inference path for lower-level deployments."
+    },
+    {
+      "route": "Ollama",
+      "type": "Local / managed local",
+      "notes": "Documented by OpenAI for gpt-oss inference."
+    },
+    {
+      "route": "80 GB accelerator",
+      "type": "Hardware target",
+      "notes": "OpenAI states the 120B model is designed to fit on a single 80 GB GPU such as H100; larger-memory accelerators also work."
+    }
+  ],
+  "sources": [
+    {
+      "label": "OpenAI model card",
+      "url": "https://openai.com/index/gpt-oss-model-card/"
+    },
+    {
+      "label": "OpenAI introduction",
+      "url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/openai/gpt-oss-120b"
+    }
+  ]
+}
