@@ -1,470 +1,329 @@
 {
-  "name": "Open Weight Models Registry",
-  "canonical_url": "https://openweightmodels.github.io/",
-  "project_hugging_face": "https://huggingface.co/open-weight",
-  "last_verified": "2026-09-26",
-  "scope_note": "Curated family-level reference with 25 selected families. Model-specific licenses and technical requirements must be verified against the linked primary source before deployment.",
+  "project": "Open Weight Models",
+  "updated": "2026-09-29",
+  "count": 32,
+  "methodology_note": "Open weight describes weight availability; license and usage rights are tracked separately. Verify model-specific terms before deployment.",
   "models": [
     {
-      "family": "gpt-oss",
+      "name": "gpt-oss-120b",
+      "sub": "120B · reasoning model",
       "developer": "OpenAI",
-      "examples": "gpt-oss-20b · gpt-oss-120b",
-      "architecture": "MoE reasoning models",
-      "size": "20B / 120B class",
-      "context": "See official model card",
-      "license": "Apache 2.0 + usage policy",
-      "license_type": "permissive",
-      "focus": "Reasoning, tool use, self-hosted inference",
-      "source": "https://openai.com/open-models/",
-      "hub": "https://huggingface.co/collections/openai/gpt-oss",
-      "verified": "2026-09-26"
+      "license": "Apache 2.0",
+      "focus": "Reasoning, tools, self-hosted inference",
+      "source": "https://huggingface.co/openai/gpt-oss-120b",
+      "license_category": "apache",
+      "status": "listed"
     },
     {
-      "family": "Llama 4",
+      "name": "gpt-oss-20b",
+      "sub": "20B · compact reasoning",
+      "developer": "OpenAI",
+      "license": "Apache 2.0",
+      "focus": "Reasoning, local and edge-class inference",
+      "source": "https://huggingface.co/openai/gpt-oss-20b",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Llama 4 Maverick",
+      "sub": "17B active / 128 experts · Model Passport",
       "developer": "Meta",
-      "examples": "Scout 17B-16E · Maverick 17B-128E",
-      "architecture": "Mixture-of-Experts, multimodal",
-      "size": "17B active class",
-      "context": "Scout 10M · Maverick 1M",
       "license": "Llama 4 Community License",
-      "license_type": "custom",
-      "focus": "General-purpose, multimodal, long context",
-      "source": "https://github.com/meta-llama/llama-models",
-      "hub": "https://huggingface.co/meta-llama",
-      "verified": "2026-09-26"
+      "focus": "Multimodal MoE, long context",
+      "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "passport": "/models/llama-4-maverick/",
+      "license_category": "llama",
+      "status": "passport"
     },
     {
-      "family": "Qwen3",
+      "name": "Llama 4 Scout",
+      "sub": "17B active / 16 experts",
+      "developer": "Meta",
+      "license": "Llama 4 Community License",
+      "focus": "Multimodal MoE, very long context",
+      "source": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "license_category": "llama",
+      "status": "listed"
+    },
+    {
+      "name": "Llama 3.3 70B Instruct",
+      "sub": "70B · text instruct",
+      "developer": "Meta",
+      "license": "Llama 3.3 Community License",
+      "focus": "General-purpose multilingual text",
+      "source": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "license_category": "llama",
+      "status": "listed"
+    },
+    {
+      "name": "Qwen3-235B-A22B",
+      "sub": "235B / 22B active · MoE",
       "developer": "Qwen / Alibaba",
-      "examples": "0.6B–32B dense · 30B-A3B · 235B-A22B",
-      "architecture": "Dense + Mixture-of-Experts",
-      "size": "0.6B–235B total",
-      "context": "Up to 256K; selected variants extend further",
       "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": "Reasoning, coding, multilingual, agents",
-      "source": "https://github.com/QwenLM/Qwen3",
-      "hub": "https://huggingface.co/Qwen",
-      "verified": "2026-09-26"
+      "focus": "Reasoning, multilingual, general-purpose",
+      "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+      "license_category": "apache",
+      "status": "listed"
     },
     {
-      "family": "Mistral Small 4",
-      "developer": "Mistral AI",
-      "examples": "Mistral-Small-4-119B-2603",
-      "architecture": "Granular Mixture-of-Experts, multimodal",
-      "size": "119B total · 6.5B active/token",
-      "context": "256K",
+      "name": "Qwen3-32B",
+      "sub": "32B · dense",
+      "developer": "Qwen / Alibaba",
       "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": "Reasoning, vision, agents, multilingual",
-      "source": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
-      "hub": "https://huggingface.co/mistralai",
-      "verified": "2026-09-26"
+      "focus": "Reasoning, multilingual, general-purpose",
+      "source": "https://huggingface.co/Qwen/Qwen3-32B",
+      "license_category": "apache",
+      "status": "listed"
     },
     {
-      "family": "DeepSeek-V3.2",
-      "developer": "DeepSeek",
-      "examples": "DeepSeek-V3.2",
-      "architecture": "Large MoE reasoning model",
-      "size": "685B parameters",
-      "context": "See official model card",
-      "license": "MIT",
-      "license_type": "permissive",
-      "focus": "Reasoning, coding, tool use, agentic AI",
-      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
-      "hub": "https://huggingface.co/deepseek-ai",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Kimi K2",
-      "developer": "Moonshot AI",
-      "examples": "Kimi-K2-Base · Instruct · Thinking",
-      "architecture": "Mixture-of-Experts",
-      "size": "1T total · 32B active",
-      "context": "128K (K2 base card)",
-      "license": "Modified MIT",
-      "license_type": "modified",
-      "focus": "Agentic intelligence, coding, reasoning",
-      "source": "https://huggingface.co/moonshotai/Kimi-K2-Base",
-      "hub": "https://huggingface.co/collections/moonshotai/kimi-k2",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "GLM-4.5",
-      "developer": "Z.ai",
-      "examples": "GLM-4.5 · GLM-4.5-Air",
-      "architecture": "Mixture-of-Experts, hybrid reasoning",
-      "size": "355B-A32B · 106B-A12B",
-      "context": "See official model card",
-      "license": "MIT",
-      "license_type": "permissive",
-      "focus": "Agents, reasoning, coding, tool use",
-      "source": "https://huggingface.co/zai-org/GLM-4.5",
-      "hub": "https://huggingface.co/zai-org",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Phi-4",
-      "developer": "Microsoft",
-      "examples": "Phi-4 · Phi-4 mini · reasoning · multimodal",
-      "architecture": "Dense small-language-model family",
-      "size": "14B base Phi-4; family includes smaller variants",
-      "context": "16K on Phi-4 model card",
-      "license": "MIT",
-      "license_type": "permissive",
-      "focus": "Reasoning, constrained compute, multimodal variants",
-      "source": "https://huggingface.co/microsoft/phi-4",
-      "hub": "https://huggingface.co/collections/microsoft/phi-4",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Granite 4.2",
-      "developer": "IBM",
-      "examples": "Granite 4.2 3B · 8B · 30B",
-      "architecture": "Dense reasoning language models",
-      "size": "3B · 8B · 30B",
-      "context": "128K native; longer extension documented",
+      "name": "Qwen3-30B-A3B",
+      "sub": "30B / 3B active · MoE",
+      "developer": "Qwen / Alibaba",
       "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": "Enterprise, reasoning, code, tools, multilingual",
-      "source": "https://huggingface.co/ibm-granite/granite-4.2-8b",
-      "hub": "https://huggingface.co/ibm-granite",
-      "verified": "2026-09-26"
+      "focus": "Efficient reasoning and multilingual inference",
+      "source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "license_category": "apache",
+      "status": "listed"
     },
     {
-      "family": "Gemma 3",
+      "name": "Qwen3-Coder-480B-A35B-Instruct",
+      "sub": "480B / 35B active · MoE",
+      "developer": "Qwen / Alibaba",
+      "license": "Apache 2.0",
+      "focus": "Coding, software agents, tool use",
+      "source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Qwen2.5-VL-72B-Instruct",
+      "sub": "72B · vision-language",
+      "developer": "Qwen / Alibaba",
+      "license": "Qwen License",
+      "focus": "Vision, video understanding, visual agents",
+      "source": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "license_category": "qwen",
+      "status": "listed"
+    },
+    {
+      "name": "Qwen2.5-Coder-32B-Instruct",
+      "sub": "32B · code",
+      "developer": "Qwen / Alibaba",
+      "license": "Apache 2.0",
+      "focus": "Code generation, repair and reasoning",
+      "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Gemma 3 27B IT",
+      "sub": "27B · multimodal",
       "developer": "Google DeepMind",
-      "examples": "Gemma 3 family",
-      "architecture": "Dense multimodal family",
-      "size": "Multiple sizes",
-      "context": "See official model card",
       "license": "Gemma Terms",
-      "license_type": "custom",
-      "focus": "Multimodal, multilingual, local / on-device use",
-      "source": "https://ai.google.dev/gemma/docs/core/model_card_3",
-      "hub": "https://huggingface.co/google",
-      "verified": "2026-09-26"
+      "focus": "Multimodal, multilingual, long context",
+      "source": "https://huggingface.co/google/gemma-3-27b-it",
+      "license_category": "gemma",
+      "status": "listed"
     },
     {
-      "family": "MiniMax-M2",
-      "developer": "MiniMax",
-      "examples": "MiniMax-M2",
-      "architecture": "Large language model",
-      "size": "See official model card",
-      "context": "See official model card",
-      "license": "Modified MIT",
-      "license_type": "modified",
-      "focus": "General-purpose, coding, agentic workloads",
-      "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
-      "hub": "https://huggingface.co/MiniMaxAI",
-      "verified": "2026-09-26"
+      "name": "Gemma 3 12B IT",
+      "sub": "12B · multimodal",
+      "developer": "Google DeepMind",
+      "license": "Gemma Terms",
+      "focus": "Multimodal general-purpose inference",
+      "source": "https://huggingface.co/google/gemma-3-12b-it",
+      "license_category": "gemma",
+      "status": "listed"
     },
     {
-      "family": "Nemotron 3 Nano",
-      "developer": "NVIDIA",
-      "examples": "NVIDIA-Nemotron-3-Nano-4B",
-      "architecture": "Compact language-model family",
-      "size": "4B class",
-      "context": "See official model card",
-      "license": "NVIDIA Nemotron Open Model License",
-      "license_type": "custom",
-      "focus": "Local inference, compact deployment, NVIDIA ecosystem",
-      "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
-      "hub": "https://huggingface.co/nvidia",
-      "verified": "2026-09-26"
+      "name": "Gemma 3 4B IT",
+      "sub": "4B · multimodal",
+      "developer": "Google DeepMind",
+      "license": "Gemma Terms",
+      "focus": "Compact multimodal and on-device use",
+      "source": "https://huggingface.co/google/gemma-3-4b-it",
+      "license_category": "gemma",
+      "status": "listed"
     },
     {
-      "family": "DeepSeek-R1",
-      "developer": "DeepSeek",
-      "examples": [
-        "DeepSeek-R1",
-        "DeepSeek-R1-Zero"
-      ],
-      "weights_available": true,
-      "architecture": "Mixture-of-Experts reasoning model",
-      "size": "671B total · 37B active",
-      "context": "128K",
-      "license": "MIT",
-      "license_type": "permissive",
-      "focus": [
-        "reasoning",
-        "math",
-        "coding",
-        "distillation"
-      ],
-      "official_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-      "hub": "https://huggingface.co/deepseek-ai",
-      "verified": "2026-09-26"
+      "name": "Gemma 3n E4B IT",
+      "sub": "E4B · mobile multimodal",
+      "developer": "Google DeepMind",
+      "license": "Gemma Terms",
+      "focus": "Mobile, audio, vision and text",
+      "source": "https://huggingface.co/google/gemma-3n-E4B-it",
+      "license_category": "gemma",
+      "status": "listed"
     },
     {
-      "family": "Qwen3-Coder",
-      "developer": "Qwen / Alibaba",
-      "examples": [
-        "Qwen3-Coder-480B-A35B-Instruct"
-      ],
-      "weights_available": true,
-      "architecture": "Mixture-of-Experts code model",
-      "size": "480B total · 35B active",
-      "context": "256K native · extendable to 1M",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "agentic coding",
-        "repository understanding",
-        "tool use"
-      ],
-      "official_source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
-      "hub": "https://huggingface.co/Qwen",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Qwen3-VL",
-      "developer": "Qwen / Alibaba",
-      "examples": [
-        "Qwen3-VL-235B-A22B-Instruct",
-        "Qwen3-VL Thinking variants"
-      ],
-      "weights_available": true,
-      "architecture": "Dense + MoE vision-language family",
-      "size": "Up to 235B total · 22B active",
-      "context": "256K native · expandable to 1M",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "vision-language",
-        "visual agents",
-        "video",
-        "OCR",
-        "spatial reasoning"
-      ],
-      "official_source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
-      "hub": "https://huggingface.co/Qwen",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "OLMo 3",
-      "developer": "Ai2",
-      "examples": [
-        "OLMo 3 7B",
-        "OLMo 3 32B",
-        "Instruct",
-        "Think"
-      ],
-      "weights_available": true,
-      "architecture": "Transformer language-model family",
-      "size": "7B · 32B",
-      "context": "65,536",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "fully open research",
-        "reasoning",
-        "instruction following"
-      ],
-      "official_source": "https://huggingface.co/allenai/Olmo-3-1125-32B",
-      "hub": "https://huggingface.co/allenai",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "SmolLM3",
-      "developer": "Hugging Face",
-      "examples": [
-        "SmolLM3-3B",
-        "SmolLM3-3B-Base"
-      ],
-      "weights_available": true,
-      "architecture": "Decoder-only Transformer with GQA / NoPE layers",
-      "size": "3B",
-      "context": "64K trained · up to 128K with YaRN",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "small models",
-        "reasoning",
-        "multilingual",
-        "local inference",
-        "tool use"
-      ],
-      "official_source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
-      "hub": "https://huggingface.co/HuggingFaceTB",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Command A",
-      "developer": "Cohere Labs",
-      "examples": [
-        "c4ai-command-a-03-2025"
-      ],
-      "weights_available": true,
-      "architecture": "Dense enterprise language model",
-      "size": "111B",
-      "context": "256K supported",
-      "license": "CC BY-NC 4.0 + AUP",
-      "license_type": "custom",
-      "focus": [
-        "enterprise",
-        "agents",
-        "multilingual",
-        "RAG",
-        "tool use"
-      ],
-      "official_source": "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025",
-      "hub": "https://huggingface.co/CohereLabs",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Falcon-H1",
-      "developer": "Technology Innovation Institute",
-      "examples": [
-        "Falcon-H1-34B-Instruct",
-        "Falcon-H1-34B-Base"
-      ],
-      "weights_available": true,
-      "architecture": "Hybrid Transformer + Mamba",
-      "size": "34B",
-      "context": "See official model card",
-      "license": "Falcon LLM License",
-      "license_type": "custom",
-      "focus": [
-        "multilingual",
-        "general-purpose",
-        "efficient sequence modeling"
-      ],
-      "official_source": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
-      "hub": "https://huggingface.co/tiiuae",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "InternLM3",
-      "developer": "InternLM",
-      "examples": [
-        "InternLM3-8B-Instruct"
-      ],
-      "weights_available": true,
-      "architecture": "Causal language model",
-      "size": "8B",
-      "context": "See official model card",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "general-purpose",
-        "reasoning",
-        "knowledge-intensive tasks"
-      ],
-      "official_source": "https://huggingface.co/internlm/internlm3-8b-instruct",
-      "hub": "https://huggingface.co/internlm",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Yi-1.5",
-      "developer": "01.AI",
-      "examples": [
-        "Yi-1.5-6B",
-        "Yi-1.5-9B",
-        "Yi-1.5-34B"
-      ],
-      "weights_available": true,
-      "architecture": "Dense language-model family",
-      "size": "6B · 9B · 34B",
-      "context": "4K · 16K · 32K variants",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "general-purpose",
-        "coding",
-        "math",
-        "reasoning"
-      ],
-      "official_source": "https://huggingface.co/01-ai/Yi-1.5-34B",
-      "hub": "https://huggingface.co/01-ai",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Hunyuan-A13B",
-      "developer": "Tencent",
-      "examples": [
-        "Hunyuan-A13B-Instruct"
-      ],
-      "weights_available": true,
-      "architecture": "Mixture-of-Experts language model",
-      "size": "A13B family",
-      "context": "See official model card",
-      "license": "Tencent Hunyuan Community License",
-      "license_type": "custom",
-      "focus": [
-        "general-purpose",
-        "reasoning",
-        "tool use"
-      ],
-      "official_source": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct",
-      "hub": "https://huggingface.co/tencent",
-      "license_note": "The A13B license defines a territory excluding the EU, UK and South Korea. Verify eligibility before use.",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "ERNIE 4.5",
-      "developer": "Baidu",
-      "examples": [
-        "ERNIE-4.5-300B-A47B-Base"
-      ],
-      "weights_available": true,
-      "architecture": "Heterogeneous Mixture-of-Experts",
-      "size": "300B total · 47B active",
-      "context": "131,072",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "general language",
-        "long context",
-        "multimodal family variants"
-      ],
-      "official_source": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-Base-Paddle",
-      "hub": "https://huggingface.co/baidu",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Devstral",
-      "developer": "Mistral AI / All Hands AI",
-      "examples": [
-        "Devstral Small 1.1"
-      ],
-      "weights_available": true,
-      "architecture": "Dense text-only coding model",
-      "size": "24B",
-      "context": "128K",
-      "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "agentic coding",
-        "software engineering",
-        "repository editing"
-      ],
-      "official_source": "https://huggingface.co/mistralai/Devstral-Small-2507",
-      "hub": "https://huggingface.co/mistralai",
-      "verified": "2026-09-26"
-    },
-    {
-      "family": "Magistral",
+      "name": "Mistral Small 3.1 24B Instruct",
+      "sub": "24B · multimodal",
       "developer": "Mistral AI",
-      "examples": [
-        "Magistral Small 1.0"
-      ],
-      "weights_available": true,
-      "architecture": "Dense reasoning language model",
-      "size": "24B",
-      "context": "128K advertised · 40K recommended for best performance",
       "license": "Apache 2.0",
-      "license_type": "permissive",
-      "focus": [
-        "reasoning",
-        "math",
-        "multilingual",
-        "local deployment"
-      ],
-      "official_source": "https://huggingface.co/mistralai/Magistral-Small-2506",
-      "hub": "https://huggingface.co/mistralai",
-      "verified": "2026-09-26"
+      "focus": "General-purpose multimodal inference",
+      "source": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Devstral Small 2505",
+      "sub": "24B-class · code agent",
+      "developer": "Mistral AI",
+      "license": "Apache 2.0",
+      "focus": "Software engineering and coding agents",
+      "source": "https://huggingface.co/mistralai/Devstral-Small-2505",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Magistral Small 2506",
+      "sub": "24B-class · reasoning",
+      "developer": "Mistral AI",
+      "license": "Apache 2.0",
+      "focus": "Reasoning and step-by-step problem solving",
+      "source": "https://huggingface.co/mistralai/Magistral-Small-2506",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Mistral Nemo Instruct 2407",
+      "sub": "12B-class · multilingual",
+      "developer": "Mistral AI / NVIDIA",
+      "license": "Apache 2.0",
+      "focus": "Multilingual text and code, 128K context",
+      "source": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Mathstral 7B v0.1",
+      "sub": "7B · mathematics",
+      "developer": "Mistral AI",
+      "license": "Apache 2.0",
+      "focus": "Mathematical reasoning",
+      "source": "https://huggingface.co/mistralai/Mathstral-7B-v0.1",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "DeepSeek-R1",
+      "sub": "reasoning model · MoE",
+      "developer": "DeepSeek",
+      "license": "MIT",
+      "focus": "Reasoning, mathematics and coding",
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "DeepSeek-V3.1",
+      "sub": "685B-class · MoE",
+      "developer": "DeepSeek",
+      "license": "MIT",
+      "focus": "Hybrid reasoning, agents and general-purpose",
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "Phi-4",
+      "sub": "14B · dense",
+      "developer": "Microsoft",
+      "license": "MIT",
+      "focus": "Reasoning, mathematics and code",
+      "source": "https://huggingface.co/microsoft/phi-4",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "Phi-4 Mini Instruct",
+      "sub": "compact · multilingual",
+      "developer": "Microsoft",
+      "license": "MIT",
+      "focus": "Small-model reasoning and instruction following",
+      "source": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "Phi-4 Multimodal Instruct",
+      "sub": "text + vision + audio",
+      "developer": "Microsoft",
+      "license": "MIT",
+      "focus": "Multimodal text, vision and speech",
+      "source": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "OLMo 2 32B Instruct",
+      "sub": "32B · fully open research stack",
+      "developer": "Ai2",
+      "license": "Apache 2.0*",
+      "focus": "Open research, reasoning and reproducibility",
+      "source": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "OLMo 2 13B Instruct",
+      "sub": "13B · fully open research stack",
+      "developer": "Ai2",
+      "license": "Apache 2.0*",
+      "focus": "Open research and reproducible training",
+      "source": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "Kimi K2 Instruct",
+      "sub": "1T-class · MoE",
+      "developer": "Moonshot AI",
+      "license": "Modified MIT",
+      "focus": "Agentic intelligence, coding and tool use",
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "license_category": "other",
+      "status": "listed"
+    },
+    {
+      "name": "GLM-4.5",
+      "sub": "355B / 32B active · MoE",
+      "developer": "Z.ai",
+      "license": "MIT",
+      "focus": "Reasoning, coding and agentic applications",
+      "source": "https://huggingface.co/zai-org/GLM-4.5",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "GLM-4.5 Air",
+      "sub": "106B / 12B active · MoE",
+      "developer": "Z.ai",
+      "license": "MIT",
+      "focus": "Efficient reasoning, coding and agents",
+      "source": "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "license_category": "mit",
+      "status": "listed"
+    },
+    {
+      "name": "Granite 3.3 8B Instruct",
+      "sub": "8B · 128K context",
+      "developer": "IBM",
+      "license": "Apache 2.0",
+      "focus": "Enterprise reasoning and instruction following",
+      "source": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+      "license_category": "apache",
+      "status": "listed"
+    },
+    {
+      "name": "SmolLM3 3B",
+      "sub": "3B · hybrid reasoning",
+      "developer": "Hugging Face",
+      "license": "Apache 2.0",
+      "focus": "Compact reasoning, agents and local inference",
+      "source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "license_category": "apache",
+      "status": "listed"
     }
-  ],
-  "scope": "Curated registry of 25 selected open-weight model families. Verify model-specific cards and licenses before deployment."
+  ]
 }
