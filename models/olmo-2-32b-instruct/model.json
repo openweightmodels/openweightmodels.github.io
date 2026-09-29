@@ -115,5 +115,13 @@
       "date": "2026-09-29",
       "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
-  ]
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "license_explorer": "/licenses/",
+    "deployment_explorer": "/deployment/",
+    "methodology": "/methodology/",
+    "apache_2_0_collection": "/licenses/apache-2-0-ai-models/",
+    "commercial_use_guide": "/licenses/commercial-use-open-weight-models/"
+  }
 }

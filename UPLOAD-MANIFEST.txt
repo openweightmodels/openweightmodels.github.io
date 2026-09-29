@@ -1,21 +1,22 @@
-OpenWeightModels quality round — Methodology + License Explorer + Deployment Explorer
-Updated: 2026-09-29
+OpenWeightModels — SEO, GEO & internal navigation round
+Date: 2026-09-29
 
-Upload the entire ZIP at repository root and preserve paths.
+Upload the complete contents of this ZIP to the repository root and replace matching files. Preserve the folder structure.
 
-New pages:
-- /methodology/
-- /licenses/
-- /deployment/
+New public pages:
+- /models/
+- /guides/
+- /guides/local-deployment/
+- /licenses/apache-2-0-ai-models/
+- /licenses/commercial-use-open-weight-models/
 
-New structured data:
-- /data/methodology.json
-- /data/licenses.json
-- /data/deployments.json
-
-Updated discovery/navigation:
-- /index.html
-- /data/models.json
-- /llms.txt
-- /sitemap.xml
-- all 32 /models/<slug>/index.html navigation/footer links
+Technical SEO/GEO updates:
+- all 32 Model Passports: BreadcrumbList + FAQPage schema
+- all 32 Model Passports: contextual Related Paths
+- homepage: CollectionPage / Organization / model ItemList schema and Explore by Intent section
+- License, Deployment and Methodology: breadcrumbs, FAQ schema where applicable, related navigation
+- llms.txt updated
+- sitemap.xml updated
+- robots.txt added
+- /data/guides.json added
+- model.json companions include related_pages

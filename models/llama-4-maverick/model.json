@@ -295,5 +295,12 @@
       "Llama 4 license",
       "Llama 4 deployment"
     ]
+  },
+  "related_pages": {
+    "models_index": "/models/",
+    "license_explorer": "/licenses/",
+    "deployment_explorer": "/deployment/",
+    "methodology": "/methodology/",
+    "commercial_use_guide": "/licenses/commercial-use-open-weight-models/"
   }
 }
