@@ -129,8 +129,21 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 </div></section>
 
 <nav class="subnav"><div class="w">
-<a href="#summary">Summary</a><a href="#passport">Passport</a><a href="#architecture">Architecture</a><a href="#training">Training</a><a href="#capabilities">Capabilities</a><a href="#benchmarks">Benchmarks</a><a href="#license">License</a><a href="#deployment">Deployment</a><a href="#hardware">Hardware</a><a href="#variants">Weights</a><a href="#limitations">Limitations</a><a href="#sources">Sources</a>
+<a href="#what-is">What is Maverick?</a><a href="#summary">Summary</a><a href="#passport">Passport</a><a href="#architecture">Architecture</a><a href="#training">Training</a><a href="#capabilities">Capabilities</a><a href="#benchmarks">Benchmarks</a><a href="#license">License</a><a href="#deployment">Deployment</a><a href="#hardware">Hardware</a><a href="#variants">Weights</a><a href="#limitations">Limitations</a><a href="#sources">Sources</a>
 </div></nav>
+
+
+<section id="what-is" class="sec"><div class="w">
+<div class="section-head"><div><div class="kicker">Definition</div><h2>What is Llama 4 Maverick?</h2></div>
+<div class="prose">
+<p class="leadpara"><strong>Llama 4 Maverick is a natively multimodal open-weight AI model developed by Meta as part of the Llama 4 model family.</strong> It is designed to process both text and images and to generate multilingual text and code.</p>
+<p>Maverick uses a <strong>Mixture-of-Experts (MoE) architecture</strong> with approximately <strong>400 billion total parameters</strong>, while about <strong>17 billion parameters are active for each token</strong>. The model contains <strong>128 routed experts</strong> plus a shared expert and supports a documented context window of up to <strong>1 million tokens</strong>.</p>
+<p>Unlike a conventional dense 17B model, Llama 4 Maverick still requires infrastructure capable of storing and serving its much larger total parameter set. The sparse MoE architecture reduces the amount of computation used for each token, but it does not reduce the complete model to the hardware footprint of a 17B model.</p>
+<p>Meta released Llama 4 Maverick on <strong>5 April 2025</strong> as one of the first Llama models combining native multimodality with a Mixture-of-Experts architecture. Official weights are available for independent deployment under the <strong>Llama 4 Community License Agreement</strong>.</p>
+<p>In practical terms, Llama 4 Maverick is intended for workloads such as multimodal assistants, image understanding, document analysis, coding, multilingual generation, long-context processing and AI systems that require self-hosted or managed deployment options.</p>
+<a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta Llama 4 model card ↗</a>
+</div></div>
+</div></section>
 
 <section id="summary" class="sec"><div class="w">
 <div class="section-head"><div><div class="kicker">Executive summary</div><h2>Why Maverick is technically unusual.</h2></div>
@@ -345,10 +358,10 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 
 <section class="sec muted"><div class="w">
 <div class="section-head"><div><div class="kicker">FAQ</div><h2>Common interpretation questions.</h2></div><div class="faq">
-<details open><summary>Is Llama 4 Maverick an open-source model?</summary><p>OpenWeightModels calls it open-weight because official weights are available. Its custom Llama 4 Community License and incorporated use policy differ from standard permissive software licenses, so “open weight” is the more precise classification for this registry.</p></details>
-<details><summary>Can Maverick be used commercially?</summary><p>Meta's model card intends Llama 4 for commercial and research use, but the answer is conditional on the Community License and AUP. Important conditions include redistribution obligations, the 700M-MAU clause and the multimodal EU developer restriction.</p></details>
-<details><summary>Can a single H100 GPU run Maverick?</summary><p>Do not confuse a single H100 GPU with an H100 DGX host. Meta says the FP8 checkpoint fits on a single H100 DGX host; NVIDIA's validated NIM profile uses eight H100 or H200 GPUs.</p></details>
-<details><summary>Why does Google show less than 1M context?</summary><p>Because provider implementations can expose their own operating envelope. Google's current managed Maverick endpoint documents 524,288 context even though Meta's base-model card documents 1M.</p></details>
+<details open><summary>Is Llama 4 Maverick open source?</summary><p>OpenWeightModels calls it open-weight because official weights are available. Its custom Llama 4 Community License and incorporated use policy differ from standard permissive software licenses, so “open weight” is the more precise classification for this registry.</p></details>
+<details><summary>Can Llama 4 Maverick be used commercially?</summary><p>Meta's model card intends Llama 4 for commercial and research use, but the answer is conditional on the Community License and AUP. Important conditions include redistribution obligations, the 700M-MAU clause and the multimodal EU developer restriction.</p></details>
+<details><summary>Can Llama 4 Maverick run on a single H100 GPU?</summary><p>Do not confuse a single H100 GPU with an H100 DGX host. Meta says the FP8 checkpoint fits on a single H100 DGX host; NVIDIA's validated NIM profile uses eight H100 or H200 GPUs.</p></details>
+<details><summary>What is the context window of Llama 4 Maverick?</summary><p>Meta documents a base context window of up to 1 million tokens for Llama 4 Maverick. Provider implementations can expose smaller limits: Google's current managed Maverick endpoint documents 524,288 tokens, while NVIDIA NIM documents 430,000 on H100 and 1 million on H200.</p></details>
 <details><summary>Does Maverick support tool calling?</summary><p>There is no single provider-independent yes/no answer in practice. AWS documents client-side tool calling, Google documents function calling, while current Microsoft Foundry documentation lists tool calling as unavailable for its Maverick offering.</p></details>
 </div></div>
 </div></section>

@@ -279,5 +279,21 @@
       "date": "2026-09-29",
       "change": "Initial full Model Passport."
     }
-  ]
+  ],
+  "definition": "Llama 4 Maverick is a natively multimodal open-weight AI model developed by Meta as part of the Llama 4 family. It uses a Mixture-of-Experts architecture with approximately 400B total parameters, 17B active parameters per token, 128 routed experts and a documented context window of up to 1M tokens.",
+  "seo_geo": {
+    "primary_question": "What is Llama 4 Maverick?",
+    "entity_type": "open-weight multimodal AI model",
+    "developer": "Meta",
+    "family": "Llama 4",
+    "key_topics": [
+      "Llama 4 Maverick",
+      "Meta Llama 4",
+      "open-weight AI model",
+      "multimodal AI model",
+      "Mixture-of-Experts",
+      "Llama 4 license",
+      "Llama 4 deployment"
+    ]
+  }
 }
