@@ -1,0 +1,9 @@
+OpenWeightModels Maverick force update
+
+This ZIP intentionally contains the same latest Maverick files in BOTH paths:
+  /models/llama-4-maverick/
+  /llama-4-maverick/
+
+Upload/replace all files at repository root while preserving paths.
+The live URL https://openweightmodels.eu/models/llama-4-maverick/ should then show:
+  What is Llama 4 Maverick?

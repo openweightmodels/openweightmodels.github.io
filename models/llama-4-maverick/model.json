@@ -1,125 +1,299 @@
 {
-  "schema_version": "1.0",
-  "id": "llama-4-maverick",
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "Llama 4 Maverick",
-  "variant": "17B-128E-Instruct",
+  "slug": "llama-4-maverick",
   "developer": "Meta",
   "family": "Llama 4",
   "release_date": "2025-04-05",
-  "last_verified": "2026-09-29",
-  "verification_status": "verified",
-  "model": {
-    "architecture": "Mixture-of-Experts (MoE), autoregressive, native multimodal early fusion",
-    "active_parameters_b": 17,
-    "total_parameters_b": 400,
-    "experts": 128,
-    "context_tokens": 1000000,
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "classification": {
+    "weight_access": "open-weight",
+    "architecture": "autoregressive multimodal mixture-of-experts",
+    "commercial_use": "conditional",
+    "license_type": "custom community/commercial license"
+  },
+  "architecture": {
+    "total_parameters": "~400B",
+    "active_parameters": "17B",
+    "routed_experts": 128,
+    "shared_expert": true,
+    "routing": "each token is sent to the shared expert and one routed expert",
+    "multimodality": "native early fusion",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "output_modalities": [
+      "text",
+      "code"
+    ],
+    "base_context_tokens": 1000000
+  },
+  "training": {
+    "pretraining_tokens": "~22T",
     "knowledge_cutoff": "2024-08",
-    "input_modalities": ["text", "image"],
-    "output_modalities": ["text", "code"],
-    "supported_languages": ["Arabic", "English", "French", "German", "Hindi", "Indonesian", "Italian", "Portuguese", "Spanish", "Tagalog", "Thai", "Vietnamese"]
+    "supported_languages": [
+      "Arabic",
+      "English",
+      "French",
+      "German",
+      "Hindi",
+      "Indonesian",
+      "Italian",
+      "Portuguese",
+      "Spanish",
+      "Tagalog",
+      "Thai",
+      "Vietnamese"
+    ],
+    "pretraining_languages": 200,
+    "post_training": [
+      "lightweight supervised fine-tuning",
+      "online reinforcement learning",
+      "lightweight direct preference optimization"
+    ],
+    "reported_training_gpu_hours_h100_80gb": 2380000,
+    "reported_location_based_co2e_tons": 645
   },
-  "weights": {
-    "available": true,
-    "official": true,
-    "formats": ["Safetensors"],
-    "precisions": ["BF16", "FP8"],
-    "primary_repository": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-    "fp8_repository": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
-  },
+  "official_weights": [
+    {
+      "variant": "Llama-4-Maverick-17B-128E-Original",
+      "precision": "BF16",
+      "publisher": "Meta"
+    },
+    {
+      "variant": "Llama-4-Maverick-17B-128E-Instruct",
+      "precision": "BF16",
+      "publisher": "Meta"
+    },
+    {
+      "variant": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "precision": "FP8",
+      "publisher": "Meta"
+    }
+  ],
   "license": {
     "name": "Llama 4 Community License Agreement",
-    "type": "custom-commercial",
+    "effective_date": "2025-04-05",
     "commercial_use": "conditional",
-    "modification": "conditional",
-    "fine_tuning": "conditional",
+    "modification": "allowed subject to terms",
     "redistribution": "conditional",
-    "self_hosting": "conditional",
-    "attribution_required": true,
-    "built_with_llama_required_for_distribution": true,
-    "derivative_model_naming_condition": true,
-    "acceptable_use_policy_applies": true,
-    "large_platform_threshold_mau": 700000000,
-    "eu_multimodal_restriction": true,
-    "source": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
-    "use_policy": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md",
-    "last_checked": "2026-09-29"
+    "redistribution_requirements": [
+      "provide a copy of the agreement with Llama Materials",
+      "prominently display Built with Llama on a related surface",
+      "retain specified Notice-file attribution in distributed copies"
+    ],
+    "derived_model_naming": "Where the agreement's specified condition applies, distributed/made-available AI models improved using Llama materials or outputs must include Llama at the beginning of the model name.",
+    "large_platform_condition": "If licensee/affiliate products or services exceeded 700M MAU in the calendar month preceding the Llama 4 release date, a separate license from Meta is required before exercising rights.",
+    "acceptable_use_policy_incorporated": true,
+    "eu_multimodal_policy_restriction": "The Llama 4 Acceptable Use Policy says Section 1(a) rights for multimodal Llama 4 models are not granted to individuals domiciled in, or companies with principal place of business in, the European Union; it says this restriction does not apply to end users of a product/service incorporating such models.",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
   },
+  "selected_meta_reported_benchmarks": [
+    {
+      "benchmark": "MMLU Pro",
+      "checkpoint": "instruct",
+      "score": 80.5,
+      "metric": "macro_avg/accuracy",
+      "shots": 0
+    },
+    {
+      "benchmark": "GPQA Diamond",
+      "checkpoint": "instruct",
+      "score": 69.8,
+      "metric": "accuracy",
+      "shots": 0
+    },
+    {
+      "benchmark": "LiveCodeBench",
+      "checkpoint": "instruct",
+      "score": 43.4,
+      "metric": "pass@1",
+      "shots": 0
+    },
+    {
+      "benchmark": "MMMU",
+      "checkpoint": "instruct",
+      "score": 73.4,
+      "metric": "accuracy",
+      "shots": 0
+    },
+    {
+      "benchmark": "ChartQA",
+      "checkpoint": "instruct",
+      "score": 90.0,
+      "metric": "relaxed_accuracy",
+      "shots": 0
+    },
+    {
+      "benchmark": "MGSM",
+      "checkpoint": "instruct",
+      "score": 92.3,
+      "metric": "average/exact_match",
+      "shots": 0
+    }
+  ],
   "deployments": [
     {
-      "id": "self-hosted",
-      "name": "Direct weights / self-hosted",
+      "name": "Direct Meta weights / Hugging Face",
       "type": "self-hosted",
-      "managed": false,
-      "official": true,
+      "precisions": [
+        "BF16",
+        "FP8"
+      ],
       "context_tokens": 1000000,
-      "notes": "Actual achievable context depends on hardware and implementation."
+      "runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "notes": "Context is the base model documentation; achievable deployment envelope is implementation- and hardware-dependent."
     },
     {
-      "id": "hugging-face-vllm",
-      "name": "Hugging Face / vLLM",
-      "type": "framework",
-      "managed": false,
-      "official": true,
-      "multimodal": true,
-      "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
-    },
-    {
-      "id": "nvidia-nim",
       "name": "NVIDIA NIM",
-      "type": "containerized-inference",
-      "managed": false,
-      "official": true,
-      "precision": "FP8",
-      "hardware": ["8x H100 SXM", "8x H100 NVL", "8x H200 SXM", "8x H200 NVL"],
+      "type": "packaged self-hosted",
+      "checkpoint": "Meta official FP8",
+      "supported_hardware": [
+        "8x H100 SXM",
+        "8x H100 NVL",
+        "8x H200 SXM",
+        "8x H200 NVL"
+      ],
       "context_tokens_h100": 430000,
       "context_tokens_h200": 1000000,
-      "source": "https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html"
+      "generic_configuration_supported": false
     },
     {
-      "id": "aws-bedrock",
       "name": "Amazon Bedrock",
-      "type": "managed-api",
-      "managed": true,
+      "type": "managed API",
       "model_id": "meta.llama4-maverick-17b-instruct-v1:0",
       "context_tokens": 1000000,
-      "max_output_tokens": 8000,
-      "image_input": true,
-      "streaming": true,
-      "client_side_tool_calling": true,
-      "geo_inference": "US",
-      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html"
+      "max_output_tokens": 8192,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "features": [
+        "streaming",
+        "guardrails",
+        "client-side tool calling",
+        "prompt management",
+        "flows",
+        "agents"
+      ],
+      "geofencing": true
     },
     {
-      "id": "google-vertex-ai",
-      "name": "Google Vertex AI",
-      "type": "managed-api",
-      "managed": true,
+      "name": "Google managed Maverick",
+      "type": "managed API",
+      "model_id": "llama-4-maverick-17b-128e-instruct-maas",
       "region": "us-east5",
       "context_tokens": 524288,
-      "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/llama/use-llama"
+      "max_output_tokens": 8192,
+      "features": [
+        "function calling",
+        "structured output"
+      ],
+      "input_modalities": [
+        "text",
+        "code",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ]
     },
     {
-      "id": "microsoft-foundry",
       "name": "Microsoft Foundry",
-      "type": "managed-api",
-      "managed": true,
+      "type": "managed API",
       "model_id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "deployment_type": "Global Standard",
       "context_tokens": 1000000,
-      "image_input": true,
-      "tool_calling": false,
-      "deployment_type": "Global standard",
-      "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tool_calling_current_listing": false
     }
   ],
   "sources": [
-    {"type": "model-card", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md"},
-    {"type": "license", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"},
-    {"type": "use-policy", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md"},
-    {"type": "weights", "publisher": "Meta / Hugging Face", "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"},
-    {"type": "deployment", "publisher": "NVIDIA", "url": "https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html"},
-    {"type": "deployment", "publisher": "AWS", "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html"},
-    {"type": "deployment", "publisher": "Google Cloud", "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/llama/use-llama"},
-    {"type": "deployment", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"}
-  ]
+    {
+      "label": "meta_card",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md"
+    },
+    {
+      "label": "meta_blog",
+      "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+    },
+    {
+      "label": "meta_license",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
+    },
+    {
+      "label": "meta_policy",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md"
+    },
+    {
+      "label": "hf_instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+    },
+    {
+      "label": "hf_fp8",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
+    },
+    {
+      "label": "nvidia",
+      "url": "https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html"
+    },
+    {
+      "label": "aws",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html"
+    },
+    {
+      "label": "aws_params",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html"
+    },
+    {
+      "label": "google",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick"
+    },
+    {
+      "label": "azure",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models?view=azure-node-latest"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard passport v2.0: expanded architecture, training, benchmarks, license, deployments, hardware, variants and limitations; corrected EU restriction provenance to Acceptable Use Policy."
+    },
+    {
+      "date": "2026-09-29",
+      "change": "Initial full Model Passport."
+    }
+  ],
+  "definition": "Llama 4 Maverick is a natively multimodal open-weight AI model developed by Meta as part of the Llama 4 family. It uses a Mixture-of-Experts architecture with approximately 400B total parameters, 17B active parameters per token, 128 routed experts and a documented context window of up to 1M tokens.",
+  "seo_geo": {
+    "primary_question": "What is Llama 4 Maverick?",
+    "entity_type": "open-weight multimodal AI model",
+    "developer": "Meta",
+    "family": "Llama 4",
+    "key_topics": [
+      "Llama 4 Maverick",
+      "Meta Llama 4",
+      "open-weight AI model",
+      "multimodal AI model",
+      "Mixture-of-Experts",
+      "Llama 4 license",
+      "Llama 4 deployment"
+    ]
+  }
 }
