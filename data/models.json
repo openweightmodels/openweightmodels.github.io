@@ -454,5 +454,13 @@
       "passport_version": "2.0"
     }
   ],
-  "full_passports": 32
+  "full_passports": 32,
+  "explorers": {
+    "methodology": "/methodology/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology_json": "/data/methodology.json",
+    "licenses_json": "/data/licenses.json",
+    "deployments_json": "/data/deployments.json"
+  }
 }

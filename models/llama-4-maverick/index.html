@@ -1,18 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Llama 4 Maverick — Model Passport, License, Architecture & Deployment | Open Weight Models</title>
-<meta name="description" content="Detailed technical reference for Meta Llama 4 Maverick: 400B MoE architecture, 17B active parameters, multimodal capabilities, Llama 4 license, EU policy restriction, FP8/BF16 weights, hardware and deployment across NVIDIA NIM, AWS, Google Cloud and Microsoft Foundry.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<meta name="theme-color" content="#07111f">
-<link rel="canonical" href="https://openweightmodels.eu/models/llama-4-maverick/">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Open Weight Models">
-<meta property="og:title" content="Llama 4 Maverick — Model Passport">
-<meta property="og:description" content="Architecture, license intelligence, hardware, quantization and provider-specific deployment data for Llama 4 Maverick.">
-<meta property="og:url" content="https://openweightmodels.eu/models/llama-4-maverick/">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Llama 4 Maverick — Model Passport, License, Architecture &amp; Deployment | Open Weight Models</title>
+<meta content="Detailed technical reference for Meta Llama 4 Maverick: 400B MoE architecture, 17B active parameters, multimodal capabilities, Llama 4 license, EU policy restriction, FP8/BF16 weights, hardware and deployment across NVIDIA NIM, AWS, Google Cloud and Microsoft Foundry." name="description"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1" name="robots"/>
+<meta content="#07111f" name="theme-color"/>
+<link href="https://openweightmodels.eu/models/llama-4-maverick/" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Open Weight Models" property="og:site_name"/>
+<meta content="Llama 4 Maverick — Model Passport" property="og:title"/>
+<meta content="Architecture, license intelligence, hardware, quantization and provider-specific deployment data for Llama 4 Maverick." property="og:description"/>
+<meta content="https://openweightmodels.eu/models/llama-4-maverick/" property="og:url"/>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "TechArticle", "headline": "Llama 4 Maverick — Model Passport, License, Architecture and Deployment", "datePublished": "2026-09-29", "dateModified": "2026-09-29", "inLanguage": "en", "author": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "publisher": {"@type": "Organization", "name": "Open Weight Models", "url": "https://openweightmodels.eu/"}, "mainEntityOfPage": "https://openweightmodels.eu/models/llama-4-maverick/", "about": {"@type": "SoftwareApplication", "name": "Llama 4 Maverick", "applicationCategory": "AI model", "creator": {"@type": "Organization", "name": "Meta"}}}
 </script>
@@ -90,9 +91,8 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <body>
 <header class="top"><div class="w nav">
 <a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span>Open Weight Models</a>
-<nav class="links"><a href="/#models">Models</a><a href="#license">License</a><a href="#deployment">Deployment</a><a href="#sources">Sources</a></nav>
+<nav class="links"><a href="/#models">Models</a><a href="/licenses/">License Explorer</a><a href="/deployment/">Deployment Explorer</a><a href="/methodology/">Methodology</a></nav>
 </div></header>
-
 <main>
 <section class="hero"><div class="w hero-grid">
 <div>
@@ -103,7 +103,7 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <div class="chips"><span class="chip">VERIFIED</span><span class="chip">OPEN WEIGHTS</span><span class="chip">MULTIMODAL</span><span class="chip">MIXTURE-OF-EXPERTS</span><span class="chip">CUSTOM LICENSE</span><span class="chip">COMMERCIAL: CONDITIONAL</span></div>
 <div class="hero-actions">
 <a class="btn primary" href="#passport">Read Passport</a>
-<a class="btn secondary" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Official model card ↗</a>
+<a class="btn secondary" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Official model card ↗</a>
 </div>
 </div>
 <aside class="snapshot">
@@ -120,20 +120,16 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 </div>
 </aside>
 </div></section>
-
 <section class="trust"><div class="w trust-grid">
 <div><strong>Source-first</strong><span>Primary Meta model card, license and policy separated from provider documentation.</span></div>
 <div><strong>License-aware</strong><span>Open weight does not mean unrestricted use or permissive open-source licensing.</span></div>
 <div><strong>Deployment-specific</strong><span>Context, tools, regions and hardware are recorded per implementation.</span></div>
 <div><strong>Evidence dated</strong><span>Full technical and legal-source review: 29 September 2026.</span></div>
 </div></section>
-
 <nav class="subnav"><div class="w">
 <a href="#what-is">What is Maverick?</a><a href="#summary">Summary</a><a href="#passport">Passport</a><a href="#architecture">Architecture</a><a href="#training">Training</a><a href="#capabilities">Capabilities</a><a href="#benchmarks">Benchmarks</a><a href="#license">License</a><a href="#deployment">Deployment</a><a href="#hardware">Hardware</a><a href="#variants">Weights</a><a href="#limitations">Limitations</a><a href="#sources">Sources</a>
 </div></nav>
-
-
-<section id="what-is" class="sec"><div class="w">
+<section class="sec" id="what-is"><div class="w">
 <div class="section-head"><div><div class="kicker">Definition</div><h2>What is Llama 4 Maverick?</h2></div>
 <div class="prose">
 <p class="leadpara"><strong>Llama 4 Maverick is a natively multimodal open-weight AI model developed by Meta as part of the Llama 4 model family.</strong> It is designed to process both text and images and to generate multilingual text and code.</p>
@@ -141,23 +137,21 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <p>Unlike a conventional dense 17B model, Llama 4 Maverick still requires infrastructure capable of storing and serving its much larger total parameter set. The sparse MoE architecture reduces the amount of computation used for each token, but it does not reduce the complete model to the hardware footprint of a 17B model.</p>
 <p>Meta released Llama 4 Maverick on <strong>5 April 2025</strong> as one of the first Llama models combining native multimodality with a Mixture-of-Experts architecture. Official weights are available for independent deployment under the <strong>Llama 4 Community License Agreement</strong>.</p>
 <p>In practical terms, Llama 4 Maverick is intended for workloads such as multimodal assistants, image understanding, document analysis, coding, multilingual generation, long-context processing and AI systems that require self-hosted or managed deployment options.</p>
-<a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta Llama 4 model card ↗</a>
+<a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Meta Llama 4 model card ↗</a>
 </div></div>
 </div></section>
-
-<section id="summary" class="sec"><div class="w">
+<section class="sec" id="summary"><div class="w">
 <div class="section-head"><div><div class="kicker">Executive summary</div><h2>Why Maverick is technically unusual.</h2></div>
 <div class="prose">
 <p class="leadpara">Llama 4 Maverick combines the storage footprint of a very large model with the per-token compute characteristics of a sparse Mixture-of-Experts system. It is therefore misleading to treat “17B active parameters” as if Maverick were a conventional 17B model.</p>
 <p>Meta documents approximately <strong>400 billion total parameters</strong>, while only about <strong>17 billion parameters are activated for an individual token</strong>. The MoE layers contain 128 routed experts plus a shared expert; each token passes through the shared expert and one routed expert. The sparse route lowers active computation, but the whole parameter set still has to be available to the serving system. That is why deployment remains datacenter-class even though the active count looks comparatively small.</p>
 <p>Maverick is also natively multimodal. Meta uses early fusion so image and text tokens are processed in a unified model backbone rather than attaching vision only as a late external component. The official model card lists multilingual text and image input, multilingual text and code output, a 1M context window and an August 2024 knowledge cutoff.</p>
 <p>Legally, Maverick is not an Apache-2.0- or MIT-style release. It is distributed under the <strong>Llama 4 Community License Agreement</strong>, with an incorporated Acceptable Use Policy. The license grants broad rights to use, modify and redistribute subject to conditions, while the policy adds prohibited-use rules and, for Llama 4 multimodal models, an important EU restriction for certain developers. This passport therefore marks commercial use as <strong>conditional</strong>, not simply “yes”.</p>
-<a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta model card ↗</a><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener">Meta architecture announcement ↗</a>
+<a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Meta model card ↗</a><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" rel="noopener" target="_blank">Meta architecture announcement ↗</a>
 </div></div>
 <div class="callout blue"><strong>OpenWeightModels classification:</strong> Maverick is an open-weight model because official weights are available for independent deployment. That classification says nothing by itself about whether its license is OSI-approved, unrestricted, region-neutral or permissive.</div>
 </div></section>
-
-<section id="passport" class="sec muted"><div class="w">
+<section class="sec muted" id="passport"><div class="w">
 <div class="section-head"><div><div class="kicker">Model Passport</div><h2>Core facts at a glance.</h2></div><p>These values describe the base Maverick model unless a deployment provider is explicitly named. Provider-specific limits appear later and should not be silently inherited from the base model.</p></div>
 <div class="stats">
 <div class="stat"><span>Developer</span><strong>Meta</strong><small>Llama 4</small></div>
@@ -174,8 +168,7 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <div class="stat"><span>Commercial use</span><strong>Conditional</strong><small>custom license + policy</small></div>
 </div>
 </div></section>
-
-<section id="architecture" class="sec"><div class="w">
+<section class="sec" id="architecture"><div class="w">
 <div class="section-head"><div><div class="kicker">Architecture</div><h2>400B stored. 17B active.</h2></div><div class="prose">
 <p>Meta describes Llama 4 as an autoregressive architecture using alternating dense and Mixture-of-Experts layers. In Maverick's MoE layers, routing sends each token through a shared expert and one of 128 routed experts. The design aims to preserve the representational capacity of a very large parameter pool without activating that entire pool for every token.</p>
 <p>This distinction affects both performance and infrastructure. Active parameters are relevant to compute performed per token, but total parameters remain relevant to weight storage, model loading, sharding and memory topology. A capacity plan based solely on 17B would therefore substantially understate Maverick's deployment footprint.</p>
@@ -191,11 +184,10 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <article class="card"><span class="number">03</span><h3>Long context</h3><p>Meta documents 1M tokens for Maverick. Long context has direct implications for KV-cache memory, latency and serving economics, so the model maximum should never be treated as a cost-free default operating point.</p></article>
 </div>
 <div class="callout" style="margin-top:15px"><strong>Practical reading of “17B active”:</strong> it is primarily a compute-routing fact, not a statement that the whole model can be hosted like a dense 17B checkpoint. Meta itself says all parameters remain stored in memory while only a subset is activated during serving.</div>
-<div><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener">Meta Llama 4 architecture ↗</a></div>
+<div><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" rel="noopener" target="_blank">Meta Llama 4 architecture ↗</a></div>
 </div></section>
-
-<section id="training" class="sec muted"><div class="w">
-<div class="section-head"><div><div class="kicker">Training & post-training</div><h2>Multimodal from pretraining onward.</h2></div><div class="prose">
+<section class="sec muted" id="training"><div class="w">
+<div class="section-head"><div><div class="kicker">Training &amp; post-training</div><h2>Multimodal from pretraining onward.</h2></div><div class="prose">
 <p>Meta reports roughly <strong>22 trillion multimodal pretraining tokens</strong> for Maverick from a mixture of publicly available data, licensed data and information from Meta products and services, including publicly shared Instagram and Facebook posts and interactions with Meta AI. The model card lists August 2024 as the data freshness cutoff.</p>
 <p>The broader Llama 4 pretraining effort covered 200 languages, with more than 100 languages receiving over one billion tokens each. Meta explicitly lists 12 languages as supported for Maverick deployments, so broader pretraining coverage should not be interpreted as equivalent support quality.</p>
 <p>For post-training, Meta describes a pipeline of lightweight supervised fine-tuning, online reinforcement learning and lightweight direct preference optimization. It also says Maverick was co-distilled from the larger Llama 4 Behemoth teacher during pretraining.</p>
@@ -206,13 +198,12 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <article class="card"><h3>Distillation</h3><p>Meta reports co-distillation from Llama 4 Behemoth, a much larger teacher model, to improve end-task quality while keeping Maverick's active computation lower.</p></article>
 </div>
 <div class="callout blue" style="margin-top:15px"><strong>Training compute disclosure:</strong> Meta reports 2.38 million H100-80GB GPU-hours for Maverick pretraining and 645 tons of location-based CO₂e for that training run. This is a developer-reported environmental disclosure, not an independent audit.</div>
-<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Official model card ↗</a><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener">Meta release blog ↗</a></div>
+<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Official model card ↗</a><a class="src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" rel="noopener" target="_blank">Meta release blog ↗</a></div>
 </div></section>
-
-<section id="capabilities" class="sec"><div class="w">
+<section class="sec" id="capabilities"><div class="w">
 <div class="section-head"><div><div class="kicker">Capabilities</div><h2>What Maverick is designed to do.</h2></div><p>Capabilities below separate base-model intent from provider-added features. Tool calling, structured outputs and guardrails can change depending on the serving platform even though the underlying weights remain the same.</p></div>
 <div class="grid3">
-<article class="card"><h3>Text & instruction following</h3><p>The Instruct checkpoint is intended for assistant-like chat, generation, summarization, multilingual workflows and general instruction following.</p></article>
+<article class="card"><h3>Text &amp; instruction following</h3><p>The Instruct checkpoint is intended for assistant-like chat, generation, summarization, multilingual workflows and general instruction following.</p></article>
 <article class="card"><h3>Image understanding</h3><p>Meta lists visual recognition, image reasoning, captioning and visual question answering. The model is text-output only; it does not generate images.</p></article>
 <article class="card"><h3>Multi-image reasoning</h3><p>Meta's model card says the family was tested for image understanding with up to five input images and recommends additional application-specific testing beyond documented conditions.</p></article>
 <article class="card"><h3>Coding</h3><p>The model card includes code benchmarks and describes multilingual text and code output. Coding capability is part of the core model rather than a cloud-only extension.</p></article>
@@ -220,8 +211,7 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <article class="card"><h3>Tool use</h3><p>Do not treat tool calling as a universal Maverick property. AWS documents client-side tool calling and Agents; Google documents function calling; current Microsoft Foundry documentation lists tool calling as unavailable for its Maverick offering.</p></article>
 </div>
 </div></section>
-
-<section id="benchmarks" class="sec muted"><div class="w">
+<section class="sec muted" id="benchmarks"><div class="w">
 <div class="section-head"><div><div class="kicker">Evaluation evidence</div><h2>Selected Meta-reported benchmarks.</h2></div><div class="prose"><p>The table below is intentionally limited to a small set of measurements from Meta's official model card. Meta states that its reported evaluations were conducted on BF16 models even though quantized checkpoints are also available. Scores should not be treated as universal real-world performance guarantees.</p></div></div>
 <div class="metric-grid">
 <div class="metric"><span>MMLU-Pro · Instruct</span><strong>80.5</strong><small>0-shot macro average accuracy</small></div>
@@ -230,7 +220,7 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <div class="metric"><span>MMMU</span><strong>73.4</strong><small>0-shot image reasoning accuracy</small></div>
 </div>
 <div class="tablebox" style="margin-top:14px"><table><thead><tr><th>Area</th><th>Benchmark</th><th>Metric</th><th>Maverick</th><th>Interpretation</th></tr></thead><tbody>
-<tr><td>Reasoning & knowledge</td><td class="value">MMLU Pro</td><td>macro_avg / accuracy</td><td class="value">80.5</td><td>Instruction-tuned, 0-shot in Meta's evaluation.</td></tr>
+<tr><td>Reasoning &amp; knowledge</td><td class="value">MMLU Pro</td><td>macro_avg / accuracy</td><td class="value">80.5</td><td>Instruction-tuned, 0-shot in Meta's evaluation.</td></tr>
 <tr><td>Science reasoning</td><td class="value">GPQA Diamond</td><td>accuracy</td><td class="value">69.8</td><td>High-difficulty factual/reasoning benchmark.</td></tr>
 <tr><td>Coding</td><td class="value">LiveCodeBench</td><td>pass@1</td><td class="value">43.4</td><td>Meta reports a dated evaluation window; benchmark versions matter.</td></tr>
 <tr><td>Image reasoning</td><td class="value">MMMU</td><td>accuracy</td><td class="value">73.4</td><td>Measures multimodal reasoning across academic domains.</td></tr>
@@ -238,17 +228,14 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <tr><td>Multilingual math</td><td class="value">MGSM</td><td>average / exact match</td><td class="value">92.3</td><td>Multilingual grade-school math evaluation.</td></tr>
 </tbody></table></div>
 <div class="callout" style="margin-top:14px"><strong>Benchmark policy:</strong> OpenWeightModels records the evaluator, checkpoint/precision where known, metric and test conditions. It does not convert heterogeneous benchmark results into a single overall model score.</div>
-<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta model-card benchmark table ↗</a></div>
+<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Meta model-card benchmark table ↗</a></div>
 </div></section>
-
-<section id="license" class="sec dark"><div class="w">
+<section class="sec dark" id="license"><div class="w">
 <div class="section-head"><div><div class="kicker">License intelligence</div><h2>Broad rights, material conditions.</h2></div><div class="prose">
 <p>Maverick uses the <strong>Llama 4 Community License Agreement</strong>, not a standard permissive software license. Meta grants a limited, worldwide, royalty-free license to use, reproduce, distribute, create derivative works and modify the Llama Materials, but redistribution, attribution, scale and policy conditions apply.</p>
 <p>The Acceptable Use Policy is explicitly incorporated into the agreement. OpenWeightModels therefore treats the license document and the policy document as two separate but jointly relevant sources.</p>
 </div></div>
-
 <div class="license-hero"><span>Official license</span><h3>Llama 4 Community License Agreement</h3><p>Custom commercial/community license · effective 5 April 2025 · accompanied by incorporated Acceptable Use Policy.</p></div>
-
 <div class="darktable"><table><thead><tr><th>Question</th><th>Classification</th><th>What the source says in practice</th></tr></thead><tbody>
 <tr><td class="value">Access / use weights</td><td><span class="status ok">Allowed*</span></td><td>License grants rights to use Llama Materials, subject to the agreement and incorporated policy.</td></tr>
 <tr><td class="value">Commercial use</td><td><span class="status cond">Conditional</span></td><td>Commercial/research use is intended, but scale, policy and regional conditions can materially affect eligibility.</td></tr>
@@ -259,24 +246,19 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <tr><td class="value">Acceptable Use Policy</td><td><span class="status risk">Mandatory</span></td><td>The policy is incorporated by reference and contains prohibited-use categories plus the multimodal EU developer restriction.</td></tr>
 <tr><td class="value">OSI-approved open source</td><td><span class="status cond">No standard OSS license</span></td><td>OpenWeightModels classifies the weights as open-weight but does not classify the license as a standard permissive OSI software license.</td></tr>
 </tbody></table></div>
-
 <div class="grid2" style="margin-top:15px">
 <div class="callout darkcall"><strong>Redistribution:</strong> Meta requires a copy of the agreement with distributed Llama Materials, prominent “Built with Llama” attribution on a related surface, and a specified Notice-file attribution for copies of Llama Materials.</div>
 <div class="callout darkcall"><strong>Large-platform threshold:</strong> The 700M-MAU provision is tied to the Llama 4 release date and preceding calendar month. It is a special eligibility condition, not a recurring generic “over 700M users” fee tier.</div>
 </div>
-
 <div class="callout darkcall" style="margin-top:15px"><strong>EU multimodal restriction:</strong> Meta's current Llama 4 Acceptable Use Policy states that the Section 1(a) rights for multimodal Llama 4 models are not granted to an individual domiciled in, or a company with its principal place of business in, the European Union. The policy separately says this restriction does not apply to end users of a product or service that incorporates such multimodal models. This means developer/license eligibility and end-user access are not the same question.</div>
-
 <div class="callout darkcall" style="margin-top:15px"><strong>OpenWeightModels interpretation:</strong> “Commercial use: conditional” is more accurate than a binary “yes.” A typical developer outside the EU may have broad commercial rights under the agreement, but redistribution obligations, the AUP, the 700M-MAU clause and geography can change the answer for a specific organization or deployment.</div>
-<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE" target="_blank" rel="noopener">Official Llama 4 license ↗</a><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md" target="_blank" rel="noopener">Official Llama 4 Acceptable Use Policy ↗</a></div>
+<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE" rel="noopener" target="_blank">Official Llama 4 license ↗</a><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md" rel="noopener" target="_blank">Official Llama 4 Acceptable Use Policy ↗</a></div>
 </div></section>
-
-<section id="deployment" class="sec"><div class="w">
+<section class="sec" id="deployment"><div class="w">
 <div class="section-head"><div><div class="kicker">Deployment intelligence</div><h2>One model, multiple operating envelopes.</h2></div><div class="prose">
 <p>The phrase “supports 1M context” is incomplete without naming the implementation. Maverick's base model is documented at 1M, NVIDIA NIM supports 1M on H200 but 430K on H100, Google currently documents 524,288 on its managed endpoint, while AWS documents 1M. Provider-specific features such as tool calling also differ.</p>
 <p>OpenWeightModels therefore stores deployment facts as child records of the model rather than flattening them into a single global feature list.</p>
 </div></div>
-
 <div class="tablebox"><table><thead><tr><th>Route</th><th>Control</th><th>Context / output</th><th>Modalities</th><th>Notable feature</th></tr></thead><tbody>
 <tr><td class="value">Direct BF16 / FP8 weights</td><td>Highest</td><td>Base model: 1M documented</td><td>Text + image → text</td><td>Full operator responsibility for serving, memory and policy compliance.</td></tr>
 <tr><td class="value">Hugging Face + vLLM/SGLang</td><td>High</td><td>Implementation-dependent</td><td>Text + image → text</td><td>Official model page documents Transformers, vLLM and SGLang launch paths.</td></tr>
@@ -285,21 +267,18 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <tr><td class="value">Google managed endpoint</td><td>Managed</td><td>524,288 context · 8,192 output</td><td>Text/code/image → text</td><td>Function calling and structured output documented; model availability in us-east5.</td></tr>
 <tr><td class="value">Microsoft Foundry</td><td>Managed</td><td>1M documented input context</td><td>Text + images → text</td><td>Global Standard deployment; current Microsoft listing says tool calling: No.</td></tr>
 </tbody></table></div>
-
 <div class="deploy-grid" style="margin-top:15px">
-<article class="deploy"><div class="deploy-top"><h3>Direct weights</h3><span class="tag">self-host</span></div><p>Meta releases both BF16 and official FP8 Maverick checkpoints. Direct deployment offers the most control but shifts model serving, scaling, observability, safeguards and legal compliance to the operator.</p><div class="kv"><span>Context</span><strong>Up to 1M base documentation</strong><span>Precision</span><strong>BF16 / FP8 official</strong><span>Difficulty</span><strong>Very high</strong></div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta model card ↗</a></article>
-<article class="deploy"><div class="deploy-top"><h3>Hugging Face runtimes</h3><span class="tag">self-host</span></div><p>The official model page documents Transformers loading plus vLLM and SGLang serving, including OpenAI-compatible API examples for the serving frameworks.</p><div class="kv"><span>Runtimes</span><strong>Transformers · vLLM · SGLang</strong><span>API shape</span><strong>OpenAI-compatible in serving examples</strong><span>Control</span><strong>High</strong></div><a class="src" href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct" target="_blank" rel="noopener">Official HF Instruct model ↗</a></article>
-<article class="deploy"><div class="deploy-top"><h3>NVIDIA NIM</h3><span class="tag">packaged</span></div><p>NVIDIA validates Maverick only on homogeneous eight-GPU H100/H200 nodes in its current NIM support matrix. Generic configurations are not supported for this profile.</p><div class="kv"><span>H200 context</span><strong>1,000,000</strong><span>H100 context</span><strong>430,000</strong><span>Checkpoint</span><strong>Meta official FP8 only</strong></div><a class="src" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" target="_blank" rel="noopener">NVIDIA support matrix ↗</a></article>
-<article class="deploy"><div class="deploy-top"><h3>Amazon Bedrock</h3><span class="tag">managed</span></div><p>AWS lists Maverick as an active Bedrock model with text/image input and text output. AWS also applies geofencing to Llama 4 access based on account country and request source.</p><div class="kv"><span>Context</span><strong>1M</strong><span>Max output</span><strong>8K</strong><span>Features</span><strong>Streaming · Guardrails · tools · Agents</strong></div><a class="src" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html" target="_blank" rel="noopener">AWS model card ↗</a><a class="src" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html" target="_blank" rel="noopener">AWS geofencing note ↗</a></article>
-<article class="deploy"><div class="deploy-top"><h3>Google Cloud</h3><span class="tag">managed</span></div><p>Google's current managed Maverick record exposes a materially smaller context envelope than Meta's base-model maximum and adds platform features such as function calling and structured output.</p><div class="kv"><span>Model ID</span><strong>llama-4-maverick-17b-128e-instruct-maas</strong><span>Context</span><strong>524,288</strong><span>Region</span><strong>us-east5</strong></div><a class="src" href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick" target="_blank" rel="noopener">Google model record ↗</a></article>
-<article class="deploy"><div class="deploy-top"><h3>Microsoft Foundry</h3><span class="tag">managed</span></div><p>Microsoft currently lists the FP8 Maverick Instruct model as a Foundry model sold directly by Azure with Global Standard deployment. Its current capability table does not advertise tool calling for this model.</p><div class="kv"><span>Input</span><strong>Text + images</strong><span>Context</span><strong>1M documented</strong><span>Tool calling</span><strong>No (current listing)</strong></div><a class="src" href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models?view=azure-node-latest" target="_blank" rel="noopener">Microsoft Foundry model list ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>Direct weights</h3><span class="tag">self-host</span></div><p>Meta releases both BF16 and official FP8 Maverick checkpoints. Direct deployment offers the most control but shifts model serving, scaling, observability, safeguards and legal compliance to the operator.</p><div class="kv"><span>Context</span><strong>Up to 1M base documentation</strong><span>Precision</span><strong>BF16 / FP8 official</strong><span>Difficulty</span><strong>Very high</strong></div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Meta model card ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>Hugging Face runtimes</h3><span class="tag">self-host</span></div><p>The official model page documents Transformers loading plus vLLM and SGLang serving, including OpenAI-compatible API examples for the serving frameworks.</p><div class="kv"><span>Runtimes</span><strong>Transformers · vLLM · SGLang</strong><span>API shape</span><strong>OpenAI-compatible in serving examples</strong><span>Control</span><strong>High</strong></div><a class="src" href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct" rel="noopener" target="_blank">Official HF Instruct model ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>NVIDIA NIM</h3><span class="tag">packaged</span></div><p>NVIDIA validates Maverick only on homogeneous eight-GPU H100/H200 nodes in its current NIM support matrix. Generic configurations are not supported for this profile.</p><div class="kv"><span>H200 context</span><strong>1,000,000</strong><span>H100 context</span><strong>430,000</strong><span>Checkpoint</span><strong>Meta official FP8 only</strong></div><a class="src" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" rel="noopener" target="_blank">NVIDIA support matrix ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>Amazon Bedrock</h3><span class="tag">managed</span></div><p>AWS lists Maverick as an active Bedrock model with text/image input and text output. AWS also applies geofencing to Llama 4 access based on account country and request source.</p><div class="kv"><span>Context</span><strong>1M</strong><span>Max output</span><strong>8K</strong><span>Features</span><strong>Streaming · Guardrails · tools · Agents</strong></div><a class="src" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html" rel="noopener" target="_blank">AWS model card ↗</a><a class="src" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html" rel="noopener" target="_blank">AWS geofencing note ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>Google Cloud</h3><span class="tag">managed</span></div><p>Google's current managed Maverick record exposes a materially smaller context envelope than Meta's base-model maximum and adds platform features such as function calling and structured output.</p><div class="kv"><span>Model ID</span><strong>llama-4-maverick-17b-128e-instruct-maas</strong><span>Context</span><strong>524,288</strong><span>Region</span><strong>us-east5</strong></div><a class="src" href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick" rel="noopener" target="_blank">Google model record ↗</a></article>
+<article class="deploy"><div class="deploy-top"><h3>Microsoft Foundry</h3><span class="tag">managed</span></div><p>Microsoft currently lists the FP8 Maverick Instruct model as a Foundry model sold directly by Azure with Global Standard deployment. Its current capability table does not advertise tool calling for this model.</p><div class="kv"><span>Input</span><strong>Text + images</strong><span>Context</span><strong>1M documented</strong><span>Tool calling</span><strong>No (current listing)</strong></div><a class="src" href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models?view=azure-node-latest" rel="noopener" target="_blank">Microsoft Foundry model list ↗</a></article>
 </div>
-
 <div class="callout warn" style="margin-top:15px"><strong>Why provider records matter:</strong> the model identity is the same, but the operating contract is not. A cloud endpoint can expose a smaller context window, different tool support, different safety features, different regional availability and a separate lifecycle from the underlying downloadable weights.</div>
 </div></section>
-
-<section id="hardware" class="sec muted"><div class="w">
-<div class="section-head"><div><div class="kicker">Hardware & quantization</div><h2>Active parameters do not equal memory footprint.</h2></div><div class="prose">
+<section class="sec muted" id="hardware"><div class="w">
+<div class="section-head"><div><div class="kicker">Hardware &amp; quantization</div><h2>Active parameters do not equal memory footprint.</h2></div><div class="prose">
 <p>Meta releases Maverick in BF16 and FP8. It states that the FP8 weights can fit on a single H100 DGX host while maintaining quality. NVIDIA's production NIM profile is more explicit: it supports a node of eight H100 SXM, H100 NVL, H200 SXM or H200 NVL GPUs and uses Meta's official FP8 checkpoint only.</p>
 <p>Long context further changes memory requirements because KV-cache usage grows with sequence length, batch size and implementation. For this reason, OpenWeightModels does not publish one universal “minimum VRAM” number for Maverick.</p>
 </div></div>
@@ -309,11 +288,10 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <article class="card"><h3>On-the-fly INT4</h3><p>Meta also provides code for on-the-fly INT4 quantization. That is distinct from saying every INT4 community artifact has identical behavior, provenance or quality.</p></article>
 </div>
 <div class="callout blue" style="margin-top:15px"><strong>Hardware interpretation:</strong> “single H100 host” is not “single H100 GPU.” A DGX H100 is an eight-GPU system. This distinction should remain explicit in technical summaries because collapsing “host” into “GPU” radically understates infrastructure needs.</div>
-<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener">Meta quantization notes ↗</a><a class="src" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" target="_blank" rel="noopener">NVIDIA NIM hardware matrix ↗</a></div>
+<div><a class="src" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank">Meta quantization notes ↗</a><a class="src" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" rel="noopener" target="_blank">NVIDIA NIM hardware matrix ↗</a></div>
 </div></section>
-
-<section id="variants" class="sec"><div class="w">
-<div class="section-head"><div><div class="kicker">Weights & variants</div><h2>Know which Maverick you are actually deploying.</h2></div><p>Model-family names are not deployment identifiers. Precision and tuning state matter for reproducibility, memory planning and comparison.</p></div>
+<section class="sec" id="variants"><div class="w">
+<div class="section-head"><div><div class="kicker">Weights &amp; variants</div><h2>Know which Maverick you are actually deploying.</h2></div><p>Model-family names are not deployment identifiers. Precision and tuning state matter for reproducibility, memory planning and comparison.</p></div>
 <div class="tablebox"><table><thead><tr><th>Variant</th><th>Purpose</th><th>Precision</th><th>Status</th><th>Notes</th></tr></thead><tbody>
 <tr><td class="value">Llama-4-Maverick-17B-128E-Original</td><td>Original/pretrained-style release</td><td>BF16</td><td><span class="status ok">Official</span></td><td>Useful when adapting the base model rather than consuming the instruction-tuned behavior.</td></tr>
 <tr><td class="value">Llama-4-Maverick-17B-128E-Instruct</td><td>Assistant / visual reasoning</td><td>BF16</td><td><span class="status ok">Official</span></td><td>Primary instruction-tuned checkpoint documented for chat and visual reasoning.</td></tr>
@@ -321,9 +299,8 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 <tr><td class="value">Community GGUF / other quantizations</td><td>Alternative runtimes</td><td>Varies</td><td><span class="status cond">Community</span></td><td>Should be tracked separately by publisher, quantization recipe and source; not equivalent to Meta's official checkpoint.</td></tr>
 </tbody></table></div>
 </div></section>
-
-<section id="limitations" class="sec muted"><div class="w">
-<div class="section-head"><div><div class="kicker">Limitations & selection notes</div><h2>Where the headline numbers can mislead.</h2></div><p>A useful model passport should make deployment risks and interpretive limits as visible as capabilities.</p></div>
+<section class="sec muted" id="limitations"><div class="w">
+<div class="section-head"><div><div class="kicker">Limitations &amp; selection notes</div><h2>Where the headline numbers can mislead.</h2></div><p>A useful model passport should make deployment risks and interpretive limits as visible as capabilities.</p></div>
 <div class="grid2">
 <article class="card"><h3>It is not a “17B hardware model”</h3><p>The 17B figure is the active parameter count. Maverick still contains roughly 400B total parameters, making model storage and orchestration a large-system problem.</p></article>
 <article class="card"><h3>1M context is not universal</h3><p>The base model is documented at 1M, but Google exposes 524,288 on its managed endpoint and NVIDIA limits H100 NIM deployments to 430K. Provider context must be recorded separately.</p></article>
@@ -334,31 +311,28 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 </div>
 <div class="callout red" style="margin-top:15px"><strong>Legal note:</strong> OpenWeightModels summarizes published terms for technical comparison and provenance. It is not legal advice. Organizations should review the current official agreement, use policy and provider terms for their jurisdiction and intended use.</div>
 </div></section>
-
-<section id="sources" class="sec"><div class="w">
-<div class="section-head"><div><div class="kicker">Sources & verification</div><h2>Evidence behind the passport.</h2></div><div class="prose"><p>Last full review: <strong>29 September 2026</strong>. Architecture, training, benchmark and weight claims are grounded primarily in Meta sources. Deployment-specific claims are grounded in the documentation of the named platform rather than inferred from the base model.</p></div></div>
+<section class="sec" id="sources"><div class="w">
+<div class="section-head"><div><div class="kicker">Sources &amp; verification</div><h2>Evidence behind the passport.</h2></div><div class="prose"><p>Last full review: <strong>29 September 2026</strong>. Architecture, training, benchmark and weight claims are grounded primarily in Meta sources. Deployment-specific claims are grounded in the documentation of the named platform rather than inferred from the base model.</p></div></div>
 <div class="sourcegrid">
-<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" target="_blank" rel="noopener"><strong>Meta — Llama 4 Model Card</strong><span>architecture · training · benchmarks · quantization ↗</span></a>
-<a class="sourcecard" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener"><strong>Meta — Llama 4 release</strong><span>MoE routing · early fusion · post-training ↗</span></a>
-<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE" target="_blank" rel="noopener"><strong>Meta — Llama 4 License</strong><span>grant · redistribution · 700M MAU term ↗</span></a>
-<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md" target="_blank" rel="noopener"><strong>Meta — Acceptable Use Policy</strong><span>prohibited uses · EU multimodal restriction ↗</span></a>
-<a class="sourcecard" href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct" target="_blank" rel="noopener"><strong>Official Hugging Face model</strong><span>checkpoint · Transformers · vLLM · SGLang ↗</span></a>
-<a class="sourcecard" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" target="_blank" rel="noopener"><strong>NVIDIA NIM</strong><span>validated GPUs · context limits · FP8 ↗</span></a>
-<a class="sourcecard" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html" target="_blank" rel="noopener"><strong>Amazon Bedrock</strong><span>context · output · features · lifecycle ↗</span></a>
-<a class="sourcecard" href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick" target="_blank" rel="noopener"><strong>Google Cloud</strong><span>managed context · region · function calling ↗</span></a>
-<a class="sourcecard" href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models?view=azure-node-latest" target="_blank" rel="noopener"><strong>Microsoft Foundry</strong><span>FP8 offering · context · deployment mode ↗</span></a>
+<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md" rel="noopener" target="_blank"><strong>Meta — Llama 4 Model Card</strong><span>architecture · training · benchmarks · quantization ↗</span></a>
+<a class="sourcecard" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" rel="noopener" target="_blank"><strong>Meta — Llama 4 release</strong><span>MoE routing · early fusion · post-training ↗</span></a>
+<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE" rel="noopener" target="_blank"><strong>Meta — Llama 4 License</strong><span>grant · redistribution · 700M MAU term ↗</span></a>
+<a class="sourcecard" href="https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md" rel="noopener" target="_blank"><strong>Meta — Acceptable Use Policy</strong><span>prohibited uses · EU multimodal restriction ↗</span></a>
+<a class="sourcecard" href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct" rel="noopener" target="_blank"><strong>Official Hugging Face model</strong><span>checkpoint · Transformers · vLLM · SGLang ↗</span></a>
+<a class="sourcecard" href="https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html" rel="noopener" target="_blank"><strong>NVIDIA NIM</strong><span>validated GPUs · context limits · FP8 ↗</span></a>
+<a class="sourcecard" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html" rel="noopener" target="_blank"><strong>Amazon Bedrock</strong><span>context · output · features · lifecycle ↗</span></a>
+<a class="sourcecard" href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick" rel="noopener" target="_blank"><strong>Google Cloud</strong><span>managed context · region · function calling ↗</span></a>
+<a class="sourcecard" href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models?view=azure-node-latest" rel="noopener" target="_blank"><strong>Microsoft Foundry</strong><span>FP8 offering · context · deployment mode ↗</span></a>
 </div>
-
 <div class="section-head" style="margin-top:54px;margin-bottom:18px"><div><div class="kicker">Change history</div><h2>Passport revisions.</h2></div><p>Material source changes should update both the affected field and this history instead of silently overwriting the record.</p></div>
 <div class="timeline">
 <div class="event"><time>29 Sep 2026</time><p>Gold-standard passport created. Expanded architecture, training, capabilities, benchmarks, detailed license analysis, provider-level deployment records, hardware/quantization, variants and limitations. EU restriction source corrected to the incorporated Acceptable Use Policy rather than the core license text.</p></div>
 <div class="event"><time>29 Sep 2026</time><p>Initial Model Passport created with license and deployment overview.</p></div>
 </div>
 </div></section>
-
 <section class="sec muted"><div class="w">
 <div class="section-head"><div><div class="kicker">FAQ</div><h2>Common interpretation questions.</h2></div><div class="faq">
-<details open><summary>Is Llama 4 Maverick open source?</summary><p>OpenWeightModels calls it open-weight because official weights are available. Its custom Llama 4 Community License and incorporated use policy differ from standard permissive software licenses, so “open weight” is the more precise classification for this registry.</p></details>
+<details open=""><summary>Is Llama 4 Maverick open source?</summary><p>OpenWeightModels calls it open-weight because official weights are available. Its custom Llama 4 Community License and incorporated use policy differ from standard permissive software licenses, so “open weight” is the more precise classification for this registry.</p></details>
 <details><summary>Can Llama 4 Maverick be used commercially?</summary><p>Meta's model card intends Llama 4 for commercial and research use, but the answer is conditional on the Community License and AUP. Important conditions include redistribution obligations, the 700M-MAU clause and the multimodal EU developer restriction.</p></details>
 <details><summary>Can Llama 4 Maverick run on a single H100 GPU?</summary><p>Do not confuse a single H100 GPU with an H100 DGX host. Meta says the FP8 checkpoint fits on a single H100 DGX host; NVIDIA's validated NIM profile uses eight H100 or H200 GPUs.</p></details>
 <details><summary>What is the context window of Llama 4 Maverick?</summary><p>Meta documents a base context window of up to 1 million tokens for Llama 4 Maverick. Provider implementations can expose smaller limits: Google's current managed Maverick endpoint documents 524,288 tokens, while NVIDIA NIM documents 430,000 on H100 and 1 million on H200.</p></details>
@@ -366,9 +340,8 @@ footer{padding:42px 0 24px;background:#06101c;color:#a9bbcd}.foot{display:flex;j
 </div></div>
 </div></section>
 </main>
-
 <footer><div class="w">
-<div class="foot"><div><a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span>Open Weight Models</a><p>Independent technical reference for open-weight AI models, licenses, hardware and deployment. Model-specific official sources remain authoritative.</p></div><div class="footlinks"><a href="/#models">Models</a><a href="/data/models.json">models.json</a><a href="/llms.txt">llms.txt</a><a href="#sources">Sources</a></div></div>
+<div class="foot"><div><a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span>Open Weight Models</a><p>Independent technical reference for open-weight AI models, licenses, hardware and deployment. Model-specific official sources remain authoritative.</p></div><div class="footlinks"><a href="/#models">Models</a><a href="/data/models.json">models.json</a><a href="/llms.txt">llms.txt</a><a href="#sources">Sources</a><a href="/methodology/">Methodology</a><a href="/licenses/">License Explorer</a><a href="/deployment/">Deployment Explorer</a></div></div>
 <div class="bottom"><span>Information for technical comparison — not legal advice.</span><span>Passport version 2.0 · verified 2026-09-29</span></div>
 </div></footer>
 </body></html>

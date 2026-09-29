@@ -1,0 +1,1366 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-29",
+  "model_count": 32,
+  "runtime_record_counts": {
+    "vLLM": 23,
+    "SGLang": 18,
+    "DeepSeek API": 1,
+    "Transformers": 28,
+    "llama.cpp": 5,
+    "Ollama": 6,
+    "Google Cloud": 3,
+    "NVIDIA NIM": 1,
+    "AWS / Bedrock": 1,
+    "Microsoft Foundry": 1
+  },
+  "hardware_class_counts": {
+    "Model-specific": 32
+  },
+  "hardware_class_note": "Editorial navigation classes, not guaranteed minimum hardware requirements.",
+  "models": [
+    {
+      "name": "DeepSeek-R1",
+      "slug": "deepseek-r1",
+      "developer": "DeepSeek",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [
+        "DeepSeek API"
+      ],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Official DeepSeek API",
+          "type": "Managed API",
+          "notes": "DeepSeek exposes R1 through its own API service."
+        },
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official full-model weights are published."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Validated serving path for the full sparse model."
+        },
+        {
+          "route": "vLLM / DeepSeek-V3 stack",
+          "type": "Serving",
+          "notes": "DeepSeek directs operators to large-model runtime guidance."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/deepseek-r1/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "DeepSeek-V3.1",
+      "slug": "deepseek-v3-1",
+      "developer": "DeepSeek",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face release."
+        },
+        {
+          "route": "DeepSeek runtime stack",
+          "type": "Self-hosted",
+          "notes": "Deployment follows DeepSeek-V3-class large-model guidance."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Supported large-model serving ecosystem."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Sparse-model serving path used across DeepSeek deployments."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/deepseek-v3-1/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Devstral Small 2505",
+      "slug": "devstral-small-2505",
+      "developer": "Mistral AI",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official model is tagged and documented for vLLM."
+        },
+        {
+          "route": "mistral-common / mistral-inference",
+          "type": "Self-hosted",
+          "notes": "Mistral-native tokenizer and serving components."
+        },
+        {
+          "route": "OpenHands-style agent scaffold",
+          "type": "Agent application",
+          "notes": "Publisher evaluation uses a coding-agent scaffold for repository tasks."
+        },
+        {
+          "route": "Local quantized deployment",
+          "type": "Local",
+          "notes": "Mistral says the 24B model can fit a single RTX 4090 or 32GB Mac when quantized."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/devstral-small-2505/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Gemma 3 12B IT",
+      "slug": "gemma-3-12b-it",
+      "developer": "Google DeepMind",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "llama.cpp",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [
+        "Google Cloud"
+      ],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face and Transformers workflow."
+        },
+        {
+          "route": "Vertex AI Model Garden",
+          "type": "Cloud",
+          "notes": "Google provides model deployment options through its cloud model ecosystem."
+        },
+        {
+          "route": "Ollama",
+          "type": "Local",
+          "notes": "Google documents Gemma use with Ollama."
+        },
+        {
+          "route": "llama.cpp / quantized ecosystem",
+          "type": "Local",
+          "notes": "Quantized local inference is widely supported for Gemma-family checkpoints."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gemma-3-12b-it/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Gemma 3 27B IT",
+      "slug": "gemma-3-27b-it",
+      "developer": "Google DeepMind",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "llama.cpp",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [
+        "Google Cloud"
+      ],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face and Transformers workflow."
+        },
+        {
+          "route": "Vertex AI Model Garden",
+          "type": "Cloud",
+          "notes": "Google provides model deployment options through its cloud model ecosystem."
+        },
+        {
+          "route": "Ollama",
+          "type": "Local",
+          "notes": "Google documents Gemma use with Ollama."
+        },
+        {
+          "route": "llama.cpp / quantized ecosystem",
+          "type": "Local",
+          "notes": "Quantized local inference is widely supported for Gemma-family checkpoints."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gemma-3-27b-it/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Gemma 3 4B IT",
+      "slug": "gemma-3-4b-it",
+      "developer": "Google DeepMind",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "llama.cpp",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [
+        "Google Cloud"
+      ],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face and Transformers workflow."
+        },
+        {
+          "route": "Vertex AI Model Garden",
+          "type": "Cloud",
+          "notes": "Google provides model deployment options through its cloud model ecosystem."
+        },
+        {
+          "route": "Ollama",
+          "type": "Local",
+          "notes": "Google documents Gemma use with Ollama."
+        },
+        {
+          "route": "llama.cpp / quantized ecosystem",
+          "type": "Local",
+          "notes": "Quantized local inference is widely supported for Gemma-family checkpoints."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gemma-3-4b-it/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Gemma 3n E4B IT",
+      "slug": "gemma-3n-e4b-it",
+      "developer": "Google DeepMind",
+      "total_parameters": "See passport",
+      "context": "32K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face model integration."
+        },
+        {
+          "route": "On-device/mobile runtimes",
+          "type": "Edge",
+          "notes": "Gemma 3n is explicitly designed for phones and laptops."
+        },
+        {
+          "route": "Google AI Edge ecosystem",
+          "type": "Edge",
+          "notes": "Google provides an edge-oriented toolchain around Gemma models."
+        },
+        {
+          "route": "Quantized ecosystem",
+          "type": "Local",
+          "notes": "Reduced precision is central to practical mobile use."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gemma-3n-e4b-it/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "GLM-4.5",
+      "slug": "glm-4-5",
+      "developer": "Z.ai",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official implementation support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official tool/reasoning parser support."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Official large-MoE serving support."
+        },
+        {
+          "route": "Z.ai API",
+          "type": "Managed API",
+          "notes": "Provider-hosted deployment path."
+        },
+        {
+          "route": "FP8 official checkpoint",
+          "type": "Optimized serving",
+          "notes": "Published FP8 weights reduce memory requirements."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/glm-4-5/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "GLM-4.5 Air",
+      "slug": "glm-4-5-air",
+      "developer": "Z.ai",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official reasoner/tool parsing support."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Official sparse-model serving."
+        },
+        {
+          "route": "Z.ai API",
+          "type": "Managed API",
+          "notes": "Provider-hosted path."
+        },
+        {
+          "route": "FP8 official checkpoint",
+          "type": "Optimized serving",
+          "notes": "Official lower-memory variant."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/glm-4-5-air/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "slug": "gpt-oss-120b",
+      "developer": "OpenAI",
+      "total_parameters": "See passport",
+      "context": "131,072 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face integration for direct inference and experimentation."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Documented production serving path with OpenAI-compatible endpoints."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Documented high-throughput serving option."
+        },
+        {
+          "route": "Ollama / local tooling",
+          "type": "Local",
+          "notes": "OpenAI documents local deployment paths for gpt-oss; the 120B model remains a high-memory workload."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gpt-oss-120b/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "gpt-oss-20b",
+      "slug": "gpt-oss-20b",
+      "developer": "OpenAI",
+      "total_parameters": "See passport",
+      "context": "131,072 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct official checkpoint loading."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "OpenAI-compatible serving path."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "High-throughput server option."
+        },
+        {
+          "route": "Ollama / local apps",
+          "type": "Local",
+          "notes": "Well suited to the smaller gpt-oss profile when sufficient system memory is available."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/gpt-oss-20b/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Granite 3.3 8B Instruct",
+      "slug": "granite-3-3-8b-instruct",
+      "developer": "IBM",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official model loading."
+        },
+        {
+          "route": "vLLM / OpenAI-compatible serving",
+          "type": "Serving",
+          "notes": "Granite models are compatible with standard transformer-serving stacks."
+        },
+        {
+          "route": "IBM watsonx ecosystem",
+          "type": "Managed enterprise",
+          "notes": "Granite is part of IBM’s enterprise model ecosystem."
+        },
+        {
+          "route": "Quantized local variants",
+          "type": "Local/server",
+          "notes": "8B scale is friendly to 8-bit/4-bit inference."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/granite-3-3-8b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Kimi K2 Instruct",
+      "slug": "kimi-k2-instruct",
+      "developer": "Moonshot AI",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official checkpoint integration."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Officially documented large-model serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Officially documented sparse-model serving."
+        },
+        {
+          "route": "KTransformers",
+          "type": "Hybrid/local research",
+          "notes": "Optimized heterogeneous inference option."
+        },
+        {
+          "route": "TensorRT-LLM",
+          "type": "NVIDIA serving",
+          "notes": "Optimized datacenter runtime."
+        },
+        {
+          "route": "Moonshot API",
+          "type": "Managed API",
+          "notes": "Provider-hosted API path."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/kimi-k2-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Llama 3.3 70B Instruct",
+      "slug": "llama-3-3-70b-instruct",
+      "developer": "Meta",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Standard Hugging Face inference path."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Widely used high-throughput serving path for Llama checkpoints."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Compatible server stack for large transformer inference."
+        },
+        {
+          "route": "Quantized ecosystem builds",
+          "type": "Local / server",
+          "notes": "Community GGUF/AWQ/GPTQ variants can reduce memory but require separate provenance checks."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/llama-3-3-70b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Llama 4 Maverick",
+      "slug": "llama-4-maverick",
+      "developer": "Meta",
+      "total_parameters": "See passport",
+      "context": "1000000 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang",
+        "NVIDIA NIM"
+      ],
+      "managed_or_cloud_paths": [
+        "AWS / Bedrock",
+        "Microsoft Foundry"
+      ],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "name": "Direct Meta weights / Hugging Face",
+          "type": "self-hosted",
+          "precisions": [
+            "BF16",
+            "FP8"
+          ],
+          "context_tokens": 1000000,
+          "runtimes": [
+            "Transformers",
+            "vLLM",
+            "SGLang"
+          ],
+          "notes": "Context is the base model documentation; achievable deployment envelope is implementation- and hardware-dependent."
+        },
+        {
+          "name": "NVIDIA NIM",
+          "type": "packaged self-hosted",
+          "checkpoint": "Meta official FP8",
+          "supported_hardware": [
+            "8x H100 SXM",
+            "8x H100 NVL",
+            "8x H200 SXM",
+            "8x H200 NVL"
+          ],
+          "context_tokens_h100": 430000,
+          "context_tokens_h200": 1000000,
+          "generic_configuration_supported": false
+        },
+        {
+          "name": "Amazon Bedrock",
+          "type": "managed API",
+          "model_id": "meta.llama4-maverick-17b-instruct-v1:0",
+          "context_tokens": 1000000,
+          "max_output_tokens": 8192,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "features": [
+            "streaming",
+            "guardrails",
+            "client-side tool calling",
+            "prompt management",
+            "flows",
+            "agents"
+          ],
+          "geofencing": true
+        },
+        {
+          "name": "Google managed Maverick",
+          "type": "managed API",
+          "model_id": "llama-4-maverick-17b-128e-instruct-maas",
+          "region": "us-east5",
+          "context_tokens": 524288,
+          "max_output_tokens": 8192,
+          "features": [
+            "function calling",
+            "structured output"
+          ],
+          "input_modalities": [
+            "text",
+            "code",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        {
+          "name": "Microsoft Foundry",
+          "type": "managed API",
+          "model_id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+          "deployment_type": "Global Standard",
+          "context_tokens": 1000000,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tool_calling_current_listing": false
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/llama-4-maverick/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Llama 4 Scout",
+      "slug": "llama-4-scout",
+      "developer": "Meta",
+      "total_parameters": "See passport",
+      "context": "10,000,000 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official checkpoint and processor support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Documented serving path."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Documented multimodal serving path."
+        },
+        {
+          "route": "NVIDIA FP8 ecosystem checkpoint",
+          "type": "Optimized serving",
+          "notes": "NVIDIA publishes a separately quantized FP8 Scout checkpoint; this is not the same as a Meta-official FP8 release."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/llama-4-scout/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Magistral Small 2506",
+      "slug": "magistral-small-2506",
+      "developer": "Mistral AI",
+      "total_parameters": "See passport",
+      "context": "128K nominal · 40K recommended for quality",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official model uses a vLLM-oriented inference path."
+        },
+        {
+          "route": "Mistral tooling",
+          "type": "Self-hosted",
+          "notes": "Mistral chat templates/tokenizer support."
+        },
+        {
+          "route": "Quantized local deployment",
+          "type": "Local",
+          "notes": "Mistral says it can fit one RTX 4090 or a 32GB RAM MacBook once quantized."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/magistral-small-2506/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Mathstral 7B v0.1",
+      "slug": "mathstral-7b-v0-1",
+      "developer": "Mistral AI",
+      "total_parameters": "See passport",
+      "context": "32,768 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "mistral-inference",
+          "type": "Self-hosted",
+          "notes": "Mistral-native inference path."
+        },
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Hugging Face deployment."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Model page supports vLLM-oriented serving."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/mathstral-7b-v0-1/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Mistral Nemo Instruct 2407",
+      "slug": "mistral-nemo-instruct-2407",
+      "developer": "Mistral AI / NVIDIA",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "mistral-inference",
+          "type": "Self-hosted",
+          "notes": "Official Mistral runtime."
+        },
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face integration."
+        },
+        {
+          "route": "NVIDIA NeMo",
+          "type": "Serving/training ecosystem",
+          "notes": "NVIDIA model/runtime integration."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Model is tagged for vLLM serving."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/mistral-nemo-instruct-2407/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Mistral Small 3.1 24B Instruct",
+      "slug": "mistral-small-3-1-24b-instruct",
+      "developer": "Mistral AI",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "mistral-inference",
+          "type": "Self-hosted",
+          "notes": "Mistral’s native inference stack."
+        },
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct Hugging Face integration."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "OpenAI-compatible production serving."
+        },
+        {
+          "route": "Quantized local runtimes",
+          "type": "Local",
+          "notes": "Mistral notes that quantized deployments can fit a single RTX 4090 or 32GB-RAM MacBook."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/mistral-small-3-1-24b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "OLMo 2 13B Instruct",
+      "slug": "olmo-2-13b-instruct",
+      "developer": "Ai2",
+      "total_parameters": "See passport",
+      "context": "4,096 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Native OLMo2 support in Transformers."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Official model card documents an OpenAI-compatible SGLang server."
+        },
+        {
+          "route": "Docker Model Runner",
+          "type": "Container",
+          "notes": "Ai2 provides a direct Docker Model Runner example for the 32B and related checkpoints."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/olmo-2-13b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "OLMo 2 32B Instruct",
+      "slug": "olmo-2-32b-instruct",
+      "developer": "Ai2",
+      "total_parameters": "See passport",
+      "context": "4,096 tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Native OLMo2 support in Transformers."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Official model card documents an OpenAI-compatible SGLang server."
+        },
+        {
+          "route": "Docker Model Runner",
+          "type": "Container",
+          "notes": "Ai2 provides a direct Docker Model Runner example for the 32B and related checkpoints."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/olmo-2-32b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Phi-4",
+      "slug": "phi-4",
+      "developer": "Microsoft",
+      "total_parameters": "See passport",
+      "context": "16K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct Hugging Face inference."
+        },
+        {
+          "route": "ONNX / Microsoft optimization ecosystem",
+          "type": "Optimized local/server",
+          "notes": "Phi models are commonly packaged for optimized inference."
+        },
+        {
+          "route": "Azure / Microsoft model catalog",
+          "type": "Managed ecosystem",
+          "notes": "Microsoft distributes Phi models through its model platforms as well as open weights."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/phi-4/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Phi-4 Mini Instruct",
+      "slug": "phi-4-mini-instruct",
+      "developer": "Microsoft",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct model loading."
+        },
+        {
+          "route": "ONNX / edge tooling",
+          "type": "Local / edge",
+          "notes": "Small size makes optimized CPU/GPU/edge deployment practical."
+        },
+        {
+          "route": "Microsoft model ecosystem",
+          "type": "Managed / packaged",
+          "notes": "Available through Microsoft model distribution channels."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/phi-4-mini-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Phi-4 Multimodal Instruct",
+      "slug": "phi-4-multimodal-instruct",
+      "developer": "Microsoft",
+      "total_parameters": "See passport",
+      "context": "128K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers with model code",
+          "type": "Self-hosted",
+          "notes": "Official Hugging Face workflow."
+        },
+        {
+          "route": "ONNX variants",
+          "type": "Optimized deployment",
+          "notes": "Microsoft publishes optimized deployment paths for Phi models."
+        },
+        {
+          "route": "Microsoft/Azure ecosystem",
+          "type": "Managed / playground",
+          "notes": "Model can be evaluated through Microsoft model platforms."
+        },
+        {
+          "route": "NVIDIA ecosystem",
+          "type": "Accelerated experimentation",
+          "notes": "Phi multimodal appears in NVIDIA model tooling/playgrounds."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/phi-4-multimodal-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen2.5-Coder-32B-Instruct",
+      "slug": "qwen2-5-coder-32b-instruct",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "32K native · long-context extension documented by Qwen",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct checkpoint loading."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "High-throughput code assistant serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Compatible server runtime."
+        },
+        {
+          "route": "GGUF / quantized ecosystem",
+          "type": "Local",
+          "notes": "Community conversions enable workstation deployment."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen2-5-coder-32b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen2.5-VL-72B-Instruct",
+      "slug": "qwen2-5-vl-72b-instruct",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "32K recommended default · config exposes 128K positions",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Official image-text-to-text integration."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official page documents multimodal vLLM serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Official page documents SGLang serving."
+        },
+        {
+          "route": "Docker Model Runner",
+          "type": "Container",
+          "notes": "Documented model runner path."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen2-5-vl-72b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen3-235B-A22B",
+      "slug": "qwen3-235b-a22b",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "32,768 native · 131,072 with YaRN",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct checkpoint loading and generation."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Qwen recommends SGLang for large multi-GPU and quantized deployments."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Qwen documents vLLM with reasoning parsers and OpenAI-compatible endpoints."
+        },
+        {
+          "route": "GPTQ/AWQ ecosystem",
+          "type": "Quantized serving",
+          "notes": "Official and ecosystem quantizations lower weight memory; support varies by runtime."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-235b-a22b/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen3-30B-A3B",
+      "slug": "qwen3-30b-a3b",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "32,768 native · 131,072 with YaRN",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct inference path."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Reasoning-aware OpenAI-compatible serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Efficient sparse-model serving."
+        },
+        {
+          "route": "Quantized local builds",
+          "type": "Local / workstation",
+          "notes": "Community and publisher quantizations can further reduce weight memory."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-30b-a3b/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen3-32B",
+      "slug": "qwen3-32b",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "32,768 native · 131,072 with YaRN",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang",
+        "llama.cpp",
+        "Ollama"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct dense-model inference."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "OpenAI-compatible high-throughput serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Reasoning-aware serving path."
+        },
+        {
+          "route": "llama.cpp / Ollama ecosystem",
+          "type": "Local / workstation",
+          "notes": "Quantized conversions can make a 32B dense model accessible on high-memory consumer systems."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-32b/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen3-Coder-480B-A35B-Instruct",
+      "slug": "qwen3-coder-480b-a35b-instruct",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "See passport",
+      "context": "256K tokens",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Official model page documents vLLM serving."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving",
+          "notes": "Officially documented serving path."
+        },
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Direct checkpoint use for compatible workflows."
+        },
+        {
+          "route": "Docker Model Runner",
+          "type": "Container workflow",
+          "notes": "Documented model-running path."
+        },
+        {
+          "route": "FP8 variant",
+          "type": "Optimized serving",
+          "notes": "Publisher FP8 checkpoint available for reduced weight memory."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-coder-480b-a35b-instruct/#deployment",
+      "verified_at": "2026-09-29"
+    },
+    {
+      "name": "SmolLM3 3B",
+      "slug": "smollm3-3b",
+      "developer": "Hugging Face",
+      "total_parameters": "See passport",
+      "context": "64K native · up to 128K extended",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM",
+        "llama.cpp"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Transformers",
+          "type": "Self-hosted",
+          "notes": "Native model support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving",
+          "notes": "Documented serving path."
+        },
+        {
+          "route": "llama.cpp / GGUF",
+          "type": "Local",
+          "notes": "Quantized portable inference."
+        },
+        {
+          "route": "ONNX",
+          "type": "Local / edge",
+          "notes": "Optimized runtime path."
+        },
+        {
+          "route": "MLX / MLC",
+          "type": "Device-oriented",
+          "notes": "Useful for Apple/device-class deployment."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/smollm3-3b/#deployment",
+      "verified_at": "2026-09-29"
+    }
+  ]
+}

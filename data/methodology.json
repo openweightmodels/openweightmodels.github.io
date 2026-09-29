@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-29",
+  "registry_size": 32,
+  "passport_status": "32 Gold Passports",
+  "scope": "Curated open-weight AI models with obtainable trained weights and sufficient first-party evidence for identity, terms and deployment.",
+  "status_vocabulary": {
+    "VERIFIED": "Confirmed by a current primary source governing the exact fact.",
+    "DOCUMENTED": "Officially stated but may describe a broader family or implementation context.",
+    "NOT_CONFIRMED": "No sufficiently reliable current source found; no guess is substituted.",
+    "EDITORIAL_CLASSIFICATION": "OpenWeightModels comparison label derived from documented facts and clearly distinguished from publisher wording."
+  },
+  "source_hierarchy": [
+    "Exact primary artifact",
+    "Developer documentation",
+    "Named deployment provider documentation",
+    "Official runtime documentation",
+    "Labeled community evidence"
+  ],
+  "separation_principle": [
+    "model facts",
+    "license and incorporated-policy facts",
+    "deployment/runtime/provider facts"
+  ],
+  "benchmark_policy": "No synthetic overall score; retain evaluator, checkpoint, metric and conditions where available.",
+  "hardware_policy": "No universal minimum GPU/VRAM claim unless documented for a defined checkpoint/runtime; estimates are labeled and exclude unmodeled overhead.",
+  "legal_note": "Technical comparison only; not legal advice."
+}

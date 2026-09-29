@@ -132,4 +132,7 @@
     <loc>https://openweightmodels.eu/models/smollm3-3b/</loc>
     <lastmod>2026-09-29</lastmod>
   </url>
+  <url><loc>https://openweightmodels.eu/methodology/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://openweightmodels.eu/licenses/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://openweightmodels.eu/deployment/</loc><lastmod>2026-09-29</lastmod></url>
 </urlset>

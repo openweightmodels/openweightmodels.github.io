@@ -2,6 +2,16 @@
 
 Independent reference for open-weight AI models, licenses, hardware and deployment.
 All model pages are full Model Passports verified on 2026-09-29.
+## Core reference pages
+- Methodology: https://openweightmodels.eu/methodology/ — source hierarchy, verification statuses, inclusion criteria and update rules
+- License Explorer: https://openweightmodels.eu/licenses/ — compare commercial use, modification, redistribution and special license conditions across 32 models
+- Deployment Explorer: https://openweightmodels.eu/deployment/ — compare self-hosting, runtimes, managed deployment paths, context and editorial hardware classes
+
+## Explorer data
+- Methodology JSON: https://openweightmodels.eu/data/methodology.json
+- License data JSON: https://openweightmodels.eu/data/licenses.json
+- Deployment data JSON: https://openweightmodels.eu/data/deployments.json
+
 
 ## Models
 - gpt-oss-120b: https://openweightmodels.eu/models/gpt-oss-120b/ — OpenAI; Apache 2.0; Reasoning, tools, self-hosted inference
