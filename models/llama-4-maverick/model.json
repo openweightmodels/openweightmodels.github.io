@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "id": "llama-4-maverick",
+  "name": "Llama 4 Maverick",
+  "variant": "17B-128E-Instruct",
+  "developer": "Meta",
+  "family": "Llama 4",
+  "release_date": "2025-04-05",
+  "last_verified": "2026-09-29",
+  "verification_status": "verified",
+  "model": {
+    "architecture": "Mixture-of-Experts (MoE), autoregressive, native multimodal early fusion",
+    "active_parameters_b": 17,
+    "total_parameters_b": 400,
+    "experts": 128,
+    "context_tokens": 1000000,
+    "knowledge_cutoff": "2024-08",
+    "input_modalities": ["text", "image"],
+    "output_modalities": ["text", "code"],
+    "supported_languages": ["Arabic", "English", "French", "German", "Hindi", "Indonesian", "Italian", "Portuguese", "Spanish", "Tagalog", "Thai", "Vietnamese"]
+  },
+  "weights": {
+    "available": true,
+    "official": true,
+    "formats": ["Safetensors"],
+    "precisions": ["BF16", "FP8"],
+    "primary_repository": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "fp8_repository": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
+  },
+  "license": {
+    "name": "Llama 4 Community License Agreement",
+    "type": "custom-commercial",
+    "commercial_use": "conditional",
+    "modification": "conditional",
+    "fine_tuning": "conditional",
+    "redistribution": "conditional",
+    "self_hosting": "conditional",
+    "attribution_required": true,
+    "built_with_llama_required_for_distribution": true,
+    "derivative_model_naming_condition": true,
+    "acceptable_use_policy_applies": true,
+    "large_platform_threshold_mau": 700000000,
+    "eu_multimodal_restriction": true,
+    "source": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
+    "use_policy": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md",
+    "last_checked": "2026-09-29"
+  },
+  "deployments": [
+    {
+      "id": "self-hosted",
+      "name": "Direct weights / self-hosted",
+      "type": "self-hosted",
+      "managed": false,
+      "official": true,
+      "context_tokens": 1000000,
+      "notes": "Actual achievable context depends on hardware and implementation."
+    },
+    {
+      "id": "hugging-face-vllm",
+      "name": "Hugging Face / vLLM",
+      "type": "framework",
+      "managed": false,
+      "official": true,
+      "multimodal": true,
+      "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+    },
+    {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "type": "containerized-inference",
+      "managed": false,
+      "official": true,
+      "precision": "FP8",
+      "hardware": ["8x H100 SXM", "8x H100 NVL", "8x H200 SXM", "8x H200 NVL"],
+      "context_tokens_h100": 430000,
+      "context_tokens_h200": 1000000,
+      "source": "https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html"
+    },
+    {
+      "id": "aws-bedrock",
+      "name": "Amazon Bedrock",
+      "type": "managed-api",
+      "managed": true,
+      "model_id": "meta.llama4-maverick-17b-instruct-v1:0",
+      "context_tokens": 1000000,
+      "max_output_tokens": 8000,
+      "image_input": true,
+      "streaming": true,
+      "client_side_tool_calling": true,
+      "geo_inference": "US",
+      "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html"
+    },
+    {
+      "id": "google-vertex-ai",
+      "name": "Google Vertex AI",
+      "type": "managed-api",
+      "managed": true,
+      "region": "us-east5",
+      "context_tokens": 524288,
+      "source": "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/llama/use-llama"
+    },
+    {
+      "id": "microsoft-foundry",
+      "name": "Microsoft Foundry",
+      "type": "managed-api",
+      "managed": true,
+      "model_id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "context_tokens": 1000000,
+      "image_input": true,
+      "tool_calling": false,
+      "deployment_type": "Global standard",
+      "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    }
+  ],
+  "sources": [
+    {"type": "model-card", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md"},
+    {"type": "license", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"},
+    {"type": "use-policy", "publisher": "Meta", "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md"},
+    {"type": "weights", "publisher": "Meta / Hugging Face", "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"},
+    {"type": "deployment", "publisher": "NVIDIA", "url": "https://docs.nvidia.com/nim/vision-language-models/1.7.0/support-matrix.html"},
+    {"type": "deployment", "publisher": "AWS", "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html"},
+    {"type": "deployment", "publisher": "Google Cloud", "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/llama/use-llama"},
+    {"type": "deployment", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"}
+  ]
+}
