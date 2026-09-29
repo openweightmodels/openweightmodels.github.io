@@ -1,0 +1,124 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Gemma 3n E4B IT",
+  "slug": "gemma-3n-e4b-it",
+  "developer": "Google DeepMind",
+  "family": "Gemma 3n",
+  "release": "June 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Gemma 3n E4B IT is a mobile-first multimodal instruction model developed by Google DeepMind in the Gemma 3n family. It has ~8B raw / E4B effective profile parameters with ~4B effective execution profile active parameters, supports 32K tokens of context, accepts Text + image + video + audio and produces Text. Its primary role is on-device multimodal assistants, mobile perception and efficient local inference.",
+  "seo_geo": {
+    "primary_question": "What is Gemma 3n E4B IT?",
+    "entity_type": "mobile-first multimodal instruction model",
+    "developer": "Google DeepMind",
+    "family": "Gemma 3n",
+    "key_topics": [
+      "Gemma 3n E4B IT",
+      "Gemma 3n",
+      "open-weight AI model",
+      "on-device multimodal assistants, mobile perception and efficient local inference",
+      "Gemma Terms of Use",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "mobile-first multimodal instruction model",
+    "total_parameters": "~8B raw / E4B effective profile",
+    "active_parameters": "~4B effective execution profile",
+    "context": "32K tokens",
+    "input_modalities": "Text + image + video + audio",
+    "output_modalities": "Text",
+    "details": [
+      "MatFormer nested architecture: E4B contains a smaller E2B-style submodel",
+      "Per-Layer Embeddings (PLE) allow parameters to be cached/offloaded",
+      "Conditional modality parameter loading",
+      "MobileNet-V5-derived vision encoder",
+      "Audio and video input support in addition to text and images"
+    ]
+  },
+  "training": {
+    "summary": "Gemma 3n was developed specifically for efficient on-device multimodal workloads. Its effective parameter nomenclature reflects architectural techniques such as PLE and nested MatFormer structure rather than a simple dense parameter count. The instruction checkpoint is designed to serve text, visual and audio interactions on resource-constrained devices."
+  },
+  "license": {
+    "name": "Gemma Terms of Use",
+    "classification": "Custom model terms",
+    "commercial_use": "Conditional",
+    "modification": "Allowed subject to terms",
+    "redistribution": "Conditional; distribution obligations apply",
+    "special_conditions": "The Gemma Terms define distribution broadly enough to include making Gemma or derivatives available through hosted services. Recipients, notices, modified-file marking and prohibited-use obligations should be reviewed before redistribution.",
+    "url": "https://ai.google.dev/gemma/terms",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face model integration."
+    },
+    {
+      "route": "On-device/mobile runtimes",
+      "type": "Edge",
+      "notes": "Gemma 3n is explicitly designed for phones and laptops."
+    },
+    {
+      "route": "Google AI Edge ecosystem",
+      "type": "Edge",
+      "notes": "Google provides an edge-oriented toolchain around Gemma models."
+    },
+    {
+      "route": "Quantized ecosystem",
+      "type": "Local",
+      "notes": "Reduced precision is central to practical mobile use."
+    }
+  ],
+  "hardware": {
+    "summary": "Gemma 3n is designed to lower device memory pressure through architectural offloading and conditional modality loading. Exact mobile memory use depends on active modalities, precision and runtime; “E4B” should not be interpreted as a conventional exactly-4B dense checkpoint."
+  },
+  "variants": [
+    {
+      "name": "Gemma 3n E4B IT",
+      "purpose": "Larger nested mobile model",
+      "precision_or_form": "E4B effective",
+      "status": "Official Google"
+    },
+    {
+      "name": "E2B nested profile",
+      "purpose": "Smaller execution submodel",
+      "precision_or_form": "E2B effective",
+      "status": "Architecture capability"
+    }
+  ],
+  "limitations": [
+    "Effective parameter labels differ from raw stored parameter counts.",
+    "Audio/vision capability can vary by language and task; text multilingual coverage does not mean every modality is equally multilingual.",
+    "32K context is smaller than Gemma 3’s 128K server-oriented models.",
+    "Device performance is highly dependent on runtime, accelerator and quantization."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/google/gemma-3n-E4B-it"
+    },
+    {
+      "label": "Gemma 3n docs",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n"
+    },
+    {
+      "label": "Gemma 3n model card",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n/model_card"
+    },
+    {
+      "label": "Gemma Terms",
+      "url": "https://ai.google.dev/gemma/terms"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

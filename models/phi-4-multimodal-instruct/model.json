@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Phi-4 Multimodal Instruct",
+  "slug": "phi-4-multimodal-instruct",
+  "developer": "Microsoft",
+  "family": "Phi-4 Multimodal",
+  "release": "February 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Phi-4 Multimodal Instruct is a compact multimodal instruction model developed by Microsoft in the Phi-4 Multimodal family. It has 5.6B parameters, supports 128K tokens of context, accepts Text + images + audio and produces Text. Its primary role is compact multimodal assistants, speech, visual understanding and text reasoning.",
+  "seo_geo": {
+    "primary_question": "What is Phi-4 Multimodal Instruct?",
+    "entity_type": "compact multimodal instruction model",
+    "developer": "Microsoft",
+    "family": "Phi-4 Multimodal",
+    "key_topics": [
+      "Phi-4 Multimodal Instruct",
+      "Phi-4 Multimodal",
+      "open-weight AI model",
+      "compact multimodal assistants, speech, visual understanding and text reasoning",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "compact multimodal instruction model",
+    "total_parameters": "5.6B",
+    "active_parameters": "5.6B",
+    "context": "128K tokens",
+    "input_modalities": "Text + images + audio",
+    "output_modalities": "Text",
+    "details": [
+      "Phi-4-mini-derived language backbone",
+      "Vision and speech encoders/adapters attached to the language model",
+      "128K text context",
+      "Image and audio input with text generation",
+      "Multimodal adapter-style design rather than a giant unified model"
+    ]
+  },
+  "training": {
+    "summary": "Microsoft reports training with about 5T text tokens, 2.3M speech hours and 1.1T image-text tokens, followed by SFT, DPO and RLHF-style alignment. The model is designed to bring multiple modalities into a relatively small 5.6B package."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers with model code",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face workflow."
+    },
+    {
+      "route": "ONNX variants",
+      "type": "Optimized deployment",
+      "notes": "Microsoft publishes optimized deployment paths for Phi models."
+    },
+    {
+      "route": "Microsoft/Azure ecosystem",
+      "type": "Managed / playground",
+      "notes": "Model can be evaluated through Microsoft model platforms."
+    },
+    {
+      "route": "NVIDIA ecosystem",
+      "type": "Accelerated experimentation",
+      "notes": "Phi multimodal appears in NVIDIA model tooling/playgrounds."
+    }
+  ],
+  "hardware": {
+    "summary": "5.6B parameters make multimodal self-hosting comparatively accessible. Memory still depends on audio length, image resolution/count, 128K text context and whether modality encoders are resident simultaneously."
+  },
+  "variants": [
+    {
+      "name": "Phi-4-multimodal-instruct",
+      "purpose": "Text/vision/audio instruct",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Optimized ONNX variants",
+      "purpose": "Efficient serving",
+      "precision_or_form": "Varies",
+      "status": "Official/ecosystem"
+    }
+  ],
+  "limitations": [
+    "Vision support is primarily English-oriented in the model card, while speech supports a smaller language subset than text.",
+    "Audio and image tokenization can increase latency independently of text context.",
+    "Multimodal safety/evaluation must be performed per modality.",
+    "Tool use is an application integration concern, not inherent authorization to act."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct"
+    },
+    {
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

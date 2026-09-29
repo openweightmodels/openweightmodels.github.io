@@ -1,0 +1,139 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "GLM-4.5",
+  "slug": "glm-4-5",
+  "developer": "Z.ai",
+  "family": "GLM-4.5",
+  "release": "July 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "GLM-4.5 is a large hybrid-reasoning Mixture-of-Experts model developed by Z.ai in the GLM-4.5 family. It has 355B parameters with 32B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is reasoning, coding, agents and general-purpose tool-oriented applications.",
+  "seo_geo": {
+    "primary_question": "What is GLM-4.5?",
+    "entity_type": "large hybrid-reasoning Mixture-of-Experts model",
+    "developer": "Z.ai",
+    "family": "GLM-4.5",
+    "key_topics": [
+      "GLM-4.5",
+      "GLM-4.5",
+      "open-weight AI model",
+      "reasoning, coding, agents and general-purpose tool-oriented applications",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "large hybrid-reasoning Mixture-of-Experts model",
+    "total_parameters": "355B",
+    "active_parameters": "32B/token",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "355B total / 32B active sparse MoE",
+      "160 routed experts plus one shared expert",
+      "8 routed experts activated per token",
+      "92 layers",
+      "Hybrid thinking and non-thinking modes",
+      "128K context"
+    ]
+  },
+  "training": {
+    "summary": "Z.ai releases base, hybrid reasoning and FP8 versions of GLM-4.5. The post-trained model is designed to combine reasoning, coding and agentic capability while allowing applications to switch between deliberate and direct modes."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official implementation support."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Official tool/reasoning parser support."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Official large-MoE serving support."
+    },
+    {
+      "route": "Z.ai API",
+      "type": "Managed API",
+      "notes": "Provider-hosted deployment path."
+    },
+    {
+      "route": "FP8 official checkpoint",
+      "type": "Optimized serving",
+      "notes": "Published FP8 weights reduce memory requirements."
+    }
+  ],
+  "hardware": {
+    "summary": "Z.ai publishes unusually concrete hardware guidance: full-featured BF16 deployment is documented at H100×16 or H200×8, while FP8 is H100×8 or H200×4. For the full 128K context, the published guidance doubles those counts: BF16 H100×32/H200×16 or FP8 H100×16/H200×8."
+  },
+  "variants": [
+    {
+      "name": "GLM-4.5",
+      "purpose": "Hybrid reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "GLM-4.5-FP8",
+      "purpose": "Reduced precision",
+      "precision_or_form": "FP8",
+      "status": "Official"
+    },
+    {
+      "name": "GLM-4.5-Base",
+      "purpose": "Base checkpoint",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "Full 128K operation has materially higher hardware requirements than shorter-context serving.",
+    "Thinking mode can add substantial generation length and latency.",
+    "MoE networking/parallelism is a first-class operational concern.",
+    "Agent deployments require independent control of tool permissions and execution."
+  ],
+  "benchmarks": [
+    {
+      "evaluation": "Z.ai 12-benchmark composite",
+      "metric_or_setup": "publisher aggregate",
+      "value": "63.2",
+      "qualification": "Publisher-reported aggregate; not a universal score"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/zai-org/GLM-4.5"
+    },
+    {
+      "label": "GLM-4.5 GitHub",
+      "url": "https://github.com/zai-org/GLM-4.5"
+    },
+    {
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Qwen2.5-VL-72B-Instruct",
+  "slug": "qwen2-5-vl-72b-instruct",
+  "developer": "Qwen / Alibaba",
+  "family": "Qwen2.5-VL",
+  "release": "January 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Qwen2.5-VL-72B-Instruct is a large vision-language instruction model developed by Qwen / Alibaba in the Qwen2.5-VL family. It has ~72B parameters, supports 32K recommended default · config exposes 128K positions of context, accepts Text + images + video and produces Text. Its primary role is visual reasoning, video understanding, document/UI perception and visual agents.",
+  "seo_geo": {
+    "primary_question": "What is Qwen2.5-VL-72B-Instruct?",
+    "entity_type": "large vision-language instruction model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen2.5-VL",
+    "key_topics": [
+      "Qwen2.5-VL-72B-Instruct",
+      "Qwen2.5-VL",
+      "open-weight AI model",
+      "visual reasoning, video understanding, document/UI perception and visual agents",
+      "Qwen License Agreement",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "large vision-language instruction model",
+    "total_parameters": "~72B",
+    "active_parameters": "~72B",
+    "context": "32K recommended default · config exposes 128K positions",
+    "input_modalities": "Text + images + video",
+    "output_modalities": "Text",
+    "details": [
+      "80 transformer layers in the language backbone",
+      "64 attention heads and 8 KV heads",
+      "Vision encoder with 32 layers",
+      "Multimodal RoPE / MRoPE-style position handling",
+      "Image and video token inputs with temporal modeling"
+    ]
+  },
+  "training": {
+    "summary": "Qwen2.5-VL is post-trained for visual instruction following, spatial/document understanding, video comprehension and visual-agent tasks. The current configuration exposes 128K positions, while the model card recommends 32K by default and discusses YaRN or configuration changes for longer inputs with caveats for temporal/spatial tasks."
+  },
+  "license": {
+    "name": "Qwen License Agreement",
+    "classification": "Custom model license",
+    "commercial_use": "Conditional",
+    "modification": "Allowed subject to terms",
+    "redistribution": "Conditional with agreement and Notice requirements",
+    "special_conditions": "The official Qwen license requires a separate license for specified commercial products/services above 100M monthly active users and requires “Built with Qwen” or “Improved using Qwen” attribution when Qwen materials/outputs are used to create or improve a distributed AI model.",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/blob/main/LICENSE",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official image-text-to-text integration."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Official page documents multimodal vLLM serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Official page documents SGLang serving."
+    },
+    {
+      "route": "Docker Model Runner",
+      "type": "Container",
+      "notes": "Documented model runner path."
+    }
+  ],
+  "hardware": {
+    "summary": "A dense ~72B multimodal model is a multi-GPU/high-memory deployment in BF16. Vision/video inputs also expand token counts and pre-processing load. Long video or high-resolution image workflows should be capacity-tested rather than sized only from text context."
+  },
+  "variants": [
+    {
+      "name": "Qwen2.5-VL-72B-Instruct",
+      "purpose": "Vision-language instruct",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Community quantizations",
+      "purpose": "Alternative serving",
+      "precision_or_form": "Varies",
+      "status": "Community"
+    }
+  ],
+  "limitations": [
+    "The official model card warns that YaRN can hurt temporal and spatial localization tasks.",
+    "Config maximum positions should not be treated as a guarantee that every workload is validated at 128K.",
+    "The custom Qwen License is materially different from Apache-2.0 used by newer Qwen3 releases.",
+    "Visual-agent use can involve external actions and therefore needs application-level permission and sandbox controls."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct"
+    },
+    {
+      "label": "Qwen License",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "label": "Official config",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/blob/main/config.json"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Phi-4",
+  "slug": "phi-4",
+  "developer": "Microsoft",
+  "family": "Phi-4",
+  "release": "12 December 2024",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Phi-4 is a compact dense reasoning language model developed by Microsoft in the Phi-4 family. It has 14B parameters, supports 16K tokens of context, accepts Text and produces Text. Its primary role is reasoning, mathematics, code and latency/compute-constrained text applications.",
+  "seo_geo": {
+    "primary_question": "What is Phi-4?",
+    "entity_type": "compact dense reasoning language model",
+    "developer": "Microsoft",
+    "family": "Phi-4",
+    "key_topics": [
+      "Phi-4",
+      "Phi-4",
+      "open-weight AI model",
+      "reasoning, mathematics, code and latency/compute-constrained text applications",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "compact dense reasoning language model",
+    "total_parameters": "14B",
+    "active_parameters": "14B",
+    "context": "16K tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "14B dense decoder-only transformer",
+      "16K context window",
+      "Text-only model",
+      "Quality-focused data mixture with synthetic and curated data"
+    ]
+  },
+  "training": {
+    "summary": "Microsoft reports 9.8T training tokens and 21 days of training on 1,920 H100-80G GPUs. The data mixture emphasizes synthetic datasets, filtered public-domain web material and acquired academic books/Q&A. Alignment includes supervised fine-tuning and direct preference optimization."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct Hugging Face inference."
+    },
+    {
+      "route": "ONNX / Microsoft optimization ecosystem",
+      "type": "Optimized local/server",
+      "notes": "Phi models are commonly packaged for optimized inference."
+    },
+    {
+      "route": "Azure / Microsoft model catalog",
+      "type": "Managed ecosystem",
+      "notes": "Microsoft distributes Phi models through its model platforms as well as open weights."
+    }
+  ],
+  "hardware": {
+    "summary": "14B dense parameters make Phi-4 far easier to host than frontier-scale models. BF16 remains a high-memory single-GPU or small multi-GPU target; quantization can bring it to consumer-class hardware. The 16K context limits cache growth relative to 128K models."
+  },
+  "variants": [
+    {
+      "name": "Phi-4",
+      "purpose": "Text reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official Microsoft"
+    },
+    {
+      "name": "Quantized ecosystem variants",
+      "purpose": "Local inference",
+      "precision_or_form": "Varies",
+      "status": "Microsoft/community"
+    }
+  ],
+  "limitations": [
+    "16K context is shorter than many 2025 open-weight models.",
+    "Primarily English orientation should be considered for multilingual applications.",
+    "Synthetic-data-heavy training can create different failure modes from web-heavy models.",
+    "Text-only model; use Phi-4 Multimodal for image/audio input."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/microsoft/phi-4"
+    },
+    {
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

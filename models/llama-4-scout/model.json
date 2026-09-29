@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Llama 4 Scout",
+  "slug": "llama-4-scout",
+  "developer": "Meta",
+  "family": "Llama 4",
+  "release": "5 April 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Llama 4 Scout is a natively multimodal Mixture-of-Experts model developed by Meta in the Llama 4 family. It has ~109B parameters with 17B/token active parameters, supports 10,000,000 tokens of context, accepts Text + images and produces Text + code. Its primary role is very-long-context multimodal understanding, assistants, documents and code.",
+  "seo_geo": {
+    "primary_question": "What is Llama 4 Scout?",
+    "entity_type": "natively multimodal Mixture-of-Experts model",
+    "developer": "Meta",
+    "family": "Llama 4",
+    "key_topics": [
+      "Llama 4 Scout",
+      "Llama 4",
+      "open-weight AI model",
+      "very-long-context multimodal understanding, assistants, documents and code",
+      "Llama 4 Community License Agreement",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "natively multimodal Mixture-of-Experts model",
+    "total_parameters": "~109B",
+    "active_parameters": "17B/token",
+    "context": "10,000,000 tokens",
+    "input_modalities": "Text + images",
+    "output_modalities": "Text + code",
+    "details": [
+      "Autoregressive sparse Mixture-of-Experts architecture",
+      "16 routed experts with sparse activation",
+      "Native early-fusion multimodality",
+      "Vision encoder based on MetaCLIP adaptations",
+      "Very-long-context design up to 10M tokens in the model card"
+    ]
+  },
+  "training": {
+    "summary": "Meta reports roughly 40T pretraining tokens for Scout, an August 2024 knowledge cutoff, broad multilingual pretraining and a multimodal training pipeline. Post-training follows the Llama 4 family approach combining supervised fine-tuning, reinforcement learning and preference optimization."
+  },
+  "license": {
+    "name": "Llama 4 Community License Agreement",
+    "classification": "Custom model license + incorporated Acceptable Use Policy",
+    "commercial_use": "Conditional",
+    "modification": "Allowed subject to terms",
+    "redistribution": "Conditional with attribution/notice requirements",
+    "special_conditions": "Includes the 700M-MAU special licensing condition; the incorporated Llama 4 AUP contains a specific EU developer restriction for multimodal Llama 4 models while excluding end users of products/services from that particular restriction.",
+    "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official checkpoint and processor support."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Documented serving path."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Documented multimodal serving path."
+    },
+    {
+      "route": "NVIDIA FP8 ecosystem checkpoint",
+      "type": "Optimized serving",
+      "notes": "NVIDIA publishes a separately quantized FP8 Scout checkpoint; this is not the same as a Meta-official FP8 release."
+    }
+  ],
+  "hardware": {
+    "summary": "Scout is substantially smaller than Maverick in total parameter count but still stores roughly 109B parameters. The 10M-token context can dominate memory through KV cache; very-long-context deployment should be planned as a specialized workload rather than a default setting."
+  },
+  "variants": [
+    {
+      "name": "Llama-4-Scout-17B-16E-Instruct",
+      "purpose": "Instruction / multimodal",
+      "precision_or_form": "BF16",
+      "status": "Official Meta"
+    },
+    {
+      "name": "NVIDIA Scout FP8",
+      "purpose": "Optimized serving",
+      "precision_or_form": "FP8",
+      "status": "Third-party NVIDIA"
+    }
+  ],
+  "limitations": [
+    "A 10M model maximum does not imply every runtime or provider exposes 10M.",
+    "Image understanding was tested under documented conditions; application-specific multi-image workloads still need validation.",
+    "The Llama 4 custom license and incorporated AUP contain material regional and use restrictions.",
+    "The active 17B figure should not be confused with the complete model storage footprint."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Meta model card",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    },
+    {
+      "label": "Meta Llama 4 release",
+      "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+    },
+    {
+      "label": "Llama 4 license",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
+    },
+    {
+      "label": "Llama 4 use policy",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/USE_POLICY.md"
+    },
+    {
+      "label": "NVIDIA Scout FP8",
+      "url": "https://huggingface.co/nvidia/Llama-4-Scout-17B-16E-Instruct-FP8"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

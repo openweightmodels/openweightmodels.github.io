@@ -1,0 +1,139 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "GLM-4.5 Air",
+  "slug": "glm-4-5-air",
+  "developer": "Z.ai",
+  "family": "GLM-4.5",
+  "release": "July 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "GLM-4.5 Air is a efficient hybrid-reasoning Mixture-of-Experts model developed by Z.ai in the GLM-4.5 family. It has 106B parameters with 12B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is efficient reasoning, coding and agent applications with lower infrastructure cost than GLM-4.5.",
+  "seo_geo": {
+    "primary_question": "What is GLM-4.5 Air?",
+    "entity_type": "efficient hybrid-reasoning Mixture-of-Experts model",
+    "developer": "Z.ai",
+    "family": "GLM-4.5",
+    "key_topics": [
+      "GLM-4.5 Air",
+      "GLM-4.5",
+      "open-weight AI model",
+      "efficient reasoning, coding and agent applications with lower infrastructure cost than GLM-4.5",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "efficient hybrid-reasoning Mixture-of-Experts model",
+    "total_parameters": "106B",
+    "active_parameters": "12B/token",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "106B total / 12B active sparse MoE",
+      "128 routed experts plus one shared expert",
+      "8 routed experts activated per token",
+      "46 layers",
+      "Hybrid thinking and non-thinking modes",
+      "128K context"
+    ]
+  },
+  "training": {
+    "summary": "GLM-4.5-Air applies the same hybrid reasoning/agent design philosophy as the larger GLM-4.5 while reducing total and active parameters. Z.ai publishes both BF16 and FP8 versions and positions Air as the efficiency-oriented member of the pair."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official support."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Official reasoner/tool parsing support."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Official sparse-model serving."
+    },
+    {
+      "route": "Z.ai API",
+      "type": "Managed API",
+      "notes": "Provider-hosted path."
+    },
+    {
+      "route": "FP8 official checkpoint",
+      "type": "Optimized serving",
+      "notes": "Official lower-memory variant."
+    }
+  ],
+  "hardware": {
+    "summary": "Z.ai documents full-featured BF16 deployment at H100×4 or H200×2 and FP8 at H100×2 or H200×1. For full 128K context it lists BF16 H100×8/H200×4 or FP8 H100×4/H200×2. These concrete profiles make Air unusually easy to capacity-plan."
+  },
+  "variants": [
+    {
+      "name": "GLM-4.5-Air",
+      "purpose": "Hybrid reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "GLM-4.5-Air-FP8",
+      "purpose": "Reduced precision",
+      "precision_or_form": "FP8",
+      "status": "Official"
+    },
+    {
+      "name": "GLM-4.5-Air-Base",
+      "purpose": "Base checkpoint",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "“Air” is still a large 106B-total MoE model, not a consumer-class checkpoint.",
+    "128K context doubles the publisher’s documented hardware profiles relative to shorter-context operation.",
+    "Thinking mode changes latency/cost characteristics.",
+    "Agentic tool use needs external authorization controls."
+  ],
+  "benchmarks": [
+    {
+      "evaluation": "Z.ai 12-benchmark composite",
+      "metric_or_setup": "publisher aggregate",
+      "value": "59.8",
+      "qualification": "Publisher-reported aggregate"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/zai-org/GLM-4.5-Air"
+    },
+    {
+      "label": "GLM-4.5 GitHub",
+      "url": "https://github.com/zai-org/GLM-4.5"
+    },
+    {
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

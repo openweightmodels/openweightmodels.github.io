@@ -1,0 +1,119 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "OLMo 2 13B Instruct",
+  "slug": "olmo-2-13b-instruct",
+  "developer": "Ai2",
+  "family": "OLMo 2",
+  "release": "2024–2025 OLMo 2 release cycle",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "OLMo 2 13B Instruct is a dense open-research instruction model developed by Ai2 in the OLMo 2 family. It has 13B parameters, supports 4,096 tokens of context, accepts Text and produces Text. Its primary role is reproducible open research, instruction following and transparent model development.",
+  "seo_geo": {
+    "primary_question": "What is OLMo 2 13B Instruct?",
+    "entity_type": "dense open-research instruction model",
+    "developer": "Ai2",
+    "family": "OLMo 2",
+    "key_topics": [
+      "OLMo 2 13B Instruct",
+      "OLMo 2",
+      "open-weight AI model",
+      "reproducible open research, instruction following and transparent model development",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense open-research instruction model",
+    "total_parameters": "13B",
+    "active_parameters": "13B",
+    "context": "4,096 tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "40 transformer layers",
+      "Hidden size 5120",
+      "full 40 KV heads",
+      "4,096 configured maximum positions",
+      "OLMo2 architecture with openly documented training stack"
+    ]
+  },
+  "training": {
+    "summary": "A defining feature of OLMo 2 is not only weight access but the broader research release: Ai2 publishes model weights together with training data information, checkpoints, code, logs and the Open Instruct/Tülu post-training recipes. The instruct variants use supervised fine-tuning, preference optimization and reinforcement-learning-from-verifiable-rewards style stages."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Native OLMo2 support in Transformers."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Official model card documents an OpenAI-compatible SGLang server."
+    },
+    {
+      "route": "Docker Model Runner",
+      "type": "Container",
+      "notes": "Ai2 provides a direct Docker Model Runner example for the 32B and related checkpoints."
+    }
+  ],
+  "hardware": {
+    "summary": "13B dense parameters make this a conventional weight-memory sizing problem rather than sparse MoE routing. The 4K context keeps KV-cache growth comparatively modest, but BF16 weight memory still determines whether a single accelerator or multi-GPU setup is required."
+  },
+  "variants": [
+    {
+      "name": "OLMo-2-13B-Instruct",
+      "purpose": "Instruction tuned",
+      "precision_or_form": "BF16",
+      "status": "Official Ai2"
+    },
+    {
+      "name": "Base OLMo 2 checkpoint",
+      "purpose": "Pretraining/base",
+      "precision_or_form": "BF16",
+      "status": "Official Ai2"
+    }
+  ],
+  "limitations": [
+    "The configured 4K context is short by current long-context standards.",
+    "Primary language focus is English.",
+    "Research openness does not mean every downstream dataset or deployment has no separate obligations.",
+    "Smaller context may require retrieval/chunking for large-document use."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct"
+    },
+    {
+      "label": "OLMo 2 project",
+      "url": "https://allenai.org/olmo"
+    },
+    {
+      "label": "Open Instruct",
+      "url": "https://github.com/allenai/open-instruct"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Granite 3.3 8B Instruct",
+  "slug": "granite-3-3-8b-instruct",
+  "developer": "IBM",
+  "family": "Granite 3.3",
+  "release": "16 April 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Granite 3.3 8B Instruct is a dense enterprise-oriented instruction and reasoning model developed by IBM in the Granite 3.3 family. It has 8B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is enterprise assistants, RAG, structured extraction, reasoning, code and function calling.",
+  "seo_geo": {
+    "primary_question": "What is Granite 3.3 8B Instruct?",
+    "entity_type": "dense enterprise-oriented instruction and reasoning model",
+    "developer": "IBM",
+    "family": "Granite 3.3",
+    "key_topics": [
+      "Granite 3.3 8B Instruct",
+      "Granite 3.3",
+      "open-weight AI model",
+      "enterprise assistants, RAG, structured extraction, reasoning, code and function calling",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense enterprise-oriented instruction and reasoning model",
+    "total_parameters": "8B",
+    "active_parameters": "8B",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "8B dense language model",
+      "128K context",
+      "Structured reasoning with <think> and <response> style separation",
+      "Instruction-tuned Granite 3.3 backbone",
+      "Designed for multilingual enterprise and coding tasks"
+    ]
+  },
+  "training": {
+    "summary": "IBM says the model is trained on a carefully balanced mix of permissively licensed data and curated synthetic tasks, then fine-tuned for reasoning and instruction following. The model card emphasizes generic assistant quality as well as mathematics, coding and structured enterprise tasks."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official model loading."
+    },
+    {
+      "route": "vLLM / OpenAI-compatible serving",
+      "type": "Serving",
+      "notes": "Granite models are compatible with standard transformer-serving stacks."
+    },
+    {
+      "route": "IBM watsonx ecosystem",
+      "type": "Managed enterprise",
+      "notes": "Granite is part of IBM’s enterprise model ecosystem."
+    },
+    {
+      "route": "Quantized local variants",
+      "type": "Local/server",
+      "notes": "8B scale is friendly to 8-bit/4-bit inference."
+    }
+  ],
+  "hardware": {
+    "summary": "An 8B dense model is practical on a single modern GPU and on CPU/unified-memory systems under quantization. 128K context can become the dominant memory consumer for long sessions, so weight size alone is not sufficient sizing."
+  },
+  "variants": [
+    {
+      "name": "granite-3.3-8b-instruct",
+      "purpose": "Reasoning/instruct",
+      "precision_or_form": "BF16",
+      "status": "Official IBM"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local/enterprise",
+      "precision_or_form": "Varies",
+      "status": "IBM/ecosystem"
+    }
+  ],
+  "limitations": [
+    "128K context may require much more memory than short enterprise prompts.",
+    "Structured reasoning tags are a prompting/output convention, not guaranteed faithful internal reasoning.",
+    "Twelve listed languages have varying quality.",
+    "Enterprise deployments still need domain-specific retrieval, access control and evaluation."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct"
+    },
+    {
+      "label": "IBM Granite docs",
+      "url": "https://www.ibm.com/granite/docs/"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Mistral Small 3.1 24B Instruct",
+  "slug": "mistral-small-3-1-24b-instruct",
+  "developer": "Mistral AI",
+  "family": "Mistral Small 3.1",
+  "release": "March 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Mistral Small 3.1 24B Instruct is a dense multimodal instruction model developed by Mistral AI in the Mistral Small 3.1 family. It has 24B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is general-purpose multimodal assistants, function calling, documents, coding and local inference.",
+  "seo_geo": {
+    "primary_question": "What is Mistral Small 3.1 24B Instruct?",
+    "entity_type": "dense multimodal instruction model",
+    "developer": "Mistral AI",
+    "family": "Mistral Small 3.1",
+    "key_topics": [
+      "Mistral Small 3.1 24B Instruct",
+      "Mistral Small 3.1",
+      "open-weight AI model",
+      "general-purpose multimodal assistants, function calling, documents, coding and local inference",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense multimodal instruction model",
+    "total_parameters": "24B",
+    "active_parameters": "24B",
+    "context": "128K tokens",
+    "input_modalities": "Text + images",
+    "output_modalities": "Text",
+    "details": [
+      "40-layer dense language backbone",
+      "Hidden size 5120",
+      "32 attention heads / 8 KV heads",
+      "Multimodal vision encoder inherited from the Pixtral-style Mistral stack",
+      "128K long-context window"
+    ]
+  },
+  "training": {
+    "summary": "Mistral Small 3.1 extends the Small family with native image understanding, multilingual instruction following and long context. It is tuned for practical assistant, coding, function-calling and document workflows while staying materially smaller than frontier-scale MoE systems."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "mistral-inference",
+      "type": "Self-hosted",
+      "notes": "Mistral’s native inference stack."
+    },
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct Hugging Face integration."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "OpenAI-compatible production serving."
+    },
+    {
+      "route": "Quantized local runtimes",
+      "type": "Local",
+      "notes": "Mistral notes that quantized deployments can fit a single RTX 4090 or 32GB-RAM MacBook."
+    }
+  ],
+  "hardware": {
+    "summary": "At 24B dense parameters, full precision is a serious workstation/server model but quantization can bring it into single-high-end-GPU or 32GB unified-memory territory. Vision and 128K context still increase runtime memory beyond weight storage alone."
+  },
+  "variants": [
+    {
+      "name": "Mistral-Small-3.1-24B-Instruct-2503",
+      "purpose": "Multimodal instruct",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local serving",
+      "precision_or_form": "Varies",
+      "status": "Mistral/ecosystem"
+    }
+  ],
+  "limitations": [
+    "Quantized “fits” statements do not guarantee 128K context at the same memory target.",
+    "Visual inputs add preprocessing and token overhead.",
+    "Function calling quality depends on schema/prompt/runtime integration.",
+    "Apache 2.0 simplifies licensing but application-level safety obligations remain."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+    },
+    {
+      "label": "Mistral model documentation",
+      "url": "https://docs.mistral.ai/models"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

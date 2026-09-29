@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Qwen2.5-Coder-32B-Instruct",
+  "slug": "qwen2-5-coder-32b-instruct",
+  "developer": "Qwen / Alibaba",
+  "family": "Qwen2.5-Coder",
+  "release": "November 2024",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Qwen2.5-Coder-32B-Instruct is a dense code-focused instruction model developed by Qwen / Alibaba in the Qwen2.5-Coder family. It has ~32.5B parameters, supports 32K native · long-context extension documented by Qwen of context, accepts Text / code and produces Text / code. Its primary role is code generation, completion, repair, reasoning and software development assistance.",
+  "seo_geo": {
+    "primary_question": "What is Qwen2.5-Coder-32B-Instruct?",
+    "entity_type": "dense code-focused instruction model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen2.5-Coder",
+    "key_topics": [
+      "Qwen2.5-Coder-32B-Instruct",
+      "Qwen2.5-Coder",
+      "open-weight AI model",
+      "code generation, completion, repair, reasoning and software development assistance",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense code-focused instruction model",
+    "total_parameters": "~32.5B",
+    "active_parameters": "~32.5B",
+    "context": "32K native · long-context extension documented by Qwen",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "64 transformer layers",
+      "Hidden size 5120",
+      "40 attention heads and 8 KV heads",
+      "Dense decoder-only language model",
+      "Code-specialized post-training"
+    ]
+  },
+  "training": {
+    "summary": "Qwen2.5-Coder is built from the Qwen2.5 family and specialized for programming tasks through code-heavy training and instruction tuning. It targets code generation as well as code reasoning, fixing and repository-level assistance."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct checkpoint loading."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "High-throughput code assistant serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Compatible server runtime."
+    },
+    {
+      "route": "GGUF / quantized ecosystem",
+      "type": "Local",
+      "notes": "Community conversions enable workstation deployment."
+    }
+  ],
+  "hardware": {
+    "summary": "A dense 32B model is feasible on multi-GPU servers and high-memory workstations with quantization. Large repository contexts and long generations increase KV-cache and latency requirements."
+  },
+  "variants": [
+    {
+      "name": "Qwen2.5-Coder-32B-Instruct",
+      "purpose": "Code assistant",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local/server",
+      "precision_or_form": "AWQ/GPTQ/GGUF",
+      "status": "Publisher/community"
+    }
+  ],
+  "limitations": [
+    "Code generation should be executed only in controlled environments.",
+    "Long-context extension can alter quality and latency relative to native context.",
+    "Benchmark coding success does not guarantee correctness or security of generated patches.",
+    "Text/code focus means no native vision/audio understanding."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct"
+    },
+    {
+      "label": "Qwen2.5-Coder GitHub",
+      "url": "https://github.com/QwenLM/Qwen2.5-Coder"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

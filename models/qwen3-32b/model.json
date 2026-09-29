@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Qwen3-32B",
+  "slug": "qwen3-32b",
+  "developer": "Qwen / Alibaba",
+  "family": "Qwen3",
+  "release": "April 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Qwen3-32B is a dense multilingual reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 32.8B parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is reasoning, code, multilingual assistants and agent workflows on a dense architecture.",
+  "seo_geo": {
+    "primary_question": "What is Qwen3-32B?",
+    "entity_type": "dense multilingual reasoning model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen3",
+    "key_topics": [
+      "Qwen3-32B",
+      "Qwen3",
+      "open-weight AI model",
+      "reasoning, code, multilingual assistants and agent workflows on a dense architecture",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense multilingual reasoning model",
+    "total_parameters": "32.8B",
+    "active_parameters": "32.8B",
+    "context": "32,768 native · 131,072 with YaRN",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "64 transformer layers",
+      "Dense causal language model",
+      "GQA with 64 query heads and 8 KV heads",
+      "Thinking and non-thinking modes",
+      "Native 32K context with YaRN extension to 131K"
+    ]
+  },
+  "training": {
+    "summary": "Qwen3-32B shares the Qwen3 post-training design that supports both explicit reasoning and direct-response modes. The family emphasizes multilingual instruction following, mathematics, code and tool-oriented agent behavior."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct dense-model inference."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "OpenAI-compatible high-throughput serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Reasoning-aware serving path."
+    },
+    {
+      "route": "llama.cpp / Ollama ecosystem",
+      "type": "Local / workstation",
+      "notes": "Quantized conversions can make a 32B dense model accessible on high-memory consumer systems."
+    }
+  ],
+  "hardware": {
+    "summary": "A 32.8B dense checkpoint is much easier to plan than a 235B MoE model because its parameter count and active compute are aligned. BF16 still requires substantial accelerator memory; 4-bit quantization moves it into high-memory workstation territory."
+  },
+  "variants": [
+    {
+      "name": "Qwen3-32B",
+      "purpose": "Dense reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local/server efficiency",
+      "precision_or_form": "AWQ/GPTQ/GGUF",
+      "status": "Publisher/community"
+    }
+  ],
+  "limitations": [
+    "Extended 131K context uses YaRN and should be benchmarked separately from native 32K.",
+    "Thinking mode can produce long traces and high token counts.",
+    "Quantized community artifacts vary in calibration and quality.",
+    "The model is text-only despite supporting agent/tool workflows."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen3-32B"
+    },
+    {
+      "label": "Qwen3 GitHub",
+      "url": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

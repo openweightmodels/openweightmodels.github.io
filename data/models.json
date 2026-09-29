@@ -2,7 +2,7 @@
   "project": "Open Weight Models",
   "updated": "2026-09-29",
   "count": 32,
-  "methodology_note": "32-model curated registry. Full Model Passports separate model, license and deployment facts; seven full passports are available as of 2026-09-29.",
+  "methodology_note": "Curated registry of 32 open-weight models. Every listed model has a Gold-standard Model Passport that separates model facts, license intelligence and deployment-specific facts and includes dated primary-source verification.",
   "models": [
     {
       "name": "gpt-oss-120b",
@@ -12,10 +12,11 @@
       "focus": "Reasoning, tools, self-hosted inference",
       "source": "https://huggingface.co/openai/gpt-oss-120b",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/gpt-oss-120b/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "gpt-oss-20b",
@@ -25,8 +26,11 @@
       "focus": "Reasoning, local and edge-class inference",
       "source": "https://huggingface.co/openai/gpt-oss-20b",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/gpt-oss-20b/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Llama 4 Maverick",
@@ -38,9 +42,10 @@
       "passport": "/models/llama-4-maverick/",
       "license_category": "llama",
       "status": "passport",
-      "passport_status": "full",
+      "passport_status": "gold_standard",
       "passport_url": "/models/llama-4-maverick/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "Llama 4 Scout",
@@ -50,8 +55,11 @@
       "focus": "Multimodal MoE, very long context",
       "source": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
       "license_category": "llama",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/llama-4-scout/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Llama 3.3 70B Instruct",
@@ -61,8 +69,11 @@
       "focus": "General-purpose multilingual text",
       "source": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
       "license_category": "llama",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/llama-3-3-70b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Qwen3-235B-A22B",
@@ -72,8 +83,11 @@
       "focus": "Reasoning, multilingual, general-purpose",
       "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/qwen3-235b-a22b/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Qwen3-32B",
@@ -83,8 +97,11 @@
       "focus": "Reasoning, multilingual, general-purpose",
       "source": "https://huggingface.co/Qwen/Qwen3-32B",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/qwen3-32b/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Qwen3-30B-A3B",
@@ -94,8 +111,11 @@
       "focus": "Efficient reasoning and multilingual inference",
       "source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/qwen3-30b-a3b/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Qwen3-Coder-480B-A35B-Instruct",
@@ -105,10 +125,11 @@
       "focus": "Coding, software agents, tool use",
       "source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/qwen3-coder-480b-a35b-instruct/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "Qwen2.5-VL-72B-Instruct",
@@ -118,8 +139,11 @@
       "focus": "Vision, video understanding, visual agents",
       "source": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
       "license_category": "qwen",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/qwen2-5-vl-72b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Qwen2.5-Coder-32B-Instruct",
@@ -129,8 +153,11 @@
       "focus": "Code generation, repair and reasoning",
       "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/qwen2-5-coder-32b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Gemma 3 27B IT",
@@ -140,10 +167,11 @@
       "focus": "Multimodal, multilingual, long context",
       "source": "https://huggingface.co/google/gemma-3-27b-it",
       "license_category": "gemma",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/gemma-3-27b-it/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "Gemma 3 12B IT",
@@ -153,8 +181,11 @@
       "focus": "Multimodal general-purpose inference",
       "source": "https://huggingface.co/google/gemma-3-12b-it",
       "license_category": "gemma",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/gemma-3-12b-it/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Gemma 3 4B IT",
@@ -164,8 +195,11 @@
       "focus": "Compact multimodal and on-device use",
       "source": "https://huggingface.co/google/gemma-3-4b-it",
       "license_category": "gemma",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/gemma-3-4b-it/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Gemma 3n E4B IT",
@@ -175,8 +209,11 @@
       "focus": "Mobile, audio, vision and text",
       "source": "https://huggingface.co/google/gemma-3n-E4B-it",
       "license_category": "gemma",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/gemma-3n-e4b-it/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Mistral Small 3.1 24B Instruct",
@@ -186,8 +223,11 @@
       "focus": "General-purpose multimodal inference",
       "source": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/mistral-small-3-1-24b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Devstral Small 2505",
@@ -197,8 +237,11 @@
       "focus": "Software engineering and coding agents",
       "source": "https://huggingface.co/mistralai/Devstral-Small-2505",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/devstral-small-2505/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Magistral Small 2506",
@@ -208,8 +251,11 @@
       "focus": "Reasoning and step-by-step problem solving",
       "source": "https://huggingface.co/mistralai/Magistral-Small-2506",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/magistral-small-2506/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Mistral Nemo Instruct 2407",
@@ -219,8 +265,11 @@
       "focus": "Multilingual text and code, 128K context",
       "source": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/mistral-nemo-instruct-2407/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Mathstral 7B v0.1",
@@ -230,8 +279,11 @@
       "focus": "Mathematical reasoning",
       "source": "https://huggingface.co/mistralai/Mathstral-7B-v0.1",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/mathstral-7b-v0-1/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "DeepSeek-R1",
@@ -241,10 +293,11 @@
       "focus": "Reasoning, mathematics and coding",
       "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/deepseek-r1/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "DeepSeek-V3.1",
@@ -254,8 +307,11 @@
       "focus": "Hybrid reasoning, agents and general-purpose",
       "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/deepseek-v3-1/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Phi-4",
@@ -265,8 +321,11 @@
       "focus": "Reasoning, mathematics and code",
       "source": "https://huggingface.co/microsoft/phi-4",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/phi-4/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Phi-4 Mini Instruct",
@@ -276,8 +335,11 @@
       "focus": "Small-model reasoning and instruction following",
       "source": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/phi-4-mini-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Phi-4 Multimodal Instruct",
@@ -287,8 +349,11 @@
       "focus": "Multimodal text, vision and speech",
       "source": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/phi-4-multimodal-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "OLMo 2 32B Instruct",
@@ -298,8 +363,11 @@
       "focus": "Open research, reasoning and reproducibility",
       "source": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/olmo-2-32b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "OLMo 2 13B Instruct",
@@ -309,8 +377,11 @@
       "focus": "Open research and reproducible training",
       "source": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/olmo-2-13b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Kimi K2 Instruct",
@@ -320,10 +391,11 @@
       "focus": "Agentic intelligence, coding and tool use",
       "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
       "license_category": "other",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/kimi-k2-instruct/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     },
     {
       "name": "GLM-4.5",
@@ -333,8 +405,11 @@
       "focus": "Reasoning, coding and agentic applications",
       "source": "https://huggingface.co/zai-org/GLM-4.5",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/glm-4-5/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "GLM-4.5 Air",
@@ -344,8 +419,11 @@
       "focus": "Efficient reasoning, coding and agents",
       "source": "https://huggingface.co/zai-org/GLM-4.5-Air",
       "license_category": "mit",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/glm-4-5-air/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "Granite 3.3 8B Instruct",
@@ -355,8 +433,11 @@
       "focus": "Enterprise reasoning and instruction following",
       "source": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "registry"
+      "status": "passport",
+      "passport_status": "gold_standard",
+      "passport_version": "2.0",
+      "passport_url": "/models/granite-3-3-8b-instruct/",
+      "verified_at": "2026-09-29"
     },
     {
       "name": "SmolLM3 3B",
@@ -366,11 +447,12 @@
       "focus": "Compact reasoning, agents and local inference",
       "source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
       "license_category": "apache",
-      "status": "listed",
-      "passport_status": "full",
+      "status": "passport",
+      "passport_status": "gold_standard",
       "passport_url": "/models/smollm3-3b/",
-      "verified_at": "2026-09-29"
+      "verified_at": "2026-09-29",
+      "passport_version": "2.0"
     }
   ],
-  "full_passports": 7
+  "full_passports": 32
 }

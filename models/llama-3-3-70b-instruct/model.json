@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Llama 3.3 70B Instruct",
+  "slug": "llama-3-3-70b-instruct",
+  "developer": "Meta",
+  "family": "Llama 3.3",
+  "release": "6 December 2024",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Llama 3.3 70B Instruct is a dense multilingual text instruction model developed by Meta in the Llama 3.3 family. It has 70B parameters, supports 128K tokens of context, accepts Text and produces Text. Its primary role is general-purpose multilingual chat, text generation and assistant workloads.",
+  "seo_geo": {
+    "primary_question": "What is Llama 3.3 70B Instruct?",
+    "entity_type": "dense multilingual text instruction model",
+    "developer": "Meta",
+    "family": "Llama 3.3",
+    "key_topics": [
+      "Llama 3.3 70B Instruct",
+      "Llama 3.3",
+      "open-weight AI model",
+      "general-purpose multilingual chat, text generation and assistant workloads",
+      "Llama 3.3 Community License Agreement",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense multilingual text instruction model",
+    "total_parameters": "70B",
+    "active_parameters": "70B",
+    "context": "128K tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "Dense decoder-only transformer",
+      "Grouped-Query Attention for inference scalability",
+      "Text-only instruction-tuned checkpoint",
+      "128K context window"
+    ]
+  },
+  "training": {
+    "summary": "Meta reports more than 15T pretraining tokens for the Llama 3 family and a December 2023 knowledge cutoff for Llama 3.3. The instruct checkpoint is aligned with supervised fine-tuning and reinforcement-learning-based preference techniques."
+  },
+  "license": {
+    "name": "Llama 3.3 Community License Agreement",
+    "classification": "Custom model license",
+    "commercial_use": "Conditional",
+    "modification": "Allowed subject to terms",
+    "redistribution": "Conditional with Llama attribution/notice requirements",
+    "special_conditions": "Commercial and research use is intended, but the Community License and Acceptable Use Policy remain part of the deployment decision. Review the current official agreement for scale, attribution and redistribution conditions.",
+    "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Standard Hugging Face inference path."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Widely used high-throughput serving path for Llama checkpoints."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Compatible server stack for large transformer inference."
+    },
+    {
+      "route": "Quantized ecosystem builds",
+      "type": "Local / server",
+      "notes": "Community GGUF/AWQ/GPTQ variants can reduce memory but require separate provenance checks."
+    }
+  ],
+  "hardware": {
+    "summary": "A dense 70B BF16 checkpoint is a multi-GPU or high-memory-server workload. Quantization can materially reduce weight memory, but long-context KV cache and throughput targets remain important."
+  },
+  "variants": [
+    {
+      "name": "Llama-3.3-70B-Instruct",
+      "purpose": "Assistant / chat",
+      "precision_or_form": "BF16",
+      "status": "Official Meta"
+    },
+    {
+      "name": "Community quantizations",
+      "purpose": "Alternative runtimes",
+      "precision_or_form": "Varies",
+      "status": "Community"
+    }
+  ],
+  "limitations": [
+    "Text-only model: no native image/audio input.",
+    "Performance in languages beyond the eight explicitly supported languages should be evaluated rather than assumed.",
+    "Custom Llama 3.3 licensing and acceptable-use terms remain part of production eligibility.",
+    "Static knowledge cutoff means current factual applications typically need retrieval or external data."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Meta model card",
+      "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+    },
+    {
+      "label": "Llama 3.3 license",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Mistral Nemo Instruct 2407",
+  "slug": "mistral-nemo-instruct-2407",
+  "developer": "Mistral AI / NVIDIA",
+  "family": "Mistral NeMo",
+  "release": "July 2024",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Mistral Nemo Instruct 2407 is a dense multilingual instruction model developed by Mistral AI / NVIDIA in the Mistral NeMo family. It has 12B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is multilingual assistants, code and long-context text workloads.",
+  "seo_geo": {
+    "primary_question": "What is Mistral Nemo Instruct 2407?",
+    "entity_type": "dense multilingual instruction model",
+    "developer": "Mistral AI / NVIDIA",
+    "family": "Mistral NeMo",
+    "key_topics": [
+      "Mistral Nemo Instruct 2407",
+      "Mistral NeMo",
+      "open-weight AI model",
+      "multilingual assistants, code and long-context text workloads",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense multilingual instruction model",
+    "total_parameters": "12B",
+    "active_parameters": "12B",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "40 transformer layers",
+      "Hidden size 5120",
+      "32 attention heads / 8 KV heads using GQA",
+      "128K context",
+      "Large ~128K tokenizer vocabulary",
+      "RoPE theta 1M"
+    ]
+  },
+  "training": {
+    "summary": "Mistral NeMo was trained jointly by Mistral AI and NVIDIA with a large proportion of multilingual and code data. The instruct model is the aligned variant and was presented as a drop-in replacement for Mistral 7B-class deployments that need stronger multilingual performance."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "mistral-inference",
+      "type": "Self-hosted",
+      "notes": "Official Mistral runtime."
+    },
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face integration."
+    },
+    {
+      "route": "NVIDIA NeMo",
+      "type": "Serving/training ecosystem",
+      "notes": "NVIDIA model/runtime integration."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Model is tagged for vLLM serving."
+    }
+  ],
+  "hardware": {
+    "summary": "A 12B dense model is comparatively approachable: BF16 still needs substantial memory, while 8-bit/4-bit builds can fit higher-end consumer hardware. Long 128K sessions add cache overhead independent of weight size."
+  },
+  "variants": [
+    {
+      "name": "Mistral-Nemo-Instruct-2407",
+      "purpose": "Instruction tuned",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "NVIDIA NeMo variant",
+      "purpose": "NVIDIA ecosystem",
+      "precision_or_form": "Varies",
+      "status": "Official partner"
+    }
+  ],
+  "limitations": [
+    "128K context creates memory/latency costs not visible from the 12B parameter count.",
+    "The model card highlights nine languages; broader language use should be evaluated.",
+    "Older 2024 model may have weaker agent/tool conventions than newer Mistral families.",
+    "Text/code only; no native image or audio input."
+  ],
+  "benchmarks": [
+    {
+      "evaluation": "MMLU",
+      "metric_or_setup": "5-shot",
+      "value": "68.0%",
+      "qualification": "Publisher-reported"
+    },
+    {
+      "evaluation": "HellaSwag",
+      "metric_or_setup": "0-shot",
+      "value": "83.5%",
+      "qualification": "Publisher-reported"
+    },
+    {
+      "evaluation": "TriviaQA",
+      "metric_or_setup": "5-shot",
+      "value": "73.8%",
+      "qualification": "Publisher-reported"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
+    },
+    {
+      "label": "Official config",
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/blob/main/config.json"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

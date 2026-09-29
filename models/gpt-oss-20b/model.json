@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "gpt-oss-20b",
+  "slug": "gpt-oss-20b",
+  "developer": "OpenAI",
+  "family": "gpt-oss",
+  "release": "August 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "gpt-oss-20b is a compact text reasoning Mixture-of-Experts model developed by OpenAI in the gpt-oss family. It has 20.9B parameters with 3.6B/token active parameters, supports 131,072 tokens of context, accepts Text and produces Text. Its primary role is reasoning and tool-oriented workflows on more accessible local or edge-class hardware.",
+  "seo_geo": {
+    "primary_question": "What is gpt-oss-20b?",
+    "entity_type": "compact text reasoning Mixture-of-Experts model",
+    "developer": "OpenAI",
+    "family": "gpt-oss",
+    "key_topics": [
+      "gpt-oss-20b",
+      "gpt-oss",
+      "open-weight AI model",
+      "reasoning and tool-oriented workflows on more accessible local or edge-class hardware",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "compact text reasoning Mixture-of-Experts model",
+    "total_parameters": "20.9B",
+    "active_parameters": "3.6B/token",
+    "context": "131,072 tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "24 transformer layers",
+      "32 experts with 4 experts active per token",
+      "Alternating dense and locally banded sparse attention",
+      "Grouped multi-query attention",
+      "RoPE positional encoding",
+      "MXFP4 released checkpoint"
+    ]
+  },
+  "training": {
+    "summary": "The 20B model follows the same gpt-oss training philosophy as the 120B release: mostly English text pretraining with strong STEM and coding content, then supervised fine-tuning and reinforcement learning for reasoning and instruction following."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct official checkpoint loading."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "OpenAI-compatible serving path."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "High-throughput server option."
+    },
+    {
+      "route": "Ollama / local apps",
+      "type": "Local",
+      "notes": "Well suited to the smaller gpt-oss profile when sufficient system memory is available."
+    }
+  ],
+  "hardware": {
+    "summary": "OpenAI positioned gpt-oss-20b for memory-constrained and local scenarios and stated that it can run with roughly 16 GB of memory in suitable deployments. Real requirements vary with context, runtime and acceleration."
+  },
+  "variants": [
+    {
+      "name": "gpt-oss-20b",
+      "purpose": "Compact reasoning",
+      "precision_or_form": "MXFP4",
+      "status": "Official"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "purpose": "Larger family member",
+      "precision_or_form": "MXFP4",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "Text-only input and output.",
+    "Smaller active size improves accessibility but does not make 128K-context inference free of memory costs.",
+    "Reasoning quality and latency depend strongly on selected reasoning effort and serving parameters.",
+    "Local deployments require the operator to provide safeguards, observability and updates."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "OpenAI introduction",
+      "url": "https://openai.com/index/introducing-gpt-oss/"
+    },
+    {
+      "label": "OpenAI model card",
+      "url": "https://openai.com/index/gpt-oss-model-card/"
+    },
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/openai/gpt-oss-20b"
+    },
+    {
+      "label": "Usage policy",
+      "url": "https://huggingface.co/openai/gpt-oss-20b/blob/main/USAGE_POLICY"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

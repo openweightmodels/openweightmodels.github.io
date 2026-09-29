@@ -1,112 +1,125 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "Qwen3-Coder-480B-A35B-Instruct",
   "slug": "qwen3-coder-480b-a35b-instruct",
   "developer": "Qwen / Alibaba",
-  "passport_status": "full",
+  "family": "Qwen3-Coder",
+  "release": "July 2025",
   "verified_at": "2026-09-29",
-  "summary": "Qwen3-Coder-480B-A35B-Instruct is a large coding-focused Mixture-of-Experts model with 480B total parameters, 35B active parameters and a 256K context window. The official checkpoint is Apache-2.0 licensed and documented for vLLM and SGLang serving.",
-  "stats": [
-    {
-      "label": "Total params",
-      "value": "480B",
-      "note": "MoE"
-    },
-    {
-      "label": "Active params",
-      "value": "35B",
-      "note": "per token"
-    },
-    {
-      "label": "Experts",
-      "value": "160",
-      "note": "8 selected/token"
-    },
-    {
-      "label": "Context",
-      "value": "256K",
-      "note": "official"
-    },
-    {
-      "label": "Focus",
-      "value": "Coding + agents",
-      "note": "tool use"
-    },
-    {
-      "label": "License",
-      "value": "Apache 2.0",
-      "note": "permissive"
-    }
-  ],
-  "license": {
-    "name": "Apache License 2.0",
-    "classification": "Permissive",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Allowed",
-        "notes": "Apache 2.0 permits commercial use."
-      },
-      {
-        "question": "Modification",
-        "status": "Allowed",
-        "notes": "Weights/code may be modified subject to license terms."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Allowed with conditions",
-        "notes": "License and notice requirements apply."
-      },
-      {
-        "question": "Patent grant",
-        "status": "Included",
-        "notes": "Apache 2.0 includes an express patent license."
-      },
-      {
-        "question": "Copyleft",
-        "status": "No",
-        "notes": "Apache 2.0 is permissive rather than reciprocal/copyleft."
-      }
+  "passport_status": "gold_standard",
+  "definition": "Qwen3-Coder-480B-A35B-Instruct is a large agentic coding Mixture-of-Experts model developed by Qwen / Alibaba in the Qwen3-Coder family. It has 480B parameters with 35B/token active parameters, supports 256K tokens of context, accepts Text / code and produces Text / code. Its primary role is software engineering, repository-scale coding, tool use and coding agents.",
+  "seo_geo": {
+    "primary_question": "What is Qwen3-Coder-480B-A35B-Instruct?",
+    "entity_type": "large agentic coding Mixture-of-Experts model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen3-Coder",
+    "key_topics": [
+      "Qwen3-Coder-480B-A35B-Instruct",
+      "Qwen3-Coder",
+      "open-weight AI model",
+      "software engineering, repository-scale coding, tool use and coding agents",
+      "Apache License 2.0",
+      "AI model deployment"
     ]
   },
-  "deployment": [
-    {
-      "route": "Transformers",
-      "type": "Self-hosted",
-      "notes": "Official Hugging Face integration."
-    },
+  "architecture": {
+    "model_type": "large agentic coding Mixture-of-Experts model",
+    "total_parameters": "480B",
+    "active_parameters": "35B/token",
+    "context": "256K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "Sparse MoE architecture",
+      "160 experts with 8 selected experts per token",
+      "~35B active parameters from a 480B total pool",
+      "Configuration supports 262,144 positions",
+      "Optimized for agentic coding and tool interaction"
+    ]
+  },
+  "training": {
+    "summary": "Qwen3-Coder extends the Qwen3 family toward software engineering and long-horizon coding agents. Its post-training focuses on code generation, repository interaction and tool-oriented behavior rather than generic chat alone."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
     {
       "route": "vLLM",
-      "type": "Serving runtime",
+      "type": "Serving",
       "notes": "Official model page documents vLLM serving."
     },
     {
       "route": "SGLang",
-      "type": "Serving runtime",
-      "notes": "Official model page documents SGLang serving."
+      "type": "Serving",
+      "notes": "Officially documented serving path."
+    },
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct checkpoint use for compatible workflows."
     },
     {
       "route": "Docker Model Runner",
       "type": "Container workflow",
-      "notes": "Documented from the Hugging Face model page."
+      "notes": "Documented model-running path."
     },
     {
-      "route": "Official FP8 variant",
-      "type": "Reduced precision",
-      "notes": "Qwen publishes an FP8 checkpoint in the model family."
+      "route": "FP8 variant",
+      "type": "Optimized serving",
+      "notes": "Publisher FP8 checkpoint available for reduced weight memory."
     }
   ],
+  "hardware": {
+    "summary": "480B total parameters make this a large multi-GPU model even though only 35B are active per token. Tensor/expert parallelism and FP8/other reduced precision are central to production deployment."
+  },
+  "variants": [
+    {
+      "name": "Qwen3-Coder-480B-A35B-Instruct",
+      "purpose": "Agentic coding",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Qwen3-Coder FP8",
+      "purpose": "Reduced-memory serving",
+      "precision_or_form": "FP8",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "Coding-agent quality depends on the scaffold, tools and repository context—not just the base model.",
+    "A 256K model context can be expensive to populate and serve.",
+    "MoE routing support and parallelism strategy materially affect throughput.",
+    "Autonomous code execution requires separate sandboxing and security controls."
+  ],
+  "benchmarks": [],
   "sources": [
     {
       "label": "Official Hugging Face model",
       "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
     },
     {
-      "label": "Qwen3-Coder repository",
+      "label": "Qwen3-Coder GitHub",
       "url": "https://github.com/QwenLM/Qwen3-Coder"
     },
     {
-      "label": "Model config",
-      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/config.json"
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

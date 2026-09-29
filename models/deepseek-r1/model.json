@@ -1,111 +1,124 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "DeepSeek-R1",
   "slug": "deepseek-r1",
   "developer": "DeepSeek",
-  "passport_status": "full",
+  "family": "DeepSeek R1",
+  "release": "January 2025",
   "verified_at": "2026-09-29",
-  "summary": "DeepSeek-R1 is a 671B-parameter reasoning Mixture-of-Experts model with 37B activated parameters and a 128K context window. DeepSeek publishes the code repository and weights under the MIT License.",
-  "stats": [
-    {
-      "label": "Total params",
-      "value": "671B",
-      "note": "MoE"
-    },
-    {
-      "label": "Active params",
-      "value": "37B",
-      "note": "per token"
-    },
-    {
-      "label": "Context",
-      "value": "128K",
-      "note": "official"
-    },
-    {
-      "label": "Input",
-      "value": "Text",
-      "note": "reasoning"
-    },
-    {
-      "label": "License",
-      "value": "MIT",
-      "note": "weights + code"
-    },
-    {
-      "label": "Deployment",
-      "value": "Datacenter",
-      "note": "multi-GPU class"
-    }
-  ],
-  "license": {
-    "name": "MIT License",
-    "classification": "Permissive",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Allowed",
-        "notes": "DeepSeek explicitly states that the R1 series supports commercial use."
-      },
-      {
-        "question": "Modification",
-        "status": "Allowed",
-        "notes": "MIT licensing permits modification."
-      },
-      {
-        "question": "Derivative works",
-        "status": "Allowed",
-        "notes": "DeepSeek explicitly permits derivative works, including distillation."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Allowed with notice",
-        "notes": "Standard MIT copyright and permission notice requirements apply."
-      },
-      {
-        "question": "Distilled variants",
-        "status": "Check base license",
-        "notes": "Some R1-Distill checkpoints inherit underlying Qwen or Llama licensing considerations."
-      }
+  "passport_status": "gold_standard",
+  "definition": "DeepSeek-R1 is a large reasoning Mixture-of-Experts model developed by DeepSeek in the DeepSeek R1 family. It has 671B parameters with 37B/token active parameters, supports 128K tokens of context, accepts Text and produces Text / code. Its primary role is reasoning, mathematics, coding and long-form problem solving.",
+  "seo_geo": {
+    "primary_question": "What is DeepSeek-R1?",
+    "entity_type": "large reasoning Mixture-of-Experts model",
+    "developer": "DeepSeek",
+    "family": "DeepSeek R1",
+    "key_topics": [
+      "DeepSeek-R1",
+      "DeepSeek R1",
+      "open-weight AI model",
+      "reasoning, mathematics, coding and long-form problem solving",
+      "MIT License",
+      "AI model deployment"
     ]
   },
-  "deployment": [
+  "architecture": {
+    "model_type": "large reasoning Mixture-of-Experts model",
+    "total_parameters": "671B",
+    "active_parameters": "37B/token",
+    "context": "128K tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text / code",
+    "details": [
+      "DeepSeek-V3-class sparse MoE backbone",
+      "671B total with 37B activated per token",
+      "128K context",
+      "Reasoning-specialized post-training",
+      "Long chain-of-thought behavior"
+    ]
+  },
+  "training": {
+    "summary": "DeepSeek-R1 was developed around reinforcement-learning-driven reasoning and later alignment stages. The full model is distinct from the smaller R1-Distill family: distilled checkpoints inherit the architecture and licensing of their underlying Qwen/Llama bases and should not be treated as the same deployment artifact."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
     {
       "route": "Official DeepSeek API",
       "type": "Managed API",
-      "notes": "DeepSeek provides an OpenAI-compatible API platform."
+      "notes": "DeepSeek exposes R1 through its own API service."
     },
     {
       "route": "Direct weights",
       "type": "Self-hosted",
-      "notes": "Official weights are published on Hugging Face."
-    },
-    {
-      "route": "DeepSeek-V3 stack",
-      "type": "Self-hosted",
-      "notes": "DeepSeek directs full R1 deployments to the DeepSeek-V3 runtime guidance."
+      "notes": "Official full-model weights are published."
     },
     {
       "route": "SGLang",
-      "type": "Serving runtime",
-      "notes": "Current SGLang documentation validates direct DeepSeek-R1 deployment."
+      "type": "Serving",
+      "notes": "Validated serving path for the full sparse model."
+    },
+    {
+      "route": "vLLM / DeepSeek-V3 stack",
+      "type": "Serving",
+      "notes": "DeepSeek directs operators to large-model runtime guidance."
     }
   ],
-  "sources": [
+  "hardware": {
+    "summary": "The full 671B checkpoint is datacenter-scale. 37B active parameters lower per-token compute relative to a dense 671B model but do not turn it into a 37B storage problem. Multi-node sharding and high-bandwidth interconnects are practical concerns."
+  },
+  "variants": [
     {
-      "label": "Official DeepSeek-R1 repository",
-      "url": "https://github.com/deepseek-ai/DeepSeek-R1"
+      "name": "DeepSeek-R1",
+      "purpose": "Full reasoning model",
+      "precision_or_form": "BF16 / published format",
+      "status": "Official"
     },
+    {
+      "name": "R1-Distill family",
+      "purpose": "Smaller distilled models",
+      "precision_or_form": "Varies",
+      "status": "Official but separate base licenses"
+    }
+  ],
+  "limitations": [
+    "Reasoning traces can be very long and expensive.",
+    "Distilled R1 variants must be licensed according to their own underlying model terms.",
+    "Full-model serving is infrastructure-heavy even with sparse activation.",
+    "Self-generated chain-of-thought should not be treated as a guaranteed faithful explanation of model internals."
+  ],
+  "benchmarks": [],
+  "sources": [
     {
       "label": "Official Hugging Face model",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1"
+    },
+    {
+      "label": "DeepSeek-R1 GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1"
     },
     {
       "label": "MIT license",
       "url": "https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE"
     },
     {
-      "label": "SGLang deployment docs",
-      "url": "https://github.com/sgl-project/sglang/blob/main/docs_new/docs/hardware-platforms/ascend-npus/model-tutorials/deepseek_r1.mdx"
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

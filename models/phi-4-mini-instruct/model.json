@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Phi-4 Mini Instruct",
+  "slug": "phi-4-mini-instruct",
+  "developer": "Microsoft",
+  "family": "Phi-4 Mini",
+  "release": "February 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Phi-4 Mini Instruct is a small dense multilingual instruction model developed by Microsoft in the Phi-4 Mini family. It has 3.8B parameters, supports 128K tokens of context, accepts Text and produces Text. Its primary role is small-model reasoning, instruction following and long-context applications.",
+  "seo_geo": {
+    "primary_question": "What is Phi-4 Mini Instruct?",
+    "entity_type": "small dense multilingual instruction model",
+    "developer": "Microsoft",
+    "family": "Phi-4 Mini",
+    "key_topics": [
+      "Phi-4 Mini Instruct",
+      "Phi-4 Mini",
+      "open-weight AI model",
+      "small-model reasoning, instruction following and long-context applications",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "small dense multilingual instruction model",
+    "total_parameters": "3.8B",
+    "active_parameters": "3.8B",
+    "context": "128K tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "3.8B dense decoder-only transformer",
+      "128K context",
+      "Grouped-Query Attention",
+      "~200K vocabulary",
+      "Shared input/output embeddings"
+    ]
+  },
+  "training": {
+    "summary": "Microsoft reports roughly 5T training tokens, 21 days on 512 A100-80G GPUs and a June 2024 cutoff for public data. Post-training focuses on instruction following, reasoning and multilingual use in a compact parameter budget."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct model loading."
+    },
+    {
+      "route": "ONNX / edge tooling",
+      "type": "Local / edge",
+      "notes": "Small size makes optimized CPU/GPU/edge deployment practical."
+    },
+    {
+      "route": "Microsoft model ecosystem",
+      "type": "Managed / packaged",
+      "notes": "Available through Microsoft model distribution channels."
+    }
+  ],
+  "hardware": {
+    "summary": "At 3.8B parameters, the model is suitable for consumer GPUs and some CPU/edge deployments after quantization. The 128K window can nevertheless consume significant KV-cache memory; small weights do not mean small long-context runtime memory."
+  },
+  "variants": [
+    {
+      "name": "Phi-4-mini-instruct",
+      "purpose": "Compact instruct",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Edge/local",
+      "precision_or_form": "Varies",
+      "status": "Microsoft/community"
+    }
+  ],
+  "limitations": [
+    "Long-context memory can dominate despite the small weight footprint.",
+    "Language quality is not uniform across all 23 listed languages.",
+    "Small models may require retrieval/tools for broad factual coverage.",
+    "Text-only checkpoint; no native vision/audio."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct"
+    },
+    {
+      "label": "MIT License",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Magistral Small 2506",
+  "slug": "magistral-small-2506",
+  "developer": "Mistral AI",
+  "family": "Magistral",
+  "release": "June 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Magistral Small 2506 is a dense reasoning instruction model developed by Mistral AI in the Magistral family. It has 24B parameters, supports 128K nominal · 40K recommended for quality of context, accepts Text and produces Text. Its primary role is step-by-step reasoning, mathematics, science, coding and multilingual problem solving.",
+  "seo_geo": {
+    "primary_question": "What is Magistral Small 2506?",
+    "entity_type": "dense reasoning instruction model",
+    "developer": "Mistral AI",
+    "family": "Magistral",
+    "key_topics": [
+      "Magistral Small 2506",
+      "Magistral",
+      "open-weight AI model",
+      "step-by-step reasoning, mathematics, science, coding and multilingual problem solving",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense reasoning instruction model",
+    "total_parameters": "24B",
+    "active_parameters": "24B",
+    "context": "128K nominal · 40K recommended for quality",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "Built on Mistral Small 3.1",
+      "24B dense transformer",
+      "Reasoning-tuned through supervised traces from Magistral Medium plus reinforcement learning",
+      "128K context in the model, with publisher recommendation to limit to ~40K because performance may degrade beyond that"
+    ]
+  },
+  "training": {
+    "summary": "Magistral Small adds explicit long-form reasoning behavior to the Mistral Small 3.1 base. Mistral describes supervised fine-tuning from Magistral Medium reasoning traces followed by reinforcement learning."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Official model uses a vLLM-oriented inference path."
+    },
+    {
+      "route": "Mistral tooling",
+      "type": "Self-hosted",
+      "notes": "Mistral chat templates/tokenizer support."
+    },
+    {
+      "route": "Quantized local deployment",
+      "type": "Local",
+      "notes": "Mistral says it can fit one RTX 4090 or a 32GB RAM MacBook once quantized."
+    }
+  ],
+  "hardware": {
+    "summary": "Quantized local deployment is realistic for a 24B model, but long chain-of-thought outputs and large context windows increase KV cache and generation time. Mistral explicitly recommends a 40K maximum model length for quality even though the architecture exposes 128K."
+  },
+  "variants": [
+    {
+      "name": "Magistral-Small-2506",
+      "purpose": "Reasoning model",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local reasoning",
+      "precision_or_form": "Varies",
+      "status": "Mistral/ecosystem"
+    }
+  ],
+  "limitations": [
+    "The nominal 128K window is not the same as a recommended 128K operating point.",
+    "Reasoning traces can be long and expensive to serve.",
+    "Benchmark scores are sensitive to sampling parameters; Mistral recommends temperature 0.7 and top_p 0.95 for the published setup.",
+    "Text-only model; no native image input."
+  ],
+  "benchmarks": [
+    {
+      "evaluation": "AIME24",
+      "metric_or_setup": "pass@1",
+      "value": "70.68%",
+      "qualification": "Publisher-reported"
+    },
+    {
+      "evaluation": "AIME25",
+      "metric_or_setup": "pass@1",
+      "value": "62.76%",
+      "qualification": "Publisher-reported"
+    },
+    {
+      "evaluation": "GPQA Diamond",
+      "metric_or_setup": "score",
+      "value": "68.18%",
+      "qualification": "Publisher-reported"
+    },
+    {
+      "evaluation": "LiveCodeBench v5",
+      "metric_or_setup": "score",
+      "value": "55.84%",
+      "qualification": "Publisher-reported"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/mistralai/Magistral-Small-2506"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

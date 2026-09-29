@@ -1,0 +1,130 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Qwen3-235B-A22B",
+  "slug": "qwen3-235b-a22b",
+  "developer": "Qwen / Alibaba",
+  "family": "Qwen3",
+  "release": "April 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Qwen3-235B-A22B is a large text Mixture-of-Experts reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 235B parameters with 22B/token active parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is reasoning, multilingual generation, agents, mathematics and coding.",
+  "seo_geo": {
+    "primary_question": "What is Qwen3-235B-A22B?",
+    "entity_type": "large text Mixture-of-Experts reasoning model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen3",
+    "key_topics": [
+      "Qwen3-235B-A22B",
+      "Qwen3",
+      "open-weight AI model",
+      "reasoning, multilingual generation, agents, mathematics and coding",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "large text Mixture-of-Experts reasoning model",
+    "total_parameters": "235B",
+    "active_parameters": "22B/token",
+    "context": "32,768 native · 131,072 with YaRN",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "94 layers",
+      "128 experts with 8 activated experts per token",
+      "GQA with 64 query heads and 4 KV heads",
+      "Hybrid thinking and non-thinking interaction modes",
+      "Native 32K context with documented YaRN extension to 131K"
+    ]
+  },
+  "training": {
+    "summary": "Qwen3 combines pretraining and post-training with a strong emphasis on reasoning, code, mathematics, multilingual instruction following and agent capabilities. Its dual interaction modes let applications trade deliberate reasoning against lower-latency direct answers."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct checkpoint loading and generation."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Qwen recommends SGLang for large multi-GPU and quantized deployments."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Qwen documents vLLM with reasoning parsers and OpenAI-compatible endpoints."
+    },
+    {
+      "route": "GPTQ/AWQ ecosystem",
+      "type": "Quantized serving",
+      "notes": "Official and ecosystem quantizations lower weight memory; support varies by runtime."
+    }
+  ],
+  "hardware": {
+    "summary": "The 235B total parameter set remains datacenter-scale despite 22B active parameters. Expert/tensor parallelism and reduced precision are central to realistic serving. Qwen specifically recommends SGLang or vLLM for its GPTQ multi-GPU path."
+  },
+  "variants": [
+    {
+      "name": "Qwen3-235B-A22B",
+      "purpose": "Base published model",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "GPTQ-Int4",
+      "purpose": "Reduced-memory inference",
+      "precision_or_form": "4-bit",
+      "status": "Official Qwen"
+    },
+    {
+      "name": "Other AWQ/FP8 variants",
+      "purpose": "Optimized deployment",
+      "precision_or_form": "Varies",
+      "status": "Publisher/ecosystem"
+    }
+  ],
+  "limitations": [
+    "YaRN-extended context is not identical to native-context behavior; long-context quality and cost should be tested.",
+    "Thinking mode can materially increase output length, latency and serving cost.",
+    "MoE active parameters do not represent complete storage requirements.",
+    "Tool use depends on prompting/runtime integrations rather than a single universal API behavior."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B"
+    },
+    {
+      "label": "Qwen3 GitHub",
+      "url": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "label": "Official GPTQ Int4",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

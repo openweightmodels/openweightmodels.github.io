@@ -1,0 +1,121 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Devstral Small 2505",
+  "slug": "devstral-small-2505",
+  "developer": "Mistral AI",
+  "family": "Devstral",
+  "release": "May 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Devstral Small 2505 is a dense software-engineering agent model developed by Mistral AI in the Devstral family. It has 24B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is software engineering agents, repository navigation, patch generation and code reasoning.",
+  "seo_geo": {
+    "primary_question": "What is Devstral Small 2505?",
+    "entity_type": "dense software-engineering agent model",
+    "developer": "Mistral AI",
+    "family": "Devstral",
+    "key_topics": [
+      "Devstral Small 2505",
+      "Devstral",
+      "open-weight AI model",
+      "software engineering agents, repository navigation, patch generation and code reasoning",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense software-engineering agent model",
+    "total_parameters": "24B",
+    "active_parameters": "24B",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "Fine-tuned from Mistral Small 3.1",
+      "Vision encoder removed; Devstral is text-only",
+      "40 layers, hidden size 5120",
+      "32 attention heads / 8 KV heads",
+      "128K context and 131K tokenizer vocabulary"
+    ]
+  },
+  "training": {
+    "summary": "Devstral specializes a Mistral Small 3.1 backbone for agentic software engineering. The training objective targets multi-file repository tasks and interaction with coding-agent scaffolds rather than generic chat alone."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Official model is tagged and documented for vLLM."
+    },
+    {
+      "route": "mistral-common / mistral-inference",
+      "type": "Self-hosted",
+      "notes": "Mistral-native tokenizer and serving components."
+    },
+    {
+      "route": "OpenHands-style agent scaffold",
+      "type": "Agent application",
+      "notes": "Publisher evaluation uses a coding-agent scaffold for repository tasks."
+    },
+    {
+      "route": "Local quantized deployment",
+      "type": "Local",
+      "notes": "Mistral says the 24B model can fit a single RTX 4090 or 32GB Mac when quantized."
+    }
+  ],
+  "hardware": {
+    "summary": "The publisher explicitly positions Devstral as locally deployable after quantization. Repository-scale context and coding-agent tool traces can still raise memory/latency substantially compared with short completion workloads."
+  },
+  "variants": [
+    {
+      "name": "Devstral-Small-2505",
+      "purpose": "Software-engineering instruct",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "It is text-only even though it was derived from a multimodal Mistral Small backbone.",
+    "Agent benchmark performance depends on the scaffold and tools used.",
+    "Generated patches require testing, security review and sandboxed execution.",
+    "A 128K window should not be automatically filled; repository retrieval can be more efficient."
+  ],
+  "benchmarks": [
+    {
+      "evaluation": "SWE-Bench Verified",
+      "metric_or_setup": "OpenHands scaffold",
+      "value": "46.8%",
+      "qualification": "Publisher-reported score"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2505"
+    },
+    {
+      "label": "Official config",
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2505/blob/main/config.json"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

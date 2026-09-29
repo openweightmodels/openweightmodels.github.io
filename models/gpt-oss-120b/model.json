@@ -1,112 +1,129 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "gpt-oss-120b",
   "slug": "gpt-oss-120b",
   "developer": "OpenAI",
-  "passport_status": "full",
+  "family": "gpt-oss",
+  "release": "August 2025",
   "verified_at": "2026-09-29",
-  "summary": "OpenAI's larger gpt-oss reasoning model combines 116.8B total parameters with about 5.1B active parameters per token and a 128K context window. The checkpoint uses MXFP4 quantization and is designed to fit on a single 80 GB accelerator.",
-  "stats": [
-    {
-      "label": "Total params",
-      "value": "116.8B",
-      "note": "MoE"
-    },
-    {
-      "label": "Active params",
-      "value": "5.1B",
-      "note": "per token"
-    },
-    {
-      "label": "Experts",
-      "value": "128",
-      "note": "4 active/token"
-    },
-    {
-      "label": "Context",
-      "value": "131,072",
-      "note": "native"
-    },
-    {
-      "label": "Checkpoint",
-      "value": "60.8 GiB",
-      "note": "MXFP4"
-    },
-    {
-      "label": "License",
-      "value": "Apache 2.0",
-      "note": "+ usage policy"
-    }
-  ],
-  "license": {
-    "name": "Apache License 2.0",
-    "classification": "Permissive license + separate usage policy",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Allowed",
-        "notes": "Apache 2.0 permits broad commercial use."
-      },
-      {
-        "question": "Modification",
-        "status": "Allowed",
-        "notes": "Modification and fine-tuning are permitted under Apache 2.0."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Allowed with conditions",
-        "notes": "Apache 2.0 notice/license obligations apply."
-      },
-      {
-        "question": "Patent grant",
-        "status": "Included",
-        "notes": "Apache 2.0 contains an express patent license."
-      },
-      {
-        "question": "Usage policy",
-        "status": "Applies",
-        "notes": "OpenAI publishes a separate gpt-oss usage policy."
-      }
+  "passport_status": "gold_standard",
+  "definition": "gpt-oss-120b is a text reasoning Mixture-of-Experts model developed by OpenAI in the gpt-oss family. It has 116.8B parameters with 5.1B/token active parameters, supports 131,072 tokens of context, accepts Text and produces Text. Its primary role is reasoning, tool-oriented workflows and high-capability self-hosted inference.",
+  "seo_geo": {
+    "primary_question": "What is gpt-oss-120b?",
+    "entity_type": "text reasoning Mixture-of-Experts model",
+    "developer": "OpenAI",
+    "family": "gpt-oss",
+    "key_topics": [
+      "gpt-oss-120b",
+      "gpt-oss",
+      "open-weight AI model",
+      "reasoning, tool-oriented workflows and high-capability self-hosted inference",
+      "Apache License 2.0",
+      "AI model deployment"
     ]
   },
-  "deployment": [
+  "architecture": {
+    "model_type": "text reasoning Mixture-of-Experts model",
+    "total_parameters": "116.8B",
+    "active_parameters": "5.1B/token",
+    "context": "131,072 tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "36 transformer layers",
+      "128 experts with 4 experts active per token",
+      "Alternating dense and locally banded sparse attention",
+      "Grouped multi-query attention with group size 8",
+      "RoPE positional encoding",
+      "MXFP4 quantized checkpoint designed for efficient memory use"
+    ]
+  },
+  "training": {
+    "summary": "OpenAI describes pretraining on a mostly English, text-only corpus with emphasis on STEM, coding and general knowledge, followed by supervised fine-tuning and high-compute reinforcement learning. The model uses the Harmony response format and exposes configurable reasoning effort."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
     {
       "route": "Transformers",
       "type": "Self-hosted",
-      "notes": "Official Hugging Face integration and model card."
+      "notes": "Official Hugging Face integration for direct inference and experimentation."
     },
     {
       "route": "vLLM",
-      "type": "Serving runtime",
-      "notes": "Documented in the official model ecosystem."
+      "type": "Serving",
+      "notes": "Documented production serving path with OpenAI-compatible endpoints."
     },
     {
-      "route": "PyTorch / Triton",
-      "type": "Self-hosted",
-      "notes": "Documented inference path for lower-level deployments."
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Documented high-throughput serving option."
     },
     {
-      "route": "Ollama",
-      "type": "Local / managed local",
-      "notes": "Documented by OpenAI for gpt-oss inference."
-    },
-    {
-      "route": "80 GB accelerator",
-      "type": "Hardware target",
-      "notes": "OpenAI states the 120B model is designed to fit on a single 80 GB GPU such as H100; larger-memory accelerators also work."
+      "route": "Ollama / local tooling",
+      "type": "Local",
+      "notes": "OpenAI documents local deployment paths for gpt-oss; the 120B model remains a high-memory workload."
     }
   ],
-  "sources": [
+  "hardware": {
+    "summary": "OpenAI states that the 120B checkpoint was designed to fit on a single 80 GB accelerator. That statement refers to model weights under the released quantization; KV cache, batch size, long context and runtime buffers still consume additional memory."
+  },
+  "variants": [
     {
-      "label": "OpenAI model card",
-      "url": "https://openai.com/index/gpt-oss-model-card/"
+      "name": "gpt-oss-120b",
+      "purpose": "Reasoning / general",
+      "precision_or_form": "MXFP4",
+      "status": "Official"
     },
+    {
+      "name": "gpt-oss-20b",
+      "purpose": "Smaller family member",
+      "precision_or_form": "MXFP4",
+      "status": "Official"
+    }
+  ],
+  "limitations": [
+    "Text-only model; it does not natively accept images or audio.",
+    "The 128K context increases KV-cache pressure and can materially change memory requirements.",
+    "A permissive software license does not remove the need to follow OpenAI’s separate usage policy and applicable law.",
+    "Self-hosting shifts safety controls, monitoring and operational reliability to the deployer."
+  ],
+  "benchmarks": [],
+  "sources": [
     {
       "label": "OpenAI introduction",
       "url": "https://openai.com/index/introducing-gpt-oss/"
     },
     {
+      "label": "OpenAI model card",
+      "url": "https://openai.com/index/gpt-oss-model-card/"
+    },
+    {
       "label": "Official Hugging Face model",
       "url": "https://huggingface.co/openai/gpt-oss-120b"
+    },
+    {
+      "label": "Usage policy",
+      "url": "https://huggingface.co/openai/gpt-oss-120b/blob/main/USAGE_POLICY"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

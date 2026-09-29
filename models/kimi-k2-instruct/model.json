@@ -1,112 +1,131 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "Kimi K2 Instruct",
   "slug": "kimi-k2-instruct",
   "developer": "Moonshot AI",
-  "passport_status": "full",
+  "family": "Kimi K2",
+  "release": "July 2025",
   "verified_at": "2026-09-29",
-  "summary": "Kimi K2 Instruct is a 1-trillion-parameter Mixture-of-Experts model with 32B active parameters, 384 experts and a 128K context window. Moonshot AI uses a Modified MIT license that adds a branding obligation for very large commercial services.",
-  "stats": [
-    {
-      "label": "Total params",
-      "value": "1T",
-      "note": "MoE"
-    },
-    {
-      "label": "Active params",
-      "value": "32B",
-      "note": "per token"
-    },
-    {
-      "label": "Experts",
-      "value": "384",
-      "note": "8 selected + shared"
-    },
-    {
-      "label": "Context",
-      "value": "128K",
-      "note": "official"
-    },
-    {
-      "label": "Focus",
-      "value": "Agentic",
-      "note": "coding + tools"
-    },
-    {
-      "label": "License",
-      "value": "Modified MIT",
-      "note": "threshold clause"
-    }
-  ],
-  "license": {
-    "name": "Modified MIT License",
-    "classification": "Permissive base + scale-triggered branding clause",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Allowed",
-        "notes": "The license broadly tracks MIT permissions."
-      },
-      {
-        "question": "Modification",
-        "status": "Allowed",
-        "notes": "Modification and derivative works are permitted."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Allowed with notice",
-        "notes": "MIT copyright and permission notice requirements remain."
-      },
-      {
-        "question": ">100M monthly active users",
-        "status": "Branding condition",
-        "notes": "Qualifying commercial products/services must prominently display “Kimi K2”."
-      },
-      {
-        "question": ">$20M monthly revenue",
-        "status": "Branding condition",
-        "notes": "The same prominent-display obligation applies above the revenue threshold."
-      }
+  "passport_status": "gold_standard",
+  "definition": "Kimi K2 Instruct is a very-large agentic Mixture-of-Experts model developed by Moonshot AI in the Kimi K2 family. It has 1T parameters with 32B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is agentic intelligence, coding, tool use and general-purpose assistants.",
+  "seo_geo": {
+    "primary_question": "What is Kimi K2 Instruct?",
+    "entity_type": "very-large agentic Mixture-of-Experts model",
+    "developer": "Moonshot AI",
+    "family": "Kimi K2",
+    "key_topics": [
+      "Kimi K2 Instruct",
+      "Kimi K2",
+      "open-weight AI model",
+      "agentic intelligence, coding, tool use and general-purpose assistants",
+      "Modified MIT License",
+      "AI model deployment"
     ]
   },
-  "deployment": [
+  "architecture": {
+    "model_type": "very-large agentic Mixture-of-Experts model",
+    "total_parameters": "1T",
+    "active_parameters": "32B/token",
+    "context": "128K tokens",
+    "input_modalities": "Text / code",
+    "output_modalities": "Text / code",
+    "details": [
+      "~1 trillion total parameters",
+      "32B active parameters",
+      "61 layers with one dense layer in the published architecture",
+      "384 routed experts, 8 selected per token plus shared expert",
+      "Multi-head latent attention (MLA)",
+      "128K context"
+    ]
+  },
+  "training": {
+    "summary": "Moonshot reports 15.5T pretraining tokens for Kimi K2 and emphasizes agentic intelligence, coding and tool use. The Instruct checkpoint is the direct-response post-trained variant rather than a later explicit “thinking” model."
+  },
+  "license": {
+    "name": "Modified MIT License",
+    "classification": "Permissive MIT base with additional scale-triggered branding condition",
+    "commercial_use": "Allowed with special condition",
+    "modification": "Allowed",
+    "redistribution": "Allowed with MIT notice requirements",
+    "special_conditions": "If a commercial product/service exceeds either 100M monthly active users or $20M monthly revenue, the published modified license requires prominent “Kimi K2” display in the product/service user interface.",
+    "url": "https://github.com/MoonshotAI/Kimi-K2/blob/main/LICENSE",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
     {
       "route": "Transformers",
       "type": "Self-hosted",
-      "notes": "Official model supports Transformers with remote model code."
+      "notes": "Official checkpoint integration."
     },
     {
       "route": "vLLM",
-      "type": "Serving runtime",
-      "notes": "Official model page documents vLLM serving."
+      "type": "Serving",
+      "notes": "Officially documented large-model serving."
     },
     {
       "route": "SGLang",
-      "type": "Serving runtime",
-      "notes": "Official model page documents SGLang serving."
+      "type": "Serving",
+      "notes": "Officially documented sparse-model serving."
     },
     {
-      "route": "FP8 checkpoint",
-      "type": "Reduced precision",
-      "notes": "The published model repository is tagged for FP8 deployment."
+      "route": "KTransformers",
+      "type": "Hybrid/local research",
+      "notes": "Optimized heterogeneous inference option."
     },
     {
-      "route": "Other optimized stacks",
-      "type": "Ecosystem",
-      "notes": "Moonshot's repository also documents broader optimized runtime support."
+      "route": "TensorRT-LLM",
+      "type": "NVIDIA serving",
+      "notes": "Optimized datacenter runtime."
+    },
+    {
+      "route": "Moonshot API",
+      "type": "Managed API",
+      "notes": "Provider-hosted API path."
     }
   ],
+  "hardware": {
+    "summary": "The 1T total parameter pool is a major datacenter workload even with 32B active per token. Production serving requires expert/tensor parallelism, fast interconnect and typically reduced precision. FP8 is central to the published checkpoint ecosystem."
+  },
+  "variants": [
+    {
+      "name": "Kimi-K2-Instruct",
+      "purpose": "Agentic instruct",
+      "precision_or_form": "FP8/published format",
+      "status": "Official"
+    },
+    {
+      "name": "Kimi K2 family variants",
+      "purpose": "Base/thinking derivatives",
+      "precision_or_form": "Varies",
+      "status": "Official family"
+    }
+  ],
+  "limitations": [
+    "32B active does not imply a 32B storage footprint.",
+    "Autonomous tool use requires sandboxing and permissions.",
+    "The Modified MIT license adds a branding condition for very large commercial services.",
+    "Long context and agent traces can create high latency/token costs."
+  ],
+  "benchmarks": [],
   "sources": [
     {
       "label": "Official Hugging Face model",
       "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
     },
     {
-      "label": "Official Kimi K2 repository",
+      "label": "Kimi K2 GitHub",
       "url": "https://github.com/MoonshotAI/Kimi-K2"
     },
     {
       "label": "Modified MIT license",
       "url": "https://github.com/MoonshotAI/Kimi-K2/blob/main/LICENSE"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

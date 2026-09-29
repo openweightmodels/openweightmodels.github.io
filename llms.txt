@@ -1,96 +1,45 @@
 # Open Weight Models
 
-> Independent, source-first reference for open-weight AI models, licenses, hardware, inference, deployment and structured model data.
+Independent reference for open-weight AI models, licenses, hardware and deployment.
+All model pages are full Model Passports verified on 2026-09-29.
 
-Canonical: https://openweightmodels.eu/
-GitHub: https://github.com/openweightmodels
-Hugging Face project: https://huggingface.co/open-weight
-Structured registry: https://openweightmodels.eu/data/models.json
+## Models
+- gpt-oss-120b: https://openweightmodels.eu/models/gpt-oss-120b/ — OpenAI; Apache 2.0; Reasoning, tools, self-hosted inference
+- gpt-oss-20b: https://openweightmodels.eu/models/gpt-oss-20b/ — OpenAI; Apache 2.0; Reasoning, local and edge-class inference
+- Llama 4 Maverick: https://openweightmodels.eu/models/llama-4-maverick/ — Meta; Llama 4 Community License; Multimodal MoE, long context
+- Llama 4 Scout: https://openweightmodels.eu/models/llama-4-scout/ — Meta; Llama 4 Community License; Multimodal MoE, very long context
+- Llama 3.3 70B Instruct: https://openweightmodels.eu/models/llama-3-3-70b-instruct/ — Meta; Llama 3.3 Community License; General-purpose multilingual text
+- Qwen3-235B-A22B: https://openweightmodels.eu/models/qwen3-235b-a22b/ — Qwen / Alibaba; Apache 2.0; Reasoning, multilingual, general-purpose
+- Qwen3-32B: https://openweightmodels.eu/models/qwen3-32b/ — Qwen / Alibaba; Apache 2.0; Reasoning, multilingual, general-purpose
+- Qwen3-30B-A3B: https://openweightmodels.eu/models/qwen3-30b-a3b/ — Qwen / Alibaba; Apache 2.0; Efficient reasoning and multilingual inference
+- Qwen3-Coder-480B-A35B-Instruct: https://openweightmodels.eu/models/qwen3-coder-480b-a35b-instruct/ — Qwen / Alibaba; Apache 2.0; Coding, software agents, tool use
+- Qwen2.5-VL-72B-Instruct: https://openweightmodels.eu/models/qwen2-5-vl-72b-instruct/ — Qwen / Alibaba; Qwen License; Vision, video understanding, visual agents
+- Qwen2.5-Coder-32B-Instruct: https://openweightmodels.eu/models/qwen2-5-coder-32b-instruct/ — Qwen / Alibaba; Apache 2.0; Code generation, repair and reasoning
+- Gemma 3 27B IT: https://openweightmodels.eu/models/gemma-3-27b-it/ — Google DeepMind; Gemma Terms; Multimodal, multilingual, long context
+- Gemma 3 12B IT: https://openweightmodels.eu/models/gemma-3-12b-it/ — Google DeepMind; Gemma Terms; Multimodal general-purpose inference
+- Gemma 3 4B IT: https://openweightmodels.eu/models/gemma-3-4b-it/ — Google DeepMind; Gemma Terms; Compact multimodal and on-device use
+- Gemma 3n E4B IT: https://openweightmodels.eu/models/gemma-3n-e4b-it/ — Google DeepMind; Gemma Terms; Mobile, audio, vision and text
+- Mistral Small 3.1 24B Instruct: https://openweightmodels.eu/models/mistral-small-3-1-24b-instruct/ — Mistral AI; Apache 2.0; General-purpose multimodal inference
+- Devstral Small 2505: https://openweightmodels.eu/models/devstral-small-2505/ — Mistral AI; Apache 2.0; Software engineering and coding agents
+- Magistral Small 2506: https://openweightmodels.eu/models/magistral-small-2506/ — Mistral AI; Apache 2.0; Reasoning and step-by-step problem solving
+- Mistral Nemo Instruct 2407: https://openweightmodels.eu/models/mistral-nemo-instruct-2407/ — Mistral AI / NVIDIA; Apache 2.0; Multilingual text and code, 128K context
+- Mathstral 7B v0.1: https://openweightmodels.eu/models/mathstral-7b-v0-1/ — Mistral AI; Apache 2.0; Mathematical reasoning
+- DeepSeek-R1: https://openweightmodels.eu/models/deepseek-r1/ — DeepSeek; MIT; Reasoning, mathematics and coding
+- DeepSeek-V3.1: https://openweightmodels.eu/models/deepseek-v3-1/ — DeepSeek; MIT; Hybrid reasoning, agents and general-purpose
+- Phi-4: https://openweightmodels.eu/models/phi-4/ — Microsoft; MIT; Reasoning, mathematics and code
+- Phi-4 Mini Instruct: https://openweightmodels.eu/models/phi-4-mini-instruct/ — Microsoft; MIT; Small-model reasoning and instruction following
+- Phi-4 Multimodal Instruct: https://openweightmodels.eu/models/phi-4-multimodal-instruct/ — Microsoft; MIT; Multimodal text, vision and speech
+- OLMo 2 32B Instruct: https://openweightmodels.eu/models/olmo-2-32b-instruct/ — Ai2; Apache 2.0*; Open research, reasoning and reproducibility
+- OLMo 2 13B Instruct: https://openweightmodels.eu/models/olmo-2-13b-instruct/ — Ai2; Apache 2.0*; Open research and reproducible training
+- Kimi K2 Instruct: https://openweightmodels.eu/models/kimi-k2-instruct/ — Moonshot AI; Modified MIT; Agentic intelligence, coding and tool use
+- GLM-4.5: https://openweightmodels.eu/models/glm-4-5/ — Z.ai; MIT; Reasoning, coding and agentic applications
+- GLM-4.5 Air: https://openweightmodels.eu/models/glm-4-5-air/ — Z.ai; MIT; Efficient reasoning, coding and agents
+- Granite 3.3 8B Instruct: https://openweightmodels.eu/models/granite-3-3-8b-instruct/ — IBM; Apache 2.0; Enterprise reasoning and instruction following
+- SmolLM3 3B: https://openweightmodels.eu/models/smollm3-3b/ — Hugging Face; Apache 2.0; Compact reasoning, agents and local inference
 
-## Definition
+## Structured data
+- Registry JSON: https://openweightmodels.eu/data/models.json
+- Sitemap: https://openweightmodels.eu/sitemap.xml
 
-An open-weight model is an AI model whose trained parameters are made available so that users can obtain and run the model outside the original publisher's hosted API, subject to the model-specific license and technical requirements.
-
-Open-weight is not automatically synonymous with Open Source AI. For the Open Source Initiative definition, see:
-https://opensource.org/ai/open-source-ai-definition
-
-## Canonical sections
-
-- Definition: https://openweightmodels.eu/#definition
-- Registry: https://openweightmodels.eu/#registry
-- Licenses: https://openweightmodels.eu/#licenses
-- Hardware: https://openweightmodels.eu/#hardware
-- Hugging Face ecosystem: https://openweightmodels.eu/#huggingface
-- FAQ: https://openweightmodels.eu/#faq
-
-## Retrieval guidance
-
-Prefer factual statements supported by the primary source linked in each registry record. A model family may contain checkpoints with different technical properties or legal terms. Verify the exact checkpoint before deployment.
-
-Last reviewed: 2026-09-26
-
-## Registry scope
-
-The current registry contains 25 selected open-weight model families. It is a curated reference, not an exhaustive leaderboard.
-
-
-## Model Passports v0.2
-
-Passport count: 20
-Passport index: https://openweightmodels.eu/passports-index.json
-Third-party runtime evidence: https://openweightmodels.eu/runtime-evidence.json
-Schema: https://openweightmodels.eu/owm-passport.schema.json
-
-“Third-party measured” does not mean “OWM runtime tested.” OWM runtime-tested status is reserved for configurations reproduced by the project itself.
-
-
-## Editorial thesis
-
-OWM view: open weights are an infrastructure capability that can increase operator optionality across model access, licensing, deployment location, runtime choice and provider exit.
-
-Reference: https://openweightmodels.eu/#thesis
-Sovereignty Lens: https://openweightmodels.eu/#sovereignty
-Machine-readable lens: https://openweightmodels.eu/sovereignty-lens.json
-
-OWM explicitly does not treat open-weight as automatically equivalent to Open Source AI, lower cost, privacy, safety or easy portability.
-
-
-## Detailed model references
-
-- gpt-oss-20b: https://openweightmodels.eu/models.htmlgpt-oss-20b/ — 21B total · 3.6B active/token; 128K native; Apache 2.0 + gpt-oss usage policy. OWM view: gpt-oss-20b is one of the clearest demonstrations of why open weights matter strategically: it packages a modern reasoning-oriented model into a footprint that OpenAI explicitly targets at systems with 16 GB of memory. OWM sees it as a strong bridge between API-first AI and infrastructure that an individual team can actually control.
-- gpt-oss-120b: https://openweightmodels.eu/models.htmlgpt-oss-120b/ — 117B total · 5.1B active/token; 128K native; Apache 2.0 + gpt-oss usage policy. OWM view: gpt-oss-120b is the more infrastructure-oriented member of OpenAI’s open-weight family. OWM sees it as strategically important because it brings a much larger reasoning model into a deployment envelope that OpenAI says can fit on a single 80 GB GPU, while still preserving the operator’s ability to choose the serving stack.
-- Qwen3-32B: https://openweightmodels.eu/models.htmlqwen3-32b/ — 32.8B total; 32,768 native · 131,072 with YaRN; Apache 2.0. OWM view: Qwen3-32B sits in one of the most useful open-weight size classes: large enough to be a serious general reasoning model, yet still realistic for workstation-class quantized deployment. OWM considers its Apache 2.0 license and broad runtime ecosystem just as important as its model capability because both reduce friction when moving between local, cloud and provider-hosted inference.
-- Qwen3-Coder-30B-A3B-Instruct: https://openweightmodels.eu/models.htmlqwen3-coder-30b-a3b/ — 30B total · ~3B active; 256K native · up to 1M with YaRN; Apache 2.0. OWM view: Qwen3-Coder-30B-A3B is one of the more strategically interesting coding checkpoints because it combines agentic coding specialization, a 256K native context and a relatively small active-parameter footprint. OWM sees it as a strong example of how open weights can move from “chatbot alternative” to infrastructure for developer agents.
-- DeepSeek-R1: https://openweightmodels.eu/models.htmldeepseek-r1/ — 671B total · 37B active; 128K; MIT. OWM view: DeepSeek-R1 is strategically important because it proved that a very large reasoning model could be distributed as weights under a permissive license. OWM does not treat it as a “local model” in the casual sense: the full 671B checkpoint is infrastructure-heavy. Its significance is that organizations can still operate that infrastructure themselves or choose among independent providers.
-- Gemma 3 27B IT: https://openweightmodels.eu/models.htmlgemma-3-27b-it/ — 27B class; 128K; Gemma Terms of Use. OWM view: Gemma 3 27B is interesting because it brings native image understanding, a 128K context window and a relatively workstation-friendly parameter count into the same open-weight package. OWM also considers it a useful reminder that “open weights” and “standard open-source license” are different concepts: Gemma uses its own Terms of Use rather than Apache or MIT.
-- Mistral Small 4: https://openweightmodels.eu/models.htmlmistral-small-4/ — 119B total · 6.5B active/token; 256K; Apache 2.0. OWM view: Mistral Small 4 is an unusually dense package of deployment features: multimodal input, reasoning and non-reasoning modes, function calling, a 256K context window, MoE efficiency and Apache 2.0 licensing. OWM sees the official NVFP4 checkpoint as especially important because it turns quantization from a community afterthought into a publisher-supported deployment path.
-- Llama 4 Scout: https://openweightmodels.eu/models.htmlllama-4-scout/ — 109B total · 17B active; 10M; Llama 4 Community License. OWM view: Llama 4 Scout is a useful case study in the difference between technical openness and licensing simplicity. Its weights are available, its 10M context is exceptional, and it is natively multimodal — but the checkpoint sits under Meta’s custom Llama 4 Community License rather than a standard permissive license. OWM therefore views it as technically portable but legally more conditional than Apache/MIT alternatives.
-- OLMo 3 32B: https://openweightmodels.eu/models.htmlolmo-3-32b/ — 32B; 65,536; Apache 2.0. OWM view: OLMo 3 32B matters to OWM for a different reason than most commercial open-weight releases: Ai2 emphasizes not only weight access but also code, checkpoints and training details. That makes OLMo particularly valuable when the goal is scientific inspectability and reproducibility rather than only self-hosted inference.
-- GLM-4.5: https://openweightmodels.eu/models.htmlglm-4-5/ — 355B total · 32B active; 131,072; MIT. OWM view: GLM-4.5 is a strong example of open-weight competition moving into agentic infrastructure. Its 355B total / 32B active architecture is far beyond workstation scale, but the MIT license and support in Transformers, vLLM and SGLang make the model layer comparatively portable for organizations already operating distributed inference.
-
-
-## Complete detailed model reference set
-
-- Command A: https://openweightmodels.eu/model-command-a.html | Passport: https://openweightmodels.eu/passport-command-a.json | History: https://openweightmodels.eu/change-command-a.json
-- DeepSeek-R1: https://openweightmodels.eu/model-deepseek-r1.html | Passport: https://openweightmodels.eu/passport-deepseek-r1.json | History: https://openweightmodels.eu/change-deepseek-r1.json
-- DeepSeek-R1-Distill-Qwen-32B: https://openweightmodels.eu/model-deepseek-r1-distill-qwen-32b.html | Passport: https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-32b.json | History: https://openweightmodels.eu/change-deepseek-r1-distill-qwen-32b.json
-- DeepSeek-R1-Distill-Qwen-7B: https://openweightmodels.eu/model-deepseek-r1-distill-qwen-7b.html | Passport: https://openweightmodels.eu/passport-deepseek-r1-distill-qwen-7b.json | History: https://openweightmodels.eu/change-deepseek-r1-distill-qwen-7b.json
-- Devstral Small 1.1: https://openweightmodels.eu/model-devstral-small-1-1.html | Passport: https://openweightmodels.eu/passport-devstral-small-1-1.json | History: https://openweightmodels.eu/change-devstral-small-1-1.json
-- Gemma 3 27B IT: https://openweightmodels.eu/model-gemma-3-27b-it.html | Passport: https://openweightmodels.eu/passport-gemma-3-27b-it.json | History: https://openweightmodels.eu/change-gemma-3-27b-it.json
-- GLM-4.5: https://openweightmodels.eu/model-glm-4-5.html | Passport: https://openweightmodels.eu/passport-glm-4-5.json | History: https://openweightmodels.eu/change-glm-4-5.json
-- gpt-oss-120b: https://openweightmodels.eu/model-gpt-oss-120b.html | Passport: https://openweightmodels.eu/passport-gpt-oss-120b.json | History: https://openweightmodels.eu/change-gpt-oss-120b.json
-- gpt-oss-20b: https://openweightmodels.eu/model-gpt-oss-20b.html | Passport: https://openweightmodels.eu/passport-gpt-oss-20b.json | History: https://openweightmodels.eu/change-gpt-oss-20b.json
-- Granite 4.2 8B: https://openweightmodels.eu/model-granite-4-2-8b.html | Passport: https://openweightmodels.eu/passport-granite-4-2-8b.json | History: https://openweightmodels.eu/change-granite-4-2-8b.json
-- Kimi K2 Instruct: https://openweightmodels.eu/model-kimi-k2-instruct.html | Passport: https://openweightmodels.eu/passport-kimi-k2-instruct.json | History: https://openweightmodels.eu/change-kimi-k2-instruct.json
-- Llama 4 Scout: https://openweightmodels.eu/model-llama-4-scout.html | Passport: https://openweightmodels.eu/passport-llama-4-scout.json | History: https://openweightmodels.eu/change-llama-4-scout.json
-- Mistral Small 4: https://openweightmodels.eu/model-mistral-small-4.html | Passport: https://openweightmodels.eu/passport-mistral-small-4.json | History: https://openweightmodels.eu/change-mistral-small-4.json
-- OLMo 3 32B: https://openweightmodels.eu/model-olmo-3-32b.html | Passport: https://openweightmodels.eu/passport-olmo-3-32b.json | History: https://openweightmodels.eu/change-olmo-3-32b.json
-- Phi-4: https://openweightmodels.eu/model-phi-4.html | Passport: https://openweightmodels.eu/passport-phi-4.json | History: https://openweightmodels.eu/change-phi-4.json
-- Qwen3-30B-A3B: https://openweightmodels.eu/model-qwen3-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-30b-a3b.json
-- Qwen3-32B: https://openweightmodels.eu/model-qwen3-32b.html | Passport: https://openweightmodels.eu/passport-qwen3-32b.json | History: https://openweightmodels.eu/change-qwen3-32b.json
-- Qwen3-Coder-30B-A3B-Instruct: https://openweightmodels.eu/model-qwen3-coder-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-coder-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-coder-30b-a3b.json
-- Qwen3-VL-30B-A3B-Instruct: https://openweightmodels.eu/model-qwen3-vl-30b-a3b.html | Passport: https://openweightmodels.eu/passport-qwen3-vl-30b-a3b.json | History: https://openweightmodels.eu/change-qwen3-vl-30b-a3b.json
-- SmolLM3-3B: https://openweightmodels.eu/model-smollm3-3b.html | Passport: https://openweightmodels.eu/passport-smollm3-3b.json | History: https://openweightmodels.eu/change-smollm3-3b.json
-
-Global observed change history: https://openweightmodels.eu/changes.html
-Machine-readable history index: https://openweightmodels.eu/change-history-index.json
+## Methodology note
+OpenWeightModels separates base-model facts, license rights and deployment-specific facts. Official model cards and license texts are preferred; ambiguous fields are not guessed.

@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Qwen3-30B-A3B",
+  "slug": "qwen3-30b-a3b",
+  "developer": "Qwen / Alibaba",
+  "family": "Qwen3",
+  "release": "April 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Qwen3-30B-A3B is a efficient text Mixture-of-Experts reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 30.5B parameters with 3.3B/token active parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is efficient reasoning, multilingual inference and tool-oriented assistants.",
+  "seo_geo": {
+    "primary_question": "What is Qwen3-30B-A3B?",
+    "entity_type": "efficient text Mixture-of-Experts reasoning model",
+    "developer": "Qwen / Alibaba",
+    "family": "Qwen3",
+    "key_topics": [
+      "Qwen3-30B-A3B",
+      "Qwen3",
+      "open-weight AI model",
+      "efficient reasoning, multilingual inference and tool-oriented assistants",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "efficient text Mixture-of-Experts reasoning model",
+    "total_parameters": "30.5B",
+    "active_parameters": "3.3B/token",
+    "context": "32,768 native · 131,072 with YaRN",
+    "input_modalities": "Text",
+    "output_modalities": "Text",
+    "details": [
+      "48 layers",
+      "128 experts with 8 activated experts per token",
+      "GQA with 32 query heads and 4 KV heads",
+      "Sparse MoE design with only ~3.3B active parameters",
+      "Thinking and non-thinking modes"
+    ]
+  },
+  "training": {
+    "summary": "The Qwen3-30B-A3B checkpoint is designed to keep per-token compute low relative to its total parameter pool while retaining Qwen3 reasoning and multilingual capabilities. Post-training enables both deliberate thinking and low-latency direct response modes."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Direct inference path."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Reasoning-aware OpenAI-compatible serving."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Efficient sparse-model serving."
+    },
+    {
+      "route": "Quantized local builds",
+      "type": "Local / workstation",
+      "notes": "Community and publisher quantizations can further reduce weight memory."
+    }
+  ],
+  "hardware": {
+    "summary": "The 30.5B total size makes this MoE much more accessible than giant sparse models. However, 3.3B active parameters should still not be interpreted as a 3B storage footprint; all experts remain part of the checkpoint."
+  },
+  "variants": [
+    {
+      "name": "Qwen3-30B-A3B",
+      "purpose": "Sparse reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Lower-memory serving",
+      "precision_or_form": "Varies",
+      "status": "Publisher/community"
+    }
+  ],
+  "limitations": [
+    "Active 3.3B describes compute routing, not total storage.",
+    "YaRN extension should be evaluated separately for long-context quality.",
+    "Thinking-mode output can dominate latency on reasoning workloads.",
+    "Runtime support for sparse MoE kernels can affect throughput more than raw active-parameter count suggests."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B"
+    },
+    {
+      "label": "Qwen3 GitHub",
+      "url": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

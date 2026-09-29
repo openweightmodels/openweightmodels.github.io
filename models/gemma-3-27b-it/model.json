@@ -1,98 +1,104 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "Gemma 3 27B IT",
   "slug": "gemma-3-27b-it",
   "developer": "Google DeepMind",
-  "passport_status": "full",
+  "family": "Gemma 3",
+  "release": "March 2025",
   "verified_at": "2026-09-29",
-  "summary": "Gemma 3 27B IT is Google's instruction-tuned 27B multimodal model with text and image input, text output and a 128K context window. Its weights are available under Google's Gemma Terms rather than a standard permissive OSS license.",
-  "stats": [
-    {
-      "label": "Parameters",
-      "value": "27B",
-      "note": "dense"
-    },
-    {
-      "label": "Context",
-      "value": "128K",
-      "note": "official"
-    },
-    {
-      "label": "Input",
-      "value": "Text + image",
-      "note": "multimodal"
-    },
-    {
-      "label": "Output",
-      "value": "Text",
-      "note": "generation"
-    },
-    {
-      "label": "Languages",
-      "value": "140+",
-      "note": "documented"
-    },
-    {
-      "label": "License",
-      "value": "Gemma Terms",
-      "note": "custom"
-    }
-  ],
+  "passport_status": "gold_standard",
+  "definition": "Gemma 3 27B IT is a dense multimodal instruction model developed by Google DeepMind in the Gemma 3 family. It has 27B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is multimodal assistants, image understanding, multilingual generation and long-context applications.",
+  "seo_geo": {
+    "primary_question": "What is Gemma 3 27B IT?",
+    "entity_type": "dense multimodal instruction model",
+    "developer": "Google DeepMind",
+    "family": "Gemma 3",
+    "key_topics": [
+      "Gemma 3 27B IT",
+      "Gemma 3",
+      "open-weight AI model",
+      "multimodal assistants, image understanding, multilingual generation and long-context applications",
+      "Gemma Terms of Use",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense multimodal instruction model",
+    "total_parameters": "27B",
+    "active_parameters": "27B",
+    "context": "128K tokens",
+    "input_modalities": "Text + images",
+    "output_modalities": "Text",
+    "details": [
+      "Decoder-style language model with multimodal vision input",
+      "128K long-context support for 4B/12B/27B family members",
+      "Vision encoder integrated for image understanding",
+      "Designed as an open-weight member of the Gemma family"
+    ]
+  },
+  "training": {
+    "summary": "Google positions Gemma 3 as a multimodal and multilingual open-weight family derived from technology and research used across its Gemini ecosystem. The instruction-tuned variants are optimized for chat and application use rather than raw base-model continuation."
+  },
   "license": {
     "name": "Gemma Terms of Use",
     "classification": "Custom model terms",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Conditional",
-        "notes": "Use is permitted subject to the Gemma Terms and incorporated restrictions."
-      },
-      {
-        "question": "Modification",
-        "status": "Conditional",
-        "notes": "Model derivatives are expressly contemplated by the terms."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Conditional",
-        "notes": "Recipients must receive the agreement and required notices/restrictions."
-      },
-      {
-        "question": "Hosted service",
-        "status": "Counts as distribution",
-        "notes": "The terms define hosted API/web access as Distribution."
-      },
-      {
-        "question": "Modified files",
-        "status": "Notice required",
-        "notes": "Modified files must carry prominent modification notices."
-      }
-    ]
+    "commercial_use": "Conditional",
+    "modification": "Allowed subject to terms",
+    "redistribution": "Conditional; distribution obligations apply",
+    "special_conditions": "The Gemma Terms define distribution broadly enough to include making Gemma or derivatives available through hosted services. Recipients, notices, modified-file marking and prohibited-use obligations should be reviewed before redistribution.",
+    "url": "https://ai.google.dev/gemma/terms",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
   },
-  "deployment": [
+  "deployments": [
     {
       "route": "Transformers",
       "type": "Self-hosted",
-      "notes": "Official model is published for standard Hugging Face workflows."
+      "notes": "Official Hugging Face and Transformers workflow."
     },
     {
       "route": "Vertex AI Model Garden",
-      "type": "Cloud deployment",
-      "notes": "Google lists Gemma 3 through Vertex Model Garden."
+      "type": "Cloud",
+      "notes": "Google provides model deployment options through its cloud model ecosystem."
     },
     {
       "route": "Ollama",
       "type": "Local",
-      "notes": "Google documents Gemma deployment with Ollama."
+      "notes": "Google documents Gemma use with Ollama."
     },
     {
-      "route": "llama.cpp",
-      "type": "Local / quantized",
-      "notes": "Google documents GGUF/llama.cpp-style local deployment for Gemma."
+      "route": "llama.cpp / quantized ecosystem",
+      "type": "Local",
+      "notes": "Quantized local inference is widely supported for Gemma-family checkpoints."
     }
   ],
+  "hardware": {
+    "summary": "Google positions the 27B class for large servers and server clusters. Exact RAM/VRAM depends strongly on quantization, image token count, context length and runtime; 128K workloads require substantially more cache than short chats."
+  },
+  "variants": [
+    {
+      "name": "Gemma-3-27B-IT",
+      "purpose": "Instruction-tuned multimodal",
+      "precision_or_form": "BF16/bfloat variants",
+      "status": "Official Google"
+    },
+    {
+      "name": "Quantized variants",
+      "purpose": "Local efficiency",
+      "precision_or_form": "Varies",
+      "status": "Google/ecosystem"
+    }
+  ],
+  "limitations": [
+    "The Gemma Terms are custom model terms, not a standard Apache/MIT license.",
+    "Image resolution and the number of images affect tokenization and memory.",
+    "140+ language coverage does not imply identical quality in every language.",
+    "Long-context maximums should be benchmarked with the actual runtime and task."
+  ],
+  "benchmarks": [],
   "sources": [
     {
-      "label": "Official model card",
+      "label": "Official Hugging Face model",
       "url": "https://huggingface.co/google/gemma-3-27b-it"
     },
     {
@@ -100,8 +106,18 @@
       "url": "https://ai.google.dev/gemma/terms"
     },
     {
-      "label": "Gemma with Ollama",
+      "label": "Gemma documentation",
+      "url": "https://ai.google.dev/gemma/docs"
+    },
+    {
+      "label": "Gemma + Ollama",
       "url": "https://ai.google.dev/gemma/docs/integrations/ollama"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

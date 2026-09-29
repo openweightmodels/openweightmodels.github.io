@@ -1,112 +1,129 @@
 {
+  "schema_version": "2.0",
+  "passport_version": "2.0",
   "name": "SmolLM3 3B",
   "slug": "smollm3-3b",
   "developer": "Hugging Face",
-  "passport_status": "full",
+  "family": "SmolLM3",
+  "release": "2025",
   "verified_at": "2026-09-29",
-  "summary": "SmolLM3 is a compact 3B language model designed for efficient deployment, hybrid reasoning and long context. Hugging Face publishes it under Apache 2.0 together with substantial training details and supports multiple local runtimes.",
-  "stats": [
-    {
-      "label": "Parameters",
-      "value": "3B",
-      "note": "dense"
-    },
-    {
-      "label": "Native train context",
-      "value": "64K",
-      "note": "staged training"
-    },
-    {
-      "label": "Extended context",
-      "value": "128K",
-      "note": "YaRN"
-    },
-    {
-      "label": "Languages",
-      "value": "6 native",
-      "note": "multilingual"
-    },
-    {
-      "label": "Focus",
-      "value": "Hybrid reasoning",
-      "note": "local"
-    },
-    {
-      "label": "License",
-      "value": "Apache 2.0",
-      "note": "permissive"
-    }
-  ],
-  "license": {
-    "name": "Apache License 2.0",
-    "classification": "Permissive",
-    "rights": [
-      {
-        "question": "Commercial use",
-        "status": "Allowed",
-        "notes": "Apache 2.0 permits commercial use."
-      },
-      {
-        "question": "Modification",
-        "status": "Allowed",
-        "notes": "Adaptation and fine-tuning are permitted."
-      },
-      {
-        "question": "Redistribution",
-        "status": "Allowed with conditions",
-        "notes": "Apache notice/license obligations apply."
-      },
-      {
-        "question": "Patent grant",
-        "status": "Included",
-        "notes": "Express Apache 2.0 patent grant."
-      },
-      {
-        "question": "Training transparency",
-        "status": "High",
-        "notes": "Hugging Face publishes substantial training details in addition to the weights."
-      }
+  "passport_status": "gold_standard",
+  "definition": "SmolLM3 3B is a compact dense hybrid-reasoning language model developed by Hugging Face in the SmolLM3 family. It has 3B parameters, supports 64K native · up to 128K extended of context, accepts Text and produces Text / code. Its primary role is local reasoning, compact assistants, agents and reproducible open-model research.",
+  "seo_geo": {
+    "primary_question": "What is SmolLM3 3B?",
+    "entity_type": "compact dense hybrid-reasoning language model",
+    "developer": "Hugging Face",
+    "family": "SmolLM3",
+    "key_topics": [
+      "SmolLM3 3B",
+      "SmolLM3",
+      "open-weight AI model",
+      "local reasoning, compact assistants, agents and reproducible open-model research",
+      "Apache License 2.0",
+      "AI model deployment"
     ]
   },
-  "deployment": [
+  "architecture": {
+    "model_type": "compact dense hybrid-reasoning language model",
+    "total_parameters": "3B",
+    "active_parameters": "3B",
+    "context": "64K native · up to 128K extended",
+    "input_modalities": "Text",
+    "output_modalities": "Text / code",
+    "details": [
+      "3B decoder-only transformer",
+      "Hybrid think / no-think interaction modes",
+      "Long-context techniques including NoPE and YaRN-style extension",
+      "Designed for efficient local inference",
+      "Publicly documented training recipe and data mixture"
+    ]
+  },
+  "training": {
+    "summary": "Hugging Face reports training SmolLM3 on roughly 11T tokens and publishes unusually rich methodology around the data mixture, training stages and configurations. The model targets English, French, Spanish, German, Italian and Portuguese while emphasizing reasoning and long context at a compact scale."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
     {
       "route": "Transformers",
       "type": "Self-hosted",
-      "notes": "Native model support in Transformers."
+      "notes": "Native model support."
     },
     {
       "route": "vLLM",
-      "type": "Serving runtime",
-      "notes": "Hugging Face documents current vLLM support."
+      "type": "Serving",
+      "notes": "Documented serving path."
     },
     {
       "route": "llama.cpp / GGUF",
       "type": "Local",
-      "notes": "Quantized community/ggml checkpoints support lightweight local serving."
+      "notes": "Quantized portable inference."
     },
     {
       "route": "ONNX",
       "type": "Local / edge",
-      "notes": "Documented as a local inference path."
+      "notes": "Optimized runtime path."
     },
     {
       "route": "MLX / MLC",
-      "type": "Local / device",
-      "notes": "Documented as local inference options for compatible hardware."
+      "type": "Device-oriented",
+      "notes": "Useful for Apple/device-class deployment."
     }
   ],
+  "hardware": {
+    "summary": "At 3B parameters SmolLM3 is one of the most accessible full passports in the registry. Quantization makes it practical on consumer and edge-class hardware, but 128K extended context can still overwhelm small-memory devices because KV cache grows with sequence length."
+  },
+  "variants": [
+    {
+      "name": "SmolLM3-3B",
+      "purpose": "Hybrid reasoning",
+      "precision_or_form": "BF16",
+      "status": "Official"
+    },
+    {
+      "name": "GGUF variants",
+      "purpose": "Portable local inference",
+      "precision_or_form": "Varies",
+      "status": "Hugging Face/ggml ecosystem"
+    }
+  ],
+  "limitations": [
+    "Extended context should be evaluated separately from native-context quality.",
+    "A 3B model has lower capacity than large frontier-class models and may need retrieval/tools.",
+    "Reasoning mode increases generation length and latency.",
+    "Community quantizations can differ in calibration and quality."
+  ],
+  "benchmarks": [],
   "sources": [
     {
       "label": "Official Hugging Face model",
       "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
     },
     {
-      "label": "Transformers documentation",
-      "url": "https://huggingface.co/docs/transformers/model_doc/smollm3"
+      "label": "SmolLM3 blog",
+      "url": "https://huggingface.co/blog/smollm3"
     },
     {
-      "label": "GGUF / llama.cpp model",
+      "label": "GGUF model",
       "url": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
     }
   ]
 }

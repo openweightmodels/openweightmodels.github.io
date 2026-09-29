@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "Mathstral 7B v0.1",
+  "slug": "mathstral-7b-v0-1",
+  "developer": "Mistral AI",
+  "family": "Mathstral",
+  "release": "July 2024",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "Mathstral 7B v0.1 is a dense mathematics-specialized language model developed by Mistral AI in the Mathstral family. It has 7B parameters, supports 32,768 tokens of context, accepts Text / math notation and produces Text. Its primary role is mathematical reasoning, scientific problem solving and math-focused experimentation.",
+  "seo_geo": {
+    "primary_question": "What is Mathstral 7B v0.1?",
+    "entity_type": "dense mathematics-specialized language model",
+    "developer": "Mistral AI",
+    "family": "Mathstral",
+    "key_topics": [
+      "Mathstral 7B v0.1",
+      "Mathstral",
+      "open-weight AI model",
+      "mathematical reasoning, scientific problem solving and math-focused experimentation",
+      "Apache License 2.0",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "dense mathematics-specialized language model",
+    "total_parameters": "7B",
+    "active_parameters": "7B",
+    "context": "32,768 tokens",
+    "input_modalities": "Text / math notation",
+    "output_modalities": "Text",
+    "details": [
+      "32 transformer layers",
+      "Hidden size 4096",
+      "32 attention heads / 8 KV heads",
+      "32K context",
+      "Derived from the Mistral 7B architectural family"
+    ]
+  },
+  "training": {
+    "summary": "Mathstral is a Mistral 7B-class model specialized for mathematics and scientific reasoning. Its release is best understood as a domain-focused checkpoint rather than a universal assistant; the specialization should be evaluated against the exact mathematical domain and prompting style."
+  },
+  "license": {
+    "name": "Apache License 2.0",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with license/notice conditions",
+    "special_conditions": "Includes an express patent grant. Model-specific acceptable-use policies, if separately published, are not automatically part of Apache 2.0.",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "mistral-inference",
+      "type": "Self-hosted",
+      "notes": "Mistral-native inference path."
+    },
+    {
+      "route": "Transformers",
+      "type": "Self-hosted",
+      "notes": "Hugging Face deployment."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Model page supports vLLM-oriented serving."
+    }
+  ],
+  "hardware": {
+    "summary": "At 7B dense parameters, Mathstral is accessible for local inference, especially under 8-bit or 4-bit quantization. Mathematical workloads can still generate long derivations, so output length and batch sizing matter."
+  },
+  "variants": [
+    {
+      "name": "Mathstral-7B-v0.1",
+      "purpose": "Math-specialized",
+      "precision_or_form": "BF16/FP formats",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized community builds",
+      "purpose": "Local math inference",
+      "precision_or_form": "Varies",
+      "status": "Community"
+    }
+  ],
+  "limitations": [
+    "Specialization for mathematics can trade off against broad conversational behavior.",
+    "Mathematical answers should be verified, especially for proofs and symbolic manipulation.",
+    "The 32K context is modest relative to newer long-context models.",
+    "No native multimodal input for diagrams/images."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/mistralai/Mathstral-7B-v0.1"
+    },
+    {
+      "label": "Official config",
+      "url": "https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/main/config.json"
+    },
+    {
+      "label": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}

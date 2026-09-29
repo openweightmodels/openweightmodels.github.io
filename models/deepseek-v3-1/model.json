@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "passport_version": "2.0",
+  "name": "DeepSeek-V3.1",
+  "slug": "deepseek-v3-1",
+  "developer": "DeepSeek",
+  "family": "DeepSeek V3.1",
+  "release": "August 2025",
+  "verified_at": "2026-09-29",
+  "passport_status": "gold_standard",
+  "definition": "DeepSeek-V3.1 is a large hybrid-reasoning Mixture-of-Experts model developed by DeepSeek in the DeepSeek V3.1 family. It has ~671B-class parameters with ~37B/token active parameters, supports 128K tokens of context, accepts Text and produces Text / code. Its primary role is hybrid reasoning, agents, coding and general-purpose long-context generation.",
+  "seo_geo": {
+    "primary_question": "What is DeepSeek-V3.1?",
+    "entity_type": "large hybrid-reasoning Mixture-of-Experts model",
+    "developer": "DeepSeek",
+    "family": "DeepSeek V3.1",
+    "key_topics": [
+      "DeepSeek-V3.1",
+      "DeepSeek V3.1",
+      "open-weight AI model",
+      "hybrid reasoning, agents, coding and general-purpose long-context generation",
+      "MIT License",
+      "AI model deployment"
+    ]
+  },
+  "architecture": {
+    "model_type": "large hybrid-reasoning Mixture-of-Experts model",
+    "total_parameters": "~671B-class",
+    "active_parameters": "~37B/token",
+    "context": "128K tokens",
+    "input_modalities": "Text",
+    "output_modalities": "Text / code",
+    "details": [
+      "DeepSeek-V3-family sparse MoE backbone",
+      "Large total parameter pool with ~37B active per token",
+      "128K context",
+      "Hybrid thinking/non-thinking operation",
+      "Designed for agent and tool-oriented workflows"
+    ]
+  },
+  "training": {
+    "summary": "DeepSeek-V3.1 extends the V3 line with hybrid reasoning behavior so applications can select more deliberate or more direct interaction patterns. The release emphasizes stronger agent capability alongside general-purpose language and code performance."
+  },
+  "license": {
+    "name": "MIT License",
+    "classification": "Permissive open-source software license",
+    "commercial_use": "Allowed",
+    "modification": "Allowed",
+    "redistribution": "Allowed with copyright and permission notice",
+    "special_conditions": "Short permissive license. It does not itself impose a use-field restriction; application law, provider terms and separate policies still apply.",
+    "url": "https://opensource.org/license/mit",
+    "legal_note": "OpenWeightModels summary for technical comparison; not legal advice."
+  },
+  "deployments": [
+    {
+      "route": "Direct weights",
+      "type": "Self-hosted",
+      "notes": "Official Hugging Face release."
+    },
+    {
+      "route": "DeepSeek runtime stack",
+      "type": "Self-hosted",
+      "notes": "Deployment follows DeepSeek-V3-class large-model guidance."
+    },
+    {
+      "route": "vLLM",
+      "type": "Serving",
+      "notes": "Supported large-model serving ecosystem."
+    },
+    {
+      "route": "SGLang",
+      "type": "Serving",
+      "notes": "Sparse-model serving path used across DeepSeek deployments."
+    }
+  ],
+  "hardware": {
+    "summary": "This is a datacenter-class sparse model. Reduced active compute helps throughput, but storage, expert parallelism and communication remain dominant design constraints. Quantized formats can reduce memory but do not remove multi-GPU complexity."
+  },
+  "variants": [
+    {
+      "name": "DeepSeek-V3.1",
+      "purpose": "Hybrid reasoning",
+      "precision_or_form": "Published checkpoint",
+      "status": "Official"
+    },
+    {
+      "name": "Quantized/optimized variants",
+      "purpose": "Serving efficiency",
+      "precision_or_form": "Varies",
+      "status": "Publisher/ecosystem"
+    }
+  ],
+  "limitations": [
+    "Large MoE infrastructure requirements remain substantial.",
+    "Thinking/non-thinking modes can produce different latency and behavior.",
+    "Agent use requires external tool safety and permission boundaries.",
+    "Context maximum does not imply uniform performance or cost across 128K."
+  ],
+  "benchmarks": [],
+  "sources": [
+    {
+      "label": "Official Hugging Face model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1"
+    },
+    {
+      "label": "DeepSeek V3 GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3"
+    },
+    {
+      "label": "MIT license",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "change_history": [
+    {
+      "date": "2026-09-29",
+      "change": "Gold-standard Passport v2.0 created with full technical, license, deployment and SEO/GEO review."
+    }
+  ]
+}
