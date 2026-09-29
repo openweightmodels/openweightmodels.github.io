@@ -1,0 +1,22 @@
+{
+  "site": "https://openweightmodels.eu/",
+  "policy_url": "https://openweightmodels.eu/privacy/",
+  "last_reviewed": "2026-09-29",
+  "analytics": false,
+  "advertising_trackers": false,
+  "nonessential_cookies": false,
+  "local_storage": false,
+  "session_storage": false,
+  "external_web_fonts": false,
+  "third_party_embeds": false,
+  "hosting": {
+    "provider": "GitHub Pages",
+    "provider_documentation": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+    "security_logging_note": "GitHub states that visitor IP addresses are logged and stored for security purposes when GitHub Pages sites are visited."
+  },
+  "notes": [
+    "External source links are ordinary hyperlinks and are not embedded third-party content.",
+    "Public sitemap, robots.txt, llms.txt and structured JSON records do not contain visitor profiles.",
+    "The policy must be reviewed if the infrastructure or tracking/storage behavior changes."
+  ]
+}

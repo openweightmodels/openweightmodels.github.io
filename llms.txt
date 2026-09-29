@@ -57,3 +57,8 @@ Canonical site: https://openweightmodels.eu/
 - [Qwen3-32B](https://openweightmodels.eu/models/qwen3-32b/): Qwen3-32B is a dense multilingual reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 32.8B parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is reasoning, code, multilingual assistants and agent workflows on a dense architecture.
 - [Qwen3-Coder-480B-A35B-Instruct](https://openweightmodels.eu/models/qwen3-coder-480b-a35b-instruct/): Qwen3-Coder-480B-A35B-Instruct is a large agentic coding Mixture-of-Experts model developed by Qwen / Alibaba in the Qwen3-Coder family. It has 480B parameters with 35B/token active parameters, supports 256K tokens of context, accepts Text / code and produces Text / code. Its primary role is software engineering, repository-scale coding, tool use and coding agents.
 - [SmolLM3 3B](https://openweightmodels.eu/models/smollm3-3b/): SmolLM3 3B is a compact dense hybrid-reasoning language model developed by Hugging Face in the SmolLM3 family. It has 3B parameters, supports 64K native · up to 128K extended of context, accepts Text and produces Text / code. Its primary role is local reasoning, compact assistants, agents and reproducible open-model research.
+
+
+## Privacy
+- https://openweightmodels.eu/privacy/ — Privacy policy and tracker-free site configuration
+- https://openweightmodels.eu/data/privacy.json — Machine-readable privacy profile

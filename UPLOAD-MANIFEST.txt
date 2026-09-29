@@ -20,3 +20,11 @@ Technical SEO/GEO updates:
 - robots.txt added
 - /data/guides.json added
 - model.json companions include related_pages
+
+
+Privacy update — 2026-09-29
+- Added /privacy/index.html
+- Added /data/privacy.json
+- Added Privacy footer link across HTML pages
+- Added /privacy/ to sitemap.xml and llms.txt
+- No analytics, advertising trackers, non-essential cookies, Local Storage, Session Storage, external fonts or third-party embeds are added by this update.
