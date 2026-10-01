@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "name": "Phi-4 Reasoning Plus",
+  "slug": "phi-4-reasoning-plus",
+  "developer": "Microsoft",
+  "verified_at": "2026-10-01",
+  "passport_status": "source_verified",
+  "definition": "Phi-4 Reasoning Plus is an open-weight AI model published by Microsoft. OpenWeightModels records it for mathematics, science, coding and multi-step reasoning.",
+  "architecture": {
+    "parameters": "14B",
+    "context": "32K"
+  },
+  "license": {
+    "name": "MIT",
+    "commercial_use": "Generally permitted by the listed license, subject to its conditions and any separate applicable terms.",
+    "legal_note": "Technical comparison only; not legal advice."
+  },
+  "hardware": {
+    "summary": "OWM hardware class: 9–16B · workstation/local. Actual memory and throughput depend on precision, quantization, context length, runtime and accelerator support."
+  },
+  "eu_deployment": {
+    "provider_origin": "🇺🇸 United States",
+    "provider_region": "North America",
+    "eu_provider": false,
+    "self_hosting": "Technically possible on EU/EEA infrastructure when the weights, runtime and connected services are operated there.",
+    "data_residency": "Provider origin does not determine data residency. Review inference, RAG, embeddings, logs, telemetry, backups and subprocessors.",
+    "ai_act": "Applicable obligations depend on the actor's role and the concrete model/system context; this is not a compliance determination."
+  },
+  "focus": "Mathematics, science, coding and multi-step reasoning",
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/microsoft/Phi-4-reasoning-plus"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
