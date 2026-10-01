@@ -1092,5 +1092,6 @@
     "methodology_json": "/data/methodology.json",
     "licenses_json": "/data/licenses.json",
     "deployments_json": "/data/deployments.json"
-  }
+  },
+  "source_verified_profiles": 17
 }
