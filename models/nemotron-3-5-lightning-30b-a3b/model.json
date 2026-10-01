@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "NVIDIA Nemotron 3.5 Lightning 30B-A3B",
+  "slug": "nemotron-3-5-lightning-30b-a3b",
+  "developer": "NVIDIA",
+  "provider_origin": {
+    "flag": "🇺🇸",
+    "country": "United States",
+    "region": "North America"
+  },
+  "family": "Nemotron 3.5",
+  "verified_at": "2026-10-01",
+  "definition": "NVIDIA Nemotron 3.5 Lightning 30B-A3B is an open-weight Nemotron 3.5 model by NVIDIA focused on customization, autonomous agents, long context and efficient server/local AI deployments.",
+  "architecture": {
+    "parameters": "30B total",
+    "active_parameters": "3B active/token",
+    "context": "Up to 1M; NVIDIA validates 256K on a single H100 and 1M on larger supported configurations",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "30B total / 3B active",
+      "Hybrid Mamba-2 + MoE + attention",
+      "Up to 1M context",
+      "Configurable reasoning mode",
+      "OpenMDW 1.1 license"
+    ]
+  },
+  "license": {
+    "name": "OpenMDW 1.1",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "High-memory workstation/server class. NVIDIA documents single H100/A100 BF16 serving and optimized NVFP4 variants for broader deployment."
+  },
+  "deployment": {
+    "summary": "NVIDIA documents vLLM and SGLang for BF16, with optimized NVFP4 checkpoints for production inference.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
