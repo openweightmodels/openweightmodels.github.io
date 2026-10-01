@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "OLMo 3 32B",
+  "slug": "olmo-3-32b",
+  "developer": "Ai2",
+  "provider_origin": {
+    "flag": "🇺🇸",
+    "country": "United States",
+    "region": "North America"
+  },
+  "family": "OLMo 3",
+  "verified_at": "2026-10-01",
+  "definition": "OLMo 3 32B is an open-weight OLMo 3 model by Ai2 focused on fully open research, reproducibility, instruction and reasoning variants.",
+  "architecture": {
+    "parameters": "32B",
+    "active_parameters": "Dense",
+    "context": "65,536",
+    "modalities": "Text → text",
+    "details": [
+      "32B dense model",
+      "65,536 context",
+      "Dolma 3 training data",
+      "Code and training details released",
+      "Base, Instruct and Think variants"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "High-memory workstation or GPU server depending on precision and context."
+  },
+  "deployment": {
+    "summary": "Transformers support is documented; Ai2 also publishes training and fine-tuning repositories.",
+    "eu_eea_self_hosting": "Technically possible when the complete inference stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/allenai/Olmo-3-1125-32B"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
