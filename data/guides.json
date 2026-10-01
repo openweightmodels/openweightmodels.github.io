@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "pages": [
     {
       "name": "Open-Weight Models Directory",
@@ -28,6 +28,11 @@
         "special_condition": 1,
         "conditional": 8
       }
+    },
+    {
+      "name": "EU Deployment, Data Residency, GDPR & AI Act",
+      "url": "/eu/",
+      "intent": "open-weight model EU deployment data residency GDPR AI Act"
     }
   ],
   "methodology": "/methodology/"
