@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Ministral 3 8B Instruct 2512",
+  "slug": "ministral-3-8b-instruct-2512",
+  "developer": "Mistral AI",
+  "provider_origin": {
+    "flag": "🇫🇷",
+    "country": "France",
+    "region": "European Union"
+  },
+  "family": "Ministral 3",
+  "verified_at": "2026-10-01",
+  "definition": "Ministral 3 8B Instruct 2512 is an open-weight Ministral 3 model by Mistral AI focused on balanced local chat, vision and instruction following.",
+  "architecture": {
+    "parameters": "8B-class language model + vision encoder",
+    "active_parameters": "Dense",
+    "context": "Up to 262,144 in published generation configuration",
+    "modalities": "Text + image → text",
+    "details": [
+      "Edge-focused family",
+      "Vision capability",
+      "11-language repository tag",
+      "FP8 release",
+      "Apache 2.0"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Consumer/local to workstation class. Mistral documents <12GB RAM/VRAM when quantized and 24GB-class BF16 operation."
+  },
+  "deployment": {
+    "summary": "Mistral publishes vLLM/mistral-common support and additional quantized checkpoints.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
