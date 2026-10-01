@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Granite 4.2 8B",
+  "slug": "granite-4-2-8b",
+  "developer": "IBM",
+  "provider_origin": {
+    "flag": "🇺🇸",
+    "country": "United States",
+    "region": "North America"
+  },
+  "family": "Granite 4.2",
+  "verified_at": "2026-10-01",
+  "definition": "Granite 4.2 8B is an open-weight Granite 4.2 model by IBM focused on enterprise assistants, reasoning, tool use and RAG.",
+  "architecture": {
+    "parameters": "8B",
+    "active_parameters": "Dense",
+    "context": "131,072",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "8B dense model",
+      "128K-class context",
+      "Reasoning mode",
+      "Tool calling",
+      "12-language model card"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Consumer/local to workstation class depending on precision and context length."
+  },
+  "deployment": {
+    "summary": "Transformers is documented; choose a serving runtime according to production throughput and quantization needs.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
