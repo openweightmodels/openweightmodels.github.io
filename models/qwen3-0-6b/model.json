@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "name": "Qwen3 0.6B",
+  "slug": "qwen3-0-6b",
+  "developer": "Qwen / Alibaba",
+  "verified_at": "2026-10-01",
+  "passport_status": "source_verified",
+  "definition": "Qwen3 0.6B is an open-weight AI model published by Qwen / Alibaba. OpenWeightModels records it for small local assistants, multilingual text and experimentation.",
+  "architecture": {
+    "parameters": "0.6B",
+    "context": "32K native"
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Generally permitted by the listed license, subject to its conditions and any separate applicable terms.",
+    "legal_note": "Technical comparison only; not legal advice."
+  },
+  "hardware": {
+    "summary": "OWM hardware class: ≤8B · consumer/local. Actual memory and throughput depend on precision, quantization, context length, runtime and accelerator support."
+  },
+  "eu_deployment": {
+    "provider_origin": "🇨🇳 China",
+    "provider_region": "Asia",
+    "eu_provider": false,
+    "self_hosting": "Technically possible on EU/EEA infrastructure when the weights, runtime and connected services are operated there.",
+    "data_residency": "Provider origin does not determine data residency. Review inference, RAG, embeddings, logs, telemetry, backups and subprocessors.",
+    "ai_act": "Applicable obligations depend on the actor's role and the concrete model/system context; this is not a compliance determination."
+  },
+  "focus": "Small local assistants, multilingual text and experimentation",
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
