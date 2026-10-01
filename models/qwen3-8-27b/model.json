@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Qwen3.8-27B",
+  "slug": "qwen3-8-27b",
+  "developer": "Qwen / Alibaba",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "Qwen3.8",
+  "verified_at": "2026-10-01",
+  "definition": "Qwen3.8-27B is an open-weight Qwen3.8 model by Qwen / Alibaba focused on coding, professional knowledge work, research, vision-language understanding and long-horizon agents.",
+  "architecture": {
+    "parameters": "27B",
+    "active_parameters": "Dense",
+    "context": "262,144 native; extendable up to 1,000,000 with supported scaling",
+    "modalities": "Text, image and video → text",
+    "details": [
+      "64-layer language model",
+      "Native vision encoder",
+      "Flexible reasoning effort",
+      "262K native long context",
+      "Publisher documents extension to 1M context"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "High-memory workstation or GPU server; quantization materially changes feasibility."
+  },
+  "deployment": {
+    "summary": "Transformers, vLLM and SGLang are documented integration paths.",
+    "eu_eea_self_hosting": "Technically possible when the complete inference stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
