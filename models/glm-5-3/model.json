@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "GLM-5.3",
+  "slug": "glm-5-3",
+  "developer": "Z.ai",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "GLM-5.3",
+  "verified_at": "2026-10-01",
+  "definition": "GLM-5.3 is an open-weight GLM-5.3 model by Z.ai focused on long-horizon coding, agentic engineering and reasoning.",
+  "architecture": {
+    "parameters": "Large frontier MoE",
+    "active_parameters": "Sparse expert routing",
+    "context": "Very-long-context model; verify the exact runtime limit in the official model card/configuration",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "GLM-5 generation",
+      "Sparse MoE architecture",
+      "Reasoning-effort controls",
+      "Agentic engineering focus",
+      "Custom GLM-5.3 license"
+    ]
+  },
+  "license": {
+    "name": "GLM-5.3 License",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Datacenter / multi-GPU class. The checkpoint is not a typical laptop/workstation model."
+  },
+  "deployment": {
+    "summary": "The official repository provides Transformers and vLLM integration. Validate exact context and parallelism settings against the current card.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/zai-org/GLM-5.3"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
