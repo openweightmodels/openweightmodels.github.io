@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Kimi K3",
+  "slug": "kimi-k3",
+  "developer": "Moonshot AI",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "Kimi K3",
+  "verified_at": "2026-10-01",
+  "definition": "Kimi K3 is an open-weight Kimi K3 model by Moonshot AI focused on long-horizon coding, knowledge work and multimodal agents.",
+  "architecture": {
+    "parameters": "2.8T total",
+    "active_parameters": "104B active/token",
+    "context": "1,048,576",
+    "modalities": "Text + image → text",
+    "details": [
+      "2.8T total parameters",
+      "104B activated parameters",
+      "93 layers",
+      "1M context",
+      "Native multimodal MoonViT-V2 encoder"
+    ]
+  },
+  "license": {
+    "name": "Kimi K3 License",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Large datacenter / multi-GPU class. The model's 2.8T total parameter pool dominates storage and sharding requirements."
+  },
+  "deployment": {
+    "summary": "The official weights are published for independent deployment; practical serving requires a large distributed inference stack.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
