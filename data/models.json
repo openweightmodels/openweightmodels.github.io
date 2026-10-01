@@ -2,7 +2,7 @@
   "project": "Open Weight Models",
   "updated": "2026-10-01",
   "count": 49,
-  "methodology_note": "Curated registry of 49 open-weight models. 32 established Gold-standard Passports are complemented by current source-verified profiles. Model facts, licenses, provider origin and EU deployment considerations are kept separate.",
+  "methodology_note": "Curated registry of 49 open-weight models. 32 established Gold-standard Passports are complemented by 17 current source-verified profiles. Hardware classes use total checkpoint scale and documented deployment paths rather than active MoE parameters alone; model facts, licenses, provider origin and EU deployment considerations remain separate.",
   "models": [
     {
       "name": "gpt-oss-120b",
@@ -21,7 +21,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "17–32B · high-memory workstation",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -66,7 +66,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -88,7 +88,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -110,7 +110,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "33–80B · large workstation / multi-GPU",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -132,7 +132,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -176,7 +176,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "17–32B · high-memory workstation",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -198,7 +198,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -220,7 +220,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "33–80B · large workstation / multi-GPU",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -264,7 +264,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "17–32B · high-memory workstation",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -352,7 +352,7 @@
       "provider_country": "France",
       "provider_region": "European Union",
       "eu_provider": true,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "17–32B · high-memory workstation",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -374,7 +374,7 @@
       "provider_country": "France",
       "provider_region": "European Union",
       "eu_provider": true,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "17–32B · high-memory workstation",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -396,7 +396,7 @@
       "provider_country": "France",
       "provider_region": "European Union",
       "eu_provider": true,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "17–32B · high-memory workstation",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -462,7 +462,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -484,7 +484,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -506,7 +506,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "9–16B · workstation/local",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -528,7 +528,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "≤8B · consumer/local",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -550,7 +550,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "≤8B · consumer/local",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -594,7 +594,7 @@
       "provider_country": "United States",
       "provider_region": "North America",
       "eu_provider": false,
-      "hardware_class": "≤8B · consumer/local",
+      "hardware_class": "9–16B · workstation/local",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -616,7 +616,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "Review the exact model-specific terms before commercial production use."
@@ -638,7 +638,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": "17–32B · high-memory workstation",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -660,7 +660,7 @@
       "provider_country": "China",
       "provider_region": "Asia",
       "eu_provider": false,
-      "hardware_class": "9–16B · workstation/local",
+      "hardware_class": "Model-specific · large / specialized",
       "eu_deployment": "EU/EEA self-hosting is technically possible when the downloadable weights, inference runtime and connected data services are operated on EU/EEA infrastructure.",
       "data_residency_note": "Provider origin is not a data-residency claim. Assess inference, RAG, embeddings, logs, telemetry, backups and subprocessors separately.",
       "commercial_use_note": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies."
@@ -788,7 +788,7 @@
       "passport_url": "/models/mistral-small-4-119b-2603/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇫🇷",
       "provider_country": "France",
       "provider_region": "European Union",
@@ -854,7 +854,7 @@
       "passport_url": "/models/command-a-plus-05-2026/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇨🇦",
       "provider_country": "Canada",
       "provider_region": "North America",
@@ -898,7 +898,7 @@
       "passport_url": "/models/minimax-m2-5/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇨🇳",
       "provider_country": "China",
       "provider_region": "Asia",
@@ -920,7 +920,7 @@
       "passport_url": "/models/glm-5-3/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇨🇳",
       "provider_country": "China",
       "provider_region": "Asia",
@@ -942,7 +942,7 @@
       "passport_url": "/models/glm-5-3-flash/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇨🇳",
       "provider_country": "China",
       "provider_region": "Asia",
@@ -964,7 +964,7 @@
       "passport_url": "/models/kimi-k3/",
       "verified_at": "2026-10-01",
       "passport_version": "2.1",
-      "hardware_class": ">80B · datacenter / multi-GPU",
+      "hardware_class": "Model-specific · large / specialized",
       "provider_flag": "🇨🇳",
       "provider_country": "China",
       "provider_region": "Asia",
