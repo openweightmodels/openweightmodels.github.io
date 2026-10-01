@@ -7,7 +7,7 @@ Updated: 2026-10-01
 
 ## Scope
 
-Open Weight Models tracks 49 open-weight model profiles. The registry currently contains 32 Gold-standard Model Passports with full technical/license/deployment review and 17 current source-verified profiles for newer releases.
+Open Weight Models tracks 64 open-weight model profiles. The registry currently contains 32 Gold-standard Model Passports with full technical/license/deployment review and 32 current source-verified profiles for newer or additional releases.
 
 “Open weight” describes access to trained model parameters. It does not automatically mean Open Source AI, unrestricted commercial use, GDPR compliance, EU data residency, or an AI Act exemption.
 
@@ -100,3 +100,22 @@ Provider origin is recorded separately from deployment location and data residen
 ## Legal and regulatory note
 
 OpenWeightModels provides technical comparison and provenance, not legal advice. Model-specific official sources, applicable law and organization-specific legal review remain authoritative.
+
+
+## Additional source-verified profiles (2026-10-01)
+
+- [Llama 3.2 1B Instruct](https://openweightmodels.eu/models/llama-3-2-1b-instruct/) — On-device chat, summarization and lightweight assistants; 🇺🇸 Meta; undefined.
+- [Llama 3.2 3B Instruct](https://openweightmodels.eu/models/llama-3-2-3b-instruct/) — Local chat, multilingual text and lightweight RAG; 🇺🇸 Meta; undefined.
+- [Llama 3.2 11B Vision Instruct](https://openweightmodels.eu/models/llama-3-2-11b-vision-instruct/) — Vision-language assistants, documents and image understanding; 🇺🇸 Meta; undefined.
+- [Gemma 3 270M IT](https://openweightmodels.eu/models/gemma-3-270m-it/) — Edge experiments, constrained devices and lightweight text tasks; 🇺🇸 Google DeepMind; undefined.
+- [Gemma 3 1B IT](https://openweightmodels.eu/models/gemma-3-1b-it/) — On-device assistants and lightweight local text inference; 🇺🇸 Google DeepMind; undefined.
+- [Gemma 3n E2B IT](https://openweightmodels.eu/models/gemma-3n-e2b-it/) — Mobile multimodal assistants, audio, vision and local inference; 🇺🇸 Google DeepMind; undefined.
+- [Qwen3 0.6B](https://openweightmodels.eu/models/qwen3-0-6b/) — Small local assistants, multilingual text and experimentation; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen3 1.7B](https://openweightmodels.eu/models/qwen3-1-7b/) — Local chat, multilingual inference and lightweight reasoning; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen3 4B](https://openweightmodels.eu/models/qwen3-4b/) — Local reasoning, chat, coding assistance and RAG; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen3 8B](https://openweightmodels.eu/models/qwen3-8b/) — Reasoning, multilingual chat, coding and local RAG; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen3 14B](https://openweightmodels.eu/models/qwen3-14b/) — Reasoning, multilingual work, coding and self-hosted assistants; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen2.5-Coder 7B Instruct](https://openweightmodels.eu/models/qwen2-5-coder-7b-instruct/) — Local code generation, repair, repository assistance and coding RAG; 🇨🇳 Qwen / Alibaba; undefined.
+- [Qwen2.5-VL 7B Instruct](https://openweightmodels.eu/models/qwen2-5-vl-7b-instruct/) — Images, documents, video understanding and visual agents; 🇨🇳 Qwen / Alibaba; undefined.
+- [Phi-4 Reasoning Plus](https://openweightmodels.eu/models/phi-4-reasoning-plus/) — Mathematics, science, coding and multi-step reasoning; 🇺🇸 Microsoft; undefined.
+- [NVIDIA Nemotron 3 Super 120B-A12B](https://openweightmodels.eu/models/nemotron-3-super-120b-a12b/) — AI agents, reasoning, coding and high-throughput server inference; 🇺🇸 NVIDIA; undefined.
