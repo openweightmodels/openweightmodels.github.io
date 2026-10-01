@@ -1,0 +1,126 @@
+{
+  "updated": "2026-10-01",
+  "count": 15,
+  "articles": [
+    {
+      "position": 1,
+      "slug": "what-are-open-weight-models",
+      "title": "What Are Open-Weight AI Models?",
+      "category": "Foundations",
+      "description": "Definition, examples, weight access and why open-weight deployment matters.",
+      "url": "/knowledge/what-are-open-weight-models/"
+    },
+    {
+      "position": 2,
+      "slug": "open-weight-vs-open-source",
+      "title": "Open Weight vs Open Source AI vs Proprietary Models",
+      "category": "Foundations",
+      "description": "Separate weight availability, source openness, licensing and hosted-only access.",
+      "url": "/knowledge/open-weight-vs-open-source/"
+    },
+    {
+      "position": 3,
+      "slug": "open-weight-vs-api-models",
+      "title": "Open-Weight Models vs API Models",
+      "category": "Decision",
+      "description": "Compare control, cost structure, privacy, operations and deployment trade-offs.",
+      "url": "/knowledge/open-weight-vs-api-models/"
+    },
+    {
+      "position": 4,
+      "slug": "ai-model-parameters-explained",
+      "title": "AI Model Parameters Explained",
+      "category": "Architecture",
+      "description": "Understand 7B, 70B, total parameters, active parameters and model scale.",
+      "url": "/knowledge/ai-model-parameters-explained/"
+    },
+    {
+      "position": 5,
+      "slug": "mixture-of-experts-explained",
+      "title": "Mixture of Experts (MoE) Explained",
+      "category": "Architecture",
+      "description": "Understand sparse routing, total vs active parameters and deployment implications.",
+      "url": "/knowledge/mixture-of-experts-explained/"
+    },
+    {
+      "position": 6,
+      "slug": "llm-quantization-explained",
+      "title": "LLM Quantization Explained",
+      "category": "Hardware",
+      "description": "FP16, FP8, INT8, INT4, GGUF, AWQ and GPTQ without the marketing shorthand.",
+      "url": "/knowledge/llm-quantization-explained/"
+    },
+    {
+      "position": 7,
+      "slug": "ram-vram-open-weight-models",
+      "title": "How Much RAM and VRAM Do Open-Weight Models Need?",
+      "category": "Hardware",
+      "description": "Estimate model-memory requirements and understand KV cache, context and runtime overhead.",
+      "url": "/knowledge/ram-vram-open-weight-models/"
+    },
+    {
+      "position": 8,
+      "slug": "gguf-vs-safetensors",
+      "title": "GGUF vs Safetensors",
+      "category": "Formats",
+      "description": "Choose the right model-weight format for local inference, training and serving.",
+      "url": "/knowledge/gguf-vs-safetensors/"
+    },
+    {
+      "position": 9,
+      "slug": "ollama-vs-llama-cpp-vllm-sglang",
+      "title": "Ollama vs llama.cpp vs vLLM vs SGLang",
+      "category": "Runtime",
+      "description": "Compare local UX, low-level inference and production serving runtimes.",
+      "url": "/knowledge/ollama-vs-llama-cpp-vllm-sglang/"
+    },
+    {
+      "position": 10,
+      "slug": "run-open-weight-models-locally",
+      "title": "How to Run Open-Weight Models Locally",
+      "category": "Deployment",
+      "description": "A practical path from model choice and quantization to local and self-hosted inference.",
+      "url": "/knowledge/run-open-weight-models-locally/"
+    },
+    {
+      "position": 11,
+      "slug": "rag-with-open-weight-models",
+      "title": "RAG with Open-Weight Models",
+      "category": "Deployment",
+      "description": "Retrieval, embeddings, vector stores, permissions and private knowledge workflows.",
+      "url": "/knowledge/rag-with-open-weight-models/"
+    },
+    {
+      "position": 12,
+      "slug": "fine-tuning-lora-qlora",
+      "title": "Fine-Tuning Open-Weight Models: LoRA, QLoRA and Full Fine-Tuning",
+      "category": "Training",
+      "description": "Choose the right adaptation method by data, memory, risk and deployment needs.",
+      "url": "/knowledge/fine-tuning-lora-qlora/"
+    },
+    {
+      "position": 13,
+      "slug": "open-weight-model-licenses",
+      "title": "Open-Weight Model Licenses Explained",
+      "category": "Licensing",
+      "description": "Apache 2.0, MIT, community licenses, custom terms and commercial-use checks.",
+      "url": "/knowledge/open-weight-model-licenses/"
+    },
+    {
+      "position": 14,
+      "slug": "open-weight-ai-europe",
+      "title": "Open-Weight AI in Europe: GDPR, Data Residency and the AI Act",
+      "category": "Europe",
+      "description": "Separate provider origin, EU deployment, data residency, GDPR and AI Act roles.",
+      "url": "/knowledge/open-weight-ai-europe/"
+    },
+    {
+      "position": 15,
+      "slug": "choose-open-weight-model",
+      "title": "How to Choose an Open-Weight Model in 2026",
+      "category": "Decision",
+      "description": "A technical decision framework for workload, hardware, license, runtime and governance.",
+      "url": "/knowledge/choose-open-weight-model/"
+    }
+  ]
+}
