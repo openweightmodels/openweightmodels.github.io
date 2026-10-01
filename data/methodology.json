@@ -1,14 +1,15 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-29",
-  "registry_size": 32,
-  "passport_status": "32 Gold Passports",
-  "scope": "Curated open-weight AI models with obtainable trained weights and sufficient first-party evidence for identity, terms and deployment.",
+  "updated": "2026-10-01",
+  "registry_size": 49,
+  "passport_status": "32 Gold-standard Passports + 17 source-verified current profiles",
+  "scope": "Curated open-weight AI models with obtainable trained weights and sufficient first-party evidence for model identity, license/terms, deployment and provider-origin metadata.",
   "status_vocabulary": {
     "VERIFIED": "Confirmed by a current primary source governing the exact fact.",
     "DOCUMENTED": "Officially stated but may describe a broader family or implementation context.",
     "NOT_CONFIRMED": "No sufficiently reliable current source found; no guess is substituted.",
-    "EDITORIAL_CLASSIFICATION": "OpenWeightModels comparison label derived from documented facts and clearly distinguished from publisher wording."
+    "EDITORIAL_CLASSIFICATION": "OpenWeightModels comparison label derived from documented facts and clearly distinguished from publisher wording.",
+    "SOURCE_VERIFIED": "Current model identity, core specifications, license and deployment facts verified from primary publisher sources; not yet a full Gold-standard review."
   },
   "source_hierarchy": [
     "Exact primary artifact",
@@ -20,9 +21,12 @@
   "separation_principle": [
     "model facts",
     "license and incorporated-policy facts",
-    "deployment/runtime/provider facts"
+    "deployment/runtime/provider facts",
+    "provider-origin metadata",
+    "data-residency and EU deployment considerations"
   ],
   "benchmark_policy": "No synthetic overall score; retain evaluator, checkpoint, metric and conditions where available.",
-  "hardware_policy": "No universal minimum GPU/VRAM claim unless documented for a defined checkpoint/runtime; estimates are labeled and exclude unmodeled overhead.",
-  "legal_note": "Technical comparison only; not legal advice."
+  "hardware_policy": "Hardware classes use total checkpoint scale and documented deployment paths; active MoE parameter counts are not treated as storage footprint. Exact requirements remain checkpoint/runtime/context/precision dependent.",
+  "legal_note": "Technical comparison only; not legal advice.",
+  "eu_deployment_policy": "Provider origin does not determine data residency. EU/EEA self-hosting is a technical deployment option, not a GDPR or AI Act compliance badge; inference, RAG, embeddings, logs, telemetry, backups and subprocessors must be assessed separately."
 }
