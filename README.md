@@ -165,9 +165,16 @@ OWM history begins on 2026-09-27. The project intentionally does not reconstruct
 
 The site now includes a source-first `/compare/` layer connecting the 64-model registry to deployment decisions.
 
-Launch set: 10 pages covering direct model comparisons, 24 GB and 48 GB VRAM shortlists, Apache 2.0 models, coding models, EU-provider models and dense-vs-MoE architecture decisions.
+Current set: 19 pages covering direct model comparisons; 8 GB, 16 GB, 24 GB and 48 GB VRAM shortlists; local multimodal, RAG, reasoning and long-context decisions; Apache 2.0 licensing; EU-provider and EU-self-hosting views; dense-vs-MoE architecture; and family-level comparisons.
 
 Machine-readable resource:
 - `/data/comparisons.json`
 
 Editorial rule: comparison pages are constraint-first decision aids, not universal rankings. Final selection should be based on representative workload evaluation on the exact checkpoint and serving stack.
+
+
+## v10.1 — Simplified navigation and cross-linking
+
+Primary navigation is now intentionally limited to **Models · Compare · Knowledge · Europe**. License, deployment, guide and methodology resources remain available contextually and in footers.
+
+All 64 canonical model profiles now expose contextual comparison links based on workload, hardware class, architecture, license or provider origin. Knowledge articles link forward into relevant decision pages.

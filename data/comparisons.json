@@ -1,7 +1,7 @@
 {
   "project": "Open Weight Models — Comparison & Decision Layer",
   "updated": "2026-10-01",
-  "count": 10,
+  "count": 19,
   "methodology": "Constraint-first decision aids, not universal rankings. Model facts link to OWM records and primary sources. Hardware guidance requires validation on the exact checkpoint, precision, context, runtime and concurrency.",
   "comparisons": [
     {
@@ -92,6 +92,87 @@
       "type": "Architecture decision",
       "description": "Total vs active parameters and serving trade-offs.",
       "url": "/compare/dense-vs-moe-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 11,
+      "slug": "open-weight-models-8gb-vram",
+      "title": "Open-Weight Models for 8 GB VRAM",
+      "type": "Hardware shortlist",
+      "description": "A conservative shortlist for 8 GB VRAM, emphasizing compact checkpoints, quantization, context headroom and realistic local inference.",
+      "url": "/compare/open-weight-models-8gb-vram/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 12,
+      "slug": "open-weight-models-16gb-vram",
+      "title": "Open-Weight Models for 16 GB VRAM",
+      "type": "Hardware shortlist",
+      "description": "A practical 16 GB VRAM shortlist spanning 7B–14B-class open-weight models with quantization, context and runtime caveats.",
+      "url": "/compare/open-weight-models-16gb-vram/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 13,
+      "slug": "local-multimodal-open-weight-models",
+      "title": "Local Multimodal Open-Weight Models",
+      "type": "Workload shortlist",
+      "description": "Compare locally deployable open-weight vision-language and multimodal models across compact, workstation and larger hardware classes.",
+      "url": "/compare/local-multimodal-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 14,
+      "slug": "open-weight-models-for-rag",
+      "title": "Open-Weight Models for RAG",
+      "type": "Workload shortlist",
+      "description": "A source-first RAG shortlist focused on context handling, instruction following, structured output, deployment footprint and private data paths.",
+      "url": "/compare/open-weight-models-for-rag/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 15,
+      "slug": "open-weight-reasoning-models",
+      "title": "Open-Weight Reasoning Models",
+      "type": "Workload shortlist",
+      "description": "Compare open-weight reasoning models across local, workstation and large-server classes without collapsing them into a universal leaderboard.",
+      "url": "/compare/open-weight-reasoning-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 16,
+      "slug": "long-context-open-weight-models",
+      "title": "Long-Context Open-Weight Models",
+      "type": "Capability shortlist",
+      "description": "Compare long-context open-weight models while separating advertised maximum context from usable quality, KV-cache memory and serving latency.",
+      "url": "/compare/long-context-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 17,
+      "slug": "eu-self-hosted-open-weight-models",
+      "title": "Open-Weight Models for EU Self-Hosting",
+      "type": "Europe deployment",
+      "description": "A deployment shortlist for EU/EEA self-hosting that keeps model provider origin separate from inference location, data residency and regulatory role.",
+      "url": "/compare/eu-self-hosted-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 18,
+      "slug": "qwen-vs-mistral-open-weight-models",
+      "title": "Qwen vs Mistral Open-Weight Models",
+      "type": "Family comparison",
+      "description": "Compare Qwen and Mistral open-weight model families by size range, multimodality, coding, reasoning, licenses, provider origin and deployment classes.",
+      "url": "/compare/qwen-vs-mistral-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 19,
+      "slug": "qwen-vs-llama-open-weight-models",
+      "title": "Qwen vs Llama Open-Weight Models",
+      "type": "Family comparison",
+      "description": "Compare Qwen and Llama open-weight families by licensing, size, multimodality, context, hardware class and self-hosted deployment.",
+      "url": "/compare/qwen-vs-llama-open-weight-models/",
       "verified": "2026-10-01"
     }
   ]
