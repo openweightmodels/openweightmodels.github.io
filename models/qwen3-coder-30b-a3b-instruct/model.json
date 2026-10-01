@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Qwen3-Coder-30B-A3B-Instruct",
+  "slug": "qwen3-coder-30b-a3b-instruct",
+  "developer": "Qwen / Alibaba",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "Qwen3 Coder",
+  "verified_at": "2026-10-01",
+  "definition": "Qwen3-Coder-30B-A3B-Instruct is an open-weight Qwen3 Coder model by Qwen / Alibaba focused on repository-scale coding, software agents, tool use and engineering workflows.",
+  "architecture": {
+    "parameters": "30.5B total",
+    "active_parameters": "3.3B active/token",
+    "context": "262,144 native; extendable toward 1M with YaRN",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "128 experts",
+      "8 activated experts per token",
+      "48 layers",
+      "Agentic coding format",
+      "Native 262K context"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "High-memory workstation or server; sparse activation lowers compute but does not shrink the stored expert set to 3.3B."
+  },
+  "deployment": {
+    "summary": "Transformers and modern serving runtimes such as vLLM can serve the checkpoint.",
+    "eu_eea_self_hosting": "Technically possible when the complete inference stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
