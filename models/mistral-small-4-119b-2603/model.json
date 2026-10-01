@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Mistral Small 4 119B A6B",
+  "slug": "mistral-small-4-119b-2603",
+  "developer": "Mistral AI",
+  "provider_origin": {
+    "flag": "🇫🇷",
+    "country": "France",
+    "region": "European Union"
+  },
+  "family": "Mistral Small 4",
+  "verified_at": "2026-10-01",
+  "definition": "Mistral Small 4 119B A6B is an open-weight Mistral Small 4 model by Mistral AI focused on general instruction, reasoning, coding, agents, function calling and vision.",
+  "architecture": {
+    "parameters": "119B total",
+    "active_parameters": "6.5B active/token",
+    "context": "256K",
+    "modalities": "Text + image → text",
+    "details": [
+      "128 experts",
+      "4 active experts",
+      "256K context",
+      "Multimodal input",
+      "Configurable reasoning mode"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Datacenter / multi-GPU class at full precision; NVIDIA publishes an NVFP4 checkpoint for lower-memory serving."
+  },
+  "deployment": {
+    "summary": "Mistral documents vLLM as a recommended serving path; Transformers support is also available.",
+    "eu_eea_self_hosting": "Technically possible when the complete inference stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
