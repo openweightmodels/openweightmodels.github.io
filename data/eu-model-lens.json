@@ -1,5 +1,565 @@
 {
-  "project": "Open Weight Models",
+  "project": "Open Weight Models — EU Deployment Lens",
   "updated": "2026-10-01",
-  "status": "initializing"
+  "methodology": "Provider country identifies the primary model-publishing organization. It does not identify training-data origin, inference location, data residency or legal compliance. EU/EEA deployment is an infrastructure option, not a GDPR or AI Act compliance badge.",
+  "legal_note": "Technical comparison only; not legal advice.",
+  "official_eu_sources": [
+    {
+      "label": "European Commission — GPAI obligations under the AI Act",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/general-purpose-ai-obligations-under-ai-act"
+    },
+    {
+      "label": "European Commission — Guidelines for GPAI providers",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers"
+    },
+    {
+      "label": "European Commission — International data transfers",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/rules-international-data-transfers_en"
+    },
+    {
+      "label": "EDPB Opinion 28/2024 on AI models",
+      "url": "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en"
+    }
+  ],
+  "models": {
+    "gpt-oss-120b": {
+      "provider": "OpenAI",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "gpt-oss-20b": {
+      "provider": "OpenAI",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "llama-4-maverick": {
+      "provider": "Meta",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "llama-4-scout": {
+      "provider": "Meta",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "llama-3-3-70b-instruct": {
+      "provider": "Meta",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-235b-a22b": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-32b": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-30b-a3b": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-coder-480b-a35b-instruct": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen2-5-vl-72b-instruct": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen2-5-coder-32b-instruct": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "gemma-3-27b-it": {
+      "provider": "Google DeepMind",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "gemma-3-12b-it": {
+      "provider": "Google DeepMind",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "gemma-3-4b-it": {
+      "provider": "Google DeepMind",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "gemma-3n-e4b-it": {
+      "provider": "Google DeepMind",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "mistral-small-3-1-24b-instruct": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "devstral-small-2505": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "magistral-small-2506": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "mistral-nemo-instruct-2407": {
+      "provider": "Mistral AI / NVIDIA",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "mathstral-7b-v0-1": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "deepseek-r1": {
+      "provider": "DeepSeek",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "deepseek-v3-1": {
+      "provider": "DeepSeek",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "phi-4": {
+      "provider": "Microsoft",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "phi-4-mini-instruct": {
+      "provider": "Microsoft",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "phi-4-multimodal-instruct": {
+      "provider": "Microsoft",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "olmo-2-32b-instruct": {
+      "provider": "Ai2",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "olmo-2-13b-instruct": {
+      "provider": "Ai2",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "kimi-k2-instruct": {
+      "provider": "Moonshot AI",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "glm-4-5": {
+      "provider": "Z.ai",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "glm-4-5-air": {
+      "provider": "Z.ai",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "granite-3-3-8b-instruct": {
+      "provider": "IBM",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "smollm3-3b": {
+      "provider": "Hugging Face",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-8-27b": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-coder-30b-a3b-instruct": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "qwen3-vl-30b-a3b-instruct": {
+      "provider": "Qwen / Alibaba",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "mistral-small-4-119b-2603": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "olmo-3-32b": {
+      "provider": "Ai2",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "olmo-3-7b": {
+      "provider": "Ai2",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "command-a-plus-05-2026": {
+      "provider": "Cohere / Cohere Labs",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "granite-4-2-8b": {
+      "provider": "IBM",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "minimax-m2-5": {
+      "provider": "MiniMax",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "glm-5-3": {
+      "provider": "Z.ai",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "glm-5-3-flash": {
+      "provider": "Z.ai",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "kimi-k3": {
+      "provider": "Moonshot AI",
+      "flag": "🇨🇳",
+      "country": "China",
+      "region": "Asia",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "nemotron-3-5-lightning-30b-a3b": {
+      "provider": "NVIDIA",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "region": "North America",
+      "eu_provider": false,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "Review the exact model-specific terms before commercial production use.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "ministral-3-3b-instruct-2512": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "ministral-3-8b-instruct-2512": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "ministral-3-14b-instruct-2512": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    },
+    "devstral-small-2-24b-instruct-2512": {
+      "provider": "Mistral AI",
+      "flag": "🇫🇷",
+      "country": "France",
+      "region": "European Union",
+      "eu_provider": true,
+      "eu_self_hosting": true,
+      "data_residency": "Depends on the complete deployment architecture, including inference, RAG, embeddings, logs, monitoring and subprocessors.",
+      "commercial_use": "The listed license is generally commercial-use friendly, subject to its conditions and any separate applicable terms or use policies.",
+      "ai_act": "AI Act obligations depend on the actor's role and the concrete model/system context; provider origin or open weights alone do not determine compliance."
+    }
+  }
 }
