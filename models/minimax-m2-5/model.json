@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "MiniMax M2.5",
+  "slug": "minimax-m2-5",
+  "developer": "MiniMax",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "MiniMax M2.5",
+  "verified_at": "2026-10-01",
+  "definition": "MiniMax M2.5 is an open-weight MiniMax M2.5 model by MiniMax focused on coding, search, tool use, agentic workflows and office work.",
+  "architecture": {
+    "parameters": "229B-class",
+    "active_parameters": "Sparse MoE",
+    "context": "196K maximum per individual sequence in the publisher vLLM deployment guide",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "229B model size shown on official repository",
+      "Agentic coding and tool use",
+      "Local deployment guides for SGLang and vLLM",
+      "196K per-sequence deployment context",
+      "Modified-MIT license"
+    ]
+  },
+  "license": {
+    "name": "Modified MIT",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Datacenter / multi-GPU class; publisher deployment guidance cites hundreds of GB of weight/KV-cache memory."
+  },
+  "deployment": {
+    "summary": "MiniMax documents SGLang, vLLM, Transformers and KTransformers deployment paths.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
