@@ -1,21 +1,20 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-29",
-  "model_count": 32,
+  "updated": "2026-10-01",
+  "model_count": 49,
   "runtime_record_counts": {
-    "vLLM": 23,
-    "SGLang": 18,
-    "DeepSeek API": 1,
-    "Transformers": 28,
+    "vLLM": 35,
+    "SGLang": 22,
+    "Transformers": 42,
     "llama.cpp": 5,
     "Ollama": 6,
-    "Google Cloud": 3,
     "NVIDIA NIM": 1,
-    "AWS / Bedrock": 1,
-    "Microsoft Foundry": 1
+    "Publisher deployment stack": 1,
+    "KTransformers": 3,
+    "Distributed self-hosted serving": 1
   },
   "hardware_class_counts": {
-    "Model-specific": 32
+    "Model-specific": 49
   },
   "hardware_class_note": "Editorial navigation classes, not guaranteed minimum hardware requirements.",
   "models": [
@@ -1361,6 +1360,676 @@
       ],
       "passport_url": "https://openweightmodels.eu/models/smollm3-3b/#deployment",
       "verified_at": "2026-09-29"
+    },
+    {
+      "name": "Qwen3.8-27B",
+      "slug": "qwen3-8-27b",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "27B · native multimodal dense model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-8-27b/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Qwen3-Coder-30B-A3B-Instruct",
+      "slug": "qwen3-coder-30b-a3b-instruct",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "30B / ~3B active · coding MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-coder-30b-a3b-instruct/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Qwen3-VL-30B-A3B-Instruct",
+      "slug": "qwen3-vl-30b-a3b-instruct",
+      "developer": "Qwen / Alibaba",
+      "total_parameters": "30B-class sparse vision-language model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers",
+        "vLLM"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/qwen3-vl-30b-a3b-instruct/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Mistral Small 4 119B A6B",
+      "slug": "mistral-small-4-119b-2603",
+      "developer": "Mistral AI",
+      "total_parameters": "119B / 6.5B active · multimodal MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/mistral-small-4-119b-2603/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "OLMo 3 32B",
+      "slug": "olmo-3-32b",
+      "developer": "Ai2",
+      "total_parameters": "32B · fully open research stack",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/olmo-3-32b/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "OLMo 3 7B",
+      "slug": "olmo-3-7b",
+      "developer": "Ai2",
+      "total_parameters": "7B · fully open research stack",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/olmo-3-7b/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Command A+ 05-2026",
+      "slug": "command-a-plus-05-2026",
+      "developer": "Cohere / Cohere Labs",
+      "total_parameters": "218B / 25B active · multimodal MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Publisher deployment stack"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Publisher deployment stack",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/command-a-plus-05-2026/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Granite 4.2 8B",
+      "slug": "granite-4-2-8b",
+      "developer": "IBM",
+      "total_parameters": "8B · 128K enterprise reasoning",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/granite-4-2-8b/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "MiniMax M2.5",
+      "slug": "minimax-m2-5",
+      "developer": "MiniMax",
+      "total_parameters": "229B-class · agentic MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "SGLang",
+        "vLLM",
+        "Transformers",
+        "KTransformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "KTransformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/minimax-m2-5/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "GLM-5.3",
+      "slug": "glm-5-3",
+      "developer": "Z.ai",
+      "total_parameters": "large frontier MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "SGLang",
+        "vLLM",
+        "Transformers",
+        "KTransformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "KTransformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/glm-5-3/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "GLM-5.3 Flash",
+      "slug": "glm-5-3-flash",
+      "developer": "Z.ai",
+      "total_parameters": "320B / 18B active · native multimodal MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "SGLang",
+        "vLLM",
+        "Transformers",
+        "KTransformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "KTransformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/glm-5-3-flash/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Kimi K3",
+      "slug": "kimi-k3",
+      "developer": "Moonshot AI",
+      "total_parameters": "native multimodal large-scale MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "Distributed self-hosted serving"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": false,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "Distributed self-hosted serving",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/kimi-k3/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "NVIDIA Nemotron 3.5 Lightning 30B-A3B",
+      "slug": "nemotron-3-5-lightning-30b-a3b",
+      "developer": "NVIDIA",
+      "total_parameters": "30B / 3B active · hybrid MoE",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "SGLang"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "SGLang",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/nemotron-3-5-lightning-30b-a3b/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Ministral 3 3B Instruct 2512",
+      "slug": "ministral-3-3b-instruct-2512",
+      "developer": "Mistral AI",
+      "total_parameters": "3B-class · vision-language edge model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/ministral-3-3b-instruct-2512/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Ministral 3 8B Instruct 2512",
+      "slug": "ministral-3-8b-instruct-2512",
+      "developer": "Mistral AI",
+      "total_parameters": "8B-class · vision-language edge model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/ministral-3-8b-instruct-2512/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Ministral 3 14B Instruct 2512",
+      "slug": "ministral-3-14b-instruct-2512",
+      "developer": "Mistral AI",
+      "total_parameters": "14B-class · vision-language edge model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/ministral-3-14b-instruct-2512/#deployment",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "name": "Devstral Small 2 24B Instruct 2512",
+      "slug": "devstral-small-2-24b-instruct-2512",
+      "developer": "Mistral AI",
+      "total_parameters": "24B · coding agent model",
+      "context": "See model profile",
+      "editorial_hardware_class": "Model-specific",
+      "documented_runtimes": [
+        "vLLM",
+        "Transformers"
+      ],
+      "managed_or_cloud_paths": [],
+      "local_path_documented": true,
+      "self_host_path_documented": true,
+      "deployment_records": [
+        {
+          "route": "Direct weights",
+          "type": "Self-hosted",
+          "notes": "Official model weights are published for independent deployment, subject to the model license."
+        },
+        {
+          "route": "vLLM",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "Transformers",
+          "type": "Serving / runtime",
+          "notes": "See the source-verified model profile and publisher documentation for exact support."
+        },
+        {
+          "route": "EU/EEA infrastructure",
+          "type": "Deployment option",
+          "notes": "Technically possible when inference and connected data services are operated on selected EU/EEA infrastructure."
+        }
+      ],
+      "passport_url": "https://openweightmodels.eu/models/devstral-small-2-24b-instruct-2512/#deployment",
+      "verified_at": "2026-10-01"
     }
-  ]
+  ],
+  "eu_deployment_note": "Provider origin is separate from data residency. EU/EEA self-hosting describes technical deployment optionality, not GDPR or AI Act compliance."
 }
