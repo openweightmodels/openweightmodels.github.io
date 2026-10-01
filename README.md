@@ -48,7 +48,23 @@ The two surfaces have different jobs:
 
 ## Current registry
 
-The expanded registry now contains **25 selected model families**, spanning general-purpose, reasoning, coding, multimodal, small-model and research-focused releases from OpenAI, Meta, Qwen/Alibaba, Mistral AI, DeepSeek, Moonshot AI, Z.ai, Microsoft, IBM, Google DeepMind, MiniMax, NVIDIA, Ai2, Hugging Face, Cohere Labs, TII, InternLM, 01.AI, Tencent and Baidu.
+The public registry now contains **49 selected open-weight model profiles**: **32 Gold-standard Model Passports** with full technical, license and deployment review plus **17 current source-verified profiles** for newer releases.
+
+The registry spans general-purpose, reasoning, coding, multimodal, edge, enterprise and open-research models. Provider origin is recorded separately from deployment location and data residency.
+
+A dedicated **EU Deployment Lens** adds:
+- provider country / region metadata
+- EU/EEA self-hosting as a technical deployment option
+- data-residency notes for inference, RAG, embeddings, logs and backups
+- commercial-use constraints
+- GDPR and AI Act context without assigning blanket compliance badges
+
+Public resources:
+- `/eu/`
+- `/data/eu-model-lens.json`
+- `/data/models.json`
+- `/data/licenses.json`
+- `/data/deployments.json`
 
 This is **not** an exhaustive leaderboard. Every entry should remain tied to a primary source and a verification date.
 
