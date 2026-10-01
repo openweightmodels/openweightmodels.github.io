@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Ministral 3 3B Instruct 2512",
+  "slug": "ministral-3-3b-instruct-2512",
+  "developer": "Mistral AI",
+  "provider_origin": {
+    "flag": "🇫🇷",
+    "country": "France",
+    "region": "European Union"
+  },
+  "family": "Ministral 3",
+  "verified_at": "2026-10-01",
+  "definition": "Ministral 3 3B Instruct 2512 is an open-weight Ministral 3 model by Mistral AI focused on edge chat, vision, compact assistants and local inference.",
+  "architecture": {
+    "parameters": "3B-class language model + vision encoder",
+    "active_parameters": "Dense",
+    "context": "Up to 262,144 in published generation configuration",
+    "modalities": "Text + image → text",
+    "details": [
+      "Edge-focused family",
+      "Vision capability",
+      "Multilingual",
+      "Official GGUF variants",
+      "Apache 2.0"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Consumer/local class. Mistral documents less than 8GB RAM/VRAM for further-quantized variants and 8GB-class FP8 operation."
+  },
+  "deployment": {
+    "summary": "Mistral publishes vLLM/mistral-common support plus additional GGUF and ONNX formats.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
