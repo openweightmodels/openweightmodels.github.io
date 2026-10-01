@@ -16,6 +16,7 @@ Provider origin is recorded separately from deployment location and data residen
 ## Core references
 
 - Knowledge base: https://openweightmodels.eu/knowledge/
+- Comparison & decision layer: https://openweightmodels.eu/compare/
 
 - Models directory: https://openweightmodels.eu/models/
 - EU deployment, data residency, GDPR & AI Act: https://openweightmodels.eu/eu/
@@ -79,7 +80,7 @@ Provider origin is recorded separately from deployment location and data residen
 - [Granite 3.3 8B Instruct](https://openweightmodels.eu/models/granite-3-3-8b-instruct/) — IBM; Apache 2.0; Enterprise reasoning and instruction following.
 - [SmolLM3 3B](https://openweightmodels.eu/models/smollm3-3b/) — Hugging Face; Apache 2.0; Compact reasoning, agents and local inference.
 
-## Current source-verified profiles (17)
+## Current source-verified profiles (32)
 
 - [Qwen3.8-27B](https://openweightmodels.eu/models/qwen3-8-27b/) — 🇨🇳 Qwen / Alibaba; Apache 2.0; Coding, professional work, research, vision and long-horizon agents.
 - [Qwen3-Coder-30B-A3B-Instruct](https://openweightmodels.eu/models/qwen3-coder-30b-a3b-instruct/) — 🇨🇳 Qwen / Alibaba; Apache 2.0; Coding agents, repository work, tool use and software engineering.
@@ -104,7 +105,7 @@ Provider origin is recorded separately from deployment location and data residen
 OpenWeightModels provides technical comparison and provenance, not legal advice. Model-specific official sources, applicable law and organization-specific legal review remain authoritative.
 
 
-## Additional source-verified profiles (2026-10-01)
+### Additional profiles added 2026-10-01
 
 - [Llama 3.2 1B Instruct](https://openweightmodels.eu/models/llama-3-2-1b-instruct/) — On-device chat, summarization and lightweight assistants; 🇺🇸 Meta; undefined.
 - [Llama 3.2 3B Instruct](https://openweightmodels.eu/models/llama-3-2-3b-instruct/) — Local chat, multilingual text and lightweight RAG; 🇺🇸 Meta; undefined.
@@ -142,3 +143,20 @@ The site publishes 15 answer-first, source-backed technical references with visi
 - https://openweightmodels.eu/knowledge/open-weight-model-licenses/
 - https://openweightmodels.eu/knowledge/open-weight-ai-europe/
 - https://openweightmodels.eu/knowledge/choose-open-weight-model/
+
+
+## Comparison & decision layer
+
+OWM publishes source-first decision pages that compare models by workload, hardware, architecture, license and deployment constraints without assigning a universal leaderboard score.
+
+- https://openweightmodels.eu/compare/
+- https://openweightmodels.eu/compare/qwen3-32b-vs-gpt-oss-20b/
+- https://openweightmodels.eu/compare/qwen3-32b-vs-gemma-3-27b/
+- https://openweightmodels.eu/compare/qwen3-coder-30b-a3b-vs-devstral-small-2/
+- https://openweightmodels.eu/compare/deepseek-r1-vs-qwen3-235b-a22b/
+- https://openweightmodels.eu/compare/open-weight-models-24gb-vram/
+- https://openweightmodels.eu/compare/open-weight-models-48gb-vram/
+- https://openweightmodels.eu/compare/apache-2-open-weight-models/
+- https://openweightmodels.eu/compare/open-weight-coding-models/
+- https://openweightmodels.eu/compare/european-open-weight-models/
+- https://openweightmodels.eu/compare/dense-vs-moe-open-weight-models/

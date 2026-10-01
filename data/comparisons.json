@@ -1,0 +1,98 @@
+{
+  "project": "Open Weight Models — Comparison & Decision Layer",
+  "updated": "2026-10-01",
+  "count": 10,
+  "methodology": "Constraint-first decision aids, not universal rankings. Model facts link to OWM records and primary sources. Hardware guidance requires validation on the exact checkpoint, precision, context, runtime and concurrency.",
+  "comparisons": [
+    {
+      "position": 1,
+      "slug": "qwen3-32b-vs-gpt-oss-20b",
+      "title": "Qwen3-32B vs gpt-oss-20b",
+      "type": "Model vs model",
+      "description": "Dense vs sparse reasoning models, both Apache 2.0.",
+      "url": "/compare/qwen3-32b-vs-gpt-oss-20b/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 2,
+      "slug": "qwen3-32b-vs-gemma-3-27b",
+      "title": "Qwen3-32B vs Gemma 3 27B",
+      "type": "Model vs model",
+      "description": "Text reasoning versus multimodal input and different license models.",
+      "url": "/compare/qwen3-32b-vs-gemma-3-27b/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 3,
+      "slug": "qwen3-coder-30b-a3b-vs-devstral-small-2",
+      "title": "Qwen3-Coder-30B-A3B vs Devstral Small 2",
+      "type": "Coding comparison",
+      "description": "Two Apache-licensed coding-agent candidates.",
+      "url": "/compare/qwen3-coder-30b-a3b-vs-devstral-small-2/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 4,
+      "slug": "deepseek-r1-vs-qwen3-235b-a22b",
+      "title": "DeepSeek-R1 vs Qwen3-235B-A22B",
+      "type": "Large reasoning comparison",
+      "description": "Large MoE reasoning systems with different total/active footprints.",
+      "url": "/compare/deepseek-r1-vs-qwen3-235b-a22b/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 5,
+      "slug": "open-weight-models-24gb-vram",
+      "title": "Open-Weight Models for 24 GB VRAM",
+      "type": "Hardware shortlist",
+      "description": "Local/workstation candidates with quantization headroom.",
+      "url": "/compare/open-weight-models-24gb-vram/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 6,
+      "slug": "open-weight-models-48gb-vram",
+      "title": "Open-Weight Models for 48 GB VRAM",
+      "type": "Hardware shortlist",
+      "description": "20B–32B-class deployment candidates.",
+      "url": "/compare/open-weight-models-48gb-vram/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 7,
+      "slug": "apache-2-open-weight-models",
+      "title": "Apache 2.0 Open-Weight Models for Commercial Deployment",
+      "type": "License shortlist",
+      "description": "Permissively licensed candidates across size classes.",
+      "url": "/compare/apache-2-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 8,
+      "slug": "open-weight-coding-models",
+      "title": "Open-Weight Coding Models — A Deployment Shortlist",
+      "type": "Workload shortlist",
+      "description": "Coding and software-engineering candidates.",
+      "url": "/compare/open-weight-coding-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 9,
+      "slug": "european-open-weight-models",
+      "title": "Open-Weight Models from European Union Providers",
+      "type": "Europe shortlist",
+      "description": "EU-provider models with residency caveats.",
+      "url": "/compare/european-open-weight-models/",
+      "verified": "2026-10-01"
+    },
+    {
+      "position": 10,
+      "slug": "dense-vs-moe-open-weight-models",
+      "title": "Dense vs MoE Open-Weight Models",
+      "type": "Architecture decision",
+      "description": "Total vs active parameters and serving trade-offs.",
+      "url": "/compare/dense-vs-moe-open-weight-models/",
+      "verified": "2026-10-01"
+    }
+  ]
+}

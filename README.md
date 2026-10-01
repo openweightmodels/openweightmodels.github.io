@@ -159,3 +159,15 @@ New change-history layer:
 - `/OWM-CHANGE-HISTORY.md`
 
 OWM history begins on 2026-09-27. The project intentionally does not reconstruct an unobserved past. Each model starts with a verified baseline; future material license, checkpoint, runtime, hardware, context, provider and access changes can be appended as dated events.
+
+
+## v10 — Comparison & decision layer
+
+The site now includes a source-first `/compare/` layer connecting the 64-model registry to deployment decisions.
+
+Launch set: 10 pages covering direct model comparisons, 24 GB and 48 GB VRAM shortlists, Apache 2.0 models, coding models, EU-provider models and dense-vs-MoE architecture decisions.
+
+Machine-readable resource:
+- `/data/comparisons.json`
+
+Editorial rule: comparison pages are constraint-first decision aids, not universal rankings. Final selection should be based on representative workload evaluation on the exact checkpoint and serving stack.
