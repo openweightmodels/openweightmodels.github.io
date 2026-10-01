@@ -1,64 +1,102 @@
 # Open Weight Models
 
-> Independent technical reference for open-weight AI models, licenses, hardware and deployment.
+> Independent, source-first technical reference for open-weight AI models, licenses, hardware, inference, deployment and European deployment considerations.
 
-Updated: 2026-09-29
 Canonical site: https://openweightmodels.eu/
+Updated: 2026-10-01
 
-## Core indexes
-- [Open-Weight Models Directory](https://openweightmodels.eu/models/): 32 verified Model Passports.
-- [License Explorer](https://openweightmodels.eu/licenses/): compare license families, commercial use, modification and redistribution.
-- [Deployment Explorer](https://openweightmodels.eu/deployment/): compare hardware classes, runtimes and managed deployment paths.
-- [Methodology](https://openweightmodels.eu/methodology/): source hierarchy, verification statuses and classification rules.
+## Scope
 
-## Decision guides
-- [Best Open-Weight Models for Local Deployment](https://openweightmodels.eu/guides/local-deployment/): hardware-oriented local deployment guide.
-- [Apache 2.0 AI Models](https://openweightmodels.eu/licenses/apache-2-0-ai-models/): exact registry models using Apache License 2.0.
-- [Open-Weight Models for Commercial Use](https://openweightmodels.eu/licenses/commercial-use-open-weight-models/): permissive, special and conditional commercial-use terms.
-- [Guides Hub](https://openweightmodels.eu/guides/): all decision guides.
+Open Weight Models tracks 49 open-weight model profiles. The registry currently contains 32 Gold-standard Model Passports with full technical/license/deployment review and 17 current source-verified profiles for newer releases.
 
-## Structured data
-- [models.json](https://openweightmodels.eu/data/models.json)
-- [licenses.json](https://openweightmodels.eu/data/licenses.json)
-- [deployments.json](https://openweightmodels.eu/data/deployments.json)
-- [methodology.json](https://openweightmodels.eu/data/methodology.json)
-- [guides.json](https://openweightmodels.eu/data/guides.json)
+“Open weight” describes access to trained model parameters. It does not automatically mean Open Source AI, unrestricted commercial use, GDPR compliance, EU data residency, or an AI Act exemption.
 
-## Model Passports
-- [DeepSeek-R1](https://openweightmodels.eu/models/deepseek-r1/): DeepSeek-R1 is a large reasoning Mixture-of-Experts model developed by DeepSeek in the DeepSeek R1 family. It has 671B parameters with 37B/token active parameters, supports 128K tokens of context, accepts Text and produces Text / code. Its primary role is reasoning, mathematics, coding and long-form problem solving.
-- [DeepSeek-V3.1](https://openweightmodels.eu/models/deepseek-v3-1/): DeepSeek-V3.1 is a large hybrid-reasoning Mixture-of-Experts model developed by DeepSeek in the DeepSeek V3.1 family. It has ~671B-class parameters with ~37B/token active parameters, supports 128K tokens of context, accepts Text and produces Text / code. Its primary role is hybrid reasoning, agents, coding and general-purpose long-context generation.
-- [Devstral Small 2505](https://openweightmodels.eu/models/devstral-small-2505/): Devstral Small 2505 is a dense software-engineering agent model developed by Mistral AI in the Devstral family. It has 24B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is software engineering agents, repository navigation, patch generation and code reasoning.
-- [Gemma 3 12B IT](https://openweightmodels.eu/models/gemma-3-12b-it/): Gemma 3 12B IT is a dense multimodal instruction model developed by Google DeepMind in the Gemma 3 family. It has 12B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is multimodal assistants, image understanding, multilingual generation and long-context applications.
-- [Gemma 3 27B IT](https://openweightmodels.eu/models/gemma-3-27b-it/): Gemma 3 27B IT is a dense multimodal instruction model developed by Google DeepMind in the Gemma 3 family. It has 27B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is multimodal assistants, image understanding, multilingual generation and long-context applications.
-- [Gemma 3 4B IT](https://openweightmodels.eu/models/gemma-3-4b-it/): Gemma 3 4B IT is a dense multimodal instruction model developed by Google DeepMind in the Gemma 3 family. It has 4B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is multimodal assistants, image understanding, multilingual generation and long-context applications.
-- [Gemma 3n E4B IT](https://openweightmodels.eu/models/gemma-3n-e4b-it/): Gemma 3n E4B IT is a mobile-first multimodal instruction model developed by Google DeepMind in the Gemma 3n family. It has ~8B raw / E4B effective profile parameters with ~4B effective execution profile active parameters, supports 32K tokens of context, accepts Text + image + video + audio and produces Text. Its primary role is on-device multimodal assistants, mobile perception and efficient local inference.
-- [GLM-4.5](https://openweightmodels.eu/models/glm-4-5/): GLM-4.5 is a large hybrid-reasoning Mixture-of-Experts model developed by Z.ai in the GLM-4.5 family. It has 355B parameters with 32B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is reasoning, coding, agents and general-purpose tool-oriented applications.
-- [GLM-4.5 Air](https://openweightmodels.eu/models/glm-4-5-air/): GLM-4.5 Air is a efficient hybrid-reasoning Mixture-of-Experts model developed by Z.ai in the GLM-4.5 family. It has 106B parameters with 12B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is efficient reasoning, coding and agent applications with lower infrastructure cost than GLM-4.5.
-- [gpt-oss-120b](https://openweightmodels.eu/models/gpt-oss-120b/): gpt-oss-120b is a text reasoning Mixture-of-Experts model developed by OpenAI in the gpt-oss family. It has 116.8B parameters with 5.1B/token active parameters, supports 131,072 tokens of context, accepts Text and produces Text. Its primary role is reasoning, tool-oriented workflows and high-capability self-hosted inference.
-- [gpt-oss-20b](https://openweightmodels.eu/models/gpt-oss-20b/): gpt-oss-20b is a compact text reasoning Mixture-of-Experts model developed by OpenAI in the gpt-oss family. It has 20.9B parameters with 3.6B/token active parameters, supports 131,072 tokens of context, accepts Text and produces Text. Its primary role is reasoning and tool-oriented workflows on more accessible local or edge-class hardware.
-- [Granite 3.3 8B Instruct](https://openweightmodels.eu/models/granite-3-3-8b-instruct/): Granite 3.3 8B Instruct is a dense enterprise-oriented instruction and reasoning model developed by IBM in the Granite 3.3 family. It has 8B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is enterprise assistants, RAG, structured extraction, reasoning, code and function calling.
-- [Kimi K2 Instruct](https://openweightmodels.eu/models/kimi-k2-instruct/): Kimi K2 Instruct is a very-large agentic Mixture-of-Experts model developed by Moonshot AI in the Kimi K2 family. It has 1T parameters with 32B/token active parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is agentic intelligence, coding, tool use and general-purpose assistants.
-- [Llama 3.3 70B Instruct](https://openweightmodels.eu/models/llama-3-3-70b-instruct/): Llama 3.3 70B Instruct is a dense multilingual text instruction model developed by Meta in the Llama 3.3 family. It has 70B parameters, supports 128K tokens of context, accepts Text and produces Text. Its primary role is general-purpose multilingual chat, text generation and assistant workloads.
-- [Llama 4 Maverick](https://openweightmodels.eu/models/llama-4-maverick/): Llama 4 Maverick is a natively multimodal open-weight AI model developed by Meta as part of the Llama 4 family. It uses a Mixture-of-Experts architecture with approximately 400B total parameters, 17B active parameters per token, 128 routed experts and a documented context window of up to 1M tokens.
-- [Llama 4 Scout](https://openweightmodels.eu/models/llama-4-scout/): Llama 4 Scout is a natively multimodal Mixture-of-Experts model developed by Meta in the Llama 4 family. It has ~109B parameters with 17B/token active parameters, supports 10,000,000 tokens of context, accepts Text + images and produces Text + code. Its primary role is very-long-context multimodal understanding, assistants, documents and code.
-- [Magistral Small 2506](https://openweightmodels.eu/models/magistral-small-2506/): Magistral Small 2506 is a dense reasoning instruction model developed by Mistral AI in the Magistral family. It has 24B parameters, supports 128K nominal · 40K recommended for quality of context, accepts Text and produces Text. Its primary role is step-by-step reasoning, mathematics, science, coding and multilingual problem solving.
-- [Mathstral 7B v0.1](https://openweightmodels.eu/models/mathstral-7b-v0-1/): Mathstral 7B v0.1 is a dense mathematics-specialized language model developed by Mistral AI in the Mathstral family. It has 7B parameters, supports 32,768 tokens of context, accepts Text / math notation and produces Text. Its primary role is mathematical reasoning, scientific problem solving and math-focused experimentation.
-- [Mistral Nemo Instruct 2407](https://openweightmodels.eu/models/mistral-nemo-instruct-2407/): Mistral Nemo Instruct 2407 is a dense multilingual instruction model developed by Mistral AI / NVIDIA in the Mistral NeMo family. It has 12B parameters, supports 128K tokens of context, accepts Text / code and produces Text / code. Its primary role is multilingual assistants, code and long-context text workloads.
-- [Mistral Small 3.1 24B Instruct](https://openweightmodels.eu/models/mistral-small-3-1-24b-instruct/): Mistral Small 3.1 24B Instruct is a dense multimodal instruction model developed by Mistral AI in the Mistral Small 3.1 family. It has 24B parameters, supports 128K tokens of context, accepts Text + images and produces Text. Its primary role is general-purpose multimodal assistants, function calling, documents, coding and local inference.
-- [OLMo 2 13B Instruct](https://openweightmodels.eu/models/olmo-2-13b-instruct/): OLMo 2 13B Instruct is a dense open-research instruction model developed by Ai2 in the OLMo 2 family. It has 13B parameters, supports 4,096 tokens of context, accepts Text and produces Text. Its primary role is reproducible open research, instruction following and transparent model development.
-- [OLMo 2 32B Instruct](https://openweightmodels.eu/models/olmo-2-32b-instruct/): OLMo 2 32B Instruct is a dense open-research instruction model developed by Ai2 in the OLMo 2 family. It has 32B parameters, supports 4,096 tokens of context, accepts Text and produces Text. Its primary role is reproducible open research, instruction following and transparent model development.
-- [Phi-4](https://openweightmodels.eu/models/phi-4/): Phi-4 is a compact dense reasoning language model developed by Microsoft in the Phi-4 family. It has 14B parameters, supports 16K tokens of context, accepts Text and produces Text. Its primary role is reasoning, mathematics, code and latency/compute-constrained text applications.
-- [Phi-4 Mini Instruct](https://openweightmodels.eu/models/phi-4-mini-instruct/): Phi-4 Mini Instruct is a small dense multilingual instruction model developed by Microsoft in the Phi-4 Mini family. It has 3.8B parameters, supports 128K tokens of context, accepts Text and produces Text. Its primary role is small-model reasoning, instruction following and long-context applications.
-- [Phi-4 Multimodal Instruct](https://openweightmodels.eu/models/phi-4-multimodal-instruct/): Phi-4 Multimodal Instruct is a compact multimodal instruction model developed by Microsoft in the Phi-4 Multimodal family. It has 5.6B parameters, supports 128K tokens of context, accepts Text + images + audio and produces Text. Its primary role is compact multimodal assistants, speech, visual understanding and text reasoning.
-- [Qwen2.5-Coder-32B-Instruct](https://openweightmodels.eu/models/qwen2-5-coder-32b-instruct/): Qwen2.5-Coder-32B-Instruct is a dense code-focused instruction model developed by Qwen / Alibaba in the Qwen2.5-Coder family. It has ~32.5B parameters, supports 32K native · long-context extension documented by Qwen of context, accepts Text / code and produces Text / code. Its primary role is code generation, completion, repair, reasoning and software development assistance.
-- [Qwen2.5-VL-72B-Instruct](https://openweightmodels.eu/models/qwen2-5-vl-72b-instruct/): Qwen2.5-VL-72B-Instruct is a large vision-language instruction model developed by Qwen / Alibaba in the Qwen2.5-VL family. It has ~72B parameters, supports 32K recommended default · config exposes 128K positions of context, accepts Text + images + video and produces Text. Its primary role is visual reasoning, video understanding, document/UI perception and visual agents.
-- [Qwen3-235B-A22B](https://openweightmodels.eu/models/qwen3-235b-a22b/): Qwen3-235B-A22B is a large text Mixture-of-Experts reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 235B parameters with 22B/token active parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is reasoning, multilingual generation, agents, mathematics and coding.
-- [Qwen3-30B-A3B](https://openweightmodels.eu/models/qwen3-30b-a3b/): Qwen3-30B-A3B is a efficient text Mixture-of-Experts reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 30.5B parameters with 3.3B/token active parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is efficient reasoning, multilingual inference and tool-oriented assistants.
-- [Qwen3-32B](https://openweightmodels.eu/models/qwen3-32b/): Qwen3-32B is a dense multilingual reasoning model developed by Qwen / Alibaba in the Qwen3 family. It has 32.8B parameters, supports 32,768 native · 131,072 with YaRN of context, accepts Text and produces Text. Its primary role is reasoning, code, multilingual assistants and agent workflows on a dense architecture.
-- [Qwen3-Coder-480B-A35B-Instruct](https://openweightmodels.eu/models/qwen3-coder-480b-a35b-instruct/): Qwen3-Coder-480B-A35B-Instruct is a large agentic coding Mixture-of-Experts model developed by Qwen / Alibaba in the Qwen3-Coder family. It has 480B parameters with 35B/token active parameters, supports 256K tokens of context, accepts Text / code and produces Text / code. Its primary role is software engineering, repository-scale coding, tool use and coding agents.
-- [SmolLM3 3B](https://openweightmodels.eu/models/smollm3-3b/): SmolLM3 3B is a compact dense hybrid-reasoning language model developed by Hugging Face in the SmolLM3 family. It has 3B parameters, supports 64K native · up to 128K extended of context, accepts Text and produces Text / code. Its primary role is local reasoning, compact assistants, agents and reproducible open-model research.
+Provider origin is recorded separately from deployment location and data residency. A provider-country flag identifies the primary model-publishing organization; it is not a claim about training-data origin, inference location, user location, or where prompts and documents are processed.
 
+## Core references
 
-## Privacy
-- https://openweightmodels.eu/privacy/ — Privacy policy and tracker-free site configuration
-- https://openweightmodels.eu/data/privacy.json — Machine-readable privacy profile
+- Models directory: https://openweightmodels.eu/models/
+- EU deployment, data residency, GDPR & AI Act: https://openweightmodels.eu/eu/
+- License Explorer: https://openweightmodels.eu/licenses/
+- Deployment Explorer: https://openweightmodels.eu/deployment/
+- Local deployment guide: https://openweightmodels.eu/guides/local-deployment/
+- Methodology: https://openweightmodels.eu/methodology/
+- Privacy: https://openweightmodels.eu/privacy/
+
+## Machine-readable data
+
+- Model registry: https://openweightmodels.eu/data/models.json
+- EU deployment lens: https://openweightmodels.eu/data/eu-model-lens.json
+- License data: https://openweightmodels.eu/data/licenses.json
+- Deployment data: https://openweightmodels.eu/data/deployments.json
+- Methodology data: https://openweightmodels.eu/data/methodology.json
+- Sitemap: https://openweightmodels.eu/sitemap.xml
+
+## Evidence rules
+
+1. Prefer primary publisher model cards, official repositories and official license text.
+2. Keep model facts, license facts, deployment facts and provider-origin metadata separate.
+3. Treat hardware classes as deployment guidance, not guaranteed minimum requirements.
+4. Do not turn benchmark results into an overall model-quality ranking.
+5. Record a verification date and link the primary source.
+6. For EU deployment, assess the complete data path: inference, RAG, embeddings, logging, monitoring, backups and subprocessors.
+7. “EU/EEA self-hosting possible” is a technical deployment property, not a GDPR or AI Act compliance badge.
+
+## Gold-standard Model Passports (32)
+
+- [gpt-oss-120b](https://openweightmodels.eu/models/gpt-oss-120b/) — OpenAI; Apache 2.0; Reasoning, tools, self-hosted inference.
+- [gpt-oss-20b](https://openweightmodels.eu/models/gpt-oss-20b/) — OpenAI; Apache 2.0; Reasoning, local and edge-class inference.
+- [Llama 4 Maverick](https://openweightmodels.eu/models/llama-4-maverick/) — Meta; Llama 4 Community License; Multimodal MoE, long context.
+- [Llama 4 Scout](https://openweightmodels.eu/models/llama-4-scout/) — Meta; Llama 4 Community License; Multimodal MoE, very long context.
+- [Llama 3.3 70B Instruct](https://openweightmodels.eu/models/llama-3-3-70b-instruct/) — Meta; Llama 3.3 Community License; General-purpose multilingual text.
+- [Qwen3-235B-A22B](https://openweightmodels.eu/models/qwen3-235b-a22b/) — Qwen / Alibaba; Apache 2.0; Reasoning, multilingual, general-purpose.
+- [Qwen3-32B](https://openweightmodels.eu/models/qwen3-32b/) — Qwen / Alibaba; Apache 2.0; Reasoning, multilingual, general-purpose.
+- [Qwen3-30B-A3B](https://openweightmodels.eu/models/qwen3-30b-a3b/) — Qwen / Alibaba; Apache 2.0; Efficient reasoning and multilingual inference.
+- [Qwen3-Coder-480B-A35B-Instruct](https://openweightmodels.eu/models/qwen3-coder-480b-a35b-instruct/) — Qwen / Alibaba; Apache 2.0; Coding, software agents, tool use.
+- [Qwen2.5-VL-72B-Instruct](https://openweightmodels.eu/models/qwen2-5-vl-72b-instruct/) — Qwen / Alibaba; Qwen License; Vision, video understanding, visual agents.
+- [Qwen2.5-Coder-32B-Instruct](https://openweightmodels.eu/models/qwen2-5-coder-32b-instruct/) — Qwen / Alibaba; Apache 2.0; Code generation, repair and reasoning.
+- [Gemma 3 27B IT](https://openweightmodels.eu/models/gemma-3-27b-it/) — Google DeepMind; Gemma Terms; Multimodal, multilingual, long context.
+- [Gemma 3 12B IT](https://openweightmodels.eu/models/gemma-3-12b-it/) — Google DeepMind; Gemma Terms; Multimodal general-purpose inference.
+- [Gemma 3 4B IT](https://openweightmodels.eu/models/gemma-3-4b-it/) — Google DeepMind; Gemma Terms; Compact multimodal and on-device use.
+- [Gemma 3n E4B IT](https://openweightmodels.eu/models/gemma-3n-e4b-it/) — Google DeepMind; Gemma Terms; Mobile, audio, vision and text.
+- [Mistral Small 3.1 24B Instruct](https://openweightmodels.eu/models/mistral-small-3-1-24b-instruct/) — Mistral AI; Apache 2.0; General-purpose multimodal inference.
+- [Devstral Small 2505](https://openweightmodels.eu/models/devstral-small-2505/) — Mistral AI; Apache 2.0; Software engineering and coding agents.
+- [Magistral Small 2506](https://openweightmodels.eu/models/magistral-small-2506/) — Mistral AI; Apache 2.0; Reasoning and step-by-step problem solving.
+- [Mistral Nemo Instruct 2407](https://openweightmodels.eu/models/mistral-nemo-instruct-2407/) — Mistral AI / NVIDIA; Apache 2.0; Multilingual text and code, 128K context.
+- [Mathstral 7B v0.1](https://openweightmodels.eu/models/mathstral-7b-v0-1/) — Mistral AI; Apache 2.0; Mathematical reasoning.
+- [DeepSeek-R1](https://openweightmodels.eu/models/deepseek-r1/) — DeepSeek; MIT; Reasoning, mathematics and coding.
+- [DeepSeek-V3.1](https://openweightmodels.eu/models/deepseek-v3-1/) — DeepSeek; MIT; Hybrid reasoning, agents and general-purpose.
+- [Phi-4](https://openweightmodels.eu/models/phi-4/) — Microsoft; MIT; Reasoning, mathematics and code.
+- [Phi-4 Mini Instruct](https://openweightmodels.eu/models/phi-4-mini-instruct/) — Microsoft; MIT; Small-model reasoning and instruction following.
+- [Phi-4 Multimodal Instruct](https://openweightmodels.eu/models/phi-4-multimodal-instruct/) — Microsoft; MIT; Multimodal text, vision and speech.
+- [OLMo 2 32B Instruct](https://openweightmodels.eu/models/olmo-2-32b-instruct/) — Ai2; Apache 2.0*; Open research, reasoning and reproducibility.
+- [OLMo 2 13B Instruct](https://openweightmodels.eu/models/olmo-2-13b-instruct/) — Ai2; Apache 2.0*; Open research and reproducible training.
+- [Kimi K2 Instruct](https://openweightmodels.eu/models/kimi-k2-instruct/) — Moonshot AI; Modified MIT; Agentic intelligence, coding and tool use.
+- [GLM-4.5](https://openweightmodels.eu/models/glm-4-5/) — Z.ai; MIT; Reasoning, coding and agentic applications.
+- [GLM-4.5 Air](https://openweightmodels.eu/models/glm-4-5-air/) — Z.ai; MIT; Efficient reasoning, coding and agents.
+- [Granite 3.3 8B Instruct](https://openweightmodels.eu/models/granite-3-3-8b-instruct/) — IBM; Apache 2.0; Enterprise reasoning and instruction following.
+- [SmolLM3 3B](https://openweightmodels.eu/models/smollm3-3b/) — Hugging Face; Apache 2.0; Compact reasoning, agents and local inference.
+
+## Current source-verified profiles (17)
+
+- [Qwen3.8-27B](https://openweightmodels.eu/models/qwen3-8-27b/) — 🇨🇳 Qwen / Alibaba; Apache 2.0; Coding, professional work, research, vision and long-horizon agents.
+- [Qwen3-Coder-30B-A3B-Instruct](https://openweightmodels.eu/models/qwen3-coder-30b-a3b-instruct/) — 🇨🇳 Qwen / Alibaba; Apache 2.0; Coding agents, repository work, tool use and software engineering.
+- [Qwen3-VL-30B-A3B-Instruct](https://openweightmodels.eu/models/qwen3-vl-30b-a3b-instruct/) — 🇨🇳 Qwen / Alibaba; Apache 2.0; Vision, documents, video, multimodal agents and tool use.
+- [Mistral Small 4 119B A6B](https://openweightmodels.eu/models/mistral-small-4-119b-2603/) — 🇫🇷 Mistral AI; Apache 2.0; Instruction, reasoning, coding, agents and vision.
+- [OLMo 3 32B](https://openweightmodels.eu/models/olmo-3-32b/) — 🇺🇸 Ai2; Apache 2.0; Open research, reproducibility, instruction and reasoning variants.
+- [OLMo 3 7B](https://openweightmodels.eu/models/olmo-3-7b/) — 🇺🇸 Ai2; Apache 2.0; Accessible open research, local experimentation and transparent training.
+- [Command A+ 05-2026](https://openweightmodels.eu/models/command-a-plus-05-2026/) — 🇨🇦 Cohere / Cohere Labs; Apache 2.0; Enterprise agents, multilingual reasoning, tool use and vision.
+- [Granite 4.2 8B](https://openweightmodels.eu/models/granite-4-2-8b/) — 🇺🇸 IBM; Apache 2.0; Enterprise assistants, reasoning, tool use and RAG.
+- [MiniMax M2.5](https://openweightmodels.eu/models/minimax-m2-5/) — 🇨🇳 MiniMax; Modified MIT; Coding, search, tool use, agentic workflows and office work.
+- [GLM-5.3](https://openweightmodels.eu/models/glm-5-3/) — 🇨🇳 Z.ai; GLM-5.3 License; Long-horizon coding, agentic engineering and reasoning.
+- [GLM-5.3 Flash](https://openweightmodels.eu/models/glm-5-3-flash/) — 🇨🇳 Z.ai; MIT; Efficient agentic work, coding, vision and long-context tasks.
+- [Kimi K3](https://openweightmodels.eu/models/kimi-k3/) — 🇨🇳 Moonshot AI; Kimi K3 License; Long-horizon coding, knowledge work and multimodal agents.
+- [NVIDIA Nemotron 3.5 Lightning 30B-A3B](https://openweightmodels.eu/models/nemotron-3-5-lightning-30b-a3b/) — 🇺🇸 NVIDIA; OpenMDW 1.1; Autonomous agents, long context and efficient local/server inference.
+- [Ministral 3 3B Instruct 2512](https://openweightmodels.eu/models/ministral-3-3b-instruct-2512/) — 🇫🇷 Mistral AI; Apache 2.0; Edge chat, vision and compact local assistants.
+- [Ministral 3 8B Instruct 2512](https://openweightmodels.eu/models/ministral-3-8b-instruct-2512/) — 🇫🇷 Mistral AI; Apache 2.0; Balanced local chat, vision and instruction following.
+- [Ministral 3 14B Instruct 2512](https://openweightmodels.eu/models/ministral-3-14b-instruct-2512/) — 🇫🇷 Mistral AI; Apache 2.0; Higher-capability local chat, vision and instruction following.
+- [Devstral Small 2 24B Instruct 2512](https://openweightmodels.eu/models/devstral-small-2-24b-instruct-2512/) — 🇫🇷 Mistral AI; Apache 2.0; Software engineering, repository-scale coding and agentic development.
+
+## Legal and regulatory note
+
+OpenWeightModels provides technical comparison and provenance, not legal advice. Model-specific official sources, applicable law and organization-specific legal review remain authoritative.
