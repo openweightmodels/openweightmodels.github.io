@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "GLM-5.3 Flash",
+  "slug": "glm-5-3-flash",
+  "developer": "Z.ai",
+  "provider_origin": {
+    "flag": "🇨🇳",
+    "country": "China",
+    "region": "Asia"
+  },
+  "family": "GLM-5.3",
+  "verified_at": "2026-10-01",
+  "definition": "GLM-5.3 Flash is an open-weight GLM-5.3 model by Z.ai focused on efficient agentic work, coding, vision and long-context tasks.",
+  "architecture": {
+    "parameters": "320B total",
+    "active_parameters": "18B active/token",
+    "context": "Publisher evaluates workloads from ~164K to 1M depending on benchmark and context management",
+    "modalities": "Text + image → text/code",
+    "details": [
+      "320B total parameters",
+      "18B active parameters",
+      "Native multimodality",
+      "Hybrid sparse + linear attention",
+      "SGLang, vLLM and Transformers deployment paths"
+    ]
+  },
+  "license": {
+    "name": "MIT",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Datacenter / multi-GPU class despite the lower active-parameter count; total weight memory remains large."
+  },
+  "deployment": {
+    "summary": "Z.ai documents local serving with SGLang, vLLM, Transformers, KTransformers and other runtimes.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
