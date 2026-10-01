@@ -33,6 +33,12 @@
       "name": "EU Deployment, Data Residency, GDPR & AI Act",
       "url": "/eu/",
       "intent": "open-weight model EU deployment data residency GDPR AI Act"
+    },
+    {
+      "name": "Open-Weight AI Knowledge Base",
+      "url": "/knowledge/",
+      "intent": "open-weight AI knowledge base",
+      "article_count": 15
     }
   ],
   "methodology": "/methodology/"
