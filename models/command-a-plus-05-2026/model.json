@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Command A+ 05-2026",
+  "slug": "command-a-plus-05-2026",
+  "developer": "Cohere / Cohere Labs",
+  "provider_origin": {
+    "flag": "🇨🇦",
+    "country": "Canada",
+    "region": "North America"
+  },
+  "family": "Command A+",
+  "verified_at": "2026-10-01",
+  "definition": "Command A+ 05-2026 is an open-weight Command A+ model by Cohere / Cohere Labs focused on enterprise agents, multilingual reasoning, tool use and vision.",
+  "architecture": {
+    "parameters": "218B total",
+    "active_parameters": "25B active/token",
+    "context": "128K input",
+    "modalities": "Text + vision → text",
+    "details": [
+      "218B total parameters",
+      "25B active parameters",
+      "128K input context",
+      "Vision input support",
+      "Enterprise / multilingual focus"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review the exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "Datacenter / multi-GPU class. Cohere publishes multiple quantizations with hardware-specific guidance."
+  },
+  "deployment": {
+    "summary": "Cohere publishes downloadable weights and deployment guidance; production serving should follow the exact quantization card.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
