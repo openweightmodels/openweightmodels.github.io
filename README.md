@@ -46,9 +46,9 @@ The two surfaces have different jobs:
 6. Link to the source instead of reproducing third-party model cards.
 7. Update or remove stale records when official releases change.
 
-## Current registry
+## Current registry and EU deployment lens
 
-The public registry now contains **49 selected open-weight model profiles**: **32 Gold-standard Model Passports** with full technical, license and deployment review plus **17 current source-verified profiles** for newer releases.
+The public registry now contains **64 selected open-weight model profiles**: **32 Gold-standard Model Passports** with full technical, license and deployment review plus **32 current source-verified profiles**. Provider origin, EU/EEA self-hosting, data-residency considerations and commercial-use notes are recorded separately.
 
 The registry spans general-purpose, reasoning, coding, multimodal, edge, enterprise and open-research models. Provider origin is recorded separately from deployment location and data residency.
 
