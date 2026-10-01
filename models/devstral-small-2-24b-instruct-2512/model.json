@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "passport_status": "source_verified",
+  "name": "Devstral Small 2 24B Instruct 2512",
+  "slug": "devstral-small-2-24b-instruct-2512",
+  "developer": "Mistral AI",
+  "provider_origin": {
+    "flag": "🇫🇷",
+    "country": "France",
+    "region": "European Union"
+  },
+  "family": "Devstral 2",
+  "verified_at": "2026-10-01",
+  "definition": "Devstral Small 2 24B Instruct 2512 is an open-weight Devstral 2 model by Mistral AI focused on software engineering, repository-scale coding and agentic development.",
+  "architecture": {
+    "parameters": "24B-class",
+    "active_parameters": "Dense",
+    "context": "Up to 262,144 in published generation configuration",
+    "modalities": "Text/code → text/code",
+    "details": [
+      "24B coding model",
+      "Repository-scale software engineering",
+      "Agentic development focus",
+      "262K-class configuration",
+      "Apache 2.0"
+    ]
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Review exact official terms before production.",
+    "legal_note": "Technical comparison; not legal advice."
+  },
+  "hardware": {
+    "summary": "High-memory workstation or GPU server class; quantization can reduce the footprint."
+  },
+  "deployment": {
+    "summary": "Mistral publishes vLLM/mistral-common integration; use the model-specific chat/system prompts for agentic coding.",
+    "eu_eea_self_hosting": "Technically possible when the complete stack is operated on EU/EEA infrastructure.",
+    "data_residency": "Provider origin does not determine data residency."
+  },
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
