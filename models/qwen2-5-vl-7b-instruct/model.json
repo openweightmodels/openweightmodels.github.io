@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.1",
+  "passport_version": "2.1",
+  "name": "Qwen2.5-VL 7B Instruct",
+  "slug": "qwen2-5-vl-7b-instruct",
+  "developer": "Qwen / Alibaba",
+  "verified_at": "2026-10-01",
+  "passport_status": "source_verified",
+  "definition": "Qwen2.5-VL 7B Instruct is an open-weight AI model published by Qwen / Alibaba. OpenWeightModels records it for images, documents, video understanding and visual agents.",
+  "architecture": {
+    "parameters": "7B",
+    "context": "See official model card"
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "commercial_use": "Generally permitted by the listed license, subject to its conditions and any separate applicable terms.",
+    "legal_note": "Technical comparison only; not legal advice."
+  },
+  "hardware": {
+    "summary": "OWM hardware class: ≤8B · consumer/local. Actual memory and throughput depend on precision, quantization, context length, runtime and accelerator support."
+  },
+  "eu_deployment": {
+    "provider_origin": "🇨🇳 China",
+    "provider_region": "Asia",
+    "eu_provider": false,
+    "self_hosting": "Technically possible on EU/EEA infrastructure when the weights, runtime and connected services are operated there.",
+    "data_residency": "Provider origin does not determine data residency. Review inference, RAG, embeddings, logs, telemetry, backups and subprocessors.",
+    "ai_act": "Applicable obligations depend on the actor's role and the concrete model/system context; this is not a compliance determination."
+  },
+  "focus": "Images, documents, video understanding and visual agents",
+  "sources": [
+    {
+      "label": "Official model source",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct"
+    }
+  ],
+  "related_pages": {
+    "models_index": "/models/",
+    "eu_deployment": "/eu/",
+    "licenses": "/licenses/",
+    "deployment": "/deployment/",
+    "methodology": "/methodology/"
+  }
+}
